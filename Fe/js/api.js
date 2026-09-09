@@ -1,8 +1,32 @@
-// CyberShield Frontend API Client Layer
+// CyberU Frontend API Client Layer
 
-const API_BASE_URL = 'http://localhost:8000/api';
+const getApiBaseUrl = () => {
+  const customUrl = localStorage.getItem('cyberu_backend_url');
+  if (customUrl) return customUrl.replace(/\/+$/, '') + (customUrl.endsWith('/api') ? '' : '/api');
+  if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+    return 'http://localhost:8000/api';
+  }
+  return 'https://cyberu-be.vercel.app/api';
+};
+
+let API_BASE_URL = getApiBaseUrl();
 
 class ApiClient {
+  static getBackendUrl() {
+    return API_BASE_URL;
+  }
+
+  static setBackendUrl(url) {
+    if (url) {
+      let formatted = url.trim().replace(/\/+$/, '');
+      if (!formatted.endsWith('/api')) formatted += '/api';
+      localStorage.setItem('cyberu_backend_url', formatted);
+      API_BASE_URL = formatted;
+    } else {
+      localStorage.removeItem('cyberu_backend_url');
+      API_BASE_URL = getApiBaseUrl();
+    }
+  }
   static getApiMode() {
     return localStorage.getItem('cybershield_api_mode') || 'system_default';
   }
