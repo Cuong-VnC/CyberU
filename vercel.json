@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "Be/main.py",
+      "use": "@vercel/python"
+    },
+    {
+      "src": "Fe/**",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "Be/main.py"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "Fe/$1"
+    }
+  ]
+}
