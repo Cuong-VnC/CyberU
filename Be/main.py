@@ -35,6 +35,20 @@ def load_json_data(filename: str) -> List[Any]:
     with open(filepath, "r", encoding="utf-8") as f:
         return json.load(f)
 
+# Root Welcome Endpoint
+@app.get("/")
+async def root():
+    return {
+        "status": "ok",
+        "service": "CyberU Python FastAPI Backend",
+        "message": "CyberU AI Anti-Scam API is running on Vercel!",
+        "endpoints": {
+            "health": "/api/health",
+            "analyze": "/api/gemini/analyze",
+            "knowledge": "/api/knowledge/threats"
+        }
+    }
+
 # Health & Status Endpoint
 @app.get("/api/health")
 async def health_check():
