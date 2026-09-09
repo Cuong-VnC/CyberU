@@ -1,0 +1,270 @@
+[
+  {
+    "id": "spot-vn-1",
+    "title": "Tin Nhắn Giả Mạo Ngân Hàng Vietcombank Cảnh Báo Khóa Thẻ",
+    "category": "SMS Phishing",
+    "difficulty": "Easy",
+    "type": "SMS Brandname",
+    "content": "[Vietcombank] Tran trong: Tai khoan VCB Digibank cua quy khach da bi khoa do dang nhap bat thuong tai Ha Noi.\nVui long truy cap https://vietcombank-digibank-xacminh.top/login de mo khoa tai khoan trong vong 24h.\nNeu qua thoi han, toan bo so du se bi phong toa.",
+    "metadataCues": [
+      "Tên miền lạ: vietcombank-digibank-xacminh.top (đuôi .top, không phải vietcombank.com.vn)",
+      "Hối thúc đe dọa phong tỏa số dư trong 24h",
+      "Ngân hàng không bao giờ gửi link đăng nhập qua SMS"
+    ],
+    "isScam": true,
+    "correctAnswer": "SCAM",
+    "indicators": [
+      "Tên miền lừa đảo đuôi `.top`",
+      "Đe dọa phong tỏa số dư để gây hoảng sợ",
+      "Đường link dẫn đến trang web giả mạo thu thập mật khẩu và OTP"
+    ],
+    "explanation": "Đây là tin nhắn lừa đảo mạo danh ngân hàng (SMS Phishing). Ngân hàng Vietcombank chính thức chỉ dùng tên miền https://vietcombank.com.vn và không bao giờ gửi link mở khóa tài khoản qua tin nhắn.",
+    "tacticName": "Giả mạo thương hiệu ngân hàng & Đe dọa tài chính"
+  },
+  {
+    "id": "spot-vn-2",
+    "title": "Thông Báo Cảnh Báo Đăng Nhập Chính Thức Từ Google",
+    "category": "Thông Báo Thật",
+    "difficulty": "Medium",
+    "type": "Email Hệ Thống",
+    "content": "Người gửi: Google <no-reply@accounts.google.com>\nTiêu đề: Cảnh báo bảo mật cho tài khoản Google của bạn\nGửi tới: nguyenvana@gmail.com\n\nChào Văn A,\nTài khoản của bạn vừa được đăng nhập trên một thiết bị mới:\n• Thiết bị: Windows 11 (Trình duyệt Chrome)\n• Địa điểm: Quận Cầu Giấy, Hà Nội, Việt Nam\n• Thời gian: 18 Tháng 8, 2026, lúc 14:32\n\nNếu đúng là bạn, bạn không cần làm gì thêm.\nNếu không phải bạn, hãy kiểm tra bảo mật tại: https://myaccount.google.com/security-checkup\n\nGoogle LLC, 1600 Amphitheatre Parkway, Mountain View, CA",
+    "metadataCues": [
+      "Email người gửi chuẩn xác: no-reply@accounts.google.com",
+      "Gửi đúng tên người dùng (Văn A)",
+      "Link dẫn chuẩn về https://myaccount.google.com",
+      "Không yêu cầu gửi mật khẩu hay dọa khóa tài khoản ngay lập tức"
+    ],
+    "isScam": false,
+    "correctAnswer": "LEGITIMATE",
+    "indicators": [
+      "Tên miền gửi thư chính thức accounts.google.com",
+      "Thông tin vị trí và thiết bị minh bạch",
+      "Không chứa liên kết độc hại hay đòi tiền bạc"
+    ],
+    "explanation": "Đây là email cảnh báo bảo mật CHÍNH THỨC và hợp lệ từ Google gửi cho người dùng khi có thiết bị mới đăng nhập. Email không đòi hỏi mật khẩu hay đe dọa.",
+    "tacticName": "Thông báo an ninh hệ thống chuẩn tắc"
+  },
+  {
+    "id": "spot-vn-3",
+    "title": "Tuyển Cộng Tác Viên Ngồi Nhà Xem Video Tiktok Kiếm Tiền Triệu",
+    "category": "Lừa đảo Tuyển dụng",
+    "difficulty": "Easy",
+    "type": "Tin Nhắn Zalo / SMS",
+    "content": "Chào bạn! 👋 Bên mình đang tuyển gấp 5 bạn cộng tác viên online:\n🎬 Công việc: Thả tim và xem video Tiktok (chỉ cần điện thoại lướt mạng).\n💰 Thu nhập: 50.000đ / video, ngày kiếm 500.000đ - 1.500.000đ thanh toán ngay theo ngày qua ATM.\n❌ Không cọc, không mất vốn, rảnh giờ nào làm giờ đó.\n👉 Kết bạn Zalo ngay với Chị Mai nhân sự: 0987.xxx.xxx để nhận việc ngay!",
+    "metadataCues": [
+      "Công việc xem video quá đơn giản nhưng mức lương phi lý (50k/video)",
+      "Không có công ty rõ ràng, tuyển qua số Zalo cá nhân",
+      "Chiêu trò mở màn của bẫy lừa nạp tiền làm nhiệm vụ giật đơn"
+    ],
+    "isScam": true,
+    "correctAnswer": "SCAM",
+    "indicators": [
+      "Mức lương bất thường cho công việc đơn giản",
+      "Mồi câu việc nhẹ lương cao để dẫn dụ vào nhóm Telegram nạp tiền",
+      "Không có hợp đồng lao động hay pháp nhân công ty"
+    ],
+    "explanation": "Đây là cái bẫy lừa đảo cộng tác viên làm nhiệm vụ. Sau khi nạn nhân liên hệ, kẻ gian sẽ cho nhận vài chục nghìn tiền mồi rồi ép nạp hàng chục triệu làm nhiệm vụ VIP rồi chiếm đoạt.",
+    "tacticName": "Bẫy việc nhẹ lương cao (Task Scam)"
+  },
+  {
+    "id": "spot-vn-4",
+    "title": "Tin Nhắn Thông Báo Biến Động Số Dư Thật Từ MBBank",
+    "category": "Thông Báo Thật",
+    "difficulty": "Medium",
+    "type": "SMS Brandname",
+    "content": "MBBANK: 18/08/2026 09:15 | TK: 0988xxxx88 | GD: +2.500.000 VND | So du: 18.450.000 VND | ND: Nguyen Van B chuyen tien mua hang. Hotline: 1900545426.",
+    "metadataCues": [
+      "Cú pháp biến động số dư ngân hàng chuẩn",
+      "Không chứa bất kỳ đường link website lạ nào",
+      "Đầy đủ mốc thời gian, số tài khoản che đuôi, số dư và nội dung chuyển tiền",
+      "Hotline chính thức của MBBank"
+    ],
+    "isScam": false,
+    "correctAnswer": "LEGITIMATE",
+    "indicators": [
+      "Không có link liên kết lạ",
+      "Cấu trúc tin nhắn biến động số dư chuẩn mực",
+      "Thông tin minh bạch không yêu cầu người nhận phải bấm gì"
+    ],
+    "explanation": "Đây là tin nhắn biến động số dư CHÍNH THỐNG từ ngân hàng MBBank. Tin nhắn thông báo thông tin giao dịch nhận tiền và không chứa đường link yêu cầu đăng nhập.",
+    "tacticName": "Tin nhắn giao dịch ngân hàng chính thống"
+  },
+  {
+    "id": "spot-vn-5",
+    "title": "Giả Mạo Cán Bộ Thuế / Dịch Vụ Công Gửi File APK Cài Đặt",
+    "category": "Mã Độc Android",
+    "difficulty": "Hard",
+    "type": "Zalo / Web Giả",
+    "content": "Chào anh Tuấn, tôi là cán bộ Chi cục Thuế Quận 1.\nHồ sơ quyết toán thuế và định danh doanh nghiệp của anh đang bị sai lệch mã số định danh trên hệ thống quốc gia.\nAnh tải ứng dụng Dịch Vụ Công của Tổng Cục Thuế theo link dưới đây để cài đặt và quét khuôn mặt cập nhật:\n👉 http://dichvucong-gov-tongcucthue.vip/thue_vneid.apk\n(Lưu ý: Bật cho phép cài đặt nguồn ngoài trên điện thoại Android để cài đặt).",
+    "metadataCues": [
+      "Gửi file cài đặt trực tiếp dạng `.apk` thay vì tải trên CH Play",
+      "Tên miền lừa đảo có đuôi `.vip`",
+      "Cơ quan nhà nước không bao giờ gửi file apk qua Zalo yêu cầu cài"
+    ],
+    "isScam": true,
+    "correctAnswer": "SCAM",
+    "indicators": [
+      "File cài đặt `.apk` chứa mã độc điều khiển điện thoại từ xa (Trojan)",
+      "Tên miền giả mạo dịch vụ công",
+      "Yêu cầu bật tính năng cài đặt không an toàn trên điện thoại"
+    ],
+    "explanation": "Cực kỳ nguy hiểm! File `.apk` này chứa mã độc gián điệp. Khi cài vào máy, nó sẽ chiếm quyền Trợ năng (Accessibility), đọc trộm mã OTP và tự động chuyển sạch tiền trong tài khoản ngân hàng của bạn.",
+    "tacticName": "Tấn công cài mã độc chiếm quyền điều khiển điện thoại (Malware/Trojan)"
+  },
+  {
+    "id": "spot-vn-6",
+    "title": "Email Xác Nhận Đặt Vé Máy Bay Vietnam Airlines Thật",
+    "category": "Thông Báo Thật",
+    "difficulty": "Easy",
+    "type": "Email Vé Máy Bay",
+    "content": "Người gửi: Vietnam Airlines E-Ticket <no-reply@vietnamairlines.com>\nTiêu đề: Xác nhận đặt chỗ & Vé điện tử - Mã đặt chỗ: VN-789XYZ\nGửi tới: khachhang@gmail.com\n\nKính gửi Quý khách NGUYEN VAN A,\nCảm ơn Quý khách đã lựa chọn Vietnam Airlines. Dưới đây là thông tin hành trình:\n• Chuyến bay: VN 214 (Hà Nội HAN -> TP. Hồ Chí Minh SGN)\n• Giờ khởi hành: 08:30 Ngày 25/09/2026\n• Hành khách: NGUYEN VAN A | Số vé: 7382910293841\n\nQuý khách có thể làm thủ tục trực tuyến tại ứng dụng Vietnam Airlines hoặc website:\nhttps://www.vietnamairlines.com\nChúc Quý khách có chuyến bay an toàn và dễ chịu!",
+    "metadataCues": [
+      "Tên miền người gửi chuẩn xác: @vietnamairlines.com",
+      "Mã vé và tên hành khách chuẩn định dạng hàng không",
+      "Website chính thức https://www.vietnamairlines.com",
+      "Không đòi hỏi thông tin thẻ tín dụng thêm"
+    ],
+    "isScam": false,
+    "correctAnswer": "LEGITIMATE",
+    "indicators": [
+      "Tên miền chính hãng được xác thực SPF/DKIM",
+      "Mã vé điện tử và lộ trình bay thực tế",
+      "Không có liên kết mờ ám hay yêu cầu tài chính bất thường"
+    ],
+    "explanation": "Đây là email xác nhận vé máy bay CHÍNH HÃNG từ hãng hàng không Vietnam Airlines. Mọi đường link đều trỏ về tên miền gốc an toàn.",
+    "tacticName": "Xác nhận dịch vụ vận chuyển chính thống"
+  },
+  {
+    "id": "spot-vn-7",
+    "title": "Tin Nhắn Trúng Thưởng Xe Máy SH & 200 Triệu Từ Sự Kiện Tri Ân",
+    "category": "Lừa đảo Trúng thưởng",
+    "difficulty": "Easy",
+    "type": "Tin Nhắn Messenger / SMS",
+    "content": "🎉 CHÚC MỪNG BẠN ĐÃ TRÚNG THƯỞNG! 🎉\nHệ thống ngẫu nhiên đã chọn tài khoản của bạn là 1 trong 3 khách hàng may mắn đạt GIẢI NHẤT sự kiện \"Tri Ân Khách Hàng 2026\".\n🎁 Phần thưởng: 01 Xe máy Honda SH 150i + 200.000.000 VNĐ tiền mặt.\nMã trúng thưởng của bạn là: SH2026-99\nVui lòng truy cập trang web: http://nhanthuong-trian-honda2026.net để điền hồ sơ nhận thưởng và nộp 3.500.000đ phí làm hồ sơ trước bạ.",
+    "metadataCues": [
+      "Trúng thưởng từ trên trời rơi xuống khi không hề tham gia chương trình nào",
+      "Yêu cầu nộp tiền trước (3.5 triệu) để được nhận thưởng",
+      "Tên miền tự chế: nhanthuong-trian-honda2026.net"
+    ],
+    "isScam": true,
+    "correctAnswer": "SCAM",
+    "indicators": [
+      "Bẫy nộp phí trước để nhận giải thưởng lớn (Advance-Fee Fraud)",
+      "Không có đăng ký chương trình khuyến mãi với Bộ Công Thương",
+      "Tên miền giả mạo thương hiệu Honda"
+    ],
+    "explanation": "Đây là chiêu trò lừa đảo trúng thưởng kinh điển. Không có giải thưởng nào cả. Sau khi bạn chuyển 3.5 triệu tiền phí, kẻ gian sẽ tiếp tục đòi thêm phí vận chuyển, thuế VAT rồi biến mất hoàn toàn.",
+    "tacticName": "Lừa đảo nộp phí nhận thưởng (Advance-Fee Fraud)"
+  },
+  {
+    "id": "spot-vn-8",
+    "title": "Email Cảnh Báo Phạt Nguội Vi Phạm Giao Thông Kèm File Lạ",
+    "category": "Phishing Cơ Quan Chức Năng",
+    "difficulty": "Medium",
+    "type": "Email Mạo Danh",
+    "content": "Người gửi: Cục Cảnh Sát Giao Thông <phatnguoi-canhbao@csgt-portal-vn.com>\nTiêu đề: [THÔNG BÁO] Quyết định xử phạt vi phạm giao thông phương tiện biển số 30A-998.xx\nGửi tới: taixe@gmail.com\n\nCục CSGT thông báo: Phương tiện của bạn đã vi phạm: \"Chạy quá tốc độ quy định 20km/h\" tại Km45 Cao tốc Pháp Vân - Cầu Giẽ.\nMức phạt tiền: 5.000.000 VNĐ.\nYêu cầu bạn tải biên bản xử phạt điện tử và nộp phạt trực tuyến trong 48h tại link:\n👉 http://tra-cuu-phat-nguoi-csgt.online/bienban.exe\nNếu không nộp sẽ bị tước giấy phép lái xe và chuyển hồ sơ sang tòa án.",
+    "metadataCues": [
+      "Email có đuôi lạ: @csgt-portal-vn.com (Website CSGT chính thống là csgt.vn)",
+      "Link tải file có đuôi `.exe` (phần mềm độc hại trên máy tính)",
+      "CSGT Việt Nam không gửi thông báo phạt nguội qua email cá nhân kèm file .exe"
+    ],
+    "isScam": true,
+    "correctAnswer": "SCAM",
+    "indicators": [
+      "File cài đặt `.exe` chứa virus độc hại",
+      "Tên miền giả mạo Cục CSGT",
+      "Đe dọa tước bằng lái để ép người dùng mở file virus"
+    ],
+    "explanation": "Lừa đảo 100%! Cục Cảnh sát giao thông chỉ gửi thông báo phạt nguội bằng văn bản giấy tới địa chỉ chủ xe hoặc người dân tự tra cứu trên website chính thức https://csgt.vn. File `.exe` gửi kèm là virus đánh cắp dữ liệu máy tính.",
+    "tacticName": "Giả danh CSGT & Phát tán mã độc tống tiền"
+  },
+  {
+    "id": "spot-vn-9",
+    "title": "Tin Nhắn SMS OTP Xác Thực Đăng Nhập Zalo Thật",
+    "category": "Thông Báo Thật",
+    "difficulty": "Easy",
+    "type": "SMS Hệ Thống",
+    "content": "Zalo: 849201 la ma xac thuc cua ban de dang nhap tren thiet bi moi. Khong chia se ma nay voi bat ky ai de tranh bi mat tai khoan.",
+    "metadataCues": [
+      "Tin nhắn chuẩn từ Brandname Zalo",
+      "Chỉ cung cấp mã OTP 6 số",
+      "Cảnh báo rõ ràng \"Khong chia se ma nay voi bat ky ai\"",
+      "Không có đường link nào đính kèm"
+    ],
+    "isScam": false,
+    "correctAnswer": "LEGITIMATE",
+    "indicators": [
+      "Tin nhắn OTP chuẩn xác từ nhà cung cấp dịch vụ Zalo",
+      "Nhắc nhở người dùng bảo mật mã xác thực",
+      "Không chứa link hay yêu cầu chuyển khoản"
+    ],
+    "explanation": "Đây là tin nhắn OTP CHÍNH THỨC từ Zalo khi bạn thực hiện đăng nhập. Nếu bạn đang tự đăng nhập, hãy dùng mã này. Nếu bạn không đăng nhập mà nhận được mã, tuyệt đối KHÔNG cung cấp cho bất kỳ ai gọi hỏi.",
+    "tacticName": "Mã xác thực 2 lớp chính thức"
+  },
+  {
+    "id": "spot-vn-10",
+    "title": "Kêu Gọi Bình Chọn Cuộc Thi Giọng Hát Việt Nhí Qua Link Độc",
+    "category": "Chiếm Đoạt Nick Facebook",
+    "difficulty": "Hard",
+    "type": "Tin Nhắn Facebook Messenger",
+    "content": "Chào chị Lan! Con gái em đang thi vòng chung kết cuộc thi \"Giọng Hát Nhí Toàn Quốc 2026\".\nChị vào link này bấm vote bình chọn cho cháu SBD 08 giúp em với nhé, chỉ mất 10 giây thôi ạ. Em cảm ơn chị nhiều lắm:\n👉 https://cuoc-thi-tai-nang-nhi-2026.weebly.com/vote?login_fb=true",
+    "metadataCues": [
+      "Nhờ vả bình chọn cuộc thi trẻ em - chiêu trò đánh vào lòng trắc ẩn",
+      "Trang web tạo trên nền tảng miễn phí Weebly",
+      "Đường link dẫn đến trang giả mạo đăng nhập Facebook để cướp tài khoản"
+    ],
+    "isScam": true,
+    "correctAnswer": "SCAM",
+    "indicators": [
+      "Trang web bình chọn giả mạo có giao diện đăng nhập Facebook giả",
+      "Lợi dụng tài khoản của bạn bè bị hack để tiếp tục phát tán bẫy",
+      "Nhập mật khẩu vào link này sẽ bị mất nick Facebook ngay lập tức"
+    ],
+    "explanation": "Đây là thủ đoạn lừa đảo cướp tài khoản Facebook rất phổ biến. Kẻ gian lập trang web bình chọn giả, khi người dùng bấm vào sẽ đòi đăng nhập Facebook để \"xác thực bình chọn\", từ đó chiếm đoạt tài khoản rồi đi vay tiền bạn bè trong danh bạ.",
+    "tacticName": "Bẫy bình chọn cuộc thi cướp tài khoản mạng xã hội (Phishing)"
+  },
+  {
+    "id": "spot-vn-11",
+    "title": "Mã QR Dán Đè Tại Bàn Ăn Nhà Hàng (Quishing)",
+    "category": "QR Code Quishing",
+    "difficulty": "Hard",
+    "type": "Mã QR Thanh Toán",
+    "content": "[Tình huống thực tế]:\nBạn đang ngồi ăn tại quán phở. Trên bàn có một miếng dán mã QR thanh toán tiền ăn.\nKhi bạn đưa điện thoại lên quét, camera mở ra đường link:\n👉 https://qr-vietqr-pay-nhanh.xyz/transfer?bill=85000\nTrang web yêu cầu bạn nhập tên đăng nhập và mật khẩu Mobile Banking để tiến hành thanh toán 85.000đ.",
+    "metadataCues": [
+      "Mã QR mở ra đường link website trên trình duyệt thay vì mở thẳng app ngân hàng",
+      "Trang web đòi nhập mật khẩu ngân hàng điện tử (Quét mã thật không bao giờ cần nhập mật khẩu trên web)",
+      "Tên miền lạ đuôi `.xyz`"
+    ],
+    "isScam": true,
+    "correctAnswer": "SCAM",
+    "indicators": [
+      "Mã QR bị kẻ gian dán đè lên mã QR của quán (Quishing)",
+      "Trang web giả mạo cổng thanh toán VietQR để trộm mật khẩu ngân hàng",
+      "Quy chuẩn: Quét mã QR thanh toán chỉ diễn ra bên trong ứng dụng ngân hàng"
+    ],
+    "explanation": "Đây là hình thức lừa đảo mã QR (Quishing). Mã QR chuẩn của ngân hàng chỉ quét được trong app ngân hàng và tự động điền số tiền/số tài khoản. Mã QR nào mở ra trang web bắt nhập mật khẩu ngân hàng chắc chắn là lừa đảo!",
+    "tacticName": "Lừa đảo qua mã QR giả mạo (Quishing)"
+  },
+  {
+    "id": "spot-vn-12",
+    "title": "Sàn Giao Dịch Chứng Khoán Quốc Tế Cam Kết Lãi 30%/Ngày",
+    "category": "Lừa đảo Tài chính / Sàn Ảo",
+    "difficulty": "Easy",
+    "type": "Tin Nhắn Nhóm Telegram",
+    "content": "📈 NHÓM ĐẦU TƯ VIP - SÀN CHỨNG KHOÁN QUỐC TẾ NASDAQ ASIA 📈\nKính chào các nhà đầu tư thông thái!\n🔥 Thuật toán AI kéo lệnh tự động tỷ lệ thắng 99.8%:\n• Nạp 5.000.000đ -> Thu về 15.000.000đ sau 24h (Lãi 300%).\n• Nạp 50.000.000đ -> Thu về 180.000.000đ sau 3 ngày.\nCam kết bảo hiểm vốn 100% bởi Tập đoàn Tài chính Thụy Sĩ.\nRút tiền về ATM trong 3 phút không mất phí!\nLiên hệ Chuyên gia Hoàng Minh: @ChuyenGiaKeoLenh_Vip để kích hoạt gói đầu tư.",
+    "metadataCues": [
+      "Cam kết lợi nhuận không tưởng (lãi 300% sau 24h)",
+      "Cam kết \"Bảo hiểm vốn 100%\" - không có thị trường tài chính nào có điều này",
+      "Sàn giao dịch không phép, hoạt động qua nhóm Telegram"
+    ],
+    "isScam": true,
+    "correctAnswer": "SCAM",
+    "indicators": [
+      "Lợi nhuận siêu thực không tưởng trong đầu tư tài chính",
+      "Mô hình đa cấp sàn giao dịch nhị phân / chứng khoán ảo lừa tiền nạp",
+      "Người đầu tư sẽ không bao giờ rút được tiền ra"
+    ],
+    "explanation": "Lừa đảo tài chính 100%! Không có kênh đầu tư hợp pháp nào trên thế giới mang lại lợi nhuận 300%/ngày mà không có rủi ro. Các biểu đồ và số dư đều do kẻ gian can thiệp bằng phần mềm để chiếm đoạt tiền nạp của nạn nhân.",
+    "tacticName": "Lừa đảo đầu tư sàn ảo cam kết lãi khủng (Ponzi / Pig Butchering)"
+  }
+]

@@ -1,0 +1,1676 @@
+[
+  {
+    "id": "scam-01-deepfake-video",
+    "title": "1. Giả Danh Người Thân Gọi Video Bằng Deepfake Vay Tiền Gấp",
+    "category": "Deepfake & AI Mạo Danh",
+    "difficulty": "Hard",
+    "description": "Bạn nhận được cuộc gọi video Messenger từ con trai/cháu ruột đang ở nước ngoài, hình ảnh mờ nhạt và giật cục, báo bị giữ đồ ở hải quan cần chuyển gấp 40 triệu.",
+    "targetProfile": "Phụ huynh, người thân trong gia đình, người có người nhà ở xa",
+    "estimatedMinutes": 3,
+    "steps": [
+      {
+        "id": "df-step-1",
+        "speaker": "Con trai/Cháu ruột (Video Call Messenger)",
+        "channel": "video",
+        "message": "Màn hình hiện khuôn mặt người thân cử động nhưng khẩu hình giật giật, tiếng rè: \"Bố mẹ ơi... sóng yếu quá... con đang bị giữ đồ ở hải quan sân bay... chuyển gấp cho con 40 triệu vào số tài khoản đồng nghiệp này cứu con với...\". Sau 5 giây cuộc gọi tự ngắt và có tin nhắn gửi STK lạ.",
+        "choices": [
+          {
+            "id": "df1_1",
+            "text": "Vì vừa nhìn thấy đúng mặt người thân nên mở app ngân hàng chuyển 40 triệu ngay lập tức.",
+            "isCorrect": false,
+            "feedback": "SẬP BẪY DEEPFAKE! Kẻ gian đã thu thập hình ảnh, clip người thân trên Facebook rồi dùng AI Deepfake ghép mặt gọi chớp nhoáng 5 giây.",
+            "psychologyNote": "Kẻ lừa đảo đánh vào tình phụ tử, tình mẫu tử và nỗi lo lắng tột độ khi thấy người thân gặp nạn.",
+            "nextStepId": "df-step-compromised"
+          },
+          {
+            "id": "df1_2",
+            "text": "Bình tĩnh, không chuyển tiền ngay. Dùng SIM điện thoại thông thường gọi trực tiếp số di động của người thân để kiểm tra.",
+            "isCorrect": true,
+            "feedback": "QUÁ XUẤT SẮC! Khi gọi số di động cá nhân, người thân xác nhận đang đi làm bình thường, tài khoản Facebook vừa bị hacker chiếm quyền.",
+            "psychologyNote": "Xác thực qua kênh viễn thông độc lập (Out-of-band Verification) là khắc tinh số 1 của Deepfake.",
+            "nextStepId": "df-step-safe"
+          },
+          {
+            "id": "df1_3",
+            "text": "Nhắn tin hỏi một câu hỏi chỉ 2 người trong nhà biết: \"Hôm trước sinh nhật mẹ ăn ở quán nào?\"",
+            "isCorrect": true,
+            "feedback": "RẤT THÔNG MINH! Kẻ lừa đảo không thể trả lời đúng bí mật gia đình nên sẽ vòng vo hoặc chặn liên lạc.",
+            "psychologyNote": "Mật mã bí mật gia đình là chốt chặn an toàn hiệu quả.",
+            "nextStepId": "df-step-safe"
+          }
+        ]
+      },
+      {
+        "id": "df-step-safe",
+        "speaker": "CyberShield Academy",
+        "channel": "system",
+        "message": "XỬ LÝ AN TOÀN! Bạn đã nhận diện thành công thủ đoạn Deepfake video call. Nguyên tắc: Cuộc gọi video ngắn, giật lag đòi tiền gấp = 99% Deepfake.",
+        "choices": []
+      },
+      {
+        "id": "df-step-compromised",
+        "speaker": "Cảnh Báo Thiệt Hại",
+        "channel": "system",
+        "message": "BẠN ĐÃ BỊ MẤT 40 TRIỆU ĐỒNG! Kẻ gian lập tức rút tiền qua mạng lưới tài khoản rác (tài khoản mua bán trái phép).",
+        "choices": []
+      }
+    ],
+    "realLifeDefenseTips": [
+      "Cuộc gọi Deepfake thường chỉ kéo dài vài giây, viện cớ sóng yếu để tắt máy.",
+      "Luôn gọi lại bằng sóng di động truyền thống (SIM viễn thông) để xác thực.",
+      "Yêu cầu người gọi vẫy tay trước mặt hoặc quay nghiêng góc 90 độ nếu nghi ngờ."
+    ],
+    "tacticAnalysis": "Ứng dụng công nghệ Deepfake AI giả lập khuôn mặt kết hợp bối cảnh nguy cấp để đánh sập rào cản phòng vệ tâm lý."
+  },
+  {
+    "id": "scam-02-deepvoice-cloning",
+    "title": "2. Giả Giọng Nói Bằng DeepVoice Tạo Tình Huống Khẩn Cấp",
+    "category": "Deepfake & AI Mạo Danh",
+    "difficulty": "Hard",
+    "description": "Bạn nhận được cuộc gọi thoại có giọng nói, ngữ điệu giống hệt giọng đứa bạn thân gọi từ số lạ, mếu máo bảo vừa gây tai nạn giao thông cần bồi thường nóng 20 triệu.",
+    "targetProfile": "Mọi công dân, bạn bè, đồng nghiệp",
+    "estimatedMinutes": 3,
+    "steps": [
+      {
+        "id": "dv-step-1",
+        "speaker": "Giọng nói bạn thân (AI Voice Clone)",
+        "channel": "call",
+        "message": "\"Alo... mày ơi... tao đang đi xe thì quẹt phải người ta ở ngã tư, người ta đang đòi giữ xe và đưa lên công an... Mày chuyển khoản hộ tao 20 triệu vào số tài khoản của anh này đền gấp với, tao đang hoảng quá máy hết pin...\"",
+        "choices": [
+          {
+            "id": "dv1_1",
+            "text": "Nghe giọng khóc lóc y hệt bạn mình nên chuyển tiền ngay vào số tài khoản lạ được cung cấp.",
+            "isCorrect": false,
+            "feedback": "SẬP BẪY VOICE CLONE! Hiện nay AI chỉ cần đoạn ghi âm 3-5 giây từ video TikTok/Facebook là có thể nhân bản giọng nói với độ giống trên 95%.",
+            "psychologyNote": "Kẻ lừa đảo đánh trúng lòng nhiệt tình giúp đỡ bạn bè trong lúc nguy nan.",
+            "nextStepId": "dv-step-compromised"
+          },
+          {
+            "id": "dv1_2",
+            "text": "Dập máy, lấy điện thoại gọi vào số điện thoại thường ngày của bạn thân hoặc người nhà bạn để xác nhận.",
+            "isCorrect": true,
+            "feedback": "CHUẨN XÁC! Bạn thân bắt máy và bảo đang ngồi uống cafe ở nhà, hoàn toàn không có vụ tai nạn nào.",
+            "psychologyNote": "Không tin cuộc gọi từ số lạ dù giọng nói có quen thuộc đến đâu.",
+            "nextStepId": "dv-step-safe"
+          },
+          {
+            "id": "dv1_3",
+            "text": "Hỏi gặng lại chi tiết: \"Mày đang đi xe biển số bao nhiêu? Đi cùng với ai?\"",
+            "isCorrect": true,
+            "feedback": "RẤT TỈNH TÁO! Kẻ lừa đảo sử dụng kịch bản AI thu âm sẵn sẽ bị lộ điểm bất thường khi gặp câu hỏi bất ngờ.",
+            "psychologyNote": "Đặt câu hỏi phản xạ bất ngờ làm vỡ vụn kịch bản giả mạo.",
+            "nextStepId": "dv-step-safe"
+          }
+        ]
+      },
+      {
+        "id": "dv-step-safe",
+        "speaker": "CyberShield Academy",
+        "channel": "system",
+        "message": "XUẤT SẮC! Bạn đã vô hiệu hóa bẫy giả giọng AI (DeepVoice / Voice Cloning). Luôn giữ thói quen xác minh chéo trước khi chuyển tiền.",
+        "choices": []
+      },
+      {
+        "id": "dv-step-compromised",
+        "speaker": "Cảnh Báo Thiệt Hại",
+        "channel": "system",
+        "message": "BẠN ĐÃ BỊ LỪA 20 TRIỆU ĐỒNG! Đừng bao giờ chuyển tiền qua số lạ chỉ vì nghe giọng nói giống người quen.",
+        "choices": []
+      }
+    ],
+    "realLifeDefenseTips": [
+      "Công nghệ AI nhái giọng (Voice Cloning) có thể bắt chước tiếng thở, ngữ điệu và giọng địa phương.",
+      "Cảnh giác khi nhận cuộc gọi từ số lạ tự xưng là người quen báo máy hỏng/mất máy.",
+      "Luôn liên hệ lại qua các kênh liên lạc truyền thống đã lưu trong danh bạ."
+    ],
+    "tacticAnalysis": "Sử dụng AI nhân bản giọng nói kết hợp yếu tố hoảng loạn, tai nạn để gây tê liệt lý trí."
+  },
+  {
+    "id": "scam-03-fake-police-court",
+    "title": "3. Giả Danh Công An, Viện Kiểm Sát, Tòa Án Đòi Chuyển Tiền Thẩm Tra",
+    "category": "Mạo Danh Cơ Quan Pháp Luật",
+    "difficulty": "Medium",
+    "description": "Kẻ gian gọi điện xưng là Thượng úy Công an điều tra hoặc Kiểm sát viên, thông báo bạn liên quan vụ án rửa tiền 50 tỷ và yêu cầu chuyển tiền vào \"tài khoản an toàn\".",
+    "targetProfile": "Người cao tuổi, phụ nữ nội trợ, cán bộ hưu trí",
+    "estimatedMinutes": 3,
+    "steps": [
+      {
+        "id": "pol-step-1",
+        "speaker": "Cán bộ Cơ quan Cảnh sát điều tra (Giả danh)",
+        "channel": "call",
+        "message": "\"Tôi là Trung tá Vũ Văn Hùng - Phó Thủ trưởng Cơ quan CSĐT. Căn cước công dân của bà đang đứng tên tài khoản nhận 50 tỷ từ đường dây ma túy. Viện KSND Tối cao đã phê chuẩn lệnh tạm giam 4 tháng. Muốn tại ngoại, bà phải gom toàn bộ tiền tiết kiệm chuyển vào tài khoản tạm giữ của Ban Chuyên án để thanh tra!\"",
+        "choices": [
+          {
+            "id": "pol1_1",
+            "text": "Hoảng sợ xin nộp tiền vào số tài khoản Ban Chuyên án cung cấp để chứng minh mình vô tội.",
+            "isCorrect": false,
+            "feedback": "BỊ LỪA ĐẢO NẶNG NỀ! Cơ quan Công an, Viện kiểm sát, Tòa án KHÔNG BAO GIỜ có tài khoản cá nhân hoặc tài khoản trung gian để \"thẩm tra tiền\".",
+            "psychologyNote": "Kẻ gian đánh vào tâm lý sợ vướng vòng lao lý và bôi nhọ thanh danh gia đình.",
+            "nextStepId": "pol-step-compromised"
+          },
+          {
+            "id": "pol1_2",
+            "text": "Dõng dạc trả lời: \"Công an không làm việc qua điện thoại. Mời các anh gửi giấy triệu tập hợp pháp về Công an phường nơi tôi cư trú\" rồi cúp máy.",
+            "isCorrect": true,
+            "feedback": "RẤT CHÍNH XÁC VÀ ĐÚNG PHÁP LUẬT! Mọi hoạt động tố tụng hình sự đều phải lập biên bản trực tiếp tại trụ sở công quyền.",
+            "psychologyNote": "Nắm vững kiến thức pháp luật là bức tường phòng thủ kiên cố nhất.",
+            "nextStepId": "pol-step-safe"
+          },
+          {
+            "id": "pol1_3",
+            "text": "Yêu cầu gọi Zalo xem sắc phục công an.",
+            "isCorrect": false,
+            "feedback": "NGUY HIỂM! Kẻ gian chuẩn bị sẵn phòng làm việc giả, mặc sắc phục giả và chĩa máy quay vào góc tĩnh để tiếp tục thao túng bạn.",
+            "psychologyNote": "Kẻ lừa đảo chuyên nghiệp dàn dựng bối cảnh cơ quan công an rất tinh vi.",
+            "nextStepId": "pol-step-compromised"
+          }
+        ]
+      },
+      {
+        "id": "pol-step-safe",
+        "speaker": "CyberShield Academy",
+        "channel": "system",
+        "message": "KẾT THÚC AN TOÀN! Tuyệt đối ghi nhớ: Cơ quan điều tra không thu tiền qua mạng, không gửi lệnh bắt qua Zalo/Facebook.",
+        "choices": []
+      },
+      {
+        "id": "pol-step-compromised",
+        "speaker": "Cảnh Báo Mất Trắng Tài Sản",
+        "channel": "system",
+        "message": "BẠN ĐÃ MẤT HÀNG TRĂM TRIỆU ĐỒNG TIẾT KIỆM! Số tiền đã bị chuyển qua hàng chục tài khoản ảo và đổi thành tiền mã hóa.",
+        "choices": []
+      }
+    ],
+    "realLifeDefenseTips": [
+      "Công an, Viện kiểm sát, Tòa án không bao giờ làm việc, lấy lời khai hoặc ra quyết định tố tụng qua điện thoại.",
+      "Không có cái gọi là \"tài khoản an toàn\", \"tài khoản tạm giữ của Bộ Công an\" để người dân nộp tiền.",
+      "Khi nhận cuộc gọi dọa dẫm, hãy ra ngay Công an phường gần nhất để trình báo."
+    ],
+    "tacticAnalysis": "Lợi dụng uy quyền của cơ quan tư pháp, cô lập nạn nhân trong phòng kín và thúc ép chuyển tiền thần tốc."
+  },
+  {
+    "id": "scam-04-fake-bank-staff-otp",
+    "title": "4. Giả Danh Nhân Viên Ngân Hàng Đòi Cung Cấp OTP & Mật Khẩu",
+    "category": "Mạo Danh Ngân Hàng",
+    "difficulty": "Easy",
+    "description": "Bạn nhận cuộc gọi tự xưng Trung tâm Chăm sóc khách hàng Ngân hàng, báo tài khoản có lỗi rủi ro và cần bạn đọc mã OTP gửi về máy để hỗ trợ hủy giao dịch.",
+    "targetProfile": "Khách hàng sử dụng dịch vụ Internet Banking, thẻ tín dụng",
+    "estimatedMinutes": 2,
+    "steps": [
+      {
+        "id": "bk-step-1",
+        "speaker": "Tổng đài viên Ngân hàng (Giả mạo)",
+        "channel": "call",
+        "message": "\"Em chào anh/chị, em là nhân viên Trung tâm Phòng chống Gian lận Ngân hàng. Hiện thẻ của anh/chị vừa phát sinh giao dịch quẹt 15 triệu tại nước ngoài. Để hủy lệnh gấp trước khi trừ tiền, hệ thống vừa gửi mã xác thực 6 số về SMS, anh/chị đọc ngay giúp em để em hủy trên hệ thống!\"",
+        "choices": [
+          {
+            "id": "bk1_1",
+            "text": "Đọc luôn mã OTP 6 số trong tin nhắn SMS cho nhân viên vì sợ mất 15 triệu.",
+            "isCorrect": false,
+            "feedback": "MẤT SẠCH TIỀN! Mã OTP thực chất là mã xác nhận giao dịch chuyển tiền hoặc đổi mật khẩu do kẻ gian vừa khởi tạo trên web ngân hàng.",
+            "psychologyNote": "Kẻ gian lợi dụng sự nhầm lẫn giữa mã hủy giao dịch và mã cấp quyền.",
+            "nextStepId": "bk-step-compromised"
+          },
+          {
+            "id": "bk1_2",
+            "text": "Tuyệt đối không đọc OTP, dập máy ngay và gọi số hotline in trên mặt sau thẻ ATM.",
+            "isCorrect": true,
+            "feedback": "RẤT CHUẨN XÁC! Nguyên tắc bất di bất dịch của mọi ngân hàng: Nhân viên ngân hàng KHÔNG BAO GIỜ yêu cầu khách hàng cung cấp mã OTP.",
+            "psychologyNote": "Bảo vệ mã bí mật OTP như chìa khóa nhà của bạn.",
+            "nextStepId": "bk-step-safe"
+          }
+        ]
+      },
+      {
+        "id": "bk-step-safe",
+        "speaker": "CyberShield Academy",
+        "channel": "system",
+        "message": "BẢO VỆ THÀNH CÔNG! Mã OTP = Chìa khóa két sắt cá nhân. Chia sẻ OTP = Tự tay mở két đưa tiền cho kẻ trộm.",
+        "choices": []
+      },
+      {
+        "id": "bk-step-compromised",
+        "speaker": "Cảnh Báo Thiệt Hại",
+        "channel": "system",
+        "message": "TÀI KHOẢN ĐÃ BỊ RÚT SẠCH! Kẻ gian đã dùng OTP để hoàn tất giao dịch rút toàn bộ số dư của bạn.",
+        "choices": []
+      }
+    ],
+    "realLifeDefenseTips": [
+      "Ngân hàng không bao giờ yêu cầu khách hàng cung cấp mã OTP, mã PIN Smart OTP, mật khẩu hay mã CVV.",
+      "Đọc kỹ nội dung tin nhắn SMS chứa OTP: xem số tiền và mục đích giao dịch ghi trong tin nhắn.",
+      "Chủ động gọi lên tổng đài chính thức in trên mặt sau thẻ ngân hàng khi có nghi vấn."
+    ],
+    "tacticAnalysis": "Tạo tình huống giao dịch gian lận giả mạo để lừa nạn nhân tự nguyện giao nộp chìa khóa xác thực 2 lớp (OTP)."
+  },
+  {
+    "id": "scam-05-fake-sms-brandname",
+    "title": "5. Tin Nhắn SMS Brandname Giả Mạo Ngân Hàng / Cơ Quan Nhà Nước",
+    "category": "Phishing Công Nghệ Cao",
+    "difficulty": "Medium",
+    "description": "Tin nhắn gửi đến từ đúng tên Brandname \"VIETCOMBANK\" hoặc \"VNeID\" cảnh báo tài khoản bị tạm khóa, yêu cầu nhấp link để xác thực.",
+    "targetProfile": "Chủ thuê bao di động 4G/5G",
+    "estimatedMinutes": 2,
+    "steps": [
+      {
+        "id": "sms-step-1",
+        "speaker": "SMS Brandname: VIETCOMBANK",
+        "channel": "sms",
+        "message": "\"[VIETCOMBANK]: Tai khoan cua Quy khach bi khoa do dang nhap bat thuong tai Ha Noi. Vui long truy cap https://vcb-digibank-xacminh.top de xac thuc lai danh tinh trong vong 12 gio.\"",
+        "choices": [
+          {
+            "id": "sms1_1",
+            "text": "Vì tin nhắn nằm chung luồng với tin nhắn biến động số dư thật của Vietcombank nên bấm vào link đăng nhập.",
+            "isCorrect": false,
+            "feedback": "SẬP BẪY TRẠM PHÁT SÓNG BTS GIẢ! Kẻ lừa đảo dùng thiết bị phát sóng vô tuyến giả mạo chèn tin nhắn vào đúng luồng tên thương hiệu.",
+            "psychologyNote": "Kẻ gian lợi dụng lòng tin vào tính năng Brandname viễn thông.",
+            "nextStepId": "sms-step-compromised"
+          },
+          {
+            "id": "sms1_2",
+            "text": "Quan sát thấy tên miền có đuôi lạ `.top`, không bấm link mà mở app Vietcombank đã cài sẵn để kiểm tra.",
+            "isCorrect": true,
+            "feedback": "TUYỆT VỜI! Mở app chính thức thấy tài khoản hoàn toàn bình thường. Website ngân hàng thật luôn là `.com.vn` hoặc `.vn`.",
+            "psychologyNote": "Kiểm tra tên miền (URL check) đánh bại 100% bẫy Brandname giả mạo.",
+            "nextStepId": "sms-step-safe"
+          }
+        ]
+      },
+      {
+        "id": "sms-step-safe",
+        "speaker": "CyberShield Academy",
+        "channel": "system",
+        "message": "BẢO VỆ THÀNH CÔNG! Các ngân hàng tại Việt Nam hiện đã ngừng gắn kèm đường link trong tin nhắn SMS thông báo.",
+        "choices": []
+      },
+      {
+        "id": "sms-step-compromised",
+        "speaker": "Cảnh Báo Thiệt Hại",
+        "channel": "system",
+        "message": "BẠN ĐÃ MẤT TÀI KHOẢN! Khi bạn nhập tên đăng nhập và mật khẩu vào trang web giả, kẻ gian đã đăng nhập và chuyển sạch tiền.",
+        "choices": []
+      }
+    ],
+    "realLifeDefenseTips": [
+      "Tin nhắn hiển thị đúng tên ngân hàng vẫn có thể là giả mạo do kẻ gian sử dụng thiết bị trạm BTS giả mạo.",
+      "Ngân hàng chính thống tại VN không gửi tin nhắn SMS có đính kèm đường link yêu cầu đăng nhập.",
+      "Luôn kiểm tra kỹ tên miền chính thức trước khi thao tác."
+    ],
+    "tacticAnalysis": "Khai thác lỗ hổng mạng di động 2G/GSM và trạm BTS giả để chèn tin nhắn lừa đảo vào luồng tin nhắn chính hãng."
+  },
+  {
+    "id": "scam-06-fake-banking-website",
+    "title": "6. Website Giả Mạo Ngân Hàng, Ví Điện Tử, Sàn TMĐT",
+    "category": "Phishing Website",
+    "difficulty": "Medium",
+    "description": "Bạn tìm kiếm \"Đăng nhập VCB\" hoặc \"Shopee khuyến mãi\" trên Google và nhấp vào kết quả hiển thị đầu tiên có biểu tượng QC (Quảng cáo).",
+    "targetProfile": "Người mua sắm online, người dùng web banking",
+    "estimatedMinutes": 2,
+    "steps": [
+      {
+        "id": "web-step-1",
+        "speaker": "Trang Web Google Search",
+        "channel": "web",
+        "message": "Kết quả số 1 có chữ [QC / Được tài trợ]: \"Đăng nhập Vietcombank Digibank Chính Thức\" với link hiển thị là `https://vietcombbank-portal.online`. Giao diện khi bấm vào giống hệt 100% web thật.",
+        "choices": [
+          {
+            "id": "web1_1",
+            "text": "Nhập luôn Tên đăng nhập và Mật khẩu ngân hàng vào vì thấy logo và màu sắc y hệt web thật.",
+            "isCorrect": false,
+            "feedback": "BỊ ĐÁNH CẮP TÀI KHOẢN! Kẻ gian đã mua quảng cáo Google Ads để đẩy website giả mạo lên top 1 kết quả tìm kiếm.",
+            "psychologyNote": "Người dùng thường có thói quen tin tưởng tuyệt đối vào kết quả đầu tiên của Google.",
+            "nextStepId": "web-step-compromised"
+          },
+          {
+            "id": "web1_2",
+            "text": "Nhìn thanh địa chỉ trình duyệt thấy sai tên miền (`vietcombbank` thừa chữ b và đuôi `.online`), tắt tab ngay lập tức.",
+            "isCorrect": true,
+            "feedback": "QUÁ XUẤT SẮC! Bạn đã nhận diện chiêu trò Typo-squatting (tên miền giả dạng gần giống) kết hợp Google Ads Phishing.",
+            "psychologyNote": "Kỹ năng quan sát URL trên thanh địa chỉ là lớp khiên an ninh vững chắc.",
+            "nextStepId": "web-step-safe"
+          }
+        ]
+      },
+      {
+        "id": "web-step-safe",
+        "speaker": "CyberShield Academy",
+        "channel": "system",
+        "message": "AN TOÀN! Hãy bookmark (đánh dấu) các trang ngân hàng chính thức trên trình duyệt để tránh bấm nhầm link quảng cáo giả mạo.",
+        "choices": []
+      },
+      {
+        "id": "web-step-compromised",
+        "speaker": "Cảnh Báo Nguy Hiểm",
+        "channel": "system",
+        "message": "THÔNG TIN BỊ CHIẾM ĐOẠT! Hacker dùng bot tự động đăng nhập vào tài khoản thật của bạn và đổi mật khẩu.",
+        "choices": []
+      }
+    ],
+    "realLifeDefenseTips": [
+      "Cảnh giác cao độ với các kết quả tìm kiếm có gắn nhãn \"Được tài trợ\" (Sponsored / Ads).",
+      "Kiểm tra chứng chỉ bảo mật và chính tả của tên miền trên thanh địa chỉ (Address bar).",
+      "Nên tự gõ địa chỉ trang web hoặc dùng ứng dụng di động chính thức."
+    ],
+    "tacticAnalysis": "Sử dụng quảng cáo tìm kiếm (Search Engine Ads) để đưa website giả mạo tiếp cận nạn nhân nhanh nhất."
+  },
+  {
+    "id": "scam-07-malicious-links",
+    "title": "7. Gửi Đường Link Độc Hại Qua Tin Nhắn, Email, Mạng Xã Hội",
+    "category": "Mã Độc & Phishing",
+    "difficulty": "Easy",
+    "description": "Bạn nhận tin nhắn Messenger từ người quen: \"Xem ảnh kỷ yếu lớp mình nè!\", \"Có phải bạn trong clip này không?\" kèm link rút gọn `bit.ly/video-hot-2024`.",
+    "targetProfile": "Người dùng Facebook, Zalo, Telegram, Email",
+    "estimatedMinutes": 2,
+    "steps": [
+      {
+        "id": "link-step-1",
+        "speaker": "Bạn học cũ (Messenger)",
+        "channel": "whatsapp",
+        "message": "\"Trời ơi Linh ơi, có phải bà trong video clip đánh ghen này không nè, người ta đang chia sẻ rầm rộ trên mạng kìa: https://tinyurl.com/clip-hot-lo-link\"",
+        "choices": [
+          {
+            "id": "link1_1",
+            "text": "Vì tò mò và lo sợ mình bị bôi nhọ nên bấm ngay vào link để xem.",
+            "isCorrect": false,
+            "feedback": "BỊ CÂU MỒI ĐỘC HẠI! Đường link dẫn tới trang đăng nhập Facebook giả mạo để chiếm đoạt tài khoản hoặc tự tải virus về máy.",
+            "psychologyNote": "Kẻ lừa đảo khai thác triệt để tính tò mò và tâm lý sợ bị xúc phạm danh dự.",
+            "nextStepId": "link-step-compromised"
+          },
+          {
+            "id": "link1_2",
+            "text": "Không bấm link. Nhắn tin hỏi người bạn xem có phải vừa gửi tin nhắn này không hay nick bị hack.",
+            "isCorrect": true,
+            "feedback": "RẤT TỈNH TÁO! Bạn học xác nhận tài khoản Facebook vừa bị mất quyền kiểm soát và đang tự động spam link độc hại cho toàn bộ danh bạ.",
+            "psychologyNote": "Dừng lại 3 giây kiểm tra trước khi click chuột cứu bạn khỏi nguy cơ bị hack.",
+            "nextStepId": "link-step-safe"
+          }
+        ]
+      },
+      {
+        "id": "link-step-safe",
+        "speaker": "CyberShield Academy",
+        "channel": "system",
+        "message": "XỬ LÝ CHÍNH XÁC! Tuyệt đối không click vào các link giật gân, link rút gọn lạ gửi qua tin nhắn.",
+        "choices": []
+      },
+      {
+        "id": "link-step-compromised",
+        "speaker": "Cảnh Báo Sập Bẫy",
+        "channel": "system",
+        "message": "TÀI KHOẢN CỦA BẠN ĐÃ BỊ HACK! Kẻ gian tiếp tục dùng nick của bạn để gửi link độc hại và vay tiền bạn bè.",
+        "choices": []
+      }
+    ],
+    "realLifeDefenseTips": [
+      "Không nhấp vào các link có tiêu đề sốc, giật gân hoặc video tò mò gửi từ tài khoản bạn bè.",
+      "Cẩn trọng với các dịch vụ rút gọn link như bit.ly, tinyurl, cutt.ly khi không rõ nguồn gốc.",
+      "Bật tính năng xác thực 2 yếu tố (2FA) trên tài khoản mạng xã hội."
+    ],
+    "tacticAnalysis": "Social Engineering dạng Clickbait (mồi nhấp chuột) đánh vào trí tò mò và cảm xúc bàng hoàng."
+  },
+  {
+    "id": "scam-08-fake-app-installation",
+    "title": "8. Làm Giả Ứng Dụng Ngân Hàng, Dịch Vụ Công, Đầu Tư (File APK)",
+    "category": "Mã Độc Chiếm Quyền (Malware)",
+    "difficulty": "Hard",
+    "description": "Đối tượng tự xưng cán bộ Thuế / Công an quận yêu cầu bạn tải ứng dụng \"Dịch Vụ Công .APK\" từ đường link lạ để làm thủ tục giảm thuế đất.",
+    "targetProfile": "Chủ doanh nghiệp, hộ kinh doanh, người sử dụng điện thoại Android",
+    "estimatedMinutes": 3,
+    "steps": [
+      {
+        "id": "app-step-1",
+        "speaker": "Cán bộ Chi cục Thuế (Giả mạo)",
+        "channel": "call",
+        "message": "\"Chào anh, do hệ thống Tổng cục Thuế đang nâng cấp, anh cần truy cập trang web `https://gdtgov-portal.top` tải ứng dụng Thuế Điện Tử file `.apk` về cài đặt và bật quyền Trợ năng (Accessibility) để hoàn tất thủ tục miễn giảm thuế nhé.\"",
+        "choices": [
+          {
+            "id": "app1_1",
+            "text": "Tải file .apk về máy, bấm \"Cho phép cài đặt từ nguồn không xác định\" và cấp quyền Trợ năng theo hướng dẫn.",
+            "isCorrect": false,
+            "feedback": "ĐIỆN THOẠI BỊ CHIẾM QUYỀN ĐIỀU KHIỂN HOÀN TOÀN! Mã độc ẩn danh sẽ tự động đọc màn hình, đánh cắp mã OTP và tự động chuyển tiền ngân hàng trong đêm.",
+            "psychologyNote": "Kẻ lừa đảo lợi dụng chính sách hỗ trợ thuế và sự thiếu hiểu biết về quyền hệ thống Android.",
+            "nextStepId": "app-step-compromised"
+          },
+          {
+            "id": "app1_2",
+            "text": "Từ chối dứt khoát! Chỉ tải ứng dụng từ kho ứng dụng chính thức Google Play Store hoặc Apple App Store.",
+            "isCorrect": true,
+            "feedback": "QUÁ XUẤT SẮC! Bạn đã ngăn chặn cuộc tấn công mã độc Trojan nguy hiểm nhất hiện nay.",
+            "psychologyNote": "Nguyên tắc vàng: Không bao giờ cài file .APK từ web lạ.",
+            "nextStepId": "app-step-safe"
+          }
+        ]
+      },
+      {
+        "id": "app-step-safe",
+        "speaker": "CyberShield Academy",
+        "channel": "system",
+        "message": "AN TOÀN TUYỆT ĐỐI! Cơ quan thuế và công an chỉ hướng dẫn người dân tải app chính thức từ Google Play và App Store.",
+        "choices": []
+      },
+      {
+        "id": "app-step-compromised",
+        "speaker": "Cảnh Báo Nguy Cấp",
+        "channel": "system",
+        "message": "ĐIỆN THOẠI ĐÃ BỊ TẤN CÔNG! Kẻ gian có thể mở app ngân hàng chuyển tiền ngay cả khi màn hình đang tắt.",
+        "choices": []
+      }
+    ],
+    "realLifeDefenseTips": [
+      "Tuyệt đối không bao giờ tải và cài đặt các file có đuôi `.apk` gửi qua Zalo, Telegram hoặc link web.",
+      "Không bao giờ cấp quyền \"Trợ năng\" (Accessibility Service) cho các ứng dụng không rõ nguồn gốc.",
+      "Nếu lỡ cài đặt, hãy bật Chế độ máy bay ngay lập tức và khôi phục cài đặt gốc của máy."
+    ],
+    "tacticAnalysis": "Phát tán mã độc gián điệp (Spyware/RAT) thông qua file APK ngoài kho ứng dụng để kiểm soát thiết bị từ xa."
+  },
+  {
+    "id": "scam-09-fake-transfer-receipt",
+    "title": "9. Làm Giả Biên Lai Chuyển Khoản & Thông Báo Thành Công",
+    "category": "Gian Lận Thương Mại",
+    "difficulty": "Medium",
+    "description": "Khách mua hàng gửi ảnh chụp màn hình chuyển khoản thành công kèm logo VietinBank, giục chủ shop giao hàng nhanh vì họ đang vội.",
+    "targetProfile": "Chủ cửa hàng, người bán hàng online, tài xế công nghệ",
+    "estimatedMinutes": 2,
+    "steps": [
+      {
+        "id": "rec-step-1",
+        "speaker": "Khách mua hàng online",
+        "channel": "whatsapp",
+        "message": "\"Chị ơi em vừa chuyển khoản 5.800.000đ tiền mua điện thoại rồi nhé, có biên lai ngân hàng VietinBank đây ạ. Chị giao hàng cho tài xế Grab đang đứng ở cửa shop luôn giúp em với, em đang cần gấp để đi biếu!\"",
+        "choices": [
+          {
+            "id": "rec1_1",
+            "text": "Thấy biên lai có dấu tích xanh giao dịch thành công nên tin tưởng giao hàng ngay cho tài xế.",
+            "isCorrect": false,
+            "feedback": "BỊ LỪA MẤT HÀNG! Hiện nay có hàng trăm website và bot Telegram cho phép tạo ảnh biên lai chuyển khoản giả giống thật 100% chỉ trong 10 giây.",
+            "psychologyNote": "Kẻ gian tạo sức ép thời gian để người bán không kịp kiểm tra tài khoản.",
+            "nextStepId": "rec-step-compromised"
+          },
+          {
+            "id": "rec1_2",
+            "text": "Mở app ngân hàng kiểm tra biến động số dư thực tế, tiền chưa vào tài khoản thì kiên quyết không giao hàng.",
+            "isCorrect": true,
+            "feedback": "CHUẨN NGUYÊN TẮC KINH DOANH! Tiền nổi trên tài khoản ngân hàng của mình mới là căn cứ duy nhất để bàn giao tài sản.",
+            "psychologyNote": "Chỉ tin vào số dư thực tế, không tin vào hình ảnh chụp màn hình.",
+            "nextStepId": "rec-step-safe"
+          }
+        ]
+      },
+      {
+        "id": "rec-step-safe",
+        "speaker": "CyberShield Academy",
+        "channel": "system",
+        "message": "BẢO VỆ TÀI SẢN THÀNH CÔNG! Nguyên tắc vàng của người bán hàng: \"Chỉ giao hàng khi tiền đã thực tế vào tài khoản\".",
+        "choices": []
+      },
+      {
+        "id": "rec-step-compromised",
+        "speaker": "Cảnh Báo Thiệt Hại",
+        "channel": "system",
+        "message": "BẠN ĐÃ MẤT HÀNG HÓA! Kẻ lừa đảo dùng biên lai photoshop để chiếm đoạt tài sản của bạn.",
+        "choices": []
+      }
+    ],
+    "realLifeDefenseTips": [
+      "Không tin vào bất kỳ hình ảnh chụp màn hình chuyển khoản nào, kể cả có thông báo chuyển nhanh 24/7.",
+      "Sử dụng loa thông báo số dư hoặc phần mềm quản lý bán hàng đồng bộ biến động số dư tự động.",
+      "Nếu khách giải thích do \"ngân hàng bị nghẽn mạng\", hãy yêu cầu giữ hàng chờ tiền nổi mới giao."
+    ],
+    "tacticAnalysis": "Dùng công cụ Photoshop / Fake Receipt Generator tạo biên lai ngân hàng giả để chiếm đoạt hàng hóa."
+  },
+  {
+    "id": "scam-10-compromised-account-borrow",
+    "title": "10. Chiếm Quyền Tài Khoản Mạng Xã Hội Nhắn Tin Mượn Tiền",
+    "category": "Social Engineering",
+    "difficulty": "Easy",
+    "description": "Tài khoản Facebook của người đồng nghiệp cùng phòng vừa nhắn tin: \"Cậu ơi có 15 triệu trong tài khoản không bắn gấp cho tớ vay mai tớ trả\".",
+    "targetProfile": "Bạn bè, đồng nghiệp, cộng đồng mạng",
+    "estimatedMinutes": 2,
+    "steps": [
+      {
+        "id": "acc-step-1",
+        "speaker": "Đồng nghiệp cùng phòng (Facebook)",
+        "channel": "whatsapp",
+        "message": "\"Linh ơi, cậu có sẵn 15 triệu trong app ngân hàng không? Cho tớ mượn thanh toán tiền hàng này cái, tí về công ty tớ rút tiền mặt trả lại cậu luôn! Bắn vào số tài khoản này nhé: 1903... NGUYEN VAN THANG\"",
+        "choices": [
+          {
+            "id": "acc1_1",
+            "text": "Vì ngồi cùng phòng nên tin tưởng chuyển luôn mà không hỏi lại.",
+            "isCorrect": false,
+            "feedback": "BỊ HACK NICK LỪA ĐẢO! Nick Facebook của đồng nghiệp vừa bị hacker chiếm đoạt cách đây 15 phút và đang nhắn tin vay tiền toàn bộ bạn bè.",
+            "psychologyNote": "Kẻ gian lợi dụng uy tín cá nhân và mối quan hệ thân thiết thường nhật.",
+            "nextStepId": "acc-step-compromised"
+          },
+          {
+            "id": "acc1_2",
+            "text": "Gọi điện thoại trực tiếp hoặc quay sang hỏi trực tiếp người đồng nghiệp đó ngay tại bàn làm việc.",
+            "isCorrect": true,
+            "feedback": "XUẤT SẮC! Người đồng nghiệp ngơ ngác bảo không hề nhắn tin và lập tức đăng cảnh báo bị hack nick.",
+            "psychologyNote": "Xác minh trực tiếp bằng giọng nói hoặc gặp mặt ngăn chặn 100% bẫy mượn tiền qua mạng.",
+            "nextStepId": "acc-step-safe"
+          }
+        ]
+      },
+      {
+        "id": "acc-step-safe",
+        "speaker": "CyberShield Academy",
+        "channel": "system",
+        "message": "AN TOÀN! Bất cứ khi nào nhận tin nhắn hỏi vay tiền qua mạng xã hội, hãy nhấc máy gọi điện thoại thoại thông thường để xác nhận.",
+        "choices": []
+      },
+      {
+        "id": "acc-step-compromised",
+        "speaker": "Cảnh Báo Thiệt Hại",
+        "channel": "system",
+        "message": "BẠN ĐÃ MẤT 15 TRIỆU ĐỒNG! Kẻ lừa đảo đã gom được hàng chục triệu từ nhiều người quen khác cùng lúc.",
+        "choices": []
+      }
+    ],
+    "realLifeDefenseTips": [
+      "Không bao giờ chuyển tiền theo yêu cầu vay mượn qua tin nhắn văn bản (Chat/SMS) mà chưa xác thực qua giọng nói.",
+      "Cảnh giác khi tên chủ tài khoản nhận tiền khác với tên người bạn quen biết.",
+      "Thiết lập câu hỏi bí mật riêng tư khi có giao dịch tài chính với bạn bè."
+    ],
+    "tacticAnalysis": "Khai thác tài khoản mạng xã hội bị lộ mật khẩu để spam mượn tiền hàng loạt trên danh sách liên lạc."
+  },
+  {
+    "id": "scam-11-silent-calls-voice-harvesting",
+    "title": "11. Cuộc Gọi \"Không Nói Gì\" Thu Thập Mẫu Giọng Nói",
+    "category": "Deepfake & Thu Thập Dữ Liệu",
+    "difficulty": "Medium",
+    "description": "Bạn liên tục nhận được cuộc gọi từ các đầu số lạ 024..., 028..., khi nhấc máy thì đầu dây bên kia im lặng hoặc chỉ hỏi bâng quơ để bạn nói dài.",
+    "targetProfile": "Mọi người dùng điện thoại thông minh",
+    "estimatedMinutes": 2,
+    "steps": [
+      {
+        "id": "sil-step-1",
+        "speaker": "Số điện thoại lạ (024.9999.xxxx)",
+        "channel": "call",
+        "message": "Khi bạn bắt máy \"Alo\", đầu dây bên kia im lặng 3 giây rồi có giọng hỏi: \"Alo, anh có phải anh Tuấn ở Cầu Giấy không ạ? Anh nghe rõ em nói không anh ơi? Anh nói to lên giúp em với ạ...\"",
+        "choices": [
+          {
+            "id": "sil1_1",
+            "text": "Nói chuyện kéo dài giải thích: \"Tôi Tuấn đây nhưng tôi không ở Cầu Giấy, cô là ai ở công ty nào đấy...\"",
+            "isCorrect": false,
+            "feedback": "RỦI RO THU THẬP GIỌNG NÓI! Kẻ gian đang ghi âm đoạn hội thoại dài của bạn để lấy dữ liệu huấn luyện mô hình AI Voice Cloning nhái giọng bạn.",
+            "psychologyNote": "Kẻ gian kích thích bạn nói nhiều để có đủ âm sắc và ngữ điệu.",
+            "nextStepId": "sil-step-compromised"
+          },
+          {
+            "id": "sil1_2",
+            "text": "Nhận thấy cuộc gọi bất thường, cúp máy ngay lập tức và chặn số.",
+            "isCorrect": true,
+            "feedback": "RẤT TỈNH TÁO! Không cung cấp dữ liệu âm thanh cá nhân cho các cuộc gọi mập mờ.",
+            "psychologyNote": "Dập máy sớm ngăn chặn kẻ xấu thu thập mẫu sinh trắc học giọng nói.",
+            "nextStepId": "sil-step-safe"
+          }
+        ]
+      },
+      {
+        "id": "sil-step-safe",
+        "speaker": "CyberShield Academy",
+        "channel": "system",
+        "message": "XỬ LÝ ĐÚNG ĐẮN! Hãy cẩn trọng với các cuộc gọi gạ bạn nói các từ khẳng định như \"Vâng\", \"Đúng rồi\", \"Tôi đồng ý\".",
+        "choices": []
+      },
+      {
+        "id": "sil-step-compromised",
+        "speaker": "Cảnh Báo Nguy Cơ",
+        "channel": "system",
+        "message": "DỮ LIỆU GIỌNG NÓI CỦA BẠN CÓ THỂ ĐÃ BỊ GHI ÂM! Kẻ gian có thể dùng để tạo cuộc gọi lừa đảo người thân trong tương lai.",
+        "choices": []
+      }
+    ],
+    "realLifeDefenseTips": [
+      "Hạn chế nói chuyện dài với các cuộc gọi khảo sát lạ hoặc cuộc gọi im lặng bất thường.",
+      "Không bao giờ trả lời các câu hỏi gài \"Có phải bạn là... không?\" bằng từ \"Đúng/Vâng\" một cách dễ dãi.",
+      "Cài đặt các ứng dụng chặn cuộc gọi rác và báo cáo số điện thoại nghi vấn."
+    ],
+    "tacticAnalysis": "Thu thập dữ liệu âm thanh (Voice Sampling) phục vụ công nghệ AI Voice Cloning để tấn công người thân mục tiêu."
+  },
+  {
+    "id": "scam-12-fake-teacher-student-accident",
+    "title": "12. Giả Danh Giáo Viên / Nhà Trường Báo Học Sinh Bị Tai Nạn",
+    "category": "Lừa Đảo Bệnh Viện & Trường Học",
+    "difficulty": "Hard",
+    "description": "Bạn nhận được cuộc gọi tự xưng giáo viên chủ nhiệm thông báo con bạn vừa ngã từ lan can tầng 3 trường học, đang cấp cứu Chợ Rẫy/Việt Đức cần chuyển viện phí gấp.",
+    "targetProfile": "Phụ huynh có con đang độ tuổi đi học",
+    "estimatedMinutes": 3,
+    "steps": [
+      {
+        "id": "stu-step-1",
+        "speaker": "Thầy giáo thể dục (Giả danh)",
+        "channel": "call",
+        "message": "\"Alo chị ơi! Em là thầy Nam giáo viên trường con chị đây! Cháu vừa bị ngã cầu thang đập đầu chảy máu nhiều, đang chuyển viện cấp cứu Chợ Rẫy. Bác sĩ yêu cầu nộp tạm ứng viện phí 25 triệu để mổ gấp ngay trong 10 phút. Chị chuyển ngay vào số tài khoản bác sĩ này kẻo nguy hiểm tính mạng cháu!\"",
+        "choices": [
+          {
+            "id": "stu1_1",
+            "text": "Hoảng loạn tinh thần, bật khóc và lập tức chuyển 25 triệu vào tài khoản được đọc.",
+            "isCorrect": false,
+            "feedback": "SẬP BẪY \"CON ĐANG CẤP CỨU\"! Đây là thủ đoạn lừa đảo tàn nhẫn từng khiến hàng nghìn phụ huynh tại Hà Nội và TP.HCM mất tiền oan.",
+            "psychologyNote": "Kẻ gian khai thác tối đa nỗi sợ hãi tột cùng về sự an toàn tính mạng của con cái.",
+            "nextStepId": "stu-step-compromised"
+          },
+          {
+            "id": "stu1_2",
+            "text": "Hít sâu giữ bình tĩnh. Gọi ngay cho số hotline trường học hoặc số điện thoại của giáo viên chủ nhiệm trong danh bạ quen thuộc.",
+            "isCorrect": true,
+            "feedback": "QUÁ XUẤT SẮC! Giáo viên chủ nhiệm thật bắt máy và xác nhận con bạn đang ngồi học bình thường trên lớp.",
+            "psychologyNote": "Nguyên tắc bất di bất dịch của bệnh viện: Luôn ưu tiên cấp cứu bệnh nhân trước, viện phí làm thủ tục sau.",
+            "nextStepId": "stu-step-safe"
+          }
+        ]
+      },
+      {
+        "id": "stu-step-safe",
+        "speaker": "CyberShield Academy",
+        "channel": "system",
+        "message": "BẢO VỆ GIA ĐÌNH THÀNH CÔNG! Hãy luôn lưu số giáo viên chủ nhiệm, giám thị và văn phòng nhà trường vào danh bạ.",
+        "choices": []
+      },
+      {
+        "id": "stu-step-compromised",
+        "speaker": "Cảnh Báo Thiệt Hại",
+        "channel": "system",
+        "message": "BẠN ĐÃ MẤT 25 TRIỆU ĐỒNG! Đừng bao giờ chuyển tiền cấp cứu qua điện thoại mà chưa xác minh với nhà trường.",
+        "choices": []
+      }
+    ],
+    "realLifeDefenseTips": [
+      "Bệnh viện công lập tại Việt Nam luôn có quy trình cấp cứu khẩn cấp ưu tiên cứu người, không bao giờ ép nộp tiền qua điện thoại mới mổ.",
+      "Luôn liên hệ trực tiếp Ban Giám hiệu hoặc giáo viên chủ nhiệm quen biết.",
+      "Nếu có điều kiện, cử người nhà đến trực tiếp trường học hoặc bệnh viện kiểm tra."
+    ],
+    "tacticAnalysis": "Gây khủng hoảng tâm lý cực hạn bằng thông tin con cái gặp nạn để cướp quyền kiểm soát hành vi tài chính."
+  },
+  {
+    "id": "scam-13-fake-doctor-medical-emergency",
+    "title": "13. Giả Danh Nhân Viên Y Tế / Bác Sĩ Báo Người Thân Cấp Cứu",
+    "category": "Lừa Đảo Bệnh Viện & Trường Học",
+    "difficulty": "Medium",
+    "description": "Một người tự xưng là Bác sĩ Trưởng khoa Cấp cứu bệnh viện Bạch Mai gọi điện báo chồng/vợ bạn bị tai nạn giao thông cần chuyển tiền mua máu hiếm gấp.",
+    "targetProfile": "Vợ/chồng, người có người thân thường xuyên di chuyển ngoài đường",
+    "estimatedMinutes": 2,
+    "steps": [
+      {
+        "id": "med-step-1",
+        "speaker": "Bác sĩ Khoa Cấp Cứu (Giả danh)",
+        "channel": "call",
+        "message": "\"Alo! Tôi là Bác sĩ Tuấn - Bệnh viện Bạch Mai. Chồng chị bị tai nạn giao thông đa chấn thương rất nặng, đang cần truyền 4 đơn vị nhóm máu hiếm O- gấp. Bệnh viện đang hết máu dự trữ, chị chuyển khoản 18 triệu vào tài khoản Trung tâm huyết học này để xuất máu khẩn cấp!\"",
+        "choices": [
+          {
+            "id": "med1_1",
+            "text": "Vì sợ chồng chết do mất máu nên vội vàng chuyển khoản 18 triệu ngay.",
+            "isCorrect": false,
+            "feedback": "BỊ LỪA ĐẢO TÂM LÝ! Bệnh viện và ngân hàng máu quốc gia không bao giờ yêu cầu chuyển khoản tiền mua máu vào tài khoản cá nhân.",
+            "psychologyNote": "Kẻ lừa đảo dàn dựng bối cảnh âm thanh còi hú cứu thương ở hậu cảnh để tăng tính chân thật.",
+            "nextStepId": "med-step-compromised"
+          },
+          {
+            "id": "med1_2",
+            "text": "Bình tĩnh gọi ngay vào số điện thoại của chồng hoặc bạn bè, đồng nghiệp đi cùng chồng để kiểm tra.",
+            "isCorrect": true,
+            "feedback": "RẤT CHUẨN XÁC! Chồng bạn bắt máy và bảo đang ngồi họp cơ quan bình thường.",
+            "psychologyNote": "Bình tĩnh kiểm chứng qua người thân triệt tiêu mọi mưu mô lừa gạt.",
+            "nextStepId": "med-step-safe"
+          }
+        ]
+      },
+      {
+        "id": "med-step-safe",
+        "speaker": "CyberShield Academy",
+        "channel": "system",
+        "message": "XỬ LÝ SÁNG SUỐT! Bạn đã giữ được sự bình tĩnh trước chiêu trò hù dọa y tế.",
+        "choices": []
+      },
+      {
+        "id": "med-step-compromised",
+        "speaker": "Cảnh Báo Thiệt Hại",
+        "channel": "system",
+        "message": "BẠN ĐÃ BỊ CHIẾM ĐOẠT 18 TRIỆU ĐỒNG! Hãy cảnh giác với các yêu cầu thanh toán viện phí khẩn cấp qua điện thoại.",
+        "choices": []
+      }
+    ],
+    "realLifeDefenseTips": [
+      "Bệnh viện thực hiện cứu chữa bệnh nhân theo y đức và quy chế cấp cứu khẩn cấp, không chờ chuyển khoản qua mạng.",
+      "Gọi vào tổng đài bệnh viện chính thức để tra cứu danh sách bệnh nhân nhập viện.",
+      "Không chuyển tiền vào bất kỳ tài khoản cá nhân nào tự xưng là bác sĩ."
+    ],
+    "tacticAnalysis": "Lợi dụng tình cảm vợ chồng và kịch bản y tế sinh tử để vô hiệu hóa lý trí nạn nhân."
+  },
+  {
+    "id": "scam-14-fake-sim-swap-upgrade",
+    "title": "14. Tin Nhắn Đe Dọa Khóa SIM / Chuẩn Hóa Thuê Bao 4G-5G",
+    "category": "Mạo Danh Viễn Thông",
+    "difficulty": "Easy",
+    "description": "Bạn nhận được tin nhắn hoặc cuộc gọi tự xưng Cục Viễn Thông báo SIM của bạn chưa chuẩn hóa thông tin và sẽ bị khóa 2 chiều sau 2 giờ.",
+    "targetProfile": "Chủ thuê bao di động Viettel, Vinaphone, Mobifone",
+    "estimatedMinutes": 2,
+    "steps": [
+      {
+        "id": "sim-step-1",
+        "speaker": "Cục Viễn Thông / Nhà Mạng (Giả mạo)",
+        "channel": "call",
+        "message": "\"Cục Viễn thông thông báo: Thuê bao của quý khách sẽ bị khóa vĩnh viễn sau 2 giờ do chưa chuẩn hóa thông tin cá nhân theo Nghị định 49. Vui lòng bấm phím 1 để gặp chuyên viên hoặc truy cập link `chuanhoathuebao-vn.top` để nâng cấp SIM 4G lên 5G miễn phí.\"",
+        "choices": [
+          {
+            "id": "sim1_1",
+            "text": "Bấm phím 1 và làm theo hướng dẫn soạn tin nhắn cú pháp đổi SIM (SIM Swap) gửi 901.",
+            "isCorrect": false,
+            "feedback": "BỊ CƯỚP SIM (SIM SWAP ATTACK)! Cú pháp đó thực chất là lệnh chuyển số điện thoại của bạn sang phôi SIM trắng của kẻ gian. Kẻ gian sẽ dùng SIM này nhận OTP ngân hàng và rút sạch tiền.",
+            "psychologyNote": "Kẻ gian lợi dụng chủ trương chuẩn hóa thông tin thuê bao của nhà nước.",
+            "nextStepId": "sim-step-compromised"
+          },
+          {
+            "id": "sim1_2",
+            "text": "Tự mở app chính thức của nhà mạng (My Viettel, My VNPT, My MobiFone) hoặc ra điểm giao dịch nhà mạng gần nhất kiểm tra.",
+            "isCorrect": true,
+            "feedback": "QUÁ XUẤT SẮC! App nhà mạng báo thông tin thuê bao đã chính chủ và hoàn toàn hợp lệ.",
+            "psychologyNote": "Sử dụng ứng dụng chính thức của nhà mạng dập tắt mọi nghi ngờ.",
+            "nextStepId": "sim-step-safe"
+          }
+        ]
+      },
+      {
+        "id": "sim-step-safe",
+        "speaker": "CyberShield Academy",
+        "channel": "system",
+        "message": "BẢO VỆ SIM AN TOÀN! Tuyệt đối không soạn tin nhắn chuyển đổi SIM theo hướng dẫn của người lạ qua điện thoại.",
+        "choices": []
+      },
+      {
+        "id": "sim-step-compromised",
+        "speaker": "Cảnh Báo Mất Quyền Kiểm Soát SIM",
+        "channel": "system",
+        "message": "SIM CỦA BẠN ĐÃ BỊ MẤT SÓNG! Hacker đã chiếm đoạt số điện thoại để chiếm đoạt tài khoản Zalo, Facebook và Ngân hàng.",
+        "choices": []
+      }
+    ],
+    "realLifeDefenseTips": [
+      "Nhà mạng chỉ thông báo chuẩn hóa thuê bao qua tin nhắn SMS có Brandname chính thức và có lộ trình kéo dài nhiều tuần.",
+      "Không soạn các cú pháp đổi SIM (như DS gửi 901) khi nhận được yêu cầu từ người lạ.",
+      "Đến trực tiếp cửa hàng giao dịch viễn thông khi cần hỗ trợ về SIM."
+    ],
+    "tacticAnalysis": "Tấn công hoán đổi SIM (SIM Swap) nhằm tước quyền kiểm soát số điện thoại để vượt qua rào chắn xác thực 2 lớp qua SMS."
+  },
+  {
+    "id": "scam-15-fake-refund-tax-tuition",
+    "title": "15. Giả Mạo Hoàn Tiền Học Phí, Hoàn Thuế Thu Nhập, Hoàn Tiền Dịch Vụ",
+    "category": "Phishing Tài Chính",
+    "difficulty": "Medium",
+    "description": "Đối tượng tự xưng nhân viên Sở Giáo Dục hoặc Tổng Cục Thuế gọi điện báo bạn có khoản hoàn thuế / hoàn học phí 4.500.000đ cần liên kết tài khoản nhận lại.",
+    "targetProfile": "Phụ huynh, nhân viên văn phòng, người nộp thuế",
+    "estimatedMinutes": 2,
+    "steps": [
+      {
+        "id": "ref-step-1",
+        "speaker": "Cán bộ Kho bạc Nhà nước (Giả mạo)",
+        "channel": "call",
+        "message": "\"Chào anh/chị, theo quyết toán thuế năm 2023, anh/chị được hoàn trả 4.850.000đ tiền thuế thu nhập cá nhân nộp thừa. Anh/chị truy cập link `hoanthue-dichvucong.top` kết nối tài khoản ngân hàng để nhận tiền hoàn trả về tài khoản ngay nhé.\"",
+        "choices": [
+          {
+            "id": "ref1_1",
+            "text": "Mừng rỡ vì có tiền hoàn trả nên bấm vào link và nhập thông tin tài khoản + mã OTP.",
+            "isCorrect": false,
+            "feedback": "BỊ RÚT SẠCH TIỀN! Trang web giả mạo sẽ lấy thông tin để tạo lệnh chuyển tiền từ tài khoản của bạn đi thay vì chuyển tiền về cho bạn.",
+            "psychologyNote": "Kẻ lừa đảo đánh trúng tâm lý ham nhận tiền bồi hoàn miễn phí.",
+            "nextStepId": "ref-step-compromised"
+          },
+          {
+            "id": "ref1_2",
+            "text": "Từ chối làm việc qua link lạ. Mở app eTax Mobile chính thức của Tổng cục Thuế để tra cứu quyết toán.",
+            "isCorrect": true,
+            "feedback": "CHUẨN QUY TRÌNH HÀNH CHÍNH! Mọi khoản hoàn thuế nhà nước đều được chi trả trực tiếp vào tài khoản đã đăng ký trên hệ thống thuế chính thống.",
+            "psychologyNote": "Làm việc qua cổng dịch vụ công chuẩn tắc giúp bảo vệ tài chính.",
+            "nextStepId": "ref-step-safe"
+          }
+        ]
+      },
+      {
+        "id": "ref-step-safe",
+        "speaker": "CyberShield Academy",
+        "channel": "system",
+        "message": "AN TOÀN TUYỆT ĐỐI! Cơ quan thuế không bao giờ gửi link yêu cầu nhập mã OTP để nhận tiền hoàn thuế.",
+        "choices": []
+      },
+      {
+        "id": "ref-step-compromised",
+        "speaker": "Cảnh Báo Mất Tiền",
+        "channel": "system",
+        "message": "BẠN ĐÃ MẤT TOÀN BỘ SỐ DƯ TÀI KHOẢN! Tiền hoàn trả không thấy đâu mà tài khoản bị vét sạch.",
+        "choices": []
+      }
+    ],
+    "realLifeDefenseTips": [
+      "Quy trình hoàn thuế thu nhập cá nhân chỉ thực hiện qua cổng Dịch vụ công Quốc gia hoặc app eTax Mobile của Tổng cục Thuế.",
+      "Không bao giờ có thủ tục \"nhập OTP để nhận tiền về tài khoản\" (Nhận tiền chuyển khoản chỉ cần số tài khoản, không cần OTP).",
+      "Cảnh giác với các cuộc gọi báo hoàn tiền học phí, bảo hiểm, điện nước."
+    ],
+    "tacticAnalysis": "Dùng mồi nhử quyền lợi tài chính (hoàn tiền) để dẫn dụ nạn nhân cung cấp thông tin bảo mật ngân hàng."
+  },
+  {
+    "id": "scam-16-task-scam-collab",
+    "title": "16. Tuyển Cộng Tác Viên Online Làm Nhiệm Vụ Nộp Tiền",
+    "category": "Lừa Đảo Việc Làm (Job Scam)",
+    "difficulty": "Easy",
+    "description": "Tin nhắn mời làm việc tại nhà: Xem video TikTok, like bài viết nhận 50k/nhiệm vụ. Sau 3 nhiệm vụ đầu được trả thưởng thật, hệ thống yêu cầu nạp 5 triệu làm nhiệm vụ VIP.",
+    "targetProfile": "Sinh viên, mẹ bỉm sữa, người tìm việc làm thêm online",
+    "estimatedMinutes": 3,
+    "steps": [
+      {
+        "id": "task-step-1",
+        "speaker": "Trưởng nhóm tuyển dụng Shopee Mall (Telegram)",
+        "channel": "telegram",
+        "message": "\"Chúc mừng bạn đã hoàn thành nhiệm vụ 1 và nhận 60.000đ về tài khoản! Bây giờ là Nhiệm Vụ 2 - Đơn hàng xúc tiến thương mại 5.000.000đ, hoa hồng 25% (nhận về 6.250.000đ sau 3 phút). Bạn chuyển 5 triệu vào STK công ty để nhận mã đơn nhé!\"",
+        "choices": [
+          {
+            "id": "task1_1",
+            "text": "Vì thấy nhiệm vụ 1 được nhận tiền thật nên chuyển luôn 5 triệu để kiếm 1.250.000đ tiền lãi.",
+            "isCorrect": false,
+            "feedback": "SẬP BẪY NHIỆM VỤ ĐA CẤP! Khoản tiền 60.000đ ban đầu chỉ là \"mồi nhử\" (thức ăn dụ cá). Khi bạn nạp 5 triệu, hệ thống sẽ báo lỗi và ép nạp thêm 20 triệu, 50 triệu.",
+            "psychologyNote": "Kẻ gian xây dựng lòng tin bằng khoản thưởng nhỏ ban đầu rồi kích hoạt lòng tham.",
+            "nextStepId": "task-step-compromised"
+          },
+          {
+            "id": "task1_2",
+            "text": "Nhận 60.000đ xong rời nhóm, chặn tài khoản Telegram vì biết rõ đây là mô hình lừa đảo Ponzi nhiệm vụ.",
+            "isCorrect": true,
+            "feedback": "QUÁ CAO TAY! Bạn đã nhìn thấu bản chất của trò lừa đảo tuyển dụng việc nhẹ lương cao phổ biến nhất hiện nay.",
+            "psychologyNote": "Kiểm soát lòng tham là chìa khóa miễn nhiễm với bẫy lừa đảo việc làm.",
+            "nextStepId": "task-step-safe"
+          }
+        ]
+      },
+      {
+        "id": "task-step-safe",
+        "speaker": "CyberShield Academy",
+        "channel": "system",
+        "message": "CHIẾN THẮNG BẪY LỪA! Không có công việc chân chính nào yêu cầu người lao động phải nộp tiền để được làm việc.",
+        "choices": []
+      },
+      {
+        "id": "task-step-compromised",
+        "speaker": "Cảnh Báo Thiệt Hại Lũy Tiến",
+        "channel": "system",
+        "message": "BẠN ĐÃ MẤT 5 TRIỆU ĐỒNG VÀ ĐANG BỊ DẪN DỤ MẤT THÊM HÀNG CHỤC TRIỆU! Dừng lại ngay lập tức.",
+        "choices": []
+      }
+    ],
+    "realLifeDefenseTips": [
+      "Không có công việc nào chỉ like video, giật đơn hàng mà kiếm tiền triệu mỗi ngày.",
+      "Tuyệt đối không nạp tiền vào bất kỳ tài khoản cá nhân nào với lý do \"giữ chân nhiệm vụ\" hay \"nâng cấp tài khoản VIP\".",
+      "Các thành viên khoe nhận tiền hàng chục triệu trong nhóm Telegram/Zalo đều là tài khoản ảo (chim mồi)."
+    ],
+    "tacticAnalysis": "Mô hình nhiệm vụ vi mô biến tướng (Micro-task scam) kết hợp bẫy chi phí chìm (Sunk cost trap)."
+  },
+  {
+    "id": "scam-17-crypto-forex-investment",
+    "title": "17. Mời Gọi Đầu Tư Chứng Khoán Quốc Tế, Tiền Ảo, Forex Lãi Khủng",
+    "category": "Lừa Đảo Đầu Tư Tài Chính",
+    "difficulty": "Medium",
+    "description": "Một \"chuyên gia tài chính\" kết bạn Zalo khoe lãi hàng trăm triệu mỗi ngày, rủ tham gia sàn đầu tư Forex/Crypto quốc tế cam kết lợi nhuận 30%/tháng, bao lỗ 100%.",
+    "targetProfile": "Người có tiền nhàn rỗi, muốn đầu tư sinh lời cao",
+    "estimatedMinutes": 3,
+    "steps": [
+      {
+        "id": "inv-step-1",
+        "speaker": "Chuyên gia Đọc lệnh VIP (Zalo/Telegram)",
+        "channel": "telegram",
+        "message": "\"Chào em, bên anh là Sàn Chứng Khoán Quốc Tế Nasdaq-Trade. Bên anh có thuật toán AI Robot đánh theo chuyên gia Singapore, cam kết lợi nhuận cố định 1.5%/ngày (45%/tháng), hoàn vốn 100% nếu có rủi ro. Em chỉ cần nạp vốn tối thiểu 20 triệu là mỗi ngày rút lãi 300k tiêu xài thoải mái!\"",
+        "choices": [
+          {
+            "id": "inv1_1",
+            "text": "Nghe cam kết bao lỗ và lãi suất cao hấp dẫn nên chuyển 20 triệu vào sàn nạp vốn.",
+            "isCorrect": false,
+            "feedback": "SẬP BẪY SÀN GIAO DỊCH ẢO! Sàn giao dịch này do kẻ lừa đảo tự lập trình, chúng có thể tự chỉnh sửa con số hiển thị trên màn hình để bạn tưởng mình có lãi.",
+            "psychologyNote": "Kẻ lừa đảo đánh trúng tâm lý FOMO (sợ bỏ lỡ cơ hội làm giàu nhanh).",
+            "nextStepId": "inv-step-compromised"
+          },
+          {
+            "id": "inv1_2",
+            "text": "Cảnh giác: Không có kênh đầu tư hợp pháp nào trên thế giới cam kết lãi suất 45%/tháng mà lại không có rủi ro. Chặn luôn số liên lạc.",
+            "isCorrect": true,
+            "feedback": "RẤT THÔNG MINH! Lãi suất ngân hàng chỉ khoảng 5-7%/năm. Bất kỳ nơi nào hứa hẹn lãi suất trên 20-30%/tháng đều là bẫy lừa đảo Ponzi.",
+            "psychologyNote": "Tư duy tài chính thực tế là bức tường bảo vệ tài sản vững chắc nhất.",
+            "nextStepId": "inv-step-safe"
+          }
+        ]
+      },
+      {
+        "id": "inv-step-safe",
+        "speaker": "CyberShield Academy",
+        "channel": "system",
+        "message": "BẢO VỆ TÀI SẢN THÀNH CÔNG! Các sàn giao dịch ngoại hối (Forex) và tiền ảo hiện chưa được pháp luật Việt Nam cấp phép hoạt động.",
+        "choices": []
+      },
+      {
+        "id": "inv-step-compromised",
+        "speaker": "Cảnh Báo Mất Trắng",
+        "channel": "system",
+        "message": "BẠN ĐÃ BỊ CHIẾM ĐOẠT 20 TRIỆU ĐỒNG! Khi bạn muốn rút tiền, sàn sẽ đòi nộp \"thuế thu nhập 20%\", \"phí bảo hiểm\", rồi đánh sập trang web.",
+        "choices": []
+      }
+    ],
+    "realLifeDefenseTips": [
+      "Quy luật tài chính bất biến: \"Lợi nhuận càng cao thì rủi ro càng lớn\". Không có kênh đầu tư nào \"lãi suất khủng, bao lỗ 100%\".",
+      "Chỉ đầu tư qua các công ty chứng khoán được Ủy ban Chứng khoán Nhà nước cấp phép.",
+      "Cảnh giác với các hình ảnh khoe nhà sang, xe xịn, số dư tài khoản hàng tỷ đồng trên mạng xã hội."
+    ],
+    "tacticAnalysis": "Mô hình Ponzi lừa đảo đầu tư trực tuyến đội lốt sàn công nghệ AI, thao túng biểu đồ nến ảo."
+  },
+  {
+    "id": "scam-18-pig-butchering-group",
+    "title": "18. Nhóm Kéo Đầu Tư \"Mổ Heo\" (Cho Rút Lãi Nhỏ, Giữ Tiền Lớn)",
+    "category": "Lừa Đảo Đầu Tư Tài Chính",
+    "difficulty": "Hard",
+    "description": "Bạn được thêm vào nhóm Zalo 50 người chia sẻ lệnh đầu tư vàng ảo. Ban đầu nạp 2 triệu rút được cả gốc lẫn lãi 2.6 triệu. Sau khi nạp 100 triệu thì hệ thống khóa lệnh.",
+    "targetProfile": "Nhà đầu tư cá nhân, người dùng mạng xã hội",
+    "estimatedMinutes": 3,
+    "steps": [
+      {
+        "id": "pig-step-1",
+        "speaker": "Hệ thống Sàn Vàng Quốc Tế",
+        "channel": "web",
+        "message": "Tài khoản của bạn hiển thị số dư tăng vọt lên 250.000.000đ sau khi nạp 100 triệu theo lệnh của \"Thầy\". Tuy nhiên khi bạn bấm RÚT TIỀN, màn hình báo: \"Tài khoản nghi vấn gian lận rửa tiền, quý khách cần nạp thêm khoản ký quỹ 50.000.000đ trong 24h để giải phóng lệnh rút\".",
+        "choices": [
+          {
+            "id": "pig1_1",
+            "text": "Đi vay mượn thêm 50 triệu nạp tiếp vào để cứu lấy 250 triệu đang bị kẹt.",
+            "isCorrect": false,
+            "feedback": "SẬP BẪY MỔ HEO (PIG BUTCHERING)! Dù bạn nạp thêm 50 triệu hay 500 triệu, bạn sẽ KHÔNG BAO GIỜ rút được tiền. Nhóm 50 người thực chất chỉ có 1 mình bạn là nạn nhân, 49 người còn lại là bot và chim mồi.",
+            "psychologyNote": "Kẻ lừa đảo dồn nạn nhân vào bẫy tâm lý \"Tiếc tiền đã nạp nên phải nạp thêm để gỡ\".",
+            "nextStepId": "pig-step-compromised"
+          },
+          {
+            "id": "pig1_2",
+            "text": "Dừng nạp tiền ngay lập tức! Chấp nhận bị lừa 100 triệu, chụp toàn bộ bằng chứng tin nhắn và tài khoản ngân hàng kẻ gian đi trình báo Công an.",
+            "isCorrect": true,
+            "feedback": "QUYẾT ĐỊNH CẮT LỖ DŨNG CẢM & ĐÚNG ĐẮN! Dừng nạp tiền là cách duy nhất để không bị bòn rút thêm hàng trăm triệu đồng tiếp theo.",
+            "psychologyNote": "Kỷ luật thép cắt lỗ cứu vãn tương lai tài chính của bạn.",
+            "nextStepId": "pig-step-safe"
+          }
+        ]
+      },
+      {
+        "id": "pig-step-safe",
+        "speaker": "CyberShield Academy",
+        "channel": "system",
+        "message": "BẢO VỆ PHẦN TÀI SẢN CÒN LẠI! Hãy nhớ: Khi sàn đã không cho rút tiền thì mọi lý do nộp thêm phí đều là bẫy đào sâu.",
+        "choices": []
+      },
+      {
+        "id": "pig-step-compromised",
+        "speaker": "Cảnh Báo Thiệt Hại Trầm Trọng",
+        "channel": "system",
+        "message": "BẠN ĐÃ MẤT TỔNG CỘNG 150 TRIỆU ĐỒNG! Sàn ảo lập tức chặn tài khoản và xóa sạch dấu vết.",
+        "choices": []
+      }
+    ],
+    "realLifeDefenseTips": [
+      "Thủ đoạn \"Nuôi cho béo rồi mổ thịt\" (Pig Butchering): Ban đầu cho rút tiền nhỏ để tạo lòng tin tuyệt đối.",
+      "Trong các nhóm đầu tư Telegram/Zalo, hầu hết thành viên đều là tài khoản ảo do một nhóm đối tượng điều khiển.",
+      "Khi đã bị chặn rút tiền, tuyệt đối KHÔNG nạp thêm bất kỳ khoản tiền nào với bất kỳ lý do gì."
+    ],
+    "tacticAnalysis": "Chiến thuật Shazhupan (Mổ heo) thao túng tâm lý dài hạn, kết hợp bẫy nạp tiền bậc thang."
+  },
+  {
+    "id": "scam-19-fake-shopee-shipping-reward",
+    "title": "19. Giả Danh Sàn TMĐT / Giao Hàng Báo Trúng Thưởng Tri Ân",
+    "category": "Lừa Đảo Trúng Thưởng",
+    "difficulty": "Easy",
+    "description": "Cuộc gọi tự xưng nhân viên Shopee/Lazada thông báo bạn là 1 trong 5 khách hàng may mắn trúng giải Nhất: Xe máy SH hoặc Tủ lạnh side-by-side.",
+    "targetProfile": "Người thường xuyên mua hàng online",
+    "estimatedMinutes": 2,
+    "steps": [
+      {
+        "id": "shp-step-1",
+        "speaker": "Bộ phận Tri ân Khách hàng Shopee (Giả mạo)",
+        "channel": "call",
+        "message": "\"Chúc mừng anh/chị! Nhân dịp sinh nhật Shopee, số điện thoại của anh/chị đã trúng thưởng 1 chiếc Tủ lạnh Panasonic trị giá 18.000.000đ. Để nhận quà tận nhà, anh/chị chỉ cần thanh toán tiền cước vận chuyển và thuế trước bạ 1.200.000đ cho nhân viên giao hàng.\"",
+        "choices": [
+          {
+            "id": "shp1_1",
+            "text": "Đồng ý nhận quà và chuyển khoản trước 1.200.000đ tiền phí ship.",
+            "isCorrect": false,
+            "feedback": "BỊ LỪA PHÍ VẬN CHUYỂN! Khi chuyển tiền xong, bạn sẽ không nhận được bất kỳ món quà nào hoặc chỉ nhận được một kiện hàng chứa cục gạch/đồ vô giá trị.",
+            "psychologyNote": "Kẻ gian lợi dụng niềm vui bất ngờ khi trúng thưởng quà giá trị lớn.",
+            "nextStepId": "shp-step-compromised"
+          },
+          {
+            "id": "shp1_2",
+            "text": "Mở app Shopee chính thức kiểm tra phần Thông báo / Trúng thưởng, không thấy có sự kiện nào thì dập máy.",
+            "isCorrect": true,
+            "feedback": "RẤT CHÍNH XÁC! Mọi chương trình trúng thưởng chính thức của Shopee/Lazada đều hiển thị trong mục Thông báo trên app và không bao giờ yêu cầu chuyển tiền trước.",
+            "psychologyNote": "Kiểm tra qua kênh ứng dụng chính thống loại trừ 100% bẫy quà tặng.",
+            "nextStepId": "shp-step-safe"
+          }
+        ]
+      },
+      {
+        "id": "shp-step-safe",
+        "speaker": "CyberShield Academy",
+        "channel": "system",
+        "message": "AN TOÀN! Nguyên tắc: \"Quà tặng trúng thưởng thật không bao giờ bắt người nhận phải nộp tiền trước\".",
+        "choices": []
+      },
+      {
+        "id": "shp-step-compromised",
+        "speaker": "Cảnh Báo Mất Tiền",
+        "channel": "system",
+        "message": "BẠN ĐÃ MẤT 1.200.000 ĐỒNG! Đừng bao giờ chuyển tiền để nhận quà trúng thưởng qua điện thoại.",
+        "choices": []
+      }
+    ],
+    "realLifeDefenseTips": [
+      "Các sàn TMĐT lớn không thông báo trúng thưởng giải thưởng lớn qua cuộc gọi từ số di động cá nhân rác.",
+      "Nếu là quà tặng trúng thưởng hợp pháp, mọi khoản thuế (nếu có) sẽ được khấu trừ trực tiếp hoặc làm thủ tục trực tiếp.",
+      "Cảnh giác với các bưu kiện COD (giao hàng thu tiền hộ) mà bạn không hề đặt mua."
+    ],
+    "tacticAnalysis": "Khai thác tâm lý thích nhận thưởng miễn phí để thu các khoản \"phí tượng trưng\" từ hàng ngàn nạn nhân."
+  },
+  {
+    "id": "scam-20-fake-utility-bill-overdue",
+    "title": "20. Giả Danh Điện Lực / Cấp Nước Thông Báo Cắt Dịch Vụ Do Nợ Cước",
+    "category": "Mạo Danh Doanh Nghiệp Dịch Vụ",
+    "difficulty": "Easy",
+    "description": "Cuộc gọi tự xưng Tổng Công ty Điện lực EVN thông báo bạn nợ tiền điện 3.200.000đ và sẽ bị cắt điện sinh hoạt trong 2 giờ tới nếu không thanh toán gấp.",
+    "targetProfile": "Hộ gia đình, chủ cửa hàng kinh doanh",
+    "estimatedMinutes": 2,
+    "steps": [
+      {
+        "id": "evn-step-1",
+        "speaker": "Tổng đài viên EVN (Giả mạo)",
+        "channel": "call",
+        "message": "\"Điện lực thông báo: Hợp đồng sử dụng điện của quý khách đang nợ cước 3.250.000đ. Đúng 12h trưa nay trạm điện sẽ cắt điện toàn bộ ngôi nhà. Vui lòng chuyển khoản vào số tài khoản cán bộ thu cước này để hủy lệnh cắt điện ngay!\"",
+        "choices": [
+          {
+            "id": "evn1_1",
+            "text": "Vì trời đang rất nóng và sợ mất điện ảnh hưởng kinh doanh nên xin STK chuyển tiền ngay.",
+            "isCorrect": false,
+            "feedback": "BỊ LỪA TIỀN CƯỚC ẢO! Điện lực EVN không thu tiền điện qua tài khoản cá nhân của nhân viên qua điện thoại.",
+            "psychologyNote": "Kẻ gian gây áp lực cắt dịch vụ thiết yếu để ép chuyển tiền trong trạng thái lo âu.",
+            "nextStepId": "evn-step-compromised"
+          },
+          {
+            "id": "evn1_2",
+            "text": "Mở app ngân hàng hoặc app EVN CSKH nhập mã khách hàng PE... kiểm tra hóa đơn.",
+            "isCorrect": true,
+            "feedback": "RẤT CHUẨN XÁC! App báo hóa đơn tiền điện tháng này đã được thanh toán thành công từ tuần trước.",
+            "psychologyNote": "Tra cứu trực tiếp qua mã hợp đồng bảo vệ bạn tuyệt đối.",
+            "nextStepId": "evn-step-safe"
+          }
+        ]
+      },
+      {
+        "id": "evn-step-safe",
+        "speaker": "CyberShield Academy",
+        "channel": "system",
+        "message": "BẢO VỆ TÀI SẢN AN TOÀN! Khi có nghi ngờ về tiền điện nước, hãy gọi số tổng đài chăm sóc khách hàng chính thức trên hóa đơn.",
+        "choices": []
+      },
+      {
+        "id": "evn-step-compromised",
+        "speaker": "Cảnh Báo Mất Tiền",
+        "channel": "system",
+        "message": "BẠN ĐÃ MẤT 3.250.000 ĐỒNG! Số tiền này không hề được nộp vào tiền điện của nhà bạn.",
+        "choices": []
+      }
+    ],
+    "realLifeDefenseTips": [
+      "EVN và các công ty cấp nước chỉ thông báo qua tin nhắn SMS Brandname hoặc thông báo chính thức trên App.",
+      "Quy trình cắt điện do nợ cước phải có văn bản thông báo trước nhiều ngày theo quy định của Bộ Công Thương.",
+      "Không chuyển tiền điện vào số tài khoản cá nhân."
+    ],
+    "tacticAnalysis": "Tạo áp lực tước đoạt nhu cầu sinh hoạt thiết yếu để thúc đẩy hành vi thanh toán thiếu suy xét."
+  },
+  {
+    "id": "scam-21-fake-social-insurance-vssid",
+    "title": "21. Giả Danh Bảo Hiểm Xã Hội / Y Tế Yêu Cầu Cập Nhật VssID",
+    "category": "Mạo Danh Cơ Quan Nhà Nước",
+    "difficulty": "Medium",
+    "description": "Đối tượng tự xưng cán bộ BHXH quận thông báo thông tin bảo hiểm y tế của bạn bị sai lệch, cần truy cập đường link để đồng bộ dữ liệu nếu không sẽ bị cắt thẻ BHYT.",
+    "targetProfile": "Người lao động, người hưởng lương hưu, người tham gia BHYT",
+    "estimatedMinutes": 2,
+    "steps": [
+      {
+        "id": "bhxh-step-1",
+        "speaker": "Cán bộ Bảo hiểm Xã hội (Giả mạo)",
+        "channel": "call",
+        "message": "\"Chào anh/chị, hồ sơ BHYT và mã định danh VssID của anh/chị đang bị sai thông tin ngày sinh, dẫn tới thẻ BHYT sẽ bị vô hiệu hóa khi đi khám bệnh. Anh/chị truy cập link `baohiemxahoi-gov-vn.top` để cán bộ hỗ trợ sửa online nhé.\"",
+        "choices": [
+          {
+            "id": "bhxh1_1",
+            "text": "Bấm vào link và tải file ứng dụng BHXH theo hướng dẫn của người gọi.",
+            "isCorrect": false,
+            "feedback": "BỊ CÀI MÃ ĐỘC CHIẾM QUYỀN ĐIỆN THOẠI! File tải về là mã độc gián điệp, khi cài đặt sẽ theo dõi tài khoản ngân hàng của bạn.",
+            "psychologyNote": "Kẻ gian lợi dụng tâm lý sợ mất quyền lợi khám chữa bệnh bảo hiểm y tế.",
+            "nextStepId": "bhxh-step-compromised"
+          },
+          {
+            "id": "bhxh1_2",
+            "text": "Từ chối làm việc qua link lạ. Mở app VssID chính thức trên máy để tra cứu hoặc đến trực tiếp cơ quan BHXH quận.",
+            "isCorrect": true,
+            "feedback": "RẤT TỈNH TÁO! Cơ quan BHXH Việt Nam chỉ sử dụng tên miền đuôi `.gov.vn` và app VssID chính thống trên kho ứng dụng.",
+            "psychologyNote": "Chỉ tin tưởng cổng thông tin có tên miền quốc gia .gov.vn.",
+            "nextStepId": "bhxh-step-safe"
+          }
+        ]
+      },
+      {
+        "id": "bhxh-step-safe",
+        "speaker": "CyberShield Academy",
+        "channel": "system",
+        "message": "AN TOÀN! Cơ quan BHXH không hướng dẫn cập nhật thông tin qua đường link lạ gửi qua Zalo hay cuộc gọi điện thoại.",
+        "choices": []
+      },
+      {
+        "id": "bhxh-step-compromised",
+        "speaker": "Cảnh Báo Nguy Cấp",
+        "channel": "system",
+        "message": "ĐIỆN THOẠI CỦA BẠN ĐÃ BỊ CÀI MÃ ĐỘC! Kẻ gian có thể đọc được tin nhắn OTP và kiểm soát máy.",
+        "choices": []
+      }
+    ],
+    "realLifeDefenseTips": [
+      "Trang web chính thức của Bảo hiểm Xã hội Việt Nam là `baohiemxahoi.gov.vn`.",
+      "Không tải bất kỳ ứng dụng VssID nào ngoài Google Play Store và Apple App Store.",
+      "Mọi thủ tục điều chỉnh thông tin BHXH đều có thể thực hiện trên Cổng Dịch vụ công Quốc gia."
+    ],
+    "tacticAnalysis": "Lợi dụng chính sách an sinh xã hội và dịch vụ số hóa công để lừa cài đặt mã độc."
+  },
+  {
+    "id": "scam-22-fake-qr-code-phishing",
+    "title": "22. Mã QR Giả Mạo (Dán Đè QR Thanh Toán / QR Link Độc Hại)",
+    "category": "Tấn Công Mã QR (Quishing)",
+    "difficulty": "Medium",
+    "description": "Bạn quét mã QR nhận được qua tin nhắn Zalo để \"Nhận tiền hỗ trợ\" hoặc quét mã QR thanh toán tại quầy quán ăn nhưng trang web mở ra yêu cầu nhập mật khẩu ngân hàng.",
+    "targetProfile": "Người dùng quét mã QR thanh toán hàng ngày",
+    "estimatedMinutes": 2,
+    "steps": [
+      {
+        "id": "qr-step-1",
+        "speaker": "Giao diện Quét mã QR trên điện thoại",
+        "channel": "web",
+        "message": "Sau khi quét mã QR \"Nhận lì xì 500k\", trình duyệt mở ra trang web có giao diện giống Internet Banking kèm dòng chữ: \"Vui lòng nhập Tên đăng nhập và Mật khẩu ngân hàng để hệ thống chuyển tiền vào tài khoản của bạn\".",
+        "choices": [
+          {
+            "id": "qr1_1",
+            "text": "Nhập thông tin đăng nhập ngân hàng vào vì nghĩ quét mã QR thì an toàn.",
+            "isCorrect": false,
+            "feedback": "BỊ TẤN CÔNG QUISHING (QR PHISHING)! Mã QR chỉ đơn giản là một cách mã hóa đường link. Kẻ gian mã hóa đường link web lừa đảo thành mã QR để né tránh các bộ lọc bảo mật.",
+            "psychologyNote": "Người dùng thường mất cảnh giác với mã QR hơn là đường link chữ.",
+            "nextStepId": "qr-step-compromised"
+          },
+          {
+            "id": "qr1_2",
+            "text": "Nhận tiền chỉ cần số tài khoản, không bao giờ cần đăng nhập ngân hàng trên web lạ. Đóng tab ngay lập tức.",
+            "isCorrect": true,
+            "feedback": "QUÁ XUẤT SẮC! Bạn nắm rất vững nguyên tắc an toàn: Nhận tiền không bao giờ cần cung cấp mật khẩu đăng nhập hay OTP.",
+            "psychologyNote": "Hiểu đúng luồng nhận tiền chuyển khoản vô hiệu hóa mọi bẫy QR.",
+            "nextStepId": "qr-step-safe"
+          }
+        ]
+      },
+      {
+        "id": "qr-step-safe",
+        "speaker": "CyberShield Academy",
+        "channel": "system",
+        "message": "XỬ LÝ CHÍNH XÁC! Luôn kiểm tra kỹ đường link hiển thị trước khi xác nhận mở liên kết từ mã QR.",
+        "choices": []
+      },
+      {
+        "id": "qr-step-compromised",
+        "speaker": "Cảnh Báo Bị Hack",
+        "channel": "system",
+        "message": "BẠN ĐÃ MẤT TÀI KHOẢN NGÂN HÀNG! Mã QR giả mạo đã đánh cắp thông tin đăng nhập của bạn.",
+        "choices": []
+      }
+    ],
+    "realLifeDefenseTips": [
+      "Khi quét mã QR thanh toán tại cửa hàng, luôn đối chiếu tên chủ tài khoản thụ hưởng hiển thị trên app xem có đúng tên quán không.",
+      "Không quét các mã QR lạ dán ở nơi công cộng hoặc gửi qua tin nhắn từ người không quen biết.",
+      "Cảnh giác với các mã QR yêu cầu cấp quyền cài đặt phần mềm hoặc yêu cầu đăng nhập tài khoản."
+    ],
+    "tacticAnalysis": "Sử dụng mã phản hồi nhanh (QR Code) để che giấu đường dẫn URL độc hại nhằm qua mặt khả năng nhận diện bằng mắt thường."
+  },
+  {
+    "id": "scam-23-remote-access-software",
+    "title": "23. Dụ Cài Phần Mềm Điều Khiển Từ Xa (AnyDesk / TeamViewer / UltraViewer)",
+    "category": "Mã Độc & Chiếm Quyền",
+    "difficulty": "Hard",
+    "description": "Đối tượng tự xưng nhân viên hỗ trợ kỹ thuật ngân hàng / bảo hành điện thoại hướng dẫn bạn tải AnyDesk hoặc TeamViewer để họ \"sửa lỗi bảo mật từ xa\".",
+    "targetProfile": "Người ít am hiểu công nghệ, người lớn tuổi",
+    "estimatedMinutes": 3,
+    "steps": [
+      {
+        "id": "rem-step-1",
+        "speaker": "Chuyên viên Hỗ trợ Kỹ thuật (Giả mạo)",
+        "channel": "call",
+        "message": "\"Máy điện thoại của anh đang bị nhiễm virus theo dõi giao dịch. Bây giờ anh lên CH Play gõ tải ứng dụng 'AnyDesk' hoặc 'TeamViewer QuickSupport', mở lên đọc cho em dãy 9 số ID hiển thị trên màn hình và bấm 'Cho phép kết nối' để em quét virus từ xa giúp anh nhé.\"",
+        "choices": [
+          {
+            "id": "rem1_1",
+            "text": "Làm theo hướng dẫn, tải AnyDesk và đọc mã ID kết nối cho chuyên viên.",
+            "isCorrect": false,
+            "feedback": "BỊ CƯỚP QUYỀN ĐIỀU KHIỂN HOÀN TOÀN! Khi bạn cho phép kết nối, kẻ gian có thể nhìn thấy mọi thao tác trên màn hình điện thoại của bạn và tự điều khiển bấm chuyển tiền ngay trước mắt bạn.",
+            "psychologyNote": "Kẻ gian lợi dụng sự sợ hãi virus và sự thiếu am hiểu về phần mềm điều khiển từ xa.",
+            "nextStepId": "rem-step-compromised"
+          },
+          {
+            "id": "rem1_2",
+            "text": "Tuyệt đối không cài đặt! Nhân viên ngân hàng thật không bao giờ yêu cầu khách hàng cài phần mềm điều khiển điện thoại từ xa.",
+            "isCorrect": true,
+            "feedback": "CHUẨN XÁC TUYỆT ĐỐI! Bạn đã ngăn chặn hình thức tấn công Remote Access Trojan nguy hiểm bậc nhất.",
+            "psychologyNote": "Bảo vệ quyền riêng tư thiết bị là tuyến phòng thủ tối thượng.",
+            "nextStepId": "rem-step-safe"
+          }
+        ]
+      },
+      {
+        "id": "rem-step-safe",
+        "speaker": "CyberShield Academy",
+        "channel": "system",
+        "message": "AN TOÀN! Tuyệt đối không cho người lạ kết nối điều khiển máy tính, điện thoại cá nhân từ xa.",
+        "choices": []
+      },
+      {
+        "id": "rem-step-compromised",
+        "speaker": "Cảnh Báo Thiệt Hại",
+        "channel": "system",
+        "message": "KẺ LỪA ĐẢO ĐANG THAO TÁC TRÊN ĐIỆN THOẠI CỦA BẠN! Hãy tắt ngay Wi-Fi / 4G hoặc tắt nguồn điện thoại ngay lập tức!",
+        "choices": []
+      }
+    ],
+    "realLifeDefenseTips": [
+      "Không bao giờ cài đặt AnyDesk, TeamViewer, RustDesk, UltraViewer theo yêu cầu của người lạ qua điện thoại.",
+      "Không cung cấp mã ID hoặc mật khẩu kết nối từ xa cho bất kỳ ai.",
+      "Nếu lỡ cho phép kết nối, hãy ngắt ngay kết nối Internet (bật Chế độ máy bay) để ngắt quyền can thiệp."
+    ],
+    "tacticAnalysis": "Lợi dụng phần mềm điều khiển từ xa hợp pháp (Remote Desktop Tools) để hợp thức hóa việc chiếm đoạt thiết bị người dùng."
+  },
+  {
+    "id": "scam-24-fake-buyer-payment-link",
+    "title": "24. Giả Danh Người Mua Hàng Bắt Bấm Link Để Nhận Tiền Đặt Cọc",
+    "category": "Phishing Thương Mại",
+    "difficulty": "Medium",
+    "description": "Bạn đăng bán đồ cũ trên Chợ Tốt / Facebook. Một người nước ngoài hoặc người ở tỉnh khác nhắn tin bảo đã chuyển cọc qua dịch vụ Western Union / MoneyGram và gửi link bảo bạn đăng nhập để rút tiền.",
+    "targetProfile": "Người bán hàng online, người thanh lý đồ cũ",
+    "estimatedMinutes": 2,
+    "steps": [
+      {
+        "id": "buy-step-1",
+        "speaker": "Người mua hàng (Zalo/Messenger)",
+        "channel": "whatsapp",
+        "message": "\"Em đang ở nước ngoài muốn mua món đồ này tặng mẹ ở VN. Em đã chuyển 3.500.000đ qua cổng Western Union Quốc Tế. Chị bấm vào link `western-union-nhantien247.com` chọn ngân hàng của chị rồi nhập mật khẩu + OTP để tiền tự động quy đổi ra VNĐ về tài khoản nhé!\"",
+        "choices": [
+          {
+            "id": "buy1_1",
+            "text": "Bấm vào link và nhập thông tin đăng nhập ngân hàng để nhận tiền cọc 3.5 triệu.",
+            "isCorrect": false,
+            "feedback": "BỊ CHIẾM ĐOẠT TÀI KHOẢN! Cổng thanh toán quốc tế không bao giờ yêu cầu người nhận tiền phải nhập mật khẩu hay OTP ngân hàng.",
+            "psychologyNote": "Kẻ lừa đảo đánh trúng tâm lý người bán mừng rỡ khi vừa đăng bài đã có khách chốt mua ngay.",
+            "nextStepId": "buy-step-compromised"
+          },
+          {
+            "id": "buy1_2",
+            "text": "Yêu cầu: \"Chỉ nhận tiền chuyển khoản thông thường qua STK ngân hàng Việt Nam, không bấm bất kỳ đường link nào\".",
+            "isCorrect": true,
+            "feedback": "QUÁ XUẤT SẮC! Kẻ lừa đảo thấy bạn quá am hiểu quy trình nên đã lập tức chặn nick bỏ chạy.",
+            "psychologyNote": "Kiên định với phương thức thanh toán an toàn dập tắt bẫy phishing.",
+            "nextStepId": "buy-step-safe"
+          }
+        ]
+      },
+      {
+        "id": "buy-step-safe",
+        "speaker": "CyberShield Academy",
+        "channel": "system",
+        "message": "BẢO VỆ TÀI CHÍNH AN TOÀN! Nhận tiền chuyển khoản chỉ cần cung cấp: Tên Ngân hàng + Số tài khoản + Tên chủ tài khoản.",
+        "choices": []
+      },
+      {
+        "id": "buy-step-compromised",
+        "speaker": "Cảnh Báo Mất Tiền",
+        "channel": "system",
+        "message": "TÀI KHOẢN ĐÃ BỊ RÚT SẠCH TIỀN! Trang web Western Union giả mạo đã đánh cắp thông tin thẻ của bạn.",
+        "choices": []
+      }
+    ],
+    "realLifeDefenseTips": [
+      "Quy tắc vàng khi bán hàng: \"Nhận tiền CHỈ CẦN đưa Số tài khoản - Tuyệt đối KHÔNG BAO GIỜ nhập mật khẩu hay OTP\".",
+      "Cảnh giác với khách hàng đồng ý mua rất nhanh mà không thèm trả giá hay hỏi tình trạng món hàng.",
+      "Không bấm vào các link nhận kiều hối, nhận tiền quốc tế không rõ nguồn gốc."
+    ],
+    "tacticAnalysis": "Ngụy trang bẫy Phishing dưới hình thức cổng nhận tiền kiều hối quốc tế."
+  },
+  {
+    "id": "scam-25-fake-seller-deposit-ghost",
+    "title": "25. Bán Hàng Giá Siêu Rẻ Yêu Cầu Chuyển Tiền Cọc Rồi Chặn Liên Lạc",
+    "category": "Gian Lận Thương Mại",
+    "difficulty": "Easy",
+    "description": "Bạn thấy một bài đăng bán iPhone 15 Pro Max hoặc Xe máy SH giá rẻ bằng 1/3 thị trường trên Facebook Marketplace, người bán ép chuyển cọc 2 triệu để giữ hàng rồi biến mất.",
+    "targetProfile": "Người săn hàng giảm giá, người mua đồ cũ online",
+    "estimatedMinutes": 2,
+    "steps": [
+      {
+        "id": "sel-step-1",
+        "speaker": "Người bán hàng (Facebook Marketplace)",
+        "channel": "whatsapp",
+        "message": "\"Xe SH 150i này em bán thanh lý gấp để đi nước ngoài chỉ 28 triệu. Đang có 5 người hỏi mua, anh muốn lấy thì chuyển cọc trước 2 triệu vào STK em giữ xe, chiều em ship tận nhà cho anh xem xe không ưng em trả lại cọc.\"",
+        "choices": [
+          {
+            "id": "sel1_1",
+            "text": "Vì thấy giá quá rẻ và sợ người khác mua mất nên chuyển khoản cọc ngay 2 triệu.",
+            "isCorrect": false,
+            "feedback": "BỊ LỪA MẤT TIỀN CỌC! Ngay sau khi bạn gửi biên lai chuyển tiền 2 triệu, đối tượng sẽ lập tức chặn Facebook, chặn số điện thoại và xóa bài đăng.",
+            "psychologyNote": "Kẻ gian đánh vào tâm lý hám của rẻ và nỗi sợ bị người khác cướp mất món hời (FOMO).",
+            "nextStepId": "sel-step-compromised"
+          },
+          {
+            "id": "sel1_2",
+            "text": "Yêu cầu: \"Gặp mặt trực tiếp tại địa chỉ nhà xem xe và giấy tờ đầy đủ mới thanh toán, không chuyển cọc trước\".",
+            "isCorrect": true,
+            "feedback": "RẤT TỈNH TÁO! Khi bạn đòi xem hàng trực tiếp, đối tượng sẽ lập tức viện đủ lý do thoái thác vì thực chất không hề có xe.",
+            "psychologyNote": "Giao dịch trực tiếp (Face-to-face) là cách bảo vệ an toàn nhất khi mua đồ giá trị lớn.",
+            "nextStepId": "sel-step-safe"
+          }
+        ]
+      },
+      {
+        "id": "sel-step-safe",
+        "speaker": "CyberShield Academy",
+        "channel": "system",
+        "message": "AN TOÀN! Đừng bao giờ chuyển tiền đặt cọc cho người lạ trên mạng xã hội khi chưa kiểm tra hàng thực tế.",
+        "choices": []
+      },
+      {
+        "id": "sel-step-compromised",
+        "speaker": "Cảnh Báo Thiệt Hại",
+        "channel": "system",
+        "message": "BẠN ĐÃ MẤT 2 TRIỆU ĐỒNG TIỀN CỌC! Bài học đắt giá về việc ham đồ giá rẻ bất thường.",
+        "choices": []
+      }
+    ],
+    "realLifeDefenseTips": [
+      "Hàng hóa có giá rẻ bất thường (rẻ hơn 50-70% giá thị trường) thì 99.9% là lừa đảo đặt cọc hoặc hàng giả, hàng trộm cắp.",
+      "Không chuyển tiền đặt cọc qua mạng cho cá nhân không rõ lai lịch, địa chỉ.",
+      "Ưu tiên mua hàng qua các sàn TMĐT có chính sách bảo vệ người mua và giữ tiền trung gian (Escrow)."
+    ],
+    "tacticAnalysis": "Dùng mồi nhử giá siêu rẻ tạo sức ép tranh mua để chiếm đoạt tiền đặt cọc vi mô của hàng loạt nạn nhân."
+  },
+  {
+    "id": "scam-26-fake-traffic-fine-phat-nguoi",
+    "title": "26. Thông Báo Phạt Nguội CSGT Kèm Link Độc Hại Tra Cứu",
+    "category": "Mạo Danh Cảnh Sát Giao Thông",
+    "difficulty": "Medium",
+    "description": "Tin nhắn gửi đến thông báo xe của bạn vi phạm vượt đèn đỏ bị phạt nguội 5.000.000đ, yêu cầu truy cập `phatnguoi-canhsatgiaothong.top` để tra cứu biên bản nộp phạt.",
+    "targetProfile": "Chủ sở hữu ô tô, xe máy",
+    "estimatedMinutes": 2,
+    "steps": [
+      {
+        "id": "csgt-step-1",
+        "speaker": "Cục Cảnh sát Giao thông (Giả mạo)",
+        "channel": "sms",
+        "message": "\"[CSGT]: Bien so xe cua ban da vi pham loi vuot den do tai nut giao ngay 15/08. So tien phat: 5.000.000d. Vui long truy cap https://tracuu-phatnguoi-csgt.top de nop phat online truoc ngay 20/08 de tranh bi tich thu bang lai.\"",
+        "choices": [
+          {
+            "id": "csgt1_1",
+            "text": "Bấm vào link trong tin nhắn để nộp phạt trực tuyến vì sợ bị tước bằng lái xe.",
+            "isCorrect": false,
+            "feedback": "SẬP BẪY MẠO DANH CSGT! Trang web giả mạo sẽ yêu cầu bạn nhập thẻ ngân hàng hoặc tải app chứa mã độc để chiếm đoạt tài khoản.",
+            "psychologyNote": "Kẻ gian đánh vào tâm lý lo sợ bị xử phạt hành chính và thu giữ phương tiện.",
+            "nextStepId": "csgt-step-compromised"
+          },
+          {
+            "id": "csgt1_2",
+            "text": "Tự truy cập vào cổng thông tin chính thức của Cục Cảnh sát Giao thông tại `csgt.vn` hoặc app VNeID để tra cứu biển số xe.",
+            "isCorrect": true,
+            "feedback": "QUÁ CHUẨN XÁC! Trang web chính thức `csgt.vn` báo phương tiện của bạn hoàn toàn không có lỗi vi phạm nào.",
+            "psychologyNote": "Tra cứu tại cổng thông tin chính phủ .vn bảo đảm an toàn 100%.",
+            "nextStepId": "csgt-step-safe"
+          }
+        ]
+      },
+      {
+        "id": "csgt-step-safe",
+        "speaker": "CyberShield Academy",
+        "channel": "system",
+        "message": "BẢO VỆ AN TOÀN! Cục CSGT không gửi thông báo phạt nguội qua tin nhắn SMS thông thường kèm đường link nộp phạt.",
+        "choices": []
+      },
+      {
+        "id": "csgt-step-compromised",
+        "speaker": "Cảnh Báo Bị Lừa",
+        "channel": "system",
+        "message": "BẠN ĐÃ BỊ MẤT TIỀN HOẶC LỘ THÔNG TIN BẢO MẬT NGÂN HÀNG!",
+        "choices": []
+      }
+    ],
+    "realLifeDefenseTips": [
+      "Thông báo phạt nguội hợp pháp được gửi bằng văn bản giấy có dấu đỏ qua đường bưu điện hoặc hiển thị trên app VNeID.",
+      "Trang web tra cứu phạt nguội duy nhất của Cục CSGT là `www.csgt.vn`.",
+      "Không nộp tiền phạt vi phạm giao thông vào các số tài khoản cá nhân được cung cấp qua tin nhắn."
+    ],
+    "tacticAnalysis": "Mạo danh lực lượng chức năng kiểm soát trật tự giao thông để tống tiền hoặc lừa cài mã độc."
+  },
+  {
+    "id": "scam-27-advance-fee-lottery-gift",
+    "title": "27. Bắt Đóng \"Phí Hồ Sơ / Thuế Trước Bạ\" Để Nhận Quà Trúng Thưởng",
+    "category": "Lừa Đảo Trúng Thưởng",
+    "difficulty": "Easy",
+    "description": "Bạn nhận được thư điện tử hoặc tin nhắn báo trúng giải nhì chương trình \"Vòng Quay May Mắn\" trị giá 100 triệu, yêu cầu nộp trước 5 triệu tiền phí làm hồ sơ nhận giải.",
+    "targetProfile": "Mọi công dân, người dùng Internet",
+    "estimatedMinutes": 2,
+    "steps": [
+      {
+        "id": "fee-step-1",
+        "speaker": "Ban Tổ Chức Sự Kiện May Mắn (Giả mạo)",
+        "channel": "email",
+        "message": "\"Kính gửi quý khách, mã số dự thưởng của quý khách đã may mắn trúng giải Nhì trị giá 100.000.000đ tiền mặt. Để làm thủ tục chuyển khoản giải thưởng, quý khách vui lòng nộp 5.000.000đ tiền thuế thu nhập cá nhân vào STK Ban tổ chức trong vòng 24 giờ.\"",
+        "choices": [
+          {
+            "id": "fee1_1",
+            "text": "Chuyển 5 triệu vào STK với suy nghĩ \"bỏ 5 triệu để nhận về 100 triệu vẫn lãi 95 triệu\".",
+            "isCorrect": false,
+            "feedback": "SẬP BẪY LỪA PHÍ TRẢ TRƯỚC (ADVANCE FEE FRAUD)! Không hề có giải thưởng nào cả. Kẻ gian sẽ chiếm đoạt 5 triệu và tiếp tục đòi thêm \"phí vận chuyển\", \"phí kích hoạt\".",
+            "psychologyNote": "Kẻ lừa đảo sử dụng phép toán so sánh lợi nhuận ảo để nạn nhân thấy khoản phí là quá nhỏ so với giải thưởng.",
+            "nextStepId": "fee-step-compromised"
+          },
+          {
+            "id": "fee1_2",
+            "text": "Nhận thức rõ: \"Tôi không tham gia bất kỳ cuộc thi nào thì không thể trúng thưởng. Nếu có thuế, hãy trừ thẳng vào 100 triệu tiền thưởng rồi chuyển 95 triệu còn lại\".",
+            "isCorrect": true,
+            "feedback": "RẤT ĐANH THÉP VÀ CHÍNH XÁC! Kẻ lừa đảo sẽ lập tức câm nín vì nguyên tắc trả thưởng hợp pháp luôn khấu trừ thuế tại nguồn.",
+            "psychologyNote": "Tư duy logic về thuế khấu trừ tại nguồn đập tan bẫy phí ứng trước.",
+            "nextStepId": "fee-step-safe"
+          }
+        ]
+      },
+      {
+        "id": "fee-step-safe",
+        "speaker": "CyberShield Academy",
+        "channel": "system",
+        "message": "XUẤT SẮC! Bất kỳ lời mời nhận thưởng nào bắt đóng tiền trước đều là 100% lừa đảo.",
+        "choices": []
+      },
+      {
+        "id": "fee-step-compromised",
+        "speaker": "Cảnh Báo Thiệt Hại",
+        "channel": "system",
+        "message": "BẠN ĐÃ MẤT 5 TRIỆU ĐỒNG TIỀN NGU! Đừng bao giờ bỏ tiền thật để mua lời hứa thưởng ảo.",
+        "choices": []
+      }
+    ],
+    "realLifeDefenseTips": [
+      "Không ai trúng thưởng một chương trình mà bản thân không hề mua vé hay đăng ký tham gia.",
+      "Theo Luật Quản lý Thuế, đơn vị trao thưởng có trách nhiệm khấu trừ thuế TNCN trực tiếp vào giá trị giải thưởng trước khi chi trả.",
+      "Cảnh giác với các tin nhắn thông báo trúng thưởng qua Zalo/Facebook/SMS."
+    ],
+    "tacticAnalysis": "Mô hình lừa đảo phí trả trước (Advance-fee scam 419) kinh điển với phiên bản số hóa."
+  },
+  {
+    "id": "scam-28-romance-catfishing-scam",
+    "title": "28. Bẫy Tình Ái Qua Mạng (Romance Scam / Nhận Thùng Hàng Triệu Đô)",
+    "category": "Lừa Đảo Tình Cảm (Romance Scam)",
+    "difficulty": "Hard",
+    "description": "Một \"Bác sĩ quân y / Kỹ sư dầu khí nước ngoài\" đẹp trai kết bạn làm quen trên mạng, tâm sự yêu đương nồng thắm suốt 3 tháng, rồi bảo gửi thùng quà trang sức triệu USD về VN nhờ bạn đóng phí hải quan nhận hộ.",
+    "targetProfile": "Phụ nữ độc thân, người cô đơn, người tìm kiếm tình cảm qua mạng",
+    "estimatedMinutes": 3,
+    "steps": [
+      {
+        "id": "rom-step-1",
+        "speaker": "Người yêu online (Bác sĩ David Wilson)",
+        "channel": "whatsapp",
+        "message": "\"Em yêu, anh vừa gửi toàn bộ số tiền tiết kiệm 500.000 USD cùng trang sức kim cương trong kiện hàng ngoại giao về VN cho em để chuẩn bị mua nhà cưới chúng mình. Nhưng bên hải quan sân bay Tân Sơn Nhất đang giữ kiện hàng bắt nộp phạt phí quá cảnh 35 triệu. Em đóng hộ anh rồi lấy thùng tiền tiêu nhé!\"",
+        "choices": [
+          {
+            "id": "rom1_1",
+            "text": "Vì quá tin tưởng tình yêu và viễn cảnh tương lai nên gom 35 triệu nạp cho nhân viên hải quan giả.",
+            "isCorrect": false,
+            "feedback": "BỊ LỪA TÌNH LẪN TIỀN! \"Bác sĩ David Wilson\" và \"nhân viên hải quan gọi điện\" thực chất đều là một băng nhóm tội phạm xuyên quốc gia đóng kịch.",
+            "psychologyNote": "Kẻ gian đầu tư thời gian nhiều tháng để thao túng tâm lý tình cảm, tạo sự gắn kết giả tạo sâu sắc.",
+            "nextStepId": "rom-step-compromised"
+          },
+          {
+            "id": "rom1_2",
+            "text": "Tỉnh táo nhận diện: Luật pháp quốc tế nghiêm cấm gửi tiền mặt số lượng lớn trong bưu phẩm. Cắt đứt liên lạc ngay.",
+            "isCorrect": true,
+            "feedback": "QUÁ TUYỆT VỜI! Bạn đã thoát khỏi một trong những cái bẫy lừa đảo tinh vi và tàn độc nhất thế giới mạng.",
+            "psychologyNote": "Lý trí trước quy định pháp lý quốc tế giúp giải trừ bùa mê tình cảm ảo.",
+            "nextStepId": "rom-step-safe"
+          }
+        ]
+      },
+      {
+        "id": "rom-step-safe",
+        "speaker": "CyberShield Academy",
+        "channel": "system",
+        "message": "BẢO VỆ BẢN THÂN AN TOÀN! Tình yêu chân chính không bắt đầu bằng những lời hứa thùng tiền triệu đô và những khoản nhờ đóng tiền hộ.",
+        "choices": []
+      },
+      {
+        "id": "rom-step-compromised",
+        "speaker": "Cảnh Báo Thiệt Hại Nặng Nề",
+        "channel": "system",
+        "message": "BẠN ĐÃ BỊ LỪA 35 TRIỆU ĐỒNG VÀ ĐAU ĐỔ VỀ MẶT TÌNH CẢM! Nhiều nạn nhân đã bị bòn rút đến hàng tỷ đồng.",
+        "choices": []
+      }
+    ],
+    "realLifeDefenseTips": [
+      "Tuyệt đối không gửi tiền hoặc đóng phí nhận quà cho người chưa từng gặp mặt ngoài đời thực.",
+      "Sử dụng công cụ tìm kiếm hình ảnh (Google Reverse Image Search) để kiểm tra ảnh đại diện của đối tượng.",
+      "Cơ quan Hải quan không làm việc qua Zalo và không yêu cầu chuyển tiền nộp phạt vào tài khoản cá nhân."
+    ],
+    "tacticAnalysis": "Thao túng tâm lý tình cảm dài hạn (Catfishing / Romance Scam) kết hợp bẫy kiện hàng ngoại giao giả."
+  },
+  {
+    "id": "scam-29-fake-recruiter-uniform-fee",
+    "title": "29. Giả Danh Nhà Tuyển Dụng Đòi Thu \"Phí Hồ Sơ, Đồng Phục, Khám Sức Khỏe\"",
+    "category": "Lừa Đảo Việc Làm (Job Scam)",
+    "difficulty": "Easy",
+    "description": "Bạn đi xin việc làm nhân viên thu ngân / văn phòng. Người phỏng vấn bảo bạn đã trúng tuyển nhưng yêu cầu đóng ngay 850.000đ tiền may đồng phục và làm thẻ nhân viên.",
+    "targetProfile": "Sinh viên mới ra trường, người lao động tìm việc",
+    "estimatedMinutes": 2,
+    "steps": [
+      {
+        "id": "rec-step-1",
+        "speaker": "Trưởng phòng Nhân sự Công ty Ảo",
+        "channel": "call",
+        "message": "\"Chúc mừng em đã vượt qua vòng phỏng vấn vị trí Hành chính văn phòng lương 12 triệu/tháng. Ngày mai em đến nhận việc, hôm nay em cần chuyển khoản trước 900.000đ tiền may 2 bộ đồng phục công ty và phí làm thẻ từ ra vào tòa nhà nhé.\"",
+        "choices": [
+          {
+            "id": "rec1_1",
+            "text": "Chuyển 900.000đ ngay để ngày mai tự tin đi làm.",
+            "isCorrect": false,
+            "feedback": "SẬP BẪY TUYỂN DỤNG MA! Ngày mai bạn đến địa chỉ văn phòng thì phát hiện đây chỉ là văn phòng ảo cho thuê theo giờ hoặc công ty ma đã giải tán.",
+            "psychologyNote": "Kẻ lừa đảo khai thác mong muốn tìm việc làm ổn định của người lao động.",
+            "nextStepId": "rec-step-compromised"
+          },
+          {
+            "id": "rec1_2",
+            "text": "Từ chối theo Luật Lao động: \"Doanh nghiệp chân chính không được phép thu bất kỳ khoản tiền nào của người lao động khi tuyển dụng\".",
+            "isCorrect": true,
+            "feedback": "RẤT ĐÚNG QUY ĐỊNH PHÁP LUẬT! Điều 20 Bộ luật Lao động Việt Nam nghiêm cấm người sử dụng lao động thu tiền của người lao động dưới mọi hình thức.",
+            "psychologyNote": "Nắm vững luật lao động bảo vệ người tìm việc.",
+            "nextStepId": "rec-step-safe"
+          }
+        ]
+      },
+      {
+        "id": "rec-step-safe",
+        "speaker": "CyberShield Academy",
+        "channel": "system",
+        "message": "AN TOÀN! Hãy cảnh giác với mọi công ty bắt nộp tiền cọc trước khi đi làm.",
+        "choices": []
+      },
+      {
+        "id": "rec-step-compromised",
+        "speaker": "Cảnh Báo Thiệt Hại",
+        "channel": "system",
+        "message": "BẠN ĐÃ MẤT TIỀN CHO CÔNG TY LỪA ĐẢO! Đừng bao giờ nộp phí hồ sơ hay đồng phục trước.",
+        "choices": []
+      }
+    ],
+    "realLifeDefenseTips": [
+      "Mọi công ty thu tiền phỏng vấn, tiền đặt cọc giữ chỗ, tiền đồng phục trước khi làm việc đều là lừa đảo.",
+      "Kiểm tra mã số thuế và địa chỉ công ty trên Cổng thông tin Đăng ký Doanh nghiệp Quốc gia trước khi đi phỏng vấn.",
+      "Không giao nộp bản gốc CMND/CCCD hay bằng cấp gốc cho nhà tuyển dụng."
+    ],
+    "tacticAnalysis": "Lợi dụng tình trạng thất nghiệp để bòn rút các khoản phí tuyển dụng trái pháp luật."
+  },
+  {
+    "id": "scam-30-ai-blackmail-extortion",
+    "title": "30. Dùng AI Cắt Ghép Ảnh/Video Nhạy Cảm Tống Tiền Khống Chế Danh Dự",
+    "category": "Tống Tiền Công Nghệ Cao (AI Blackmail)",
+    "difficulty": "Hard",
+    "description": "Kẻ gian lấy ảnh chân dung trên Facebook của bạn, dùng AI cắt ghép vào hình ảnh/video nhạy cảm (Deepfake porn/nude) rồi gửi tin nhắn đe dọa sẽ phát tán cho người thân nếu không nộp 50 triệu.",
+    "targetProfile": "Mọi người dùng có đăng ảnh cá nhân công khai trên mạng",
+    "estimatedMinutes": 3,
+    "steps": [
+      {
+        "id": "blk-step-1",
+        "speaker": "Kẻ tống tiền ẩn danh (Telegram)",
+        "channel": "telegram",
+        "message": "\"Tao đang giữ clip nhạy cảm mang khuôn mặt của mày với bạn trai/gái. Tao đã có danh sách bạn bè Facebook và số điện thoại cơ quan của mày. Trong vòng 6 tiếng nếu không chuyển 50.000.000đ vào ví USDT này, tao sẽ gửi clip này cho bố mẹ, sếp và đồng nghiệp mày xem!\"",
+        "choices": [
+          {
+            "id": "blk1_1",
+            "text": "Hoảng loạn tột độ vì sợ mất danh dự nên vội vàng gom tiền chuyển ngay cho kẻ tống tiền.",
+            "isCorrect": false,
+            "feedback": "SAI LẦM TAI HẠI! Kẻ tống tiền sẽ KHÔNG BAO GIỜ xóa video sau khi nhận tiền. Chúng sẽ tiếp tục đòi thêm 100 triệu, 200 triệu cho đến khi bạn kiệt quệ tài chính.",
+            "psychologyNote": "Kẻ tống tiền khai thác cảm giác xấu hổ, danh dự xã hội và sự hoảng loạn.",
+            "nextStepId": "blk-step-compromised"
+          },
+          {
+            "id": "blk1_2",
+            "text": "Giữ bình tĩnh: Biết rõ đây là hình ảnh do AI cắt ghép giả mạo. Lưu lại toàn bộ bằng chứng tin nhắn và đến ngay Cơ quan An ninh mạng (A05) Công an để tố giác.",
+            "isCorrect": true,
+            "feedback": "RẤT BẢN LĨNH & ĐÚNG ĐẮN! Không chuyển tiền cho kẻ tống tiền. Cơ quan công an có chuyên án xử lý tội phạm tống tiền sử dụng công nghệ cao.",
+            "psychologyNote": "Dũng cảm đối mặt và nhờ cậy pháp luật là cách duy nhất chấm dứt tống tiền.",
+            "nextStepId": "blk-step-safe"
+          }
+        ]
+      },
+      {
+        "id": "blk-step-safe",
+        "speaker": "CyberShield Academy",
+        "channel": "system",
+        "message": "XỬ LÝ ĐÚNG ĐẮN! Hãy khóa bảo vệ trang cá nhân Facebook, không chia sẻ hình ảnh nhạy cảm và báo ngay cơ quan công an khi bị tống tiền.",
+        "choices": []
+      },
+      {
+        "id": "blk-step-compromised",
+        "speaker": "Cảnh Báo Vòng Xoáy Tống Tiền",
+        "channel": "system",
+        "message": "BẠN ĐÃ MẮT KẸT TRONG VÒNG XOÁY TỐNG TIỀN VÔ TẬN! Tuyệt đối không bao giờ thương lượng nộp tiền cho tội phạm.",
+        "choices": []
+      }
+    ],
+    "realLifeDefenseTips": [
+      "Tuyệt đối không chuyển tiền cho kẻ đe dọa, tống tiền (Nộp tiền chỉ làm chúng đòi hỏi nhiều hơn).",
+      "Chụp ảnh màn hình toàn bộ tin nhắn, tài khoản nhận tiền, đường link để làm chứng cứ tố giác tội phạm.",
+      "Chủ động thông báo cho gia đình, bạn bè về việc mình đang bị kẻ xấu cắt ghép hình ảnh AI bôi nhọ."
+    ],
+    "tacticAnalysis": "Tống tiền kỹ thuật số (Sextortion / AI Blackmail) lợi dụng công nghệ Generative AI để chế tạo tài liệu nhạy cảm giả mạo."
+  }
+]

@@ -1,0 +1,1456 @@
+[
+  {
+    "id": "deepfake-video-scam",
+    "title": "1. Deepfake AI Gọi Video Giả Danh Người Thân Mượn Tiền Cấp Cứu",
+    "category": "AI & Deepfake",
+    "shortDescription": "Kẻ gian dùng trí tuệ nhân tạo (AI) cắt ghép khuôn mặt và biểu cảm của người thân để gọi video chập chờn xin chuyển tiền viện phí, xử lý tai nạn khẩn cấp.",
+    "whatIsIt": "Lừa đảo Deepfake Video là hình thức tội phạm công nghệ cao thu thập hình ảnh, video của nạn nhân trên mạng xã hội, dùng AI tổng hợp khuôn mặt và cử động miệng giả mạo rồi thực hiện cuộc gọi video call chớp nhoáng cho người thân để mượn tiền.",
+    "howItWorks": [
+      "Kẻ gian hack hoặc chiếm quyền tài khoản Facebook, Zalo, Telegram của nạn nhân.",
+      "Thu thập video, hình ảnh công khai để huấn luyện mô hình AI Deepfake tạo khuôn mặt và biểu cảm giả.",
+      "Gọi video call chớp nhoáng (5 - 15 giây) trong điều kiện mạng lag, giật cục, ánh sáng mờ rồi đột ngột ngắt kết nối.",
+      "Nhắn tin lại qua app bảo do sóng yếu, đang gặp sự cố nguy cấp (tai nạn giao thông, nộp viện phí cấp cứu, bị giữ tại sân bay) và gửi số tài khoản ngân hàng để nhờ chuyển tiền gấp."
+    ],
+    "warningSigns": [
+      "Cuộc gọi video diễn ra rất ngắn, hình ảnh bị đứng hình, mờ nhòe hoặc nháy giật bất thường.",
+      "Khẩu hình miệng không khớp tự nhiên với âm thanh phát ra; ánh mắt đờ đẫn, ít chớp mắt.",
+      "Bối cảnh phía sau mờ ảo, ánh sáng khuôn mặt không đồng nhất với môi trường xung quanh.",
+      "Số tài khoản ngân hàng nhận tiền mang tên người lạ hoặc mở tại ngân hàng khác biệt hoàn toàn."
+    ],
+    "redFlags": [
+      "Khuôn mặt có viền bóng mờ quanh cằm và trán khi cử động.",
+      "Từ chối gọi lại video hoặc khi gọi lại thì tắt máy ngay lập tức.",
+      "Yêu cầu chuyển tiền vào tài khoản trung gian của bên thứ 3."
+    ],
+    "psychologicalTactics": [
+      "Đánh vào tình mẫu tử, tình cảm gia đình ruột thịt và sự thương xót người thân.",
+      "Tạo áp lực thời gian sống còn (đe dọa tính mạng nếu không đóng tiền viện phí trong 15 phút).",
+      "Làm nạn nhân hoảng loạn để bỏ qua các bước kiểm tra logic thông thường."
+    ],
+    "tactics": [
+      "Lợi dụng tình cảm gia đình",
+      "Tạo tình huống sinh tử khẩn cấp",
+      "Cô lập khả năng kiểm chứng"
+    ],
+    "whatScammersAskFor": [
+      "Chuyển tiền gấp từ 10 triệu đến hàng trăm triệu đồng vào số tài khoản chỉ định.",
+      "Yêu cầu không gọi cho người khác trong nhà để tránh \"làm mọi người lo lắng thêm\"."
+    ],
+    "howToVerify": [
+      "Dập máy ngay và gọi trực tiếp vào SỐ ĐIỆN THOẠI DI ĐỘNG (cuộc gọi SIM viễn thông thông thường) của người thân.",
+      "Hỏi câu hỏi bảo mật gia đình mà người ngoài không thể biết (VD: tên trường mẫu giáo, món ăn dị ứng, kỷ niệm chung).",
+      "Nếu đang gọi video, yêu cầu người đối diện quay mặt góc nghiêng 90 độ hoặc vẫy tay qua mặt (Deepfake AI sẽ bị lỗi hiển thị ngay)."
+    ],
+    "countermeasures": [
+      "Gọi xác minh qua số điện thoại SIM di động truyền thống.",
+      "Đặt \"Mật khẩu an toàn gia đình\" cho các cuộc gọi liên quan đến tài chính.",
+      "Yêu cầu thực hiện động tác vẫy tay hoặc quay góc nghiêng trước camera."
+    ],
+    "whatToDoIfTargeted": [
+      "Không chuyển bất kỳ khoản tiền nào cho đến khi nghe thấy giọng nói thật qua SIM hoặc gặp trực tiếp.",
+      "Cảnh báo người thân và bạn bè rằng tài khoản mạng xã hội của họ đang bị kẻ xấu lợi dụng."
+    ],
+    "whatToDoIfCompromised": [
+      "Gọi ngay hotline ngân hàng chuyển tiền để yêu cầu hỗ trợ khẩn cấp tra soát giao dịch.",
+      "Lưu lại video ghi màn hình, số tài khoản, tin nhắn và nộp đơn tố giác tại Cơ quan Cảnh sát điều tra."
+    ]
+  },
+  {
+    "id": "deepvoice-audio-clone",
+    "title": "2. DeepVoice AI Giả Giọng Nói Người Thân Tạo Tình Huống Khẩn Cấp",
+    "category": "AI & Deepfake",
+    "shortDescription": "Trích xuất mẫu giọng nói từ các đoạn ghi âm, video trên TikTok/Facebook để sao chép giọng nói thật 99%, gọi điện thông báo sự cố bắt cóc hoặc tai nạn.",
+    "whatIsIt": "DeepVoice (Voice Cloning) sử dụng mạng nơ-ron nhân tạo để học âm sắc, ngữ điệu, cách ngắt nghỉ của một người chỉ từ một đoạn ghi âm ngắn vài giây, sau đó biến đổi văn bản bất kỳ thành giọng nói của chính người đó.",
+    "howItWorks": [
+      "Kẻ gian thu thập giọng nói của nạn nhân từ video trên mạng xã hội, tin nhắn thoại (voice message) hoặc cuộc gọi khảo sát rác.",
+      "Dùng công cụ AI tổng hợp giọng nói để gọi điện cho cha mẹ, ông bà của nạn nhân.",
+      "Giả vờ đang khóc nức nở, thở dốc vì vừa bị bắt cóc, tai nạn hoặc bị bắt giữ tại đồn cảnh sát.",
+      "Một đối tượng khác vào vai kẻ bắt cóc hoặc cán bộ điều tra giật máy, đe dọa đòi tiền chuộc/tiền bảo lãnh ngay."
+    ],
+    "warningSigns": [
+      "Giọng nói có âm sắc giống nhưng ngữ điệu đôi khi hơi đều đều, thiếu cảm xúc biến thiên tự nhiên.",
+      "Cuộc gọi thường kèm theo nhiều tiếng ồn nền (tiếng còi hú, tiếng khóc) nhằm che giấu khuyết điểm âm thanh AI.",
+      "Đối tượng giục giã liên tục, không cho người nghe kịp ngắt lời hay đặt câu hỏi chi tiết."
+    ],
+    "redFlags": [
+      "Số điện thoại gọi đến là số lạ từ nước ngoài (+84... dạng ảo) hoặc ẩn danh.",
+      "Kẻ gian cấm người nhận tắt máy hoặc chuyển hướng cuộc gọi."
+    ],
+    "psychologicalTactics": [
+      "Tạo cú sốc tâm lý cực mạnh (Shock & Panic) khiến người nghe hoang mang tột độ.",
+      "Sử dụng tiếng khóc van xin để kích hoạt bản năng bảo vệ con cái mù quáng."
+    ],
+    "tactics": [
+      "Gây sốc tâm lý",
+      "Tiếng khóc giả mạo",
+      "Đe dọa bạo lực hoặc tù tội"
+    ],
+    "whatScammersAskFor": [
+      "Chuyển tiền chuộc con/em qua tài khoản ngân hàng hoặc nạp tiền ảo/thẻ cào.",
+      "Giữ nguyên cuộc gọi liên tục không được cúp máy để khống chế nạn nhân."
+    ],
+    "howToVerify": [
+      "Bình tĩnh dập máy ngay lập tức và dùng điện thoại khác gọi cho con/người thân hoặc cơ quan nơi người đó đang học/làm việc.",
+      "Liên hệ giáo viên chủ nhiệm, đồng nghiệp hoặc công an khu vực để kiểm tra chéo vị trí thực tế."
+    ],
+    "countermeasures": [
+      "Luôn giữ bình tĩnh, tuyệt đối không hành động theo lệnh kẻ gọi khi chưa kiểm chứng.",
+      "Lưu sẵn số hotline của nhà trường, cơ quan làm việc của người thân trong danh bạ."
+    ],
+    "whatToDoIfTargeted": [
+      "Dập máy ngay, gọi điện thoại cho người thân và thông báo cho người xung quanh.",
+      "Báo ngay cho Công an phường/xã gần nhất để được hỗ trợ can thiệp."
+    ],
+    "whatToDoIfCompromised": [
+      "Báo cơ quan Công an và ngân hàng để phong tỏa tài khoản thụ hưởng trong thời gian sớm nhất."
+    ]
+  },
+  {
+    "id": "police-investigation-scam",
+    "title": "3. Giả Danh Công An, Viện Kiểm Sát, Tòa Án Yêu Cầu Chuyển Tiền \"Xác Minh\"",
+    "category": "Giả danh Cơ quan chức năng",
+    "shortDescription": "Mạo danh điều tra viên gọi điện dọa nạn nhân liên quan đại án ma túy, rửa tiền, gửi lệnh bắt giả và yêu cầu chuyển tiền vào tài khoản tạm giữ của nhà nước.",
+    "whatIsIt": "Kẻ lừa đảo đóng vai Thiếu úy/Trung tá Công an hoặc Kiểm sát viên, thông báo tài khoản nạn nhân mở tại ngân hàng đã nhận hàng chục tỷ đồng tiền phạm pháp, sau đó ép nạn nhân chuyển tiền tiết kiệm vào \"tài khoản an ninh\" để chứng minh sự trong sạch.",
+    "howItWorks": [
+      "Gọi điện thoại bằng tổng đài ảo giả mạo số cơ quan chức năng, xưng tên tuổi, đơn vị điều tra cụ thể.",
+      "Đọc đúng họ tên, số CCCD, địa chỉ của nạn nhân để tạo lòng tin vững chắc.",
+      "Gửi hình ảnh \"Lệnh bắt tạm giam\", \"Lệnh niêm phong tài sản\" có dấu đỏ và chữ ký giả mạo qua Zalo.",
+      "Yêu cầu nạn nhân vào phòng kín, giữ bí mật tuyệt đối và chuyển toàn bộ tiền gửi vào \"Tài khoản thẩm tra của Ban chuyên án\"."
+    ],
+    "warningSigns": [
+      "Cơ quan công an làm việc, thẩm vấn và kết tội người dân qua điện thoại hoặc Zalo.",
+      "Gửi các văn bản tố tụng, lệnh bắt, quyết định khởi tố qua mạng xã hội.",
+      "Yêu cầu công dân nộp tiền, chuyển khoản để \"thẩm tra nguồn tiền\" hoặc \"bảo lãnh tại ngoại\".",
+      "Đe dọa sẽ bắt giam ngay trong ngày nếu nạn nhân tiết lộ thông tin cho người thân."
+    ],
+    "redFlags": [
+      "Số tài khoản nhận tiền mang tên cá nhân hoặc tên tài khoản doanh nghiệp mập mờ.",
+      "Giọng điệu quát tháo, đe dọa dồn dập, ép buộc làm theo từng bước."
+    ],
+    "psychologicalTactics": [
+      "Lạm dụng biểu tượng quyền lực hành pháp (quân phục, con dấu đỏ, chức danh).",
+      "Đánh vào nỗi sợ tù tội, sợ bị hủy hoại danh dự và tương lai.",
+      "Kỹ thuật cô lập xã hội (ngăn nạn nhân tham vấn ý kiến người xung quanh)."
+    ],
+    "tactics": [
+      "Đe dọa pháp lý",
+      "Cô lập nạn nhân",
+      "Giả mạo hồ sơ lệnh bắt con dấu đỏ"
+    ],
+    "whatScammersAskFor": [
+      "Chuyển toàn bộ tiền tiết kiệm trong ngân hàng, tiền mặt ở nhà vào tài khoản của kẻ gian.",
+      "Cung cấp thông tin tài khoản Internet Banking, mật khẩu và mã xác thực OTP."
+    ],
+    "howToVerify": [
+      "Quy tắc vàng: Công an, Viện kiểm sát chỉ làm việc trực tiếp tại trụ sở, có giấy mời hoặc giấy triệu tập bằng văn bản gửi qua đường bưu điện/công an khu vực.",
+      "Nhà nước KHÔNG BAO GIỜ có \"tài khoản tạm giữ\" của cá nhân để người dân nộp tiền thanh tra."
+    ],
+    "countermeasures": [
+      "Dập máy ngay lập tức, bạn không vi phạm bất kỳ điều luật nào khi dập máy kẻ lừa đảo.",
+      "Đến trực tiếp trụ sở Công an phường gần nhất để trình báo và hỏi thông tin."
+    ],
+    "whatToDoIfTargeted": [
+      "Tắt máy, chặn số và không chuyển bất kỳ một đồng nào.",
+      "Cảnh báo người già, phụ nữ nội trợ trong gia đình vì đây là nhóm nạn nhân dễ bị nhắm tới nhất."
+    ],
+    "whatToDoIfCompromised": [
+      "Gọi ngân hàng phong tỏa tài khoản khẩn cấp.",
+      "Nộp đơn trình báo tại Cơ quan Cảnh sát điều tra Công an cấp Quận/Huyện kèm biên lai chuyển khoản."
+    ]
+  },
+  {
+    "id": "bank-officer-otp-scam",
+    "title": "4. Giả Danh Nhân Viên Ngân Hàng Yêu Cầu Cung Cấp Mật Khẩu, Mã OTP",
+    "category": "Giả mạo Ngân hàng & Tài chính",
+    "shortDescription": "Tự xưng nhân viên chăm sóc khách hàng hỗ trợ nâng hạn mức thẻ, xử lý lỗi giao dịch hoặc kích hoạt gói quà tặng để lừa đọc mã Smart OTP.",
+    "whatIsIt": "Kẻ gian đóng vai nhân viên phòng dịch vụ khách hàng của ngân hàng, thông báo thẻ tín dụng của bạn bị lỗi hoặc cần nâng hạn mức/hủy phí thường niên, từ đó yêu cầu cung cấp số thẻ, mã CVV và mã xác thực OTP gửi về điện thoại.",
+    "howItWorks": [
+      "Gọi điện tự xưng cán bộ ngân hàng Vietcombank, Techcombank, MBBank, BIDV...",
+      "Thông báo bạn đủ điều kiện nâng hạn mức thẻ tín dụng lên 100 triệu hoặc được hoàn trả tiền phí.",
+      "Yêu cầu bạn chụp ảnh 2 mặt thẻ tín dụng (gồm 16 số thẻ, ngày hết hạn và 3 số CVV phía sau).",
+      "Đồng thời thực hiện giao dịch thanh toán trực tuyến và yêu cầu bạn đọc mã OTP gửi về máy để \"xác nhận hoàn tất\"."
+    ],
+    "warningSigns": [
+      "Người gọi yêu cầu đọc mã OTP, mã PIN hoặc mật khẩu ứng dụng ngân hàng.",
+      "Tự xưng nhân viên ngân hàng nhưng gọi bằng số di động cá nhân 10 số (không phải tổng đài 1900...).",
+      "Thúc ép đọc mã OTP nhanh kẻo \"hết hạn phiên làm việc\"."
+    ],
+    "redFlags": [
+      "Tin nhắn OTP có nội dung \"Giao dịch thanh toán mua hàng...\" thay vì \"Kích hoạt dịch vụ\".",
+      "Yêu cầu truy cập link lạ có giao diện đăng nhập ngân hàng điện tử."
+    ],
+    "psychologicalTactics": [
+      "Đánh vào sự tiện lợi và lòng tham quyền lợi tài chính (nâng hạn mức, tặng quà, hoàn phí).",
+      "Đánh tráo khái niệm giữa \"mã xác thực nhận tiền/hủy lỗi\" và \"mã xác thực chuyển tiền\"."
+    ],
+    "tactics": [
+      "Đánh tráo khái niệm mã OTP",
+      "Hứa hẹn quyền lợi tài chính",
+      "Mạo danh nhân viên ngân hàng"
+    ],
+    "whatScammersAskFor": [
+      "16 số mặt trước thẻ, ngày hết hạn và 3 chữ số bảo mật CVV/CVC mặt sau thẻ.",
+      "Mã xác thực OTP gửi qua tin nhắn SMS hoặc mã sinh ra từ Smart OTP.",
+      "Tên đăng nhập và mật khẩu tài khoản ngân hàng điện tử."
+    ],
+    "howToVerify": [
+      "Quy tắc vàng của tất cả ngân hàng: Nhân viên ngân hàng KHÔNG BAO GIỜ yêu cầu khách hàng cung cấp mã OTP, mã PIN hay mật khẩu.",
+      "Mã OTP chính là chìa khóa mở két sắt rút tiền của bạn."
+    ],
+    "countermeasures": [
+      "Luôn đọc kỹ nội dung tin nhắn chứa mã OTP (số tiền, người nhận, mục đích giao dịch).",
+      "Che kín 3 số bảo mật CVV ở mặt sau thẻ tín dụng ngay khi nhận thẻ."
+    ],
+    "whatToDoIfTargeted": [
+      "Tuyệt đối không đọc bất kỳ chữ số nào trong tin nhắn OTP cho người khác.",
+      "Dập máy và gọi tổng đài chính thức của ngân hàng in ở mặt sau thẻ ATM."
+    ],
+    "whatToDoIfCompromised": [
+      "Mở ngay ứng dụng ngân hàng để chủ động Khóa thẻ / Tạm khóa tài khoản khẩn cấp.",
+      "Gọi tổng đài ngân hàng để hủy mọi phiên đăng nhập đang hoạt động."
+    ]
+  },
+  {
+    "id": "sms-brandname-phishing-scam",
+    "title": "5. Tin Nhắn SMS Brandname Giả Mạo Ngân Hàng, Cơ Quan Nhà Nước",
+    "category": "SMS & Viễn thông",
+    "shortDescription": "Sử dụng trạm phát sóng di động giả (Fake BTS) chèn tin nhắn giả mạo vào đúng luồng tin nhắn chính thức của ngân hàng để lừa bấm vào link độc.",
+    "whatIsIt": "Tội phạm sử dụng thiết bị trạm thu phát sóng di động giả (IMSI Catcher / Fake BTS) phát tán tin nhắn rác mang tên thương hiệu (Brandname) của các ngân hàng, Bộ Công an, cơ quan thuế, khiến tin nhắn giả nằm chung hộp thư với tin nhắn thật của ngân hàng.",
+    "howItWorks": [
+      "Kẻ gian chở trạm phát sóng giả bằng ô tô hoặc xe máy đi qua các khu dân cư đông đúc.",
+      "Thiết bị ép các điện thoại xung quanh ngắt kết nối với nhà mạng thật và nhận tin nhắn từ trạm giả.",
+      "Nội dung tin nhắn: \"Tài khoản của quý khách bị trừ tiền / đăng nhập trái phép, bấm vào link để hủy\".",
+      "Đường link dẫn đến website có giao diện y hệt ngân hàng thật để đánh cắp mật khẩu và OTP."
+    ],
+    "warningSigns": [
+      "Tin nhắn chứa đường link có tên miền lạ, không phải tên miền chính thức của ngân hàng (VD: `.top`, `.vip`, `.xyz`, `.cc`, `.site`).",
+      "Nội dung đe dọa trừ tiền hoặc khóa tài khoản trong vòng vài phút.",
+      "Khi bấm vào link, trang web yêu cầu nhập đầy đủ tên đăng nhập, mật khẩu và mã OTP."
+    ],
+    "redFlags": [
+      "Tên miền thêm bớt ký tự (VD: `vietcombank-ebank.com`, `techcombank-login.top` thay vì `vietcombank.com.vn`)."
+    ],
+    "psychologicalTactics": [
+      "Lợi dụng uy tín của thương hiệu ngân hàng chính thống (tin nhắn hiển thị đúng tên ngân hàng).",
+      "Tạo sự hoảng hốt khi thấy số tiền lớn sắp bị trừ khỏi tài khoản."
+    ],
+    "tactics": [
+      "Giả mạo sóng vô tuyến BTS",
+      "Chèn luồng tin nhắn Brandname",
+      "Tạo trang Phishing"
+    ],
+    "whatScammersAskFor": [
+      "Tên đăng nhập, mật khẩu Internet Banking.",
+      "Mã OTP gửi về tin nhắn SMS."
+    ],
+    "howToVerify": [
+      "Ngân hàng tại Việt Nam tuyệt đối KHÔNG gửi tin nhắn SMS kèm đường link yêu cầu đăng nhập tài khoản.",
+      "Mở ứng dụng ngân hàng độc lập trên điện thoại để tự kiểm tra số dư và thông báo."
+    ],
+    "countermeasures": [
+      "Không bấm vào bất kỳ đường link nào gửi qua tin nhắn SMS.",
+      "Cài đặt nhận thông báo biến động số dư qua ứng dụng OTT của ngân hàng thay vì SMS."
+    ],
+    "whatToDoIfTargeted": [
+      "Bỏ qua và xóa tin nhắn, không bấm vào liên kết đính kèm.",
+      "Báo cáo tin nhắn rác/lừa đảo tới đầu số 156 hoặc 5656 của Bộ Thông tin & Truyền thông."
+    ],
+    "whatToDoIfCompromised": [
+      "Đổi mật khẩu ngân hàng ngay trên thiết bị an toàn.",
+      "Khóa tài khoản và liên hệ ngân hàng gấp để phong tỏa dòng tiền."
+    ]
+  },
+  {
+    "id": "fake-bank-ecommerce-website",
+    "title": "6. Tạo Website Giả Mạo Ngân Hàng, Ví Điện Tử, Sàn Thương Mại Điện Tử",
+    "category": "Phishing & Giả mạo Web",
+    "shortDescription": "Sao chép 100% giao diện cổng thanh toán, ví MoMo/ZaloPay, sàn Shopee/Lazada để lừa người dùng nhập thông tin thẻ và tài khoản đăng nhập.",
+    "whatIsIt": "Kẻ tấn công sao chép mã nguồn giao diện của các cổng thanh toán ngân hàng, ví điện tử phổ biến hoặc sàn TMĐT, đặt trên các tên miền nhái (Typosquatting) nhằm thu thập thông tin thẻ thanh toán quốc tế và tài khoản cá nhân.",
+    "howItWorks": [
+      "Dựng website có hình ảnh, màu sắc, font chữ và logo chuẩn của ngân hàng hoặc sàn TMĐT.",
+      "Chạy quảng cáo Google Ads hoặc gửi qua mạng xã hội để trang web giả xuất hiện ở vị trí đầu kết quả tìm kiếm.",
+      "Nạn nhân tìm kiếm \"đăng nhập ngân hàng X\" hoặc \"nhận quà sinh nhật Shopee\" bấm vào trang web giả.",
+      "Form đăng nhập chuyển thẳng dữ liệu tài khoản và mã OTP về máy chủ của tin tặc."
+    ],
+    "warningSigns": [
+      "Thanh địa chỉ URL không có chứng chỉ bảo mật hợp lệ hoặc tên miền bị sai chính tả.",
+      "Các đường link phụ trên trang web (chính sách, giới thiệu, điều khoản) bị lỗi hoặc dẫn về trang chủ.",
+      "Trang web yêu cầu nhập cả mã PIN Smart OTP hoặc 3 số CVV khi không thực hiện mua sắm cụ thể."
+    ],
+    "redFlags": [
+      "Tên miền sử dụng đuôi quốc tế giá rẻ hoặc có tiền tố lạ (VD: `login-momo.net`, `shopee-voucher2026.com`)."
+    ],
+    "psychologicalTactics": [
+      "Tạo cảm giác thân thuộc nhờ giao diện được copy chính xác từng pixel.",
+      "Dụ dỗ bằng quà tặng khuyến mãi khủng, voucher giảm giá 50-90%."
+    ],
+    "tactics": [
+      "Nhái giao diện pixel-perfect",
+      "SEO bẩn/Chạy quảng cáo Google Ads",
+      "Đánh cắp form dữ liệu ngầm"
+    ],
+    "whatScammersAskFor": [
+      "Tài khoản đăng nhập, mật khẩu, mã OTP, số thẻ tín dụng và mã CVV."
+    ],
+    "howToVerify": [
+      "Luôn kiểm tra kỹ thanh địa chỉ trình duyệt xem có đúng tên miền chính thức (`.vn` hoặc tên miền thương hiệu đã đăng ký) hay không.",
+      "Đánh dấu (Bookmark) các trang web ngân hàng chính thức để truy cập thay vì tìm kiếm qua Google."
+    ],
+    "countermeasures": [
+      "Bật tính năng cảnh báo website lừa đảo trên trình duyệt Chrome/Safari.",
+      "Không đăng nhập tài khoản ngân hàng trên các thiết bị hoặc mạng Wi-Fi công cộng không an toàn."
+    ],
+    "whatToDoIfTargeted": [
+      "Đóng tab trình duyệt ngay, xóa lịch sử duyệt web và không nhập bất kỳ thông tin nào."
+    ],
+    "whatToDoIfCompromised": [
+      "Đổi mật khẩu ngay lập tức từ trang web chính thức hoặc ứng dụng di động.",
+      "Gọi tổng đài hỗ trợ của dịch vụ đó để kiểm tra các phiên đăng nhập lạ."
+    ]
+  },
+  {
+    "id": "malicious-links-messages",
+    "title": "7. Gửi Đường Link Độc Hại Qua Tin Nhắn, Email, Mạng Xã Hội",
+    "category": "Mã độc & Liên kết độc hại",
+    "shortDescription": "Gửi link \"bình chọn cuộc thi\", \"xem ảnh nhạy cảm\", \"nhận quà tặng tri ân\" chứa mã độc đánh cắp Cookie trình duyệt và tài khoản mạng xã hội.",
+    "whatIsIt": "Hình thức phát tán mã độc hoặc kịch bản khai thác lỗ hổng (Cross-Site Scripting / Malicious Web) qua các liên kết rút gọn hoặc tin nhắn mồi chài, nhằm chiếm quyền điều khiển tài khoản mạng xã hội hoặc cài đặt phần mềm độc hại vào máy nạn nhân.",
+    "howItWorks": [
+      "Nạn nhân nhận được tin nhắn từ bạn bè: \"Bình chọn giúp cháu mình thi vẽ tranh\", \"Xem video bạn bị quay lén nè\"...",
+      "Đường link dẫn đến trang web yêu cầu đăng nhập lại tài khoản Facebook/Google để xem tiếp nội dung.",
+      "Khi đăng nhập, mã độc thu thập Cookie, Token và mật khẩu của nạn nhân.",
+      "Kẻ gian tiếp tục dùng tài khoản vừa chiếm được để phát tán link độc hại tới toàn bộ danh bạ bạn bè."
+    ],
+    "warningSigns": [
+      "Tin nhắn có nội dung giật gân, tò mò hoặc khẩn thiết nhờ vả bình chọn.",
+      "Link sử dụng dịch vụ rút gọn link (bit.ly, tinyurl, cutt.ly) che giấu đích đến thật.",
+      "Trang web bắt buộc phải đăng nhập lại tài khoản mạng xã hội dù bạn đang dùng ứng dụng."
+    ],
+    "redFlags": [
+      "Đăng nhập tài khoản nhưng không chuyển đến nội dung như đã hứa mà hiện trang trắng hoặc báo lỗi."
+    ],
+    "psychologicalTactics": [
+      "Kích thích tính tò mò, hiếu kỳ hoặc tâm lý ngại từ chối giúp đỡ bạn bè.",
+      "Lợi dụng uy tín của tài khoản bạn bè quen biết (vốn đã bị hack từ trước)."
+    ],
+    "tactics": [
+      "Lợi dụng lòng tin bạn bè",
+      "Kích thích tò mò",
+      "Tấn công chuỗi lây lan danh bạ"
+    ],
+    "whatScammersAskFor": [
+      "Đăng nhập tài khoản Facebook, Zalo, Gmail, Telegram.",
+      "Cho phép ứng dụng bên thứ 3 truy cập quyền quản lý tài khoản."
+    ],
+    "howToVerify": [
+      "Liên hệ trực tiếp với người gửi qua kênh khác (gọi điện thoại) để hỏi có phải họ gửi link không.",
+      "Không bao giờ nhập mật khẩu tài khoản mạng xã hội vào các trang web bên ngoài ứng dụng chính thức."
+    ],
+    "countermeasures": [
+      "Bật xác thực 2 yếu tố (2FA) bằng ứng dụng Google Authenticator cho tất cả tài khoản.",
+      "Kiểm tra và đăng xuất các phiên đăng nhập lạ trong phần Cài đặt bảo mật."
+    ],
+    "whatToDoIfTargeted": [
+      "Không bấm vào link, thông báo cho người bạn đó biết tài khoản của họ đã bị kẻ xấu kiểm soát."
+    ],
+    "whatToDoIfCompromised": [
+      "Đổi mật khẩu ngay lập tức và chọn \"Đăng xuất khỏi tất cả các thiết bị khác\".",
+      "Đăng bài cảnh báo trên trang cá nhân để bạn bè không tiếp tục bấm vào link độc."
+    ]
+  },
+  {
+    "id": "fake-apps-malware-apk",
+    "title": "8. Làm Giả Ứng Dụng Ngân Hàng, Dịch Vụ Công, Đầu Tư Để Lừa Cài Đặt File APK",
+    "category": "Mã độc & Ứng dụng giả mạo",
+    "shortDescription": "Dụ dỗ người dùng cài đặt file `.apk` giả mạo cổng dịch vụ công VNeID, ứng dụng hoàn thuế hoặc app chứng khoán có chứa mã độc gián điệp chiếm quyền trợ năng.",
+    "whatIsIt": "Mã độc Trojan ngân hàng trên hệ điều hành Android. Kẻ tấn công lừa nạn nhân tải và cài đặt ứng dụng từ file `.apk` ngoài kho ứng dụng, sau đó chiếm quyền Trợ năng (Accessibility) để tự động điều khiển điện thoại từ xa và rút tiền.",
+    "howItWorks": [
+      "Kẻ gian gọi điện hướng dẫn cập nhật hồ sơ định danh, cài app nộp thuế điện tử hoặc app đầu tư sinh lời.",
+      "Gửi đường link tải file cài đặt có đuôi `.apk` (VD: `vneid-update.apk`, `tongcuc-thue.apk`).",
+      "Hướng dẫn nạn nhân tắt bảo mật Google Play Protect và cấp quyền \"Trợ năng\" (Accessibility Service).",
+      "Mã độc âm thầm theo dõi mọi thao tác bấm phím, đọc trộm mã OTP ngân hàng, tự động mở app ngân hàng chuyển tiền đi khi nạn nhân ngủ."
+    ],
+    "warningSigns": [
+      "Yêu cầu cài đặt ứng dụng bằng cách tải file trực tiếp từ trang web thay vì kho ứng dụng CH Play / App Store.",
+      "Ứng dụng đòi hỏi các quyền can thiệp sâu: Quyền trợ năng, quyền điều khiển màn hình, quyền đọc SMS.",
+      "Điện thoại bị nóng ran, hao pin nhanh bất thường, màn hình tự sáng hoặc tự động chuyển trang."
+    ],
+    "redFlags": [
+      "Yêu cầu tắt chế độ bảo vệ Play Protect hoặc bật tính năng \"Cài đặt từ nguồn không xác định\"."
+    ],
+    "psychologicalTactics": [
+      "Lợi dụng sự thiếu hiểu biết về công nghệ của người dân.",
+      "Mượn danh cơ quan nhà nước để ép buộc cài đặt ứng dụng \"bắt buộc theo quy định\"."
+    ],
+    "tactics": [
+      "Mã độc chiếm quyền Trợ năng (Accessibility)",
+      "Kiểm soát thiết bị từ xa",
+      "Tự động rút tiền"
+    ],
+    "whatScammersAskFor": [
+      "Tải và cài đặt file `.apk` lạ.",
+      "Cấp quyền Trợ năng (Accessibility) và quyền đọc tin nhắn SMS cho ứng dụng."
+    ],
+    "howToVerify": [
+      "Chỉ cài đặt ứng dụng từ CH Play (Android) và App Store (iOS).",
+      "Cơ quan nhà nước và ngân hàng KHÔNG BAO GIỜ yêu cầu người dân cài file APK qua đường link ngoài."
+    ],
+    "countermeasures": [
+      "Tuyệt đối không cấp quyền Trợ năng (Accessibility) cho bất kỳ ứng dụng nào tải từ trang web.",
+      "Bật tính năng bảo vệ Google Play Protect trên điện thoại Android."
+    ],
+    "whatToDoIfTargeted": [
+      "Từ chối cài đặt, xóa ngay file đã tải về trong thư mục Download."
+    ],
+    "whatToDoIfCompromised": [
+      "Bật ngay Chế độ máy bay (Airplane Mode) hoặc tháo SIM, tắt nguồn điện thoại để ngắt kết nối điều khiển.",
+      "Dùng máy khác gọi hotline ngân hàng khóa toàn bộ tài khoản và thẻ.",
+      "Khôi phục cài đặt gốc (Factory Reset) toàn bộ điện thoại để xóa sạch mã độc."
+    ]
+  },
+  {
+    "id": "fake-bank-receipt-transfer",
+    "title": "9. Làm Giả Biên Lai Chuyển Khoản, Thông Báo Giao Dịch Thành Công (Fake Bill)",
+    "category": "Gian lận Giao dịch & Thương mại",
+    "shortDescription": "Sử dụng các phần mềm/website tạo ảnh chụp màn hình biên lai chuyển tiền ngân hàng giả để lừa người bán hàng giao hàng hoặc gửi tiền trả lại.",
+    "whatIsIt": "Kẻ lừa đảo sử dụng các công cụ tạo ảnh hóa đơn chuyển tiền giả (Fake Receipt Generator) có logo, tên tài khoản, mã giao dịch và số tiền y hệt thông báo thật của ngân hàng nhằm chiếm đoạt hàng hóa hoặc lừa người bán chuyển lại \"tiền thừa\".",
+    "howItWorks": [
+      "Kẻ gian vờ mua hàng hóa giá trị cao hoặc đặt cọc phòng/dịch vụ.",
+      "Tạo ảnh biên lai chuyển khoản giả mạo gửi qua tin nhắn kèm lý do \"Ngân hàng khác hệ thống nên 1-2 tiếng sau tiền mới nổi, bạn giao hàng gấp giúp mình\".",
+      "Hoặc làm giả biên lai chuyển nhầm số tiền lớn (VD: mua hàng 500k nhưng gửi bill giả 5 triệu) rồi khóc lóc đòi người bán chuyển khoản lại 4.5 triệu."
+    ],
+    "warningSigns": [
+      "Gửi ảnh biên lai chuyển tiền thành công nhưng tài khoản ngân hàng của bạn chưa nhận được tiền hoặc thông báo biến động số dư.",
+      "Biên lai có phông chữ số tiền bị lệch, màu sắc không đồng nhất, thời gian giao dịch bất hợp lý.",
+      "Thúc ép giao hàng ngay lập tức hoặc giục chuyển trả lại tiền thừa."
+    ],
+    "redFlags": [
+      "Viện lý do \"chuyển khoản liên ngân hàng vào cuối tuần nên tiền bị treo\" hoặc \"gửi link xác nhận nhận tiền\"."
+    ],
+    "psychologicalTactics": [
+      "Tạo áp lực vội vã cần hàng khẩn cấp để bên bán không kịp kiểm tra tài khoản.",
+      "Đánh vào sự tử tế, trung thực của người bán hàng khi thấy người khác chuyển \"nhầm\" tiền."
+    ],
+    "tactics": [
+      "Photoshop/Web tạo bill giả",
+      "Gây áp lực giao hàng gấp",
+      "Chiêu bài chuyển nhầm tiền"
+    ],
+    "whatScammersAskFor": [
+      "Giao hàng hóa ngay lập tức cho shipper trước khi tiền về tài khoản.",
+      "Chuyển khoản lại khoản tiền chuyển \"nhầm\" cho kẻ gian."
+    ],
+    "howToVerify": [
+      "Nguyên tắc bất di bất dịch: Chỉ giao hàng khi TIỀN ĐÃ NỔI THỰC TẾ trên ứng dụng ngân hàng của bạn (có tin nhắn biến động số dư hoặc kiểm tra trong lịch sử giao dịch app).",
+      "Không tin bất kỳ hình ảnh chụp màn hình hay email thông báo nào từ phía người mua."
+    ],
+    "countermeasures": [
+      "Luôn mở app ngân hàng tự kiểm tra lịch sử giao dịch thực tế.",
+      "Nếu có người lạ chuyển nhầm tiền thật, hãy đến ngân hàng làm thủ tục hoàn trả, tuyệt đối không tự ý chuyển trả vào tài khoản khác do họ yêu cầu."
+    ],
+    "whatToDoIfTargeted": [
+      "Từ chối giao hàng và giữ nguyên hàng hóa cho đến khi tiền về tài khoản."
+    ],
+    "whatToDoIfCompromised": [
+      "Liên hệ đơn vị vận chuyển để chặn giữ đơn hàng nếu shipper chưa giao.",
+      "Trình báo công an kèm bằng chứng đoạn chat và thông tin người nhận hàng."
+    ]
+  },
+  {
+    "id": "social-account-takeover-loan",
+    "title": "10. Chiếm Quyền Tài Khoản Mạng Xã Hội Rồi Nhắn Tin Vay Tiền",
+    "category": "Mạng xã hội & Chiếm đoạt tài khoản",
+    "shortDescription": "Hack Facebook, Zalo bằng link Phishing hoặc mã OTP, đọc lịch sử tin nhắn để bắt chước cách xưng hô rồi nhắn tin mượn tiền khắp danh bạ bạn bè.",
+    "whatIsIt": "Kẻ tấn công chiếm quyền kiểm soát tài khoản mạng xã hội của một cá nhân, nghiên cứu văn phong xưng hô và các mối quan hệ thân thiết, sau đó gửi tin nhắn đồng loạt mượn từ 2 đến 10 triệu đồng để xử lý công việc đột xuất.",
+    "howItWorks": [
+      "Chiếm quyền tài khoản qua việc nạn nhân bấm link độc, quét mã QR hoặc bị lộ mật khẩu.",
+      "Đổi mật khẩu, xóa số điện thoại khôi phục để chủ tài khoản không đăng nhập lại được.",
+      "Đọc lịch sử tin nhắn cũ để nắm được cách xưng hô (anh/em, mày/tao, ba/mẹ).",
+      "Nhắn tin mượn tiền với lý do: \"Em đang kẹt tiền thanh toán đơn hàng/tiền hàng, anh chuyển khoản giúp em 5 triệu lát chiều em gửi lại\".",
+      "Cung cấp số tài khoản ngân hàng trùng họ tên với chủ tài khoản (mua tài khoản rác trùng tên) để tạo lòng tin tuyệt đối."
+    ],
+    "warningSigns": [
+      "Người bạn lâu ngày không liên lạc đột nhiên nhắn tin nhờ chuyển tiền gấp.",
+      "Cách xưng hô có điểm khác thường so với thói quen trò chuyện hàng ngày.",
+      "Viện lý do tài khoản ngân hàng đang lỗi nên yêu cầu chuyển vào một tài khoản ngân hàng khác.",
+      "Từ chối cuộc gọi thoại/video với lý do đang bận họp, đang trên đường lái xe."
+    ],
+    "redFlags": [
+      "Số tài khoản nhận tiền có tên chủ tài khoản viết không dấu gần giống hoặc hoàn toàn xa lạ."
+    ],
+    "psychologicalTactics": [
+      "Lợi dụng uy tín và mối quan hệ bạn bè, đối tác thân thiết nhiều năm.",
+      "Số tiền mượn thường ở mức vừa phải (vài triệu đồng) khiến nạn nhân dễ dàng đồng ý mà không đắn đo."
+    ],
+    "tactics": [
+      "Khai thác thông tin cá nhân",
+      "Mượn danh nghĩa bạn bè",
+      "Mua tài khoản ngân hàng trùng tên"
+    ],
+    "whatScammersAskFor": [
+      "Chuyển tiền mượn tạm từ 2 triệu đến 20 triệu đồng."
+    ],
+    "howToVerify": [
+      "Gọi điện thoại trực tiếp vào số SIM di động cá nhân của người đó để xác nhận trước khi chuyển 1 đồng.",
+      "Hỏi lại một chi tiết riêng tư trong quá khứ mà chỉ 2 người biết."
+    ],
+    "countermeasures": [
+      "Bật bảo mật 2 lớp cho Facebook/Zalo, không đăng nhập tài khoản trên các trang web lạ.",
+      "Quy tắc ứng xử tài chính: Tuyệt đối không chuyển tiền chỉ dựa trên tin nhắn văn bản qua mạng xã hội."
+    ],
+    "whatToDoIfTargeted": [
+      "Gọi điện thông báo ngay cho người bạn đó bằng điện thoại để họ kịp thời cảnh báo mọi người."
+    ],
+    "whatToDoIfCompromised": [
+      "Báo ngay cho ngân hàng chuyển tiền để đề nghị khóa chiều rút tài khoản đích.",
+      "Lưu vết giao dịch và báo cáo cho cơ quan chức năng."
+    ]
+  },
+  {
+    "id": "sim-lock-telecom-threat",
+    "title": "11. Cuộc Gọi \"Khóa SIM Sau 2 Giờ\" Ép Cung Cấp Thông Tin Cá Nhân",
+    "category": "SMS & Viễn thông",
+    "shortDescription": "Cuộc gọi tự động tự xưng Cục Viễn thông / Nhà mạng thông báo SIM chưa chuẩn hóa sẽ bị khóa sau 2 giờ, ép bấm phím kết nối chuyên viên để chiếm đoạt thông tin.",
+    "whatIsIt": "Kẻ lừa đảo sử dụng tổng đài tự động giả danh Cục Viễn thông (Bộ TT&TT) hoặc các nhà mạng Viettel, VinaPhone, MobiFone đe dọa khóa liên lạc của thuê bao nhằm lừa người dân cung cấp số CCCD, tài khoản ngân hàng hoặc nộp tiền phạt viễn thông.",
+    "howItWorks": [
+      "Tổng đài tự động phát giọng đọc: \"Cục Viễn thông thông báo thuê bao của quý khách sẽ bị khóa liên lạc sau 2 giờ do chưa chuẩn hóa thông tin hoặc vi phạm phát tán tin rác... Bấm phím 1 để gặp chuyên viên\".",
+      "Khi bấm phím, kẻ lừa đảo đóng vai nhân viên nhà mạng yêu cầu cung cấp họ tên, số CCCD, ngày cấp, mã OTP gửi về máy.",
+      "Sau đó kẻ gian chuyển máy sang \"Công an\" bảo số điện thoại này đang liên quan vụ án rửa tiền, dọa nạt và yêu cầu chuyển tiền."
+    ],
+    "warningSigns": [
+      "Nhà mạng viễn thông KHÔNG BAO GIỜ thông báo khóa SIM qua cuộc gọi tự động đe dọa khóa trong 2 giờ.",
+      "Cuộc gọi đến từ các đầu số lạ (+84..., đầu số nước ngoài hoặc số di động thông thường).",
+      "Yêu cầu cung cấp thông tin CCCD hoặc mã xác thực OTP qua điện thoại."
+    ],
+    "redFlags": [
+      "Nối máy liên thông từ nhân viên nhà mạng sang công an ngay trong cùng một cuộc gọi."
+    ],
+    "psychologicalTactics": [
+      "Đánh vào tâm lý sợ bị mất liên lạc di động ảnh hưởng đến công việc làm ăn.",
+      "Lợi dụng đợt chuẩn hóa thông tin thuê bao của nhà nước để dựng kịch bản."
+    ],
+    "tactics": [
+      "Giả mạo tổng đài Cục Viễn thông",
+      "Đe dọa gián đoạn liên lạc",
+      "Chuyển luồng sang kịch bản công an"
+    ],
+    "whatScammersAskFor": [
+      "Số Căn cước công dân, ảnh chụp chân dung.",
+      "Mã OTP gửi về tin nhắn SMS để cướp SIM hoặc tài khoản dịch vụ mạng."
+    ],
+    "howToVerify": [
+      "Tự soạn tin nhắn `TTTB` gửi `1414` (miễn phí) để kiểm tra thông tin thuê bao chính chủ.",
+      "Gọi trực tiếp hotline chính thức của nhà mạng: Viettel (18008098), VinaPhone (18001091), MobiFone (18001090)."
+    ],
+    "countermeasures": [
+      "Dập máy ngay khi nghe các thông báo khóa SIM tự động.",
+      "Đến các điểm giao dịch trực tiếp của nhà mạng nếu cần cập nhật thông tin CCCD."
+    ],
+    "whatToDoIfTargeted": [
+      "Dập máy, phản ánh cuộc gọi rác tới đầu số 156 hoặc 5656."
+    ],
+    "whatToDoIfCompromised": [
+      "Nếu đã lỡ đọc mã OTP, liên hệ nhà mạng ngay lập tức để khóa SIM đề phòng kẻ gian chiếm đoạt số điện thoại nhận mã OTP ngân hàng."
+    ]
+  },
+  {
+    "id": "ecommerce-job-commission-scam",
+    "title": "12. Bẫy Nạp Tiền Làm Nhiệm Vụ Giật Đơn Shopee, Lazada Hưởng Hoa Hồng",
+    "category": "Tuyển dụng & Việc làm",
+    "shortDescription": "Tuyển cộng tác viên online nạp tiền thanh toán đơn hàng ảo nhận hoa hồng 20-30%, mồi nhử những đơn đầu sau đó giam tiền và ép nạp hàng chục triệu.",
+    "whatIsIt": "Mô hình lừa đảo cộng tác viên làm nhiệm vụ bậc thang. Kẻ gian dụ dỗ người tìm việc chuyển tiền thanh toán đơn hàng ảo để đẩy tương tác, trả hoa hồng thật cho các đơn nhỏ, sau đó nâng hạn mức đơn hàng lên hàng chục triệu rồi khóa lệnh rút tiền.",
+    "howItWorks": [
+      "Đăng tin tuyển dụng trên Facebook, TikTok: Tuyển người chốt đơn online, 30 phút/ngày, thu nhập 500k-1tr.",
+      "Nạn nhân vào nhóm Telegram, làm đơn hàng 100k - 500k, được hoàn vốn kèm 20% hoa hồng về tài khoản ngân hàng thật.",
+      "Khi nạn nhân tin tưởng, kẻ gian giao \"Nhiệm vụ VIP liên hoàn\" gồm 3 đơn: 5 triệu, 20 triệu, 50 triệu.",
+      "Nạp xong 50 triệu, hệ thống báo \"Lỗi cú pháp nội dung chuyển khoản\", bắt nộp thêm 50 triệu tiền bảo hiểm để mở khóa toàn bộ số tiền."
+    ],
+    "warningSigns": [
+      "Công việc online cực kỳ dễ dàng nhưng hứa hẹn hoa hồng cao bất thường (20-30%).",
+      "Người lao động phải nộp tiền túi của mình trước để làm nhiệm vụ.",
+      "Toàn bộ giao dịch làm việc trao đổi qua nhóm Telegram nặc danh có nhiều tài khoản ảo liên tục khoe tiền.",
+      "Bị từ chối rút tiền với đủ các lý do vô lý (sai cú pháp, chưa nộp thuế, bảo lãnh điểm tín nhiệm)."
+    ],
+    "redFlags": [
+      "Số tài khoản nhận tiền nạp nhiệm vụ là số tài khoản cá nhân thay đổi liên tục sau mỗi lần chuyển."
+    ],
+    "psychologicalTactics": [
+      "Thả mồi bắt bóng: Cho ăn hoa hồng nhỏ ban đầu để tạo dựng niềm tin tuyệt đối.",
+      "Tâm lý tiếc của (Sunk Cost Fallacy): Càng mất tiền càng cố nạp thêm để cứu vãn số tiền cũ."
+    ],
+    "tactics": [
+      "Chiêu trò thả mồi hoa hồng nhỏ",
+      "Áp lực nhóm chim mồi Telegram",
+      "Tạo rào cản rút tiền liên hoàn"
+    ],
+    "whatScammersAskFor": [
+      "Chuyển tiền liên tục vào các tài khoản ngân hàng chỉ định để thực hiện nhiệm vụ."
+    ],
+    "howToVerify": [
+      "Các sàn TMĐT lớn (Shopee, Lazada, Tiki) khẳng định KHÔNG BAO GIỜ tuyển cộng tác viên giật đơn qua Telegram hay Zalo.",
+      "Không có công việc chân chính nào yêu cầu người đi làm phải chuyển tiền trước cho công ty."
+    ],
+    "countermeasures": [
+      "Tuyệt đối không tham gia các nhóm tuyển dụng làm nhiệm vụ online trên Telegram.",
+      "Khi đã bị giữ tiền, phải DỪNG LẠI NGAY, nạp thêm chắc chắn sẽ mất thêm 100%."
+    ],
+    "whatToDoIfTargeted": [
+      "Rời nhóm Telegram, chặn liên lạc và không chuyển bất kỳ khoản tiền nào."
+    ],
+    "whatToDoIfCompromised": [
+      "Cắt lỗ ngay lập tức, lưu lại toàn bộ ảnh chụp tin nhắn, số tài khoản kẻ lừa đảo và trình báo Công an."
+    ]
+  },
+  {
+    "id": "forex-crypto-investment-scam",
+    "title": "13. Lừa Đầu Tư Sàn Ngoại Hối Forex, Tiền Ảo (Crypto) Cam Kết Lãi Khủng",
+    "category": "Đầu tư & Tài chính ảo",
+    "shortDescription": "Lập sàn giao dịch tài chính ảo, cam kết lợi nhuận 30-50%/tháng, dùng biểu đồ can thiệp ngầm cho thắng liên tục lúc đầu rồi đánh cháy tài khoản.",
+    "whatIsIt": "Tội phạm lập ra các sàn giao dịch Forex, quyền chọn nhị phân (BO), chứng khoán quốc tế hoặc tiền mã hóa không có giấy phép, cho chuyên gia đọc lệnh \"bao thắng\", điều chỉnh biểu đồ nến xanh đỏ từ hậu trường để chiếm đoạt toàn bộ tiền nạp của nhà đầu tư.",
+    "howItWorks": [
+      "Kết bạn qua mạng xã hội, khoe cuộc sống sang chảnh, xe sang, nhà đẹp nhờ đầu tư tài chính 4.0.",
+      "Mời nạn nhân vào nhóm \"VIP Kéo Vốn\" có chuyên gia đọc lệnh cam kết lợi nhuận 1-3%/ngày, bảo toàn vốn 100%.",
+      "Nạn nhân nạp thử vài triệu, thấy tài khoản trên web tăng vọt lên hàng chục triệu và rút được thử một khoản nhỏ.",
+      "Khi nạn nhân dốc hết tiền tiết kiệm, vay mượn nạp hàng trăm triệu đến hàng tỷ đồng, sàn sẽ khóa lệnh rút hoặc cố tình đánh cháy tài khoản trong 1 đêm."
+    ],
+    "warningSigns": [
+      "Cam kết lợi nhuận cố định cao phi lý (30-100%/tháng), bao lỗ 100%.",
+      "Sàn giao dịch không được Ngân hàng Nhà nước hoặc Ủy ban Chứng khoán Việt Nam cấp phép hoạt động.",
+      "Yêu cầu nạp tiền bằng cách chuyển khoản vào tài khoản cá nhân của người trung gian hoặc mua USDT.",
+      "Khi rút tiền lớn, sàn bắt nộp thêm \"Phí thuế thu nhập cá nhân 20%\", \"Phí xác minh rửa tiền\"..."
+    ],
+    "redFlags": [
+      "Tên miền sàn giao dịch thay đổi liên tục, máy chủ đặt tại nước ngoài.",
+      "Các thành viên trong nhóm liên tục gửi ảnh chụp màn hình nhận tiền lãi hàng tỷ đồng (chim mồi)."
+    ],
+    "psychologicalTactics": [
+      "Kích thích lòng tham làm giàu nhanh chóng không cần lao động.",
+      "Tạo hiệu ứng FOMO (sợ bỏ lỡ cơ hội làm giàu) qua các hình ảnh khoe tiền của chuyên gia."
+    ],
+    "tactics": [
+      "Thao túng biểu đồ nến ngầm",
+      "Cam kết lợi nhuận siêu thực",
+      "Khóa cổng rút tiền bằng các loại phí ma"
+    ],
+    "whatScammersAskFor": [
+      "Nạp tiền mặt qua tài khoản ngân hàng hoặc chuyển tiền mã hóa USDT vào ví sàn."
+    ],
+    "howToVerify": [
+      "Việt Nam chưa cấp phép cho bất kỳ sàn giao dịch Forex hay tiền ảo nào hoạt động.",
+      "Mọi lời hứa \"đầu tư không rủi ro, lãi suất trên 20%/năm\" đều là lừa đảo mô hình Ponzi."
+    ],
+    "countermeasures": [
+      "Chỉ đầu tư qua các công ty chứng khoán, ngân hàng được Nhà nước cấp phép chính thức.",
+      "Không tin vào các \"chuyên gia đọc lệnh\", \"thầy kéo vốn\" trên mạng xã hội."
+    ],
+    "whatToDoIfTargeted": [
+      "Không nạp tiền, rời khỏi các hội nhóm đầu tư tài chính lạ."
+    ],
+    "whatToDoIfCompromised": [
+      "Tuyệt đối không nạp thêm các khoản phí \"thuế giải ngân\", làm đơn tố giác kèm nhật ký chuyển khoản gửi Cơ quan CSĐT."
+    ]
+  },
+  {
+    "id": "kid-model-online-contest-scam",
+    "title": "14. Tuyển Mẫu Nhí, Bình Chọn Cuộc Thi Online Đòi Tiền Đặt Cọc",
+    "category": "Tuyển dụng & Cuộc thi",
+    "shortDescription": "Mạo danh các thương hiệu thời trang trẻ em tuyển mẫu nhí hoặc bình chọn tài năng, dụ phụ huynh làm nhiệm vụ mua sắm nâng điểm tín nhiệm.",
+    "whatIsIt": "Hình thức lừa đảo nhắm vào tình yêu thương và sự tự hào của cha mẹ đối với con cái. Kẻ gian lập fanpage giả mạo hãng thời trang (Canifa, KidsPlaza...) thông báo tuyển mẫu nhí, sau đó bắt phụ huynh làm các bài khảo sát nạp tiền thanh toán để con được lọt vào vòng trong.",
+    "howItWorks": [
+      "Chạy quảng cáo tuyển mẫu ảnh nhí với cát-xê hàng triệu đồng mỗi buổi chụp, bao vé máy bay du lịch.",
+      "Phụ huynh đăng ký ảnh con, được thông báo con đã lọt vào \"Vòng xét duyệt cuối cùng\".",
+      "Yêu cầu phụ huynh tham gia nhóm thử thách để \"tăng điểm tín nhiệm thương hiệu\" bằng cách mua đơn hàng hoàn tiền.",
+      "Ban đầu hoàn tiền thật, sau đó đơn hàng lên tới 50-100 triệu thì chiếm đoạt toàn bộ."
+    ],
+    "warningSigns": [
+      "Tuyển mẫu nhí qua mạng xã hội không yêu cầu casting trực tiếp mà chỉ yêu cầu làm nhiệm vụ chuyển tiền.",
+      "Fanpage mới thành lập, tương tác ảo, không có dấu tích xanh chính chủ của thương hiệu.",
+      "Ép phụ huynh nạp tiền để con đạt giải thưởng hoặc được chọn làm đại sứ thương hiệu."
+    ],
+    "redFlags": [
+      "Các bài thi bình chọn yêu cầu nạp tiền để mua lượt vote hoặc nạp điểm thử thách."
+    ],
+    "psychologicalTactics": [
+      "Đánh vào tâm lý yêu thương con cái, mong muốn con tỏa sáng và nổi tiếng của phụ huynh.",
+      "Tạo sự cạnh tranh giữa các phụ huynh trong nhóm chat để thúc đẩy nạp tiền."
+    ],
+    "tactics": [
+      "Lợi dụng tình thương con cái",
+      "Giả danh thương hiệu thời trang",
+      "Biến tướng thành bẫy nạp tiền"
+    ],
+    "whatScammersAskFor": [
+      "Chuyển tiền mua sản phẩm thử thách, tiền cọc trang phục, phí bảo hiểm hình ảnh."
+    ],
+    "howToVerify": [
+      "Liên hệ trực tiếp hotline hoặc fanpage có tích xanh chính thức của thương hiệu để xác minh chương trình.",
+      "Các công ty người mẫu chân chính luôn casting trực tiếp và không bao giờ thu tiền làm nhiệm vụ của phụ huynh."
+    ],
+    "countermeasures": [
+      "Không tham gia các cuộc thi bình chọn online yêu cầu chuyển tiền hoặc đăng nhập tài khoản lạ."
+    ],
+    "whatToDoIfTargeted": [
+      "Từ chối tham gia, cảnh báo các phụ huynh khác trong các hội nhóm nuôi dạy con."
+    ],
+    "whatToDoIfCompromised": [
+      "Ngừng chuyển tiền ngay, thu thập chứng cứ chuyển khoản để nộp cơ quan công an."
+    ]
+  },
+  {
+    "id": "pig-butchering-romance-scam",
+    "title": "15. Lừa Đảo Tình Cảm \"Bẫy Mồi Heo\" (Pig Butchering) & Gửi Quà Ngoại Quốc",
+    "category": "Lừa đảo Tình cảm & Xuyên biên giới",
+    "shortDescription": "Đóng vai doanh nhân thành đạt/Việt kiều kết bạn làm quen, xây dựng quan hệ yêu đương rồi dụ đầu tư sàn ảo hoặc báo quà triệu USD bị hải quan giữ.",
+    "whatIsIt": "Thủ đoạn lừa đảo tinh vi kéo dài nhiều tháng. Kẻ gian xây dựng hình tượng giàu có, quan tâm chăm sóc nạn nhân qua mạng, tạo dựng tình cảm yêu đương sâu đậm, sau đó dụ nạn nhân cùng nạp tiền đầu tư hoặc đóng phí hải quan để nhận kiện hàng quà tặng đắt tiền.",
+    "howItWorks": [
+      "Kẻ gian dùng ảnh đại diện người mẫu, doanh nhân, bác sĩ quân y nước ngoài kết bạn làm quen qua Tinder, Facebook.",
+      "Nhắn tin trò chuyện mỗi ngày, quan tâm ân cần, hứa hẹn về tương lai hôn nhân hạnh phúc.",
+      "Kịch bản 1: Khoe mình có bí quyết đầu tư tài chính/tiền số, rủ nạn nhân cùng chơi để \"tích lũy tiền mua nhà chung\", ban đầu cho rút lãi rồi dụ nạp hàng tỷ đồng.",
+      "Kịch bản 2: Bảo đã gửi thùng quà chứa hàng triệu USD, vàng bạc về Việt Nam tặng, sau đó có đối tượng giả danh nhân viên hải quan sân bay gọi điện đòi nộp phí phạt, phí rửa tiền để nhận hàng."
+    ],
+    "warningSigns": [
+      "Người yêu qua mạng chưa từng gặp mặt trực tiếp ngoài đời hoặc luôn viện lý do từ chối gọi video rõ mặt.",
+      "Hình ảnh cuộc sống quá hoàn hảo, giàu sang bất thường nhưng lại chia sẻ các cơ hội đầu tư bí mật.",
+      "Có người tự xưng hải quan/sân bay yêu cầu chuyển tiền phạt vào tài khoản cá nhân để thông quan quà tặng."
+    ],
+    "redFlags": [
+      "Yêu cầu chuyển tiền vào các số tài khoản cá nhân tại Việt Nam để đóng thuế/phí hải quan quốc tế."
+    ],
+    "psychologicalTactics": [
+      "Nuôi dưỡng lòng tin và cảm xúc yêu thương mù quáng trong thời gian dài (vỗ béo con mồi).",
+      "Đánh vào sự cô đơn, khát khao tìm kiếm bạn đời của những người độc thân hoặc đổ vỡ tình cảm."
+    ],
+    "tactics": [
+      "Xây dựng hình tượng hoàn hảo",
+      "Chiến thuật mưa dầm thấm lâu",
+      "Kịch bản quà tặng hải quan"
+    ],
+    "whatScammersAskFor": [
+      "Chuyển tiền đầu tư vào sàn ảo theo hướng dẫn của \"người yêu\".",
+      "Chuyển tiền đóng phí hải quan, phí vận chuyển quốc tế, phí hối lộ nhân viên sân bay."
+    ],
+    "howToVerify": [
+      "Hải quan và cơ quan nhà nước không bao giờ làm việc qua điện thoại yêu cầu nộp tiền phạt vào tài khoản cá nhân.",
+      "Tìm kiếm ngược hình ảnh (Google Reverse Image Search) của người đó để phát hiện ảnh người nổi tiếng bị trộm."
+    ],
+    "countermeasures": [
+      "Tuyệt đối không gửi tiền, không đầu tư tài chính theo lời rủ rê của bất kỳ ai quen qua mạng xã hội.",
+      "Luôn cảnh giác với những mối quan hệ \"quá hoàn hảo\" trên không gian ảo."
+    ],
+    "whatToDoIfTargeted": [
+      "Cắt đứt liên lạc, chặn tài khoản ngay lập tức."
+    ],
+    "whatToDoIfCompromised": [
+      "Trình báo cơ quan công an kèm lịch sử trò chuyện và tài khoản ngân hàng thụ hưởng."
+    ]
+  },
+  {
+    "id": "fast-online-loan-insurance-fee",
+    "title": "16. Tư Vấn Vay Tiền Online Thủ Tục Siêu Tốc Ép Nộp Phí Bảo Hiểm Khoản Vay",
+    "category": "Tín dụng & Vay tiền ảo",
+    "shortDescription": "Mồi nhử duyệt vay 50-200 triệu không cần thế chấp, sau đó báo lỗi số tài khoản và ép nộp phí bảo hiểm khoản vay 10-20% mới được giải ngân.",
+    "whatIsIt": "Kẻ lừa đảo lập các trang web/ứng dụng cho vay tiền online giả mạo với điều kiện cực kỳ dễ dàng (chỉ cần CCCD, duyệt tiền trong 5 phút). Khi hồ sơ được duyệt, kẻ gian cố tình chỉnh sửa sai 1 chữ số trong số tài khoản ngân hàng của nạn nhân rồi bắt nộp tiền \"sửa hồ sơ\" và \"phí bảo hiểm\".",
+    "howItWorks": [
+      "Nạn nhân cần tiền gấp đăng ký vay 50 triệu trên web/app vay tiền qua mạng.",
+      "Hệ thống hiện thông báo \"Khoản vay 50.000.000đ đã được duyệt thành công vào ví ảo\".",
+      "Khi bấm rút tiền, hệ thống báo lỗi: \"Sai số tài khoản ngân hàng, tài khoản bị đóng băng an ninh\".",
+      "Nhân viên hỗ trợ gọi điện bảo nạn nhân phải chuyển 10 triệu (20% khoản vay) để xác minh chính chủ và mở khóa, hứa sẽ hoàn trả kèm tiền vay.",
+      "Nộp xong 10 triệu, kẻ gian tiếp tục bịa ra các lỗi: Phí bảo hiểm rủi ro, Phí nâng điểm tín dụng... bòn rút đến khi nạn nhân kiệt quệ."
+    ],
+    "warningSigns": [
+      "Cho vay số tiền lớn với lãi suất siêu rẻ, thủ tục quá đơn giản không cần chứng minh thu nhập.",
+      "Bắt người đi vay phải chuyển tiền phí trước (phí hồ sơ, phí bảo hiểm, phí giải ngân).",
+      "Cố tình báo lỗi sai thông tin tài khoản để đòi tiền mở khóa."
+    ],
+    "redFlags": [
+      "Công ty tài chính bắt nộp tiền vào số tài khoản cá nhân của nhân viên thẩm định."
+    ],
+    "psychologicalTactics": [
+      "Lợi dụng thế yếu và sự túng quẫn tài chính của người đang cần tiền gấp.",
+      "Tâm lý tiếc khoản vay đã được duyệt khiến nạn nhân đi vay mượn thêm để nộp phí."
+    ],
+    "tactics": [
+      "Cố tình tạo lỗi sai số tài khoản",
+      "Bẫy phí trước giải ngân",
+      "Đe dọa khởi kiện hợp đồng"
+    ],
+    "whatScammersAskFor": [
+      "Chuyển khoản nộp phí thẩm định, phí bảo hiểm khoản vay từ 10% đến 50% giá trị hợp đồng vay."
+    ],
+    "howToVerify": [
+      "Các ngân hàng và công ty tài chính hợp pháp KHÔNG BAO GIỜ yêu cầu khách hàng nộp tiền trước để được giải ngân khoản vay.",
+      "Mọi khoản phí hợp pháp đều được trừ trực tiếp vào số tiền giải ngân thực nhận."
+    ],
+    "countermeasures": [
+      "Chỉ vay vốn tại các ngân hàng thương mại hoặc công ty tài chính được Ngân hàng Nhà nước cấp phép.",
+      "Không tin các ứng dụng vay tiền trôi nổi trên mạng xã hội."
+    ],
+    "whatToDoIfTargeted": [
+      "Hủy bỏ giao dịch, không nộp bất kỳ một khoản tiền phí nào."
+    ],
+    "whatToDoIfCompromised": [
+      "Dừng nộp tiền ngay, không sợ lời đe dọa \"khởi kiện vì hủy hợp đồng\" của kẻ gian vì hợp đồng vay ảo không có giá trị pháp lý."
+    ]
+  },
+  {
+    "id": "traffic-fine-cold-penalty-scam",
+    "title": "17. Cảnh Báo Phạt Nguội Vi Phạm Giao Thông Qua Điện Thoại Ép Chuyển Tiền",
+    "category": "Giả danh Cơ quan chức năng",
+    "shortDescription": "Cuộc gọi tự xưng Cảnh sát giao thông thông báo xe ô tô/xe máy của bạn có biên bản phạt nguội 15-30 triệu, dọa tước bằng lái nếu không chuyển nộp phạt ngay.",
+    "whatIsIt": "Kẻ lừa đảo đóng giả cán bộ Đội Cảnh sát giao thông hoặc Cục Cảnh sát giao thông, thông báo phương tiện của nạn nhân bị camera ghi lại vi phạm gây tai nạn rồi bỏ trốn hoặc vượt đèn đỏ tại địa phương khác, yêu cầu chuyển tiền phạt vào tài khoản cá nhân để xử lý nhanh.",
+    "howItWorks": [
+      "Gọi điện thoại xưng là Cán bộ CSGT thông báo xe biển số ... vi phạm lỗi nghiêm trọng.",
+      "Hỏi nạn nhân có muốn \"nộp phạt online xử lý tại chỗ\" để không bị gửi giấy báo về cơ quan và giữ bằng lái không.",
+      "Gửi số tài khoản cá nhân bảo đây là tài khoản của kho bạc/cán bộ thụ lý hồ sơ.",
+      "Sau khi nhận tiền xong, kẻ gian lập tức cắt đứt mọi liên lạc."
+    ],
+    "warningSigns": [
+      "CSGT thông báo vi phạm phạt nguội qua điện thoại (Quy định: CSGT chỉ gửi thông báo bằng văn bản giấy có dấu đỏ về địa chỉ chủ xe).",
+      "Yêu cầu nộp tiền phạt giao thông qua số tài khoản ngân hàng cá nhân.",
+      "Hối thúc chuyển tiền ngay trong ngày kẻo bị niêm phong phương tiện."
+    ],
+    "redFlags": [
+      "Đọc sai thông tin loại xe hoặc vi phạm tại địa phương mà nạn nhân chưa từng lái xe đến."
+    ],
+    "psychologicalTactics": [
+      "Đánh vào tâm lý sợ phiền phức, sợ bị giữ bằng lái hoặc bị phạt nặng hơn.",
+      "Lợi dụng tâm lý muốn \"nộp phạt nhanh gọn\" của người dân."
+    ],
+    "tactics": [
+      "Mạo danh CSGT",
+      "Đe dọa tước bằng lái xe",
+      "Lừa chuyển tiền nộp phạt vào tài khoản cá nhân"
+    ],
+    "whatScammersAskFor": [
+      "Chuyển tiền nộp phạt vi phạm giao thông từ 3 triệu đến 25 triệu đồng."
+    ],
+    "howToVerify": [
+      "Tra cứu phạt nguội chính xác 100% trên Cổng thông tin Cục Cảnh sát Giao thông (`csgt.vn`) hoặc Cổng Dịch vụ công Quốc gia.",
+      "Cơ quan CSGT KHÔNG BAO GIỜ gọi điện thoại đòi tiền phạt trực tiếp."
+    ],
+    "countermeasures": [
+      "Nộp phạt giao thông chỉ thực hiện tại Kho bạc Nhà nước hoặc qua Cổng Dịch vụ công Quốc gia."
+    ],
+    "whatToDoIfTargeted": [
+      "Dập máy ngay, tự vào trang web `csgt.vn` nhập biển số xe để kiểm tra."
+    ],
+    "whatToDoIfCompromised": [
+      "Báo cáo cho cơ quan công an địa phương kèm thông tin số điện thoại và số tài khoản kẻ lừa đảo."
+    ]
+  },
+  {
+    "id": "evn-electricity-cut-threat-scam",
+    "title": "18. Giả Danh Điện Lực EVN Đe Dọa Cắt Điện Sinh Hoạt Ép Thanh Toán Gấp",
+    "category": "Giả danh Doanh nghiệp Dịch vụ",
+    "shortDescription": "Mạo danh Tổng công ty Điện lực gọi điện dọa gia đình nợ cước 2-5 triệu và sẽ ngắt điện sinh hoạt sau 2 giờ nếu không chuyển khoản thanh toán gấp.",
+    "whatIsIt": "Kẻ lừa đảo đóng giả nhân viên thu cước của Tập đoàn Điện lực Việt Nam (EVN), gọi điện thoại vào các khung giờ cao điểm hoặc thời tiết nắng nóng, dọa cắt điện nhà ở/cơ sở kinh doanh nếu không chuyển khoản thanh toán tiền điện nợ đọng.",
+    "howItWorks": [
+      "Gọi điện tự xưng cán bộ Điện lực thông báo hợp đồng điện sinh hoạt còn nợ tiền điện 2 tháng.",
+      "Đe dọa trong vòng 2 giờ tới nhân viên kỹ thuật sẽ đến ngắt cầu dao cắt điện toàn bộ tòa nhà.",
+      "Cung cấp số tài khoản cá nhân tự xưng là \"Tài khoản cán bộ thu cước tại địa bàn\" để chuyển tiền khẩn cấp."
+    ],
+    "warningSigns": [
+      "EVN không bao giờ cử nhân viên dùng tài khoản cá nhân để thu tiền cước qua điện thoại.",
+      "Đe dọa cắt điện gấp trong vòng 2 giờ (Theo luật: EVN phải gửi thông báo bằng văn bản trước ít nhất 15 ngày).",
+      "Yêu cầu bấm phím 1 để gặp tổng đài viên thu cước."
+    ],
+    "redFlags": [
+      "Người gọi không đọc được chính xác Mã khách hàng (Mã PE...) in trên hóa đơn điện của gia đình bạn."
+    ],
+    "psychologicalTactics": [
+      "Lợi dụng nhu cầu sử dụng điện thiết yếu của gia đình và cơ sở kinh doanh để gây hoảng sợ."
+    ],
+    "tactics": [
+      "Gây áp lực ngắt dịch vụ thiết yếu",
+      "Mạo danh nhân viên EVN",
+      "Thu tiền qua tài khoản cá nhân"
+    ],
+    "whatScammersAskFor": [
+      "Chuyển tiền đóng cước điện từ 1 triệu đến 10 triệu đồng vào tài khoản cá nhân."
+    ],
+    "howToVerify": [
+      "Mở ứng dụng EVN CSKH hoặc ứng dụng ngân hàng, nhập Mã khách hàng (PE...) để tra cứu số dư thực tế.",
+      "Gọi tổng đài chăm sóc khách hàng chính thức của EVN: Miền Bắc (19006769), Miền Nam (19001006 / 19009000), Miền Trung (19001909), TP.HCM (1900545454)."
+    ],
+    "countermeasures": [
+      "Chỉ thanh toán tiền điện qua app ngân hàng, ví điện tử chính thức hoặc cổng Dịch vụ công EVN."
+    ],
+    "whatToDoIfTargeted": [
+      "Dập máy, kiểm tra trên app ngân hàng hoặc app EVN chính thức."
+    ],
+    "whatToDoIfCompromised": [
+      "Báo ngân hàng phong tỏa và trình báo công an phường nơi cư trú."
+    ]
+  },
+  {
+    "id": "lottery-prize-tax-scam",
+    "title": "19. Thông Báo Trúng Thưởng Xe Máy, Tiền Mặt Lớn Yêu Cầu Nộp Phí Trước Bạ",
+    "category": "Trúng thưởng & Quà tặng",
+    "shortDescription": "Gửi tin nhắn hoặc gọi điện chúc mừng trúng xe máy SH, sổ tiết kiệm 500 triệu từ sự kiện tri ân, sau đó ép nộp 10% thuế trước bạ và phí vận chuyển.",
+    "whatIsIt": "Kịch bản lừa đảo trúng thưởng cổ điển nhưng liên tục biến tướng. Nạn nhân nhận được thông báo trúng giải đặc biệt trong chương trình quay số may mắn, nhưng muốn nhận quà thì phải chuyển trước tiền thuế thu nhập cá nhân hoặc phí đặt cọc giao xe.",
+    "howItWorks": [
+      "Gửi tin nhắn Messenger hoặc gọi điện chúc mừng bạn là khách hàng may mắn trúng xe máy SH trị giá 100 triệu hoặc 500 triệu tiền mặt.",
+      "Gửi đường link trang web có vòng quay may mắn và giấy chứng nhận trúng thưởng có dấu đỏ giả mạo.",
+      "Yêu cầu nạn nhân nộp 10% thuế trước bạ (10 triệu đồng) vào tài khoản chỉ định để làm thủ tục nhận giải.",
+      "Nộp xong 10 triệu, tiếp tục đòi phí vận chuyển xe, phí bảo hiểm quà tặng... rồi chặn liên lạc."
+    ],
+    "warningSigns": [
+      "Trúng thưởng trong một chương trình mà bạn chưa từng đăng ký hay mua vé tham gia.",
+      "Bắt buộc người trúng giải phải chuyển tiền nộp phí trước qua tài khoản cá nhân.",
+      "Trang web thông báo trúng thưởng có giao diện sơ sài, tên miền miễn phí."
+    ],
+    "redFlags": [
+      "Yêu cầu mua thẻ cào điện thoại gửi mã PIN để thanh toán phí nhận thưởng."
+    ],
+    "psychologicalTactics": [
+      "Đánh vào lòng tham và niềm vui bất ngờ khi nhận được tài sản giá trị lớn.",
+      "Tạo áp lực quà tặng sẽ bị hủy nếu không đóng phí trong vòng 24 giờ."
+    ],
+    "tactics": [
+      "Bẫy trúng thưởng ảo",
+      "Đòi phí trước bạ trước",
+      "Giả mạo giấy chứng nhận có dấu đỏ"
+    ],
+    "whatScammersAskFor": [
+      "Chuyển tiền thuế thu nhập cá nhân 10%, phí hồ sơ, phí vận chuyển xe máy.",
+      "Gửi mã thẻ cào điện thoại."
+    ],
+    "howToVerify": [
+      "Các chương trình khuyến mãi trúng thưởng hợp pháp đều phải đăng ký với Sở Công Thương và thuế được trừ thẳng vào giá trị giải thưởng.",
+      "Không có đơn vị uy tín nào bắt người trúng thưởng phải chuyển tiền nộp phí trước."
+    ],
+    "countermeasures": [
+      "Bỏ qua mọi thông báo trúng thưởng từ các nguồn không rõ ràng."
+    ],
+    "whatToDoIfTargeted": [
+      "Xóa tin nhắn, chặn số và không phản hồi."
+    ],
+    "whatToDoIfCompromised": [
+      "Lưu lại bằng chứng tin nhắn và số tài khoản để trình báo cơ quan điều tra."
+    ]
+  },
+  {
+    "id": "fake-parcel-cod-shipping-scam",
+    "title": "20. Lừa Đảo Gửi Bưu Phẩm Quà Tặng Thu Phí Ship COD Giá Trị Cao",
+    "category": "Giao hàng & COD Phishing",
+    "shortDescription": "Lấy trộm thông tin mua hàng trên livestream, gửi gói hàng rác (vỏ hộp, giẻ lau) cho nạn nhân và thu hộ COD từ vài trăm nghìn đến tiền triệu.",
+    "whatIsIt": "Tội phạm quét thông tin khách hàng bình luận số điện thoại, địa chỉ trên các phiên livestream bán hàng, sau đó gửi bưu phẩm rác bằng hình thức thu hộ COD với số tiền 200k - 500k đúng thời điểm nạn nhân vắng nhà để nhờ người thân nhận hộ.",
+    "howItWorks": [
+      "Kẻ gian thu thập thông tin đơn hàng thật của nạn nhân trên mạng xã hội.",
+      "Tạo đơn hàng giả qua các công ty chuyển phát nhanh (GHTK, GHN, Viettel Post, J&T).",
+      "Shipper giao hàng tới nhà khi nạn nhân vắng nhà, gọi điện cho người nhà hoặc bảo nạn nhân chuyển khoản trước để shipper gửi bảo vệ.",
+      "Mở hộp ra chỉ có giấy vụn, khẩu trang cũ hoặc hàng giả vô giá trị."
+    ],
+    "warningSigns": [
+      "Giao kiện hàng mà bạn không hề đặt mua hoặc không nhớ đã mua món gì.",
+      "Shipper giục chuyển khoản thanh toán gấp để chạy đơn tiếp.",
+      "Người bán từ chối cho đồng kiểm (xem hàng trước khi nhận)."
+    ],
+    "redFlags": [
+      "Thông tin người gửi trên bưu phẩm không rõ ràng hoặc để tên shop mập mờ."
+    ],
+    "psychologicalTactics": [
+      "Lợi dụng thói quen mua sắm online nhiều của người dân khiến họ không nhớ hết các đơn hàng.",
+      "Lợi dụng sự tin tưởng của người thân nhận hộ ở nhà."
+    ],
+    "tactics": [
+      "Quét trộm dữ liệu Livestream",
+      "Giao hàng rác thu COD",
+      "Lợi dụng người thân nhận hộ"
+    ],
+    "whatScammersAskFor": [
+      "Tiền mặt thu hộ COD từ 100.000đ đến vài triệu đồng."
+    ],
+    "howToVerify": [
+      "Kiểm tra mã vận đơn trên ứng dụng mua sắm chính thức (Shopee, Lazada, TikTok Shop).",
+      "Yêu cầu mở hộp đồng kiểm trước sự chứng kiến của nhân viên giao hàng."
+    ],
+    "countermeasures": [
+      "Dặn dò người nhà tuyệt đối không nhận và thanh toán bất kỳ đơn hàng nào nếu chưa có sự đồng ý của bạn.",
+      "Ẩn thông tin số điện thoại khi bình luận trên các phiên livestream bán hàng."
+    ],
+    "whatToDoIfTargeted": [
+      "Từ chối nhận hàng và yêu cầu hoàn trả người gửi."
+    ],
+    "whatToDoIfCompromised": [
+      "Báo cáo ngay với đơn vị vận chuyển để giữ lại tiền COD chưa quyết toán cho kẻ lừa đảo."
+    ]
+  },
+  {
+    "id": "quishing-qr-code-scam",
+    "title": "21. Dụ Dỗ Quét Mã QR Nhận Quà / Thanh Toán Dẫn Tới Link Giả Mạo (Quishing)",
+    "category": "Mã QR & Quishing",
+    "shortDescription": "Dán đè mã QR lừa đảo tại các cửa hàng, hoặc gửi mã QR \"nhận tiền hoàn cước\" chứa link độc chiếm đoạt tài khoản ngân hàng và Zalo.",
+    "whatIsIt": "Quishing (QR Phishing) là thủ đoạn lợi dụng sự tiện lợi của mã QR để che giấu đường link độc hại. Do mắt thường không thể đọc được nội dung mã QR, người dùng quét mã sẽ bị chuyển hướng đến website giả mạo hoặc kích hoạt tải mã độc.",
+    "howItWorks": [
+      "Kẻ gian dán đè mã QR nhận tiền của mình lên bảng mã QR thanh toán tại các quầy thu ngân quán ăn, cửa hàng.",
+      "Hoặc gửi mã QR qua tin nhắn bảo: \"Quét mã này để nhận tiền thưởng 500k tri ân khách hàng\".",
+      "Khi quét mã bằng camera điện thoại hoặc Zalo, trang web mở ra yêu cầu đăng nhập tài khoản ngân hàng hoặc cấp quyền truy cập Zalo."
+    ],
+    "warningSigns": [
+      "Mã QR tại quầy thanh toán có dấu hiệu bị dán đè, méo mó hoặc lệch góc.",
+      "Quét mã QR xong xuất hiện đường link trang web có đuôi lạ yêu cầu nhập mật khẩu.",
+      "Yêu cầu quét mã QR để \"nhận tiền về tài khoản\" (Nhận tiền chỉ cần cung cấp số tài khoản, không bao giờ phải quét mã)."
+    ],
+    "redFlags": [
+      "Mã QR yêu cầu cấp quyền đăng nhập Zalo/Telegram trên máy tính lạ."
+    ],
+    "psychologicalTactics": [
+      "Lợi dụng sự tiện lợi và thói quen quét mã QR nhanh chóng của người dùng hiện đại.",
+      "Tính chất ẩn danh của mã QR (không nhìn thấy URL trực tiếp trước khi quét)."
+    ],
+    "tactics": [
+      "Dán đè mã QR tại điểm bán vật lý",
+      "Gửi mã QR chiếm quyền Zalo",
+      "Trang web Phishing giấu sau QR"
+    ],
+    "whatScammersAskFor": [
+      "Chuyển tiền mua hàng vào tài khoản kẻ gian thay vì chủ quán.",
+      "Xác thực đăng nhập tài khoản Zalo/Ngân hàng."
+    ],
+    "howToVerify": [
+      "Khi quét mã thanh toán, luôn kiểm tra tên chủ tài khoản thụ hưởng hiển thị trên app xem có đúng tên chủ cửa hàng không.",
+      "Nhìn kỹ xem mã QR có bị dán đè lớp giấy mới lên trên không."
+    ],
+    "countermeasures": [
+      "Kiểm tra kỹ URL trước khi bấm \"Mở liên kết\" sau khi quét mã QR.",
+      "Tuyệt đối không quét mã QR lạ để đăng nhập tài khoản trên các thiết bị không phải của mình."
+    ],
+    "whatToDoIfTargeted": [
+      "Tắt trang web ngay, không bấm đồng ý cấp quyền.",
+      "Báo cho chủ quán nếu phát hiện bảng mã QR bị dán đè."
+    ],
+    "whatToDoIfCompromised": [
+      "Mở Zalo/Ngân hàng vào phần Quản lý thiết bị đăng nhập, lập tức bấm \"Đăng xuất khỏi tất cả các thiết bị khác\"."
+    ]
+  },
+  {
+    "id": "sim-swap-4g-5g-upgrade-scam",
+    "title": "22. Lừa Nâng Cấp SIM 4G/5G Từ Xa Chiếm Đoạt Quyền Sử Dụng SIM (SIM Swap)",
+    "category": "SMS & Viễn thông",
+    "shortDescription": "Tự xưng nhân viên nhà mạng hỗ trợ đổi SIM 4G lên 5G miễn phí không cần ra quầy, lừa nạn nhân nhắn tin theo cú pháp để cướp quyền SIM.",
+    "whatIsIt": "Tấn công hoán đổi SIM (SIM Swap Fraud). Kẻ gian dụ dỗ nạn nhân nhắn tin cú pháp đổi phôi SIM trắng của nhà mạng, từ đó kích hoạt SIM của kẻ gian và vô hiệu hóa SIM của nạn nhân để nhận mã OTP ngân hàng.",
+    "howItWorks": [
+      "Kẻ gian gọi điện mạo danh nhân viên Viettel, MobiFone, VinaPhone thông báo SIM bạn đang dùng sắp bị cắt do chưa nâng cấp lên 4G/5G.",
+      "Hướng dẫn cú pháp nhắn tin: Soạn `SIM... [Dãy số serial phôi SIM của kẻ gian]` gửi `901` hoặc `1414`.",
+      "Ngay sau khi gửi tin nhắn, SIM trên điện thoại nạn nhân bị mất sóng hoàn toàn (No Service).",
+      "Kẻ gian lắp SIM mới vào máy của chúng, nhận mã OTP ngân hàng và đổi mật khẩu, rút sạch tiền."
+    ],
+    "warningSigns": [
+      "Nhân viên nhà mạng yêu cầu nhắn tin cú pháp lạ có chứa dãy số dài gửi tổng đài.",
+      "Điện thoại đột ngột bị mất sóng hoàn toàn, không thể gọi hay nhận tin nhắn trong khi xung quanh vẫn có sóng.",
+      "Yêu cầu nâng cấp SIM mà không cần đến cửa hàng giao dịch trực tiếp."
+    ],
+    "redFlags": [
+      "Tin nhắn phản hồi của nhà mạng có nội dung: \"Quý khách đang yêu cầu đổi SIM mới...\"."
+    ],
+    "psychologicalTactics": [
+      "Tạo sự thuận tiện (đổi SIM miễn phí tại nhà không cần đi lại) để thu hút người dùng.",
+      "Đe dọa sẽ bị khóa SIM nếu không nâng cấp lên 5G kịp thời."
+    ],
+    "tactics": [
+      "Lừa gửi cú pháp đổi phôi SIM",
+      "Cướp quyền nhận mã OTP SMS",
+      "Rút tiền tài khoản ngân hàng"
+    ],
+    "whatScammersAskFor": [
+      "Nhắn tin cú pháp đổi số serial phôi SIM trắng gửi tổng đài nhà mạng."
+    ],
+    "howToVerify": [
+      "Nhà mạng KHÔNG BAO GIỜ hỗ trợ đổi SIM từ xa qua tin nhắn điện thoại.",
+      "Việc đổi SIM 4G/5G bắt buộc phải thực hiện trực tiếp tại cửa hàng giao dịch chính thức của nhà mạng có xuất trình CCCD chính chủ."
+    ],
+    "countermeasures": [
+      "Không soạn tin nhắn theo bất kỳ cú pháp nào do người lạ hướng dẫn qua điện thoại.",
+      "Nếu thấy SIM đột ngột mất sóng bất thường, phải mượn máy khác gọi ngay tổng đài nhà mạng để kiểm tra trạng thái SIM."
+    ],
+    "whatToDoIfTargeted": [
+      "Từ chối và dập máy ngay."
+    ],
+    "whatToDoIfCompromised": [
+      "Dùng máy khác gọi tổng đài nhà mạng KHÓA SIM KHẨN CẤP ngay lập tức.",
+      "Gọi tổng đài các ngân hàng bạn đang dùng để KHÓA TÀI KHOẢN TRƯỚC KHI kẻ gian kịp nhận OTP."
+    ]
+  },
+  {
+    "id": "bribe-visa-job-broker-scam",
+    "title": "23. Lừa Đảo \"Chạy Án\", Xin Việc Làm, Làm Visa Xuất Khẩu Lao Động Ảo",
+    "category": "Môi giới & Dịch vụ ảo",
+    "shortDescription": "Tự nhận có \"quan hệ rộng\" chạy trắng án, xin việc vào cơ quan nhà nước hoặc làm visa đi Hàn/Nhật bao đỗ 100%, nhận tiền cọc rồi biến mất.",
+    "whatIsIt": "Kẻ lừa đảo khoe khoang có mối quan hệ thân thiết với lãnh đạo cấp cao, cam kết lo lót giảm án tù, xin biên chế công chức hoặc làm hồ sơ visa lao động nước ngoài với tỷ lệ đỗ 100%, yêu cầu nộp hàng chục đến hàng trăm triệu tiền \"lo lót\".",
+    "howItWorks": [
+      "Tiếp cận gia đình có người thân đang bị tạm giam hoặc người đang cần xin việc, đi xuất khẩu lao động.",
+      "Chụp ảnh cùng người nổi tiếng, mặc vest sang trọng, khoe giấy tờ giả mạo để tạo lòng tin.",
+      "Ký hợp đồng \"tư vấn dịch vụ\" bằng giấy viết tay hoặc cam kết miệng.",
+      "Yêu cầu nộp tiền theo từng giai đoạn: Phí bôi trơn, phí nộp hồ sơ mật, phí thẩm định...",
+      "Đến ngày hẹn thì tắt điện thoại, xóa tài khoản mạng xã hội và bỏ trốn."
+    ],
+    "warningSigns": [
+      "Cam kết \"chạy án\", \"xin việc biên chế\", \"visa bao đậu 100%\" trái quy định pháp luật.",
+      "Yêu cầu đưa tiền mặt hoặc chuyển khoản cá nhân không có hóa đơn chứng từ hợp lệ.",
+      "Yêu cầu giữ bí mật tuyệt đối không được hỏi thăm cơ quan chức năng."
+    ],
+    "redFlags": [
+      "Không có trụ sở công ty rõ ràng hoặc công ty không có giấy phép hoạt động dịch vụ việc làm/xuất khẩu lao động của Bộ LĐ-TB&XH."
+    ],
+    "psychologicalTactics": [
+      "Lợi dụng tâm lý nôn nóng, sự bế tắc và cả tin của người nhà nạn nhân.",
+      "Đánh vào sự e ngại pháp luật của nạn nhân (nạn nhân ngại báo công an vì bản thân cũng tham gia hành vi \"chạy chọt\")."
+    ],
+    "tactics": [
+      "Khoe khoang quan hệ ảo",
+      "Cam kết bao đậu 100%",
+      "Nhận tiền cọc nhiều đợt"
+    ],
+    "whatScammersAskFor": [
+      "Tiền mặt hoặc chuyển khoản tiền cọc từ 50 triệu đến hàng tỷ đồng."
+    ],
+    "howToVerify": [
+      "Pháp luật Việt Nam nghiêm cấm mọi hành vi đưa hối lộ, chạy án, xin việc chạy chọt (đây là hành vi vi phạm hình sự).",
+      "Tra cứu danh sách doanh nghiệp xuất khẩu lao động được cấp phép tại Cổng thông tin Cục Quản lý lao động ngoài nước (`dolab.gov.vn`)."
+    ],
+    "countermeasures": [
+      "Tuyệt đối không tin các dịch vụ \"chạy án\" hay \"xin việc cửa sau\".",
+      "Làm thủ tục xin visa, du học, xuất khẩu lao động qua các trung tâm uy tín được cấp phép."
+    ],
+    "whatToDoIfTargeted": [
+      "Từ chối giao dịch và tố giác đối tượng tới cơ quan công an."
+    ],
+    "whatToDoIfCompromised": [
+      "Tập hợp toàn bộ giấy tờ cam kết, ghi âm cuộc gọi, sao kê chuyển khoản nộp đơn tố cáo tại Cơ quan Cảnh sát điều tra."
+    ]
+  },
+  {
+    "id": "recovery-scam-fake-lawyer",
+    "title": "24. Dịch Vụ Hỗ Trợ \"Lấy Lại Tiền Bị Lừa Đảo\" (Treo Đầu Dê Bán Thịt Chó)",
+    "category": "Lừa đảo Kép & Thu hồi vốn ảo",
+    "shortDescription": "Mạo danh Văn phòng Luật sư, Cục An ninh mạng cam kết lấy lại 100% tiền đã bị lừa đảo trên sàn mạng, bắt nạn nhân nộp phí ủy thác để lừa lần 2.",
+    "whatIsIt": "Lừa đảo kép (Recovery Scam). Tội phạm nhắm vào những người vừa bị lừa đảo mất tiền, đóng giả làm Luật sư uy tín hoặc Cán bộ Cục An ninh mạng & Phòng chống tội phạm công nghệ cao (A05), cam kết can thiệp kỹ thuật kéo lại tiền về ví rồi bắt nộp \"phí phần mềm\", \"phí thuế\".",
+    "howItWorks": [
+      "Lập các Fanpage Facebook có tên: \"Cục An Ninh Mạng Hỗ Trợ Thu Hồi Vốn Treo\", \"Văn Phòng Luật Sư Tranh Tụng\"... chạy quảng cáo rầm rộ.",
+      "Nạn nhân gửi thông tin vụ việc và số tiền đã mất.",
+      "Kẻ gian dùng tài khoản ảo gửi ảnh chụp màn hình giả mạo: \"Đã phong tỏa thành công số tiền 200 triệu của bạn trên cổng thanh toán quốc tế\".",
+      "Yêu cầu nạn nhân chuyển 10-20% phí mở cổng giải ngân (VD: 20 triệu) để rút tiền về.",
+      "Nhận xong 20 triệu, kẻ gian tiếp tục vòi thêm tiền rồi chặn liên lạc (nạn nhân bị lừa 2 lần liên tiếp)."
+    ],
+    "warningSigns": [
+      "Quảng cáo dịch vụ \"thu hồi tiền lừa đảo\", \"hack tài khoản sàn ảo lấy lại tiền\" trên Facebook/TikTok.",
+      "Yêu cầu nộp tiền phí ủy thác, phí phần mềm kéo tiền trước.",
+      "Cơ quan công an không bao giờ thu tiền phí hỗ trợ người dân lấy lại tài sản bị chiếm đoạt."
+    ],
+    "redFlags": [
+      "Sử dụng tài khoản ngân hàng cá nhân để nhận tiền phí \"thu hồi tài sản\"."
+    ],
+    "psychologicalTactics": [
+      "Đánh vào tâm lý tuyệt vọng và khát khao lấy lại số tiền đã mất của nạn nhân.",
+      "Mượn danh cơ quan pháp luật và an ninh mạng để tạo vỏ bọc tin cậy."
+    ],
+    "tactics": [
+      "Lừa đảo lần 2 (Recovery Scam)",
+      "Giả mạo Cục An ninh mạng A05",
+      "Tạo bằng chứng phong tỏa tiền ảo"
+    ],
+    "whatScammersAskFor": [
+      "Chuyển tiền phí dịch vụ luật sư, phí giải ngân tài sản thu hồi từ 5 triệu đến 50 triệu đồng."
+    ],
+    "howToVerify": [
+      "Bộ Công an và Cục An ninh mạng A05 KHÔNG BAO GIỜ lập trang web hay Fanpage thu hồi tiền lừa đảo cho người dân.",
+      "Không có công nghệ hay luật sư nào có thể \"hack hệ thống sàn ảo để rút tiền về tự động\"."
+    ],
+    "countermeasures": [
+      "Khi bị lừa đảo, nơi duy nhất tiếp nhận và xử lý là Cơ quan Công an cấp Quận/Huyện/Tỉnh, hoàn toàn miễn phí.",
+      "Tuyệt đối không tìm kiếm các dịch vụ lấy lại tiền trên mạng xã hội."
+    ],
+    "whatToDoIfTargeted": [
+      "Không liên hệ, báo cáo Fanpage giả mạo cho Facebook."
+    ],
+    "whatToDoIfCompromised": [
+      "Dừng nộp tiền ngay, đến trực tiếp trụ sở Cơ quan Cảnh sát điều tra Công an địa phương để làm đơn tố cáo."
+    ]
+  },
+  {
+    "id": "telegram-qr-code-takeover",
+    "title": "25. Chiếm Đoạt Tài Khoản Telegram Bằng Mã Xác Thực Đăng Nhập Máy Tính",
+    "category": "Mạng xã hội & Chiếm đoạt tài khoản",
+    "shortDescription": "Gửi link \"bình chọn\", \"nhận tài liệu\" bắt quét mã QR Telegram hoặc gửi mã OTP đăng nhập, sau đó chiếm tài khoản và tống tiền danh bạ.",
+    "whatIsIt": "Kẻ tấn công tạo trang web giả mạo yêu cầu quét mã QR để xác thực xem tài liệu hoặc bình chọn. Mã QR thực chất là mã đăng nhập Telegram Web trên máy tính của kẻ tấn công, giúp chúng chiếm quyền điều khiển tài khoản Telegram của nạn nhân ngay lập tức.",
+    "howItWorks": [
+      "Kẻ gian gửi tin nhắn qua Telegram: \"Xem hình ảnh vụ tai nạn hôm qua tại link này\" hoặc \"Xác minh tài khoản Telegram để không bị xóa\".",
+      "Đường link hiện mã QR bảo: \"Mở app Telegram quét mã này để xác minh\".",
+      "Khi quét mã, thực chất nạn nhân đã cho phép thiết bị của kẻ gian đăng nhập vào tài khoản Telegram của mình.",
+      "Kẻ gian ngay lập tức bật mật khẩu 2 lớp (Two-Step Verification) mới, đá phiên đăng nhập của nạn nhân ra khỏi điện thoại.",
+      "Dùng tài khoản Telegram vừa chiếm để nhắn tin vay tiền toàn bộ các nhóm chat tiền ảo, đối tác kinh doanh."
+    ],
+    "warningSigns": [
+      "Yêu cầu quét mã QR bằng ứng dụng Telegram để \"xem tài liệu\" hoặc \"nhận quà\".",
+      "Nhận được tin nhắn từ Telegram chính thức gửi mã xác nhận đăng nhập mới từ địa chỉ IP lạ.",
+      "Các thông báo bảo mật gửi về điện thoại bằng tiếng Anh hoặc từ vị trí địa lý xa lạ."
+    ],
+    "redFlags": [
+      "App Telegram trên điện thoại đột ngột nhận được thông báo \"Đăng nhập mới từ trình duyệt Linux/Windows...\"."
+    ],
+    "psychologicalTactics": [
+      "Lợi dụng sự tò mò và thói quen quét mã QR không đọc kỹ cảnh báo trên màn hình ứng dụng."
+    ],
+    "tactics": [
+      "Quét mã QR chiếm phiên Telegram Web",
+      "Khóa tài khoản bằng mật khẩu 2 lớp mới",
+      "Tống tiền danh bạ nhóm chat"
+    ],
+    "whatScammersAskFor": [
+      "Quét mã QR đăng nhập Telegram.",
+      "Gửi mã OTP 5 chữ số đăng nhập Telegram gửi về tin nhắn."
+    ],
+    "howToVerify": [
+      "Khi quét mã QR trên Telegram, ứng dụng luôn hiển thị dòng chữ: \"Bạn đang đăng nhập Telegram trên thiết bị mới...\". Nếu không phải do bạn tự mở trên máy tính, tuyệt đối bấm HỦY."
+    ],
+    "countermeasures": [
+      "Bật tính năng Xác thực 2 bước (Two-Step Verification / Mật khẩu đám mây) trong Cài đặt bảo mật của Telegram.",
+      "Thường xuyên kiểm tra mục `Settings -> Devices` (Thiết bị) và xóa các thiết bị lạ."
+    ],
+    "whatToDoIfTargeted": [
+      "Hủy quét mã, đổi mật khẩu 2 bước ngay."
+    ],
+    "whatToDoIfCompromised": [
+      "Nếu vẫn còn phiên đăng nhập trên điện thoại: Vào `Settings -> Devices -> Terminate all other sessions` (Đăng xuất tất cả thiết bị khác) ngay lập tức.",
+      "Thông báo trong các nhóm chat cảnh báo tài khoản đã bị hack."
+    ]
+  },
+  {
+    "id": "charity-disaster-relief-scam",
+    "title": "26. Kêu Gọi Từ Thiện Cứu Trợ Thiên Tai Bằng Số Tài Khoản Cá Nhân Mạo Danh",
+    "category": "Lừa đảo Từ thiện & Đời sống",
+    "shortDescription": "Lợi dụng bão lũ, thiên tai, bệnh hiểm nghèo để lập Fanpage giả mạo Mặt trận Tổ quốc hoặc người nổi tiếng kêu gọi chuyển tiền từ thiện.",
+    "whatIsIt": "Kẻ lừa đảo lợi dụng lòng nhân ái của người dân trong các đợt bão lũ, thiên tai hoặc các hoàn cảnh thương tâm để lập các fanpage giả mạo Hội Chữ thập đỏ, Quỹ Cứu trợ Mặt trận Tổ quốc, sao chép hình ảnh đau thương rồi gắn số tài khoản ngân hàng cá nhân để trục lợi.",
+    "howItWorks": [
+      "Khi xảy ra thiên tai, bão lũ lớn, kẻ gian lập tức tạo hàng loạt fanpage có tên giống Ủy ban MTTQ Việt Nam, Hội Chữ Thập Đỏ...",
+      "Lấy cắp hình ảnh, bài viết cứu trợ thật của các đoàn tình nguyện, biên tập lại lời kêu gọi khẩn thiết.",
+      "Thay số tài khoản chính thống bằng số tài khoản cá nhân của kẻ lừa đảo (hoặc tài khoản có tên gần giống).",
+      "Chạy quảng cáo Facebook để tiếp cận hàng triệu người có lòng hảo tâm chuyển tiền ủng hộ."
+    ],
+    "warningSigns": [
+      "Trang kêu gọi từ thiện mới thành lập vài ngày, có lượng tương tác bất thường.",
+      "Số tài khoản nhận tiền là tài khoản cá nhân thay vì tài khoản minh bạch của các tổ chức từ thiện được nhà nước cấp phép.",
+      "Không có báo cáo sao kê minh bạch các đợt thu chi cứu trợ."
+    ],
+    "redFlags": [
+      "Fanpage giả mạo tên cơ quan nhà nước nhưng không có dấu tích xanh xác thực."
+    ],
+    "psychologicalTactics": [
+      "Đánh vào lòng trắc ẩn, sự đồng cảm và tinh thần tương thân tương ái của đồng bào.",
+      "Lợi dụng sự nóng lòng muốn giúp đỡ nạn nhân vùng lũ để người dân không kịp kiểm tra tài khoản."
+    ],
+    "tactics": [
+      "Lợi dụng bão lũ thiên tai",
+      "Sao chép hình ảnh thương tâm",
+      "Thay số tài khoản nhận tiền từ thiện"
+    ],
+    "whatScammersAskFor": [
+      "Chuyển tiền ủng hộ từ thiện từ vài trăm nghìn đến hàng triệu đồng vào số tài khoản cá nhân."
+    ],
+    "howToVerify": [
+      "Chỉ gửi tiền ủng hộ qua các số tài khoản chính thức của Ban Cứu trợ Trung ương - Ủy ban Trung ương Mặt trận Tổ quốc Việt Nam hoặc Hội Chữ thập đỏ Việt Nam.",
+      "Kiểm tra kỹ thông tin đơn vị tiếp nhận trên các kênh truyền thông chính thống của VTV, báo Nhân Dân."
+    ],
+    "countermeasures": [
+      "Không chuyển tiền từ thiện vào các số tài khoản cá nhân trôi nổi trên mạng xã hội."
+    ],
+    "whatToDoIfTargeted": [
+      "Báo cáo trang Fanpage giả mạo và cảnh báo cho bạn bè."
+    ],
+    "whatToDoIfCompromised": [
+      "Lưu vết chuyển tiền và gửi phản ánh tới cơ quan công an để triệt phá đường dây trục lợi từ thiện."
+    ]
+  },
+  {
+    "id": "hotel-tour-booking-deposit-scam",
+    "title": "27. Đặt Cọc Phòng Khách Sạn / Tour Du Lịch Giá Siêu Rẻ Dịp Lễ Rồi Bùng Cọc",
+    "category": "Du lịch & Dịch vụ ảo",
+    "shortDescription": "Lập Fanpage nhái khách sạn, resort 5 sao nổi tiếng, bán combo phòng giá rẻ hơn thị trường 50%, ép chuyển cọc 100% rồi chặn liên lạc.",
+    "whatIsIt": "Kẻ lừa đảo tạo fanpage mạo danh các khách sạn, khu nghỉ dưỡng (resort) nổi tiếng tại Đà Lạt, Phú Quốc, Nha Trang, Sa Pa... chạy quảng cáo combo du lịch giá siêu rẻ dịp lễ Tết, yêu cầu khách chuyển cọc 50-100% tiền phòng rồi chiếm đoạt.",
+    "howItWorks": [
+      "Tạo fanpage có tên và ảnh đại diện giống hệt resort 5 sao, sao chép toàn bộ bài đăng, video đánh giá.",
+      "Đăng bài thanh lý voucher phòng nghỉ, combo vé máy bay + khách sạn giảm giá 50% chỉ áp dụng trong ngày.",
+      "Khi khách nhắn tin hỏi, kẻ gian tư vấn nhiệt tình, gửi hợp đồng xác nhận đặt phòng có con dấu giả.",
+      "Yêu cầu khách chuyển tiền cọc hoặc thanh toán 100% tiền phòng vào tài khoản cá nhân để \"giữ phòng giờ chót\".",
+      "Sau khi khách chuyển tiền xong, đối tượng chặn Facebook, Zalo, điện thoại."
+    ],
+    "warningSigns": [
+      "Giá phòng hoặc tour rẻ bất thường so với mặt bằng chung các trang đặt phòng uy tín (Agoda, Booking.com).",
+      "Fanpage mới lập, có nhiều lượt thích ảo, phần đánh giá bị tắt.",
+      "Yêu cầu chuyển tiền cọc gấp vào số tài khoản cá nhân của người tự xưng là \"Quản lý kinh doanh\" thay vì tài khoản công ty khách sạn."
+    ],
+    "redFlags": [
+      "Thúc ép chuyển tiền ngay trong 15 phút với lý do \"chỉ còn 1 phòng duy nhất\"."
+    ],
+    "psychologicalTactics": [
+      "Tạo tâm lý săn deal hời giá rẻ và nỗi sợ hết phòng trong mùa du lịch cao điểm."
+    ],
+    "tactics": [
+      "Nhái Fanpage resort 5 sao",
+      "Tung deal giá siêu rẻ",
+      "Hối thúc chuyển cọc giữ chỗ"
+    ],
+    "whatScammersAskFor": [
+      "Chuyển khoản tiền cọc phòng từ 2 triệu đến hàng chục triệu đồng."
+    ],
+    "howToVerify": [
+      "Tra cứu số điện thoại hotline cố định của khách sạn trên Google Maps hoặc website chính thức để gọi xác nhận.",
+      "Đặt phòng qua các nền tảng OTA uy tín có bảo hiểm hủy phòng (Booking.com, Traveloka, Agoda)."
+    ],
+    "countermeasures": [
+      "Kiểm tra tính minh bạch của Fanpage (ngày đổi tên, vị trí người quản trị trang).",
+      "Chỉ chuyển khoản vào tài khoản công ty có tên doanh nghiệp chủ quản khách sạn."
+    ],
+    "whatToDoIfTargeted": [
+      "Không chuyển tiền cọc, gọi trực tiếp khách sạn để kiểm tra."
+    ],
+    "whatToDoIfCompromised": [
+      "Báo ngân hàng và làm đơn tố cáo gửi Công an địa phương nơi cư trú."
+    ]
+  },
+  {
+    "id": "study-abroad-scholarship-scam",
+    "title": "28. Học Bổng Du Học Quốc Tế \"Bao Đậu\" Yêu Cầu Đặt Cọc Giữ Chỗ Khẩn Cấp",
+    "category": "Giáo dục & Du học ảo",
+    "shortDescription": "Mạo danh đại diện các trường đại học danh tiếng tại Úc, Mỹ, Canada thông báo trúng học bổng 70-100%, bắt nộp phí bảo chứng tài chính.",
+    "whatIsIt": "Kẻ lừa đảo lập các trung tâm tư vấn du học ảo, gửi thư chúc mừng giả mạo từ các trường đại học quốc tế thông báo học sinh đã được duyệt cấp học bổng toàn phần, sau đó yêu cầu phụ huynh chuyển tiền đặt cọc giữ chỗ và phí bảo chứng chứng minh tài chính visa.",
+    "howItWorks": [
+      "Tiếp cận học sinh, phụ huynh qua các hội thảo du học online hoặc nhóm luyện thi IELTS.",
+      "Thông báo hồ sơ của học sinh xuất sắc trúng học bổng 80% - 100% của trường đại học tại Úc/Canada.",
+      "Gửi thư trúng tuyển (Letter of Offer) bằng tiếng Anh có chữ ký và logo trường giả mạo.",
+      "Yêu cầu phụ huynh chuyển 50 - 200 triệu đồng vào \"Tài khoản ủy thác visa\" để giữ suất học bổng trước hạn chót.",
+      "Sau khi nhận tiền, trung tâm ảo biến mất không dấu vết."
+    ],
+    "warningSigns": [
+      "Được cấp học bổng giá trị cao quá dễ dàng mà không cần trải qua phỏng vấn hay yêu cầu chứng chỉ ngoại ngữ khắt khe.",
+      "Yêu cầu nộp tiền cọc học bổng qua số tài khoản cá nhân tại Việt Nam.",
+      "Email gửi thư trúng tuyển dùng tên miền miễn phí (@gmail.com, @yahoo.com) thay vì tên miền trường đại học (`.edu`, `.edu.au`)."
+    ],
+    "redFlags": [
+      "Thúc ép nộp tiền trong vòng 24 - 48 giờ nếu không sẽ chuyển học bổng cho ứng viên khác."
+    ],
+    "psychologicalTactics": [
+      "Đánh vào niềm tự hào và ước mơ du học nước ngoài của học sinh và phụ huynh.",
+      "Tạo áp lực thời hạn giữ chỗ để phụ huynh không kịp liên hệ xác minh với trường."
+    ],
+    "tactics": [
+      "Làm giả thư trúng tuyển đại học",
+      "Cam kết học bổng bao đỗ",
+      "Thu phí bảo chứng tài chính ảo"
+    ],
+    "whatScammersAskFor": [
+      "Chuyển tiền cọc giữ suất học bổng, phí bảo hiểm du học sinh, phí chứng minh tài chính từ 50 triệu đến 300 triệu đồng."
+    ],
+    "howToVerify": [
+      "Kiểm tra địa chỉ email người gửi: Phải có đuôi tên miền chính thức của trường (VD: `@sydney.edu.au`, `@harvard.edu`).",
+      "Gửi email trực tiếp vào hòm thư tuyển sinh (Admissions Office) trên trang web chính thức của trường để xác thực."
+    ],
+    "countermeasures": [
+      "Chỉ làm việc với các công ty tư vấn du học có pháp nhân và giấy phép hoạt động giáo dục rõ ràng."
+    ],
+    "whatToDoIfTargeted": [
+      "Dừng giao dịch, liên hệ trực tiếp với trường đại học ở nước ngoài để kiểm tra."
+    ],
+    "whatToDoIfCompromised": [
+      "Báo cáo cho cơ quan công an kinh tế kèm toàn bộ thư từ và sao kê chuyển tiền."
+    ]
+  },
+  {
+    "id": "emergency-hospital-child-surgery-scam",
+    "title": "29. Mạo Danh Giáo Viên / Bệnh Viện Báo \"Con Đang Cấp Cứu\" Giục Chuyển Tiền Mổ Gấp",
+    "category": "Mạo danh & Tống tiền khẩn cấp",
+    "shortDescription": "Gọi điện thoại cho phụ huynh thông báo con bị ngã chấn thương sọ não đang ở phòng cấp cứu, ép chuyển khoản gấp 20-50 triệu để bác sĩ mổ.",
+    "whatIsIt": "Thủ đoạn lừa đảo táng tận lương tâm nhắm vào phụ huynh học sinh. Kẻ gian gọi điện trong giờ học, tự xưng là giáo viên chủ nhiệm hoặc bác sĩ bệnh viện (Việt Đức, Chợ Rẫy...), thông báo con bị ngã cầu thang bất tỉnh cần mổ gấp và yêu cầu chuyển tiền viện phí ngay.",
+    "howItWorks": [
+      "Thu thập thông tin họ tên phụ huynh, tên con, tên trường học và lớp học của con.",
+      "Gọi điện trong giờ con đang học trên lớp (lúc này phụ huynh không thể gọi điện cho con vì con không dùng điện thoại trong giờ học).",
+      "Đầu dây bên kia có tiếng còi hú cứu thương, tiếng bác sĩ quát tháo tạo hiện trường giả cấp cứu.",
+      "Tự xưng bác sĩ trưởng khoa cấp cứu yêu cầu chuyển ngay 20-50 triệu vào tài khoản viện phí để ký lệnh mổ gấp."
+    ],
+    "warningSigns": [
+      "Bệnh viện KHÔNG BAO GIỜ từ chối cấp cứu bệnh nhân vì chưa nộp tiền tạm ứng qua chuyển khoản cá nhân.",
+      "Người gọi thúc ép chuyển tiền ngay lập tức, đe dọa \"chậm 5 phút là con nguy hiểm tính mạng\".",
+      "Số tài khoản nhận viện phí là tài khoản cá nhân chứ không phải tài khoản chính thức của bệnh viện."
+    ],
+    "redFlags": [
+      "Từ chối cho phụ huynh nghe máy của giáo viên chủ nhiệm với lý do \"cô giáo đang làm việc với công an\"."
+    ],
+    "psychologicalTactics": [
+      "Tấn công trực diện vào điểm yếu lớn nhất của cha mẹ: Tính mạng và sự an nguy của con cái.",
+      "Tạo cú sốc hoảng loạn cực độ khiến phụ huynh mất hoàn toàn khả năng tư duy logic."
+    ],
+    "tactics": [
+      "Gây hoảng sợ tột độ",
+      "Tạo âm thanh giả hiện trường cấp cứu",
+      "Lợi dụng giờ học của con"
+    ],
+    "whatScammersAskFor": [
+      "Chuyển tiền tạm ứng viện phí, tiền mổ khẩn cấp từ 20 triệu đến 100 triệu đồng."
+    ],
+    "howToVerify": [
+      "Quy tắc vàng: Giữ bình tĩnh, dập máy và gọi ngay cho GIÁO VIÊN CHỦ NHIỆM hoặc SỐ ĐIỆN THOẠI NHÀ TRƯỜNG của con.",
+      "Gọi trực tiếp vào tổng đài bệnh viện được nhắc tên để kiểm tra xem có bệnh nhân tên con nhập viện không.",
+      "Các bệnh viện luôn ưu tiên cứu chữa tính mạng bệnh nhân trước, làm thủ tục tài chính sau."
+    ],
+    "countermeasures": [
+      "Lưu sẵn số điện thoại giáo viên chủ nhiệm, giám thị và ban giám hiệu nhà trường trong danh bạ.",
+      "Dặn dò con về các tình huống an toàn tại trường học."
+    ],
+    "whatToDoIfTargeted": [
+      "Bình tĩnh dập máy, gọi cho nhà trường kiểm tra."
+    ],
+    "whatToDoIfCompromised": [
+      "Báo ngay cho ngân hàng chuyển tiền và cơ quan công an gần nhất."
+    ]
+  },
+  {
+    "id": "fake-concert-flight-ticket-scam",
+    "title": "30. Lừa Mua Bán Vé Máy Bay / Vé Xem Concert Âm Nhạc Ảo (Pass Vé Ảo)",
+    "category": "Thương mại & Vé sự kiện ảo",
+    "shortDescription": "Lập tài khoản \"pass vé\" concert ca sĩ nổi tiếng hoặc vé máy bay Tết giá rẻ, nhận tiền chuyển khoản xong hủy vé hoặc gửi mã QR vé giả.",
+    "whatIsIt": "Kẻ gian lợi dụng các sự kiện âm nhạc cháy vé (concert Blackpink, Anh Trai Say Hi, Taylor Swift...) hoặc mùa cao điểm vé máy bay Tết để rao bán lại vé (pass vé) với giá gốc hoặc rẻ hơn, nhận tiền chuyển khoản xong chặn liên lạc hoặc gửi mã vé giả không có giá trị.",
+    "howItWorks": [
+      "Đăng bài trong các nhóm fan hâm mộ: \"Mình bận việc đột xuất cần pass lại 2 vé VIP concert giá gốc\".",
+      "Gửi ảnh chụp màn hình email xác nhận mua vé, ảnh căn cước công dân chính chủ (thực chất là CCCD ăn cắp của người khác) để tạo uy tín.",
+      "Yêu cầu người mua chuyển khoản 100% tiền vé để \"đổi thông tin người nhận vé trên hệ thống Ticketbox\".",
+      "Nhận tiền xong, đối tượng xóa bài viết, chặn tài khoản Facebook/Zalo của người mua.",
+      "Hoặc gửi mã QR vé giả, khi người mua đến cổng sự kiện quét mã thì hệ thống báo vé giả hoặc vé đã được sử dụng."
+    ],
+    "warningSigns": [
+      "Bán vé sự kiện hot đang cháy vé với giá rẻ hoặc giá gốc mà không đòi tiền chênh lệch.",
+      "Từ chối giao dịch trực tiếp mặt đối mặt hoặc từ chối sử dụng dịch vụ trung gian uy tín.",
+      "Hối thúc chuyển khoản nhanh vì \"đang có nhiều người hỏi mua cùng lúc\"."
+    ],
+    "redFlags": [
+      "Tài khoản mạng xã hội mới tạo, không có tương tác thật trong cộng đồng fan.",
+      "Số tài khoản ngân hàng không trùng tên với Căn cước công dân cung cấp."
+    ],
+    "psychologicalTactics": [
+      "Đánh vào tâm lý háo hức, cuồng nhiệt muốn gặp thần tượng của người hâm mộ trẻ tuổi.",
+      "Tạo áp lực khan hiếm vé (vé sắp bán cho người khác nếu không chốt trong 5 phút)."
+    ],
+    "tactics": [
+      "Pass vé giả",
+      "Tạo lòng tin bằng CCCD ăn cắp",
+      "Một vé bán cho hàng chục người"
+    ],
+    "whatScammersAskFor": [
+      "Chuyển tiền mua vé máy bay hoặc vé concert từ 1 triệu đến hàng chục triệu đồng."
+    ],
+    "howToVerify": [
+      "Chỉ mua vé qua các kênh phân phối chính thức của ban tổ chức (Ticketbox, đại lý vé máy bay chính hãng).",
+      "Nếu mua lại vé: Bắt buộc giao dịch trực tiếp gặp mặt hoặc dùng dịch vụ trung gian có bảo hiểm tiền gửi."
+    ],
+    "countermeasures": [
+      "Không tin các hình ảnh chụp CCCD gửi qua mạng vì có thể là giấy tờ bị đánh cắp.",
+      "Kiểm tra uy tín người bán trong các nhóm cộng đồng trước khi giao dịch."
+    ],
+    "whatToDoIfTargeted": [
+      "Từ chối chuyển tiền nếu không được giao dịch trực tiếp."
+    ],
+    "whatToDoIfCompromised": [
+      "Đăng bài cảnh báo thông tin tài khoản kẻ lừa đảo lên các hội nhóm fan để ngăn chặn thêm nạn nhân.",
+      "Trình báo công an về hành vi lừa đảo chiếm đoạt tài sản."
+    ]
+  }
+]

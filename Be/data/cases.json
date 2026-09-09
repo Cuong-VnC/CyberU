@@ -1,0 +1,323 @@
+[
+  {
+    "id": "demo-case-001",
+    "caseNumber": "VU-AN-2026-081",
+    "title": "Tin Nhắn Mạo Danh Ngân Hàng Kèm Link Giả Mạo VCB",
+    "description": "SMS cảnh báo khóa tài khoản ngân hàng do đăng nhập lạ, kèm đường link độc hại và cuộc gọi xưng nhân viên tổng đài ép đọc mã OTP.",
+    "status": "flagged",
+    "tags": [
+      "Mạo danh Ngân hàng",
+      "Cướp mã OTP",
+      "SMS Phishing"
+    ],
+    "rawText": "[Tin nhắn SMS nhận được từ Brandname giả mạo]:\n\"VIETCOMBANK: Phat hien giao dich 25.000.000 VND dang duoc thuc hien tu thiet bi la tai Ha Noi. Neu khong phai ban, vui long truy cap https://vietcombank-ebank-xacminh.top/login de huy giao dich ngay trong 5 phut.\"\n\n[Cuộc gọi ngay sau đó từ số 0912.839.xxx]:\nNgười gọi: \"Chào anh/chị, tôi là Nguyễn Văn Cường - Trực ban An ninh Vietcombank. Chúng tôi vừa gửi tin nhắn hủy giao dịch 25 triệu. Anh/chị hãy đọc ngay mã 6 số OTP vừa gửi về máy để em chặn lệnh chuyển tiền này lại!\"",
+    "mode": "DEEP_INVESTIGATION",
+    "evidenceItems": [
+      {
+        "id": "demo-ev-1",
+        "name": "anh_chup_tin_nhan_sms.png",
+        "type": "image",
+        "mimeType": "image/png",
+        "size": 245000,
+        "textContent": "Ảnh chụp màn hình tin nhắn SMS Brandname Vietcombank có chứa đường link https://vietcombank-ebank-xacminh.top/login",
+        "createdAt": 1788947127777
+      },
+      {
+        "id": "demo-ev-2",
+        "name": "ghi_am_cuoc_goi_tong_dai.mp3",
+        "type": "audio",
+        "mimeType": "audio/mpeg",
+        "size": 1024000,
+        "textContent": "Ghi âm cuộc gọi tự xưng nhân viên an ninh ngân hàng hối thúc đọc mã OTP 6 số để hủy lệnh trừ tiền 25 triệu.",
+        "createdAt": 1788950727777
+      }
+    ],
+    "lastReport": {
+      "id": "demo-report-001",
+      "caseId": "demo-case-001",
+      "caseTitle": "Tin Nhắn Mạo Danh Ngân Hàng Kèm Link Giả Mạo VCB",
+      "mode": "DEEP_INVESTIGATION",
+      "inputText": "SMS cảnh báo trừ tiền 25 triệu kèm link giả mạo vietcombank-ebank-xacminh.top và cuộc gọi ép đọc mã OTP",
+      "evidenceCount": 2,
+      "evidenceSummary": [
+        {
+          "name": "anh_chup_tin_nhan_sms.png",
+          "type": "image"
+        },
+        {
+          "name": "ghi_am_cuoc_goi_tong_dai.mp3",
+          "type": "audio"
+        }
+      ],
+      "createdAt": 1788950727777,
+      "language": "vi",
+      "isDemo": true,
+      "result": {
+        "verdict": "CRITICAL_RISK",
+        "risk_score": 98,
+        "confidence": 0.99,
+        "categories": [
+          "SMS Phishing Giả Mạo Ngân Hàng",
+          "Tấn Công Trạm BTS Giả",
+          "Đánh Cắp Mã OTP Khẩn Cấp",
+          "Mạo Danh Nhân Viên Ngân Hàng"
+        ],
+        "summary": "Phát hiện chiến dịch lừa đảo mạng cực kỳ nguy hiểm. Kẻ gian giả mạo thương hiệu Vietcombank bằng trạm BTS chèn link độc hại `.top`, kết hợp cuộc gọi thao túng tâm lý nhằm chiếm đoạt mã OTP để rút cạn tiền trong tài khoản.",
+        "threat_level_label": "Nguy Cơ Lừa Đảo Cực Kỳ Nguy Hiểm (Mức 98/100)",
+        "why_is_this_suspicious": [
+          {
+            "title": "Tên Miền Độc Hại Đuôi .top Nhái Ngân Hàng",
+            "explanation": "Tên miền `vietcombank-ebank-xacminh.top` hoàn toàn không thuộc sở hữu của Ngân hàng TMCP Ngoại Thương Việt Nam (trang chính thức là vietcombank.com.vn).",
+            "severity": "critical"
+          },
+          {
+            "title": "Hành Vi Đòi Hỏi Mã OTP Trực Tiếp Qua Điện Thoại",
+            "explanation": "Nhân viên ngân hàng thật KHÔNG BAO GIỜ gọi điện yêu cầu khách hàng đọc mã xác thực OTP hay mật khẩu.",
+            "severity": "critical"
+          },
+          {
+            "title": "Tạo Tâm Lý Hoảng Sợ & Ép Buộc Thời Gian (5 Phút)",
+            "explanation": "Kẻ gian bịa ra số tiền bị trừ 25 triệu và đặt giới hạn 5 phút để nạn nhân rối trí, không kịp suy nghĩ hay kiểm tra lại.",
+            "severity": "high"
+          }
+        ],
+        "evidence": [
+          {
+            "indicator": "Tên miền lừa đảo giả mạo",
+            "detail": "https://vietcombank-ebank-xacminh.top/login",
+            "source_type": "SMS Text & Image",
+            "reason": "Tên miền không thuộc dải địa chỉ IP và hệ thống quản lý của Vietcombank.",
+            "is_suspicious": true
+          },
+          {
+            "indicator": "Yêu cầu đọc mã OTP qua cuộc gọi",
+            "detail": "Đòi mã OTP 6 số để \"hủy giao dịch\"",
+            "source_type": "Ghi âm cuộc gọi thoại",
+            "reason": "Mã OTP chỉ dùng để xác thực giao dịch chuyển tiền ra ngoài, không thể dùng để hủy lệnh.",
+            "is_suspicious": true
+          }
+        ],
+        "psychological_tactics": [
+          {
+            "tactic": "Tạo Nỗi Sợ Mất Tiền Khẩn Cấp",
+            "description": "Dọa dẫm tài khoản vừa bị trừ 25 triệu khiến nạn nhân hoang mang tột độ.",
+            "evidence_quote_or_element": "\"Phat hien giao dich 25.000.000 VND dang duoc thuc hien tu thiet bi la\""
+          },
+          {
+            "tactic": "Đóng Vai Người Hỗ Trợ Cứu Giúp (Savior Complex)",
+            "description": "Người gọi đóng vai nhân viên an ninh tận tình giúp hủy lệnh để nạn nhân mất cảnh giác.",
+            "evidence_quote_or_element": "\"Anh/chị đọc ngay mã OTP để em chặn lệnh chuyển tiền này lại\""
+          }
+        ],
+        "requested_actions": [
+          "Bấm vào đường link lạ để nhập tên đăng nhập và mật khẩu VCB Digibank",
+          "Đọc mã OTP xác thực giao dịch 6 số cho người gọi"
+        ],
+        "suspicious_entities": [
+          {
+            "entity_type": "Tên Miền (URL)",
+            "value": "https://vietcombank-ebank-xacminh.top",
+            "assessment": "Website câu trộm thông tin tài khoản ngân hàng (Phishing portal)"
+          },
+          {
+            "entity_type": "Số Điện Thoại",
+            "value": "0912.839.xxx",
+            "assessment": "Số điện thoại rác dùng gọi điện thao túng tâm lý"
+          },
+          {
+            "entity_type": "Mạo Danh",
+            "value": "Ban An Ninh Vietcombank",
+            "assessment": "Mạo danh trái phép cơ quan an ninh tài chính"
+          }
+        ],
+        "cross_modal_correlations": [
+          {
+            "items_correlated": "Tin nhắn SMS + Ghi âm cuộc gọi thoại",
+            "finding": "Cuộc gọi diễn ra ngay sau khi tin nhắn gửi tới 1 phút, chứng tỏ đây là một kịch bản có tổ chức phối hợp giữa SMS giả mạo và nhân viên gọi lừa đảo.",
+            "inconsistency_type": "Phối hợp đa phương thức tấn công có chủ đích"
+          }
+        ],
+        "timeline": [
+          {
+            "timestamp": "Phút 00:00",
+            "event": "Nhận SMS Brandname có link độc hại",
+            "analysis": "Kẻ gian kích hoạt mồi nhử bằng tin nhắn dọa mất 25 triệu.",
+            "flag": "warning"
+          },
+          {
+            "timestamp": "Phút 01:15",
+            "event": "Cuộc gọi tự xưng an ninh ngân hàng",
+            "analysis": "Kẻ gian gọi điện thúc ép đọc mã OTP ngay lập tức.",
+            "flag": "critical"
+          }
+        ],
+        "recommended_actions": [
+          {
+            "step_number": 1,
+            "title": "Tuyệt đối KHÔNG đọc mã OTP và KHÔNG bấm vào link",
+            "action": "Ngắt cuộc gọi ngay lập tức. Mã OTP cung cấp cho người khác sẽ khiến bạn mất toàn bộ tiền trong tài khoản.",
+            "priority": "immediate"
+          },
+          {
+            "step_number": 2,
+            "title": "Khóa thẻ và đổi mật khẩu trên ứng dụng chính thức",
+            "action": "Mở ứng dụng VCB Digibank chính thức trên điện thoại, kích hoạt khóa thẻ tạm thời hoặc đổi mật khẩu đăng nhập.",
+            "priority": "immediate"
+          },
+          {
+            "step_number": 3,
+            "title": "Gọi hotline chính thức của ngân hàng để xác minh",
+            "action": "Gọi đến hotline Vietcombank 1900545413 (in ở mặt sau thẻ ATM) để nhân viên kiểm tra tình trạng tài khoản.",
+            "priority": "urgent"
+          },
+          {
+            "step_number": 4,
+            "title": "Phản ánh tin nhắn rác tới tổng đài 156 / 5656",
+            "action": "Chuyển tiếp tin nhắn lừa đảo tới đầu số 156 (Bộ TT&TT) để cơ quan chức năng phong tỏa trạm BTS giả.",
+            "priority": "advisory"
+          }
+        ],
+        "emergency_active_threat": true,
+        "emergency_action_checklist": {
+          "stop": "KHÔNG đọc mã OTP, KHÔNG bấm vào đường link trong tin nhắn SMS.",
+          "protect": "Vào app ngân hàng chính thức khóa thẻ và đổi mật khẩu ngay.",
+          "verify": "Gọi hotline chính thức in trên mặt sau thẻ ATM (1900545413).",
+          "report": "Chuyển tiếp tin nhắn tới đầu số 156 (Bộ TT&TT) và báo cho ngân hàng.",
+          "monitor": "Kiểm tra lại sao kê tài khoản ngân hàng xem có giao dịch lạ nào không."
+        },
+        "uncertainties": [
+          "Vị trí thực tế của kẻ gọi không thể định vị chính xác do sử dụng SIM rác hoặc số ảo."
+        ]
+      }
+    },
+    "createdAt": 1788943527777,
+    "updatedAt": 1788950727777,
+    "isDemo": true
+  },
+  {
+    "id": "demo-case-002",
+    "caseNumber": "VU-AN-2026-082",
+    "title": "Nhóm Telegram Đầu Tư Chứng Khoán Kéo Lệnh Lãi 300% & Link Cài APK",
+    "description": "Lời mời tham gia nhóm Telegram VIP cam kết lợi nhuận 300% trong 5 ngày kèm đường link yêu cầu tải file APK trading không rõ nguồn gốc.",
+    "status": "flagged",
+    "tags": [
+      "Lừa đảo Tài chính",
+      "Sàn Ảo Ponzi",
+      "Mã Độc APK"
+    ],
+    "rawText": "\"Chào anh Tuấn! Bên em là nhóm chuyên gia đầu tư định lượng Quỹ Apex Quantum. Thuật toán AI Arbitrage kéo lệnh tự động trên sàn quốc tế. Nạp 20 triệu cam kết sau 5 ngày thu về 120 triệu (lãi 600%), bảo hiểm vốn 100%. Anh tải app trading độc quyền tại link: https://apex-quantum-trade.vip/app.apk để nhận gói quà tặng 2 triệu đồng trải nghiệm ngay!\"",
+    "mode": "FINANCIAL",
+    "evidenceItems": [
+      {
+        "id": "demo-ev-3",
+        "name": "anh_chup_so_du_120_trieu.jpg",
+        "type": "image",
+        "mimeType": "image/jpeg",
+        "size": 312000,
+        "textContent": "Ảnh chụp màn hình số dư 120 triệu đồng trong app trading kèm biểu đồ tăng trưởng xanh ảo.",
+        "createdAt": 1788871527777
+      }
+    ],
+    "lastReport": {
+      "id": "demo-report-002",
+      "caseId": "demo-case-002",
+      "caseTitle": "Nhóm Telegram Đầu Tư Chứng Khoán Kéo Lệnh Lãi 300% & Link Cài APK",
+      "mode": "FINANCIAL",
+      "inputText": "Tin nhắn mời vào nhóm Telegram đầu tư cam kết lãi 600% và link tải file app.apk từ domain .vip",
+      "evidenceCount": 1,
+      "evidenceSummary": [
+        {
+          "name": "anh_chup_so_du_120_trieu.jpg",
+          "type": "image"
+        }
+      ],
+      "createdAt": 1788885927777,
+      "language": "vi",
+      "isDemo": true,
+      "result": {
+        "verdict": "CRITICAL_RISK",
+        "risk_score": 96,
+        "confidence": 0.98,
+        "categories": [
+          "Lừa Đảo Đầu Tư Sàn Ảo (Pig Butchering)",
+          "Phát Tán Mã Độc File APK Trực Tiếp",
+          "Mô Hình Lừa Đảo Ponzi Siêu Lợi Nhuận"
+        ],
+        "summary": "Lừa đảo tài chính kết hợp phát tán mã độc. Kẻ gian dùng mồi nhử lợi nhuận phi thực tế (600% trong 5 ngày) để dẫn dụ nạn nhân cài file APK chứa mã độc gián điệp vào điện thoại.",
+        "threat_level_label": "Nguy Cơ Lừa Đảo Tài Chính & Mã Độc Cực Kỳ Nguy Hiểm",
+        "why_is_this_suspicious": [
+          {
+            "title": "Lợi Nhuận Bất Thường Phi Thực Tế (Lãi 600% trong 5 ngày)",
+            "explanation": "Trong thị trường tài chính hợp pháp, không có bất kỳ quỹ hay chuyên gia nào cam kết lãi 600% không có rủi ro.",
+            "severity": "critical"
+          },
+          {
+            "title": "Yêu Cầu Tải File Cài Đặt APK Ngoài Kho Ứng Dụng",
+            "explanation": "File `app.apk` tải từ website lạ đuôi `.vip` thường chứa mã độc đọc trộm tin nhắn SMS và đánh cắp tài khoản ngân hàng.",
+            "severity": "critical"
+          }
+        ],
+        "evidence": [
+          {
+            "indicator": "Cam kết lợi nhuận 600%",
+            "detail": "Nạp 20 triệu -> Thu về 120 triệu trong 5 ngày",
+            "source_type": "Tin nhắn văn bản",
+            "reason": "Dấu hiệu không thể chối cãi của mô hình lừa đảo tài chính Ponzi.",
+            "is_suspicious": true
+          },
+          {
+            "indicator": "Link tải file APK",
+            "detail": "https://apex-quantum-trade.vip/app.apk",
+            "source_type": "Đường link tải file",
+            "reason": "Cài file APK ngoài kho ứng dụng chính thức là con đường lây nhiễm mã độc phổ biến nhất trên Android.",
+            "is_suspicious": true
+          }
+        ],
+        "psychological_tactics": [
+          {
+            "tactic": "Đánh Vào Lòng Tham & FOMO (Sợ Bỏ Lỡ Cơ Hội)",
+            "description": "Tạo cảm giác cơ hội kiếm tiền dễ dàng, có quà tặng 2 triệu để kích thích nạn nhân nạp thử.",
+            "evidence_quote_or_element": "\"Quà tặng 2 triệu đồng trải nghiệm ngay\""
+          }
+        ],
+        "requested_actions": [
+          "Tải và cài đặt file app.apk vào điện thoại",
+          "Nạp 20 triệu đồng vào tài khoản chỉ định trong nhóm"
+        ],
+        "suspicious_entities": [
+          {
+            "entity_type": "Tên Miền (URL)",
+            "value": "https://apex-quantum-trade.vip",
+            "assessment": "Tên miền sàn ảo chưa được cấp phép tại Việt Nam"
+          },
+          {
+            "entity_type": "Tệp Tin Cài Đặt",
+            "value": "app.apk",
+            "assessment": "Tệp tin nghi vấn chứa mã độc chiếm quyền điện thoại"
+          }
+        ],
+        "recommended_actions": [
+          {
+            "step_number": 1,
+            "title": "Tuyệt đối KHÔNG tải hoặc cài đặt file APK",
+            "action": "Nếu đã lỡ tải, hãy xóa ngay file trong thư mục Tải về và không mở file.",
+            "priority": "immediate"
+          },
+          {
+            "step_number": 2,
+            "title": "Tuyệt đối KHÔNG chuyển tiền đầu tư",
+            "action": "Mọi khoản tiền nạp vào sàn ảo này sẽ bị chiếm đoạt vĩnh viễn không thể rút ra.",
+            "priority": "immediate"
+          }
+        ],
+        "emergency_active_threat": true,
+        "uncertainties": [
+          "Chưa giải mã chi tiết mã độc bên trong file APK do chưa phân tích mã nhị phân trong môi trường Sandbox."
+        ]
+      }
+    },
+    "createdAt": 1788871527777,
+    "updatedAt": 1788885927777,
+    "isDemo": true
+  }
+]
