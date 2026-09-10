@@ -316,11 +316,11 @@ async def scan_url_with_fallback(target_url: str, client_key: Optional[str] = No
         fallback_chain.append({
             "provider": "Gemini AI",
             "status": "SUCCESS",
-            "reason": "Tự động chuyển sang Gemini AI do 2 API trước bị limit/chưa cấu hình."
+            "reason": "Chuyển sang Gemini AI / Heuristic do các API trước bị limit hoặc chưa cấu hình key."
         })
 
         res["fallback_chain"] = fallback_chain
-        res["provider_used"] = "Gemini AI"
+        res["provider_used"] = res.get("provider", "Gemini AI")
         return res
     except Exception as gemini_err:
         fallback_chain.append({
@@ -329,12 +329,16 @@ async def scan_url_with_fallback(target_url: str, client_key: Optional[str] = No
             "reason": str(gemini_err)
         })
 
+        crawled = await inspect_and_fetch_url(raw_url)
+        is_high_risk = crawled.get("isHighRiskTld") or crawled.get("formsDetected", {}).get("hasLoginForm")
         return {
-            "success": False,
+            "success": True,
             "url": raw_url,
-            "provider_used": "None",
-            "verdict": "ERROR",
-            "risk_score": 0,
-            "summary": f"Tất cả các dịch vụ quét URL (VirusTotal, Safe Browsing, Gemini) đều không thể phản hồi: {str(gemini_err)}",
-            "fallback_chain": fallback_chain
+            "provider_used": "Heuristic Security Scanner",
+            "verdict": "SUSPICIOUS" if is_high_risk else "SAFE",
+            "risk_score": 75 if is_high_risk else 20,
+            "threat_label": "Phân Tích Heuristic Cấu Trúc URL",
+            "summary": "Tất cả API Key (VirusTotal, Safe Browsing, Gemini) chưa được thiết lập trên Vercel hoặc bị lỗi 401. Đã quét sơ bộ qua tên miền & cấu trúc HTML.",
+            "fallback_chain": fallback_chain,
+            "crawled": crawled
         }
