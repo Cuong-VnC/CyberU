@@ -12,7 +12,6 @@ VIRUSTOTAL_ENV_KEY = "VIRUSTOTAL_API_KEY"
 SAFE_BROWSING_ENV_KEY = "SAFE_BROWSING_API_KEY"
 GEMINI_ENV_KEY = "GEMINI_API_KEY"
 
-
 def get_virustotal_key() -> str:
     return (
         os.getenv("VIRUSTOTAL_API_KEY", "") or
@@ -21,7 +20,6 @@ def get_virustotal_key() -> str:
         os.getenv("VIRUSTOTAL_KEY", "") or
         os.getenv("VT_API_KEY", "")
     ).strip()
-
 
 def get_safebrowsing_key() -> str:
     return (
@@ -32,14 +30,12 @@ def get_safebrowsing_key() -> str:
         os.getenv("GOOGLE_SAFE_BROWSING_API_KEY", "")
     ).strip()
 
-
 def normalize_url(raw_url: str) -> str:
     """Normalize URL to lowercase and ensure http/https scheme."""
     u = raw_url.strip().lower()
     if not re.match(r'^https?://', u):
         u = 'https://' + u
     return u.lower()
-
 
 async def scan_url_virustotal(target_url: str) -> Dict[str, Any]:
     """Scan URL via VirusTotal API v3."""
@@ -165,7 +161,6 @@ async def scan_url_virustotal(target_url: str) -> Dict[str, Any]:
             ]
         }
 
-
 async def scan_url_safebrowsing(target_url: str) -> Dict[str, Any]:
     """Scan URL via Google Safe Browsing API v4."""
     sb_key = get_safebrowsing_key()
@@ -257,7 +252,6 @@ async def scan_url_safebrowsing(target_url: str) -> Dict[str, Any]:
             "matches": matches,
             "why_is_this_suspicious": why_items
         }
-
 
 async def scan_url_gemini(target_url: str, client_key: Optional[str] = None) -> Dict[str, Any]:
     """Analyze URL via Gemini AI or Heuristic Scanner."""
