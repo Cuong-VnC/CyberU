@@ -181,56 +181,64 @@ async def analyze_scam_payload(payload: Dict[str, Any], client_key: Optional[str
             if re.match(r'^https?://[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}', candidate):
                 urls = [candidate]
 
-    if mode == "URL_PHISHING" and urls:
+    if mode == "URL_PHISHING" or (not evidence_items and (urls or (text_content.strip().startswith('http') or '.' in text_content.strip())) and len(text_content.strip()) < 300):
+        target_url = urls[0] if urls else (text_content.strip() if text_content.strip().startswith('http') else 'https://' + text_content.strip())
         from services.url_scanner_service import scan_url_with_fallback
-        scan_res = await scan_url_with_fallback(urls[0], client_key=client_key)
+        scan_res = await scan_url_with_fallback(target_url, client_key=client_key)
         
-        # Nếu VirusTotal hoặc Google Safe Browsing xử lý thành công -> Trả về kết quả ngay mà không cần gọi Gemini API
-        if scan_res.get("provider_used") in ["VirusTotal", "Google Safe Browsing"]:
-            why_items = []
-            if scan_res.get("provider_used") == "VirusTotal":
+        provider = scan_res.get("provider_used", scan_res.get("provider", "URL Scanner"))
+        why_items = scan_res.get("why_is_this_suspicious", [])
+        if not why_items:
+            if provider == "VirusTotal":
                 stats = scan_res.get("stats", {})
                 why_items.append({
-                    "title": "Báo cáo Bảo mật VirusTotal",
-                    "explanation": f"Số nhà bảo mật cảnh báo độc hại: {stats.get('malicious', 0)}, nghi vấn: {stats.get('suspicious', 0)}."
+                    "title": "Báo cáo Bảo mật VirusTotal API v3",
+                    "explanation": f"Số nhà bảo mật đánh giá độc hại: {stats.get('malicious', 0)}, nghi vấn: {stats.get('suspicious', 0)} trên tổng số {sum(stats.values()) if stats else 1} công cụ quét."
                 })
-            elif scan_res.get("provider_used") == "Google Safe Browsing":
+            elif provider == "Google Safe Browsing":
                 why_items.append({
-                    "title": "Báo cáo Google Safe Browsing",
-                    "explanation": scan_res.get("summary", "Đã đối chiếu dữ liệu với Google Safe Browsing Database.")
+                    "title": "Báo cáo Google Safe Browsing API v4",
+                    "explanation": scan_res.get("summary", "Đã kiểm định với cơ sở dữ liệu Google Safe Browsing.")
+                })
+            else:
+                why_items.append({
+                    "title": "Phân Tích Cấu Trúc URL & Domain",
+                    "explanation": scan_res.get("summary", "Đã phân tích thông tin tên miền và thành phần trang web.")
                 })
 
-            return {
-                "success": True,
-                "providerUsed": scan_res.get("provider_used"),
-                "modelUsed": scan_res.get("provider_used"),
-                "primaryModel": scan_res.get("provider_used"),
-                "modelSwitched": True,
-                "switchReason": f"Kết quả trực tiếp từ dịch vụ {scan_res.get('provider_used')}.",
-                "rationale": f"Xử lý thành công qua {scan_res.get('provider_used')}.",
-                "analysis": {
-                    "verdict": scan_res.get("verdict", "SAFE"),
-                    "risk_score": scan_res.get("risk_score", 0),
-                    "threat_level_label": scan_res.get("threat_label", scan_res.get("verdict")),
-                    "summary": scan_res.get("summary", ""),
-                    "why_is_this_suspicious": why_items,
-                    "recommended_actions": [
-                        {
-                            "step_number": 1,
-                            "title": "Kiểm tra địa chỉ trang web",
-                            "action": "Không nhập thông tin tài khoản, mật khẩu hoặc mã OTP vào website này."
-                        },
-                        {
-                            "step_number": 2,
-                            "title": "Báo cáo vi phạm",
-                            "action": "Nếu phát hiện dấu hiệu lừa đảo, hãy báo cáo cho cơ quan chức năng hoặc Quản trị viên."
-                        }
-                    ]
+        actions = scan_res.get("recommended_actions", [])
+        if not actions:
+            actions = [
+                {
+                    "step_number": 1,
+                    "title": "Kiểm tra địa chỉ trang web",
+                    "action": "Không nhập thông tin tài khoản, mật khẩu hoặc mã OTP vào website này."
+                },
+                {
+                    "step_number": 2,
+                    "title": "Báo cáo vi phạm",
+                    "action": "Nếu phát hiện dấu hiệu lừa đảo, hãy báo cáo cho cơ quan chức năng hoặc Quản trị viên."
                 }
-            }
+            ]
 
-    # Nếu bước 1 (VirusTotal) và bước 2 (Safe Browsing) bị limit/lỗi, mới khởi tạo Gemini Client cho bước 3
-    client = get_genai_client(client_key)
+        return {
+            "success": True,
+            "providerUsed": provider,
+            "modelUsed": provider,
+            "primaryModel": provider,
+            "modelSwitched": True,
+            "switchReason": f"Kết quả từ dịch vụ quét URL: {provider}.",
+            "rationale": f"Xử lý thành công qua {provider}.",
+            "analysis": {
+                "verdict": scan_res.get("verdict", "SAFE"),
+                "risk_score": scan_res.get("risk_score", 0),
+                "threat_level_label": scan_res.get("threat_label", scan_res.get("verdict")),
+                "summary": scan_res.get("summary", f"Đã quét URL thành công qua {provider}."),
+                "why_is_this_suspicious": why_items,
+                "recommended_actions": actions,
+                "fallback_chain": scan_res.get("fallback_chain", [])
+            }
+        }
 
     parts = []
     system_prompt = f"""You are CyberU AI — a world-class Cybersecurity Threat Intelligence, Multimodal Scam, Phishing, and Social Engineering Analysis engine.

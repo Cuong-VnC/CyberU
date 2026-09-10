@@ -50,7 +50,30 @@ async def scan_url_virustotal(target_url: str) -> Dict[str, Any]:
             raise ValueError("INVALID_KEY_OR_QUOTA: Khóa VirusTotal API không hợp lệ hoặc đã hết hạn nghạch.")
 
         if resp.status_code == 404:
-            # URL chưa có sẵn trong DB VirusTotal, gửi yêu cầu phân tích mới (POST /api/v3/urls)
+            # Nếu URL cụ thể chưa có sẵn trong DB VirusTotal, truy vấn danh tiếng tên miền (Domain API v3)
+            parsed_domain = urllib.parse.urlparse(target_url).hostname or target_url.replace("https://", "").replace("http://", "").split("/")[0]
+            domain_endpoint = f"https://www.virustotal.com/api/v3/domains/{parsed_domain}"
+            domain_resp = await client.get(domain_endpoint, headers=headers)
+            
+            if domain_resp.status_code == 200:
+                d_data = domain_resp.json()
+                d_stats = d_data.get("data", {}).get("attributes", {}).get("last_analysis_stats", {})
+                d_mal = d_stats.get("malicious", 0)
+                d_susp = d_stats.get("suspicious", 0)
+                d_total = sum(d_stats.values()) if d_stats else 1
+                
+                return {
+                    "success": True,
+                    "provider": "VirusTotal",
+                    "verdict": "MALICIOUS" if d_mal >= 2 else "SUSPICIOUS" if (d_mal > 0 or d_susp > 0 or any(target_url.endswith(tld) for tld in HIGH_RISK_TLDS)) else "SAFE",
+                    "risk_score": min(99, int(((d_mal * 2 + d_susp) / max(d_total, 10)) * 100 + 35)) if (d_mal > 0 or d_susp > 0) else (60 if any(target_url.endswith(tld) for tld in HIGH_RISK_TLDS) else 15),
+                    "threat_label": f"Phân Tích Tên Miền VirusTotal ({parsed_domain})",
+                    "summary": f"VirusTotal đánh giá tên miền '{parsed_domain}': {d_mal} công cụ bảo mật cảnh báo độc hại, {d_susp} cảnh báo nghi vấn trên tổng số {d_total} công cụ quét.",
+                    "stats": d_stats,
+                    "last_final_url": target_url
+                }
+
+            # Gửi yêu cầu phân tích mới nếu domain cũng chưa có
             submit_resp = await client.post(
                 "https://www.virustotal.com/api/v3/urls",
                 headers=headers,
@@ -59,13 +82,12 @@ async def scan_url_virustotal(target_url: str) -> Dict[str, Any]:
             if submit_resp.status_code == 429:
                 raise RuntimeError("LIMIT_EXCEEDED: VirusTotal API đã đạt hạn mức lượt yêu cầu khi gửi URL.")
             
-            # Nếu 200, VT đang phân tích. Ta phân tích sơ bộ theo domain/tld + thông báo pending
             return {
                 "success": True,
                 "provider": "VirusTotal",
                 "verdict": "SUSPICIOUS" if any(target_url.endswith(tld) for tld in HIGH_RISK_TLDS) else "SAFE",
                 "risk_score": 60 if any(target_url.endswith(tld) for tld in HIGH_RISK_TLDS) else 20,
-                "summary": "URL vừa được gửi lên VirusTotal để phân tích. Đã quét sơ bộ qua TLD và cấu trúc URL.",
+                "summary": f"URL vừa được gửi lên VirusTotal để phân tích. Đã quét sơ bộ qua TLD ({urllib.parse.urlparse(target_url).hostname}).",
                 "stats": {"malicious": 0, "suspicious": 0, "harmless": 0, "undetected": 1},
                 "raw": submit_resp.json() if submit_resp.status_code == 200 else {}
             }
