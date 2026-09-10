@@ -270,7 +270,11 @@ Return STRICT JSON adhering precisely to schema."""
             err_str = str(err)
             lower_err = err_str.lower()
             
-            if "api_key_invalid" in lower_err or "api key not valid" in lower_err:
+            is_auth_error = any(term in lower_err for term in [
+                "401", "unauthenticated", "invalid authentication credentials",
+                "access_token_type_unsupported", "api_key_invalid", "api key not valid"
+            ])
+            if is_auth_error:
                 env_key = os.getenv("GEMINI_API_KEY", "").strip()
                 if client_key and env_key and client_key != env_key:
                     print("Custom API key invalid, falling back to server GEMINI_API_KEY...")
@@ -301,7 +305,7 @@ Return STRICT JSON adhering precisely to schema."""
                     except Exception as fb_err:
                         print("Fallback client error:", fb_err)
 
-                raise ValueError("Khóa Gemini API cá nhân của bạn không hợp lệ (API_KEY_INVALID). Vui lòng kiểm tra lại API Key trong tab Cài đặt hoặc chọn 'Sử dụng API có sẵn'.")
+                raise ValueError("Khóa Gemini API Key không hợp lệ hoặc chưa được cấp quyền (HTTP 401 UNAUTHENTICATED). Vui lòng kiểm tra biến GEMINI_API_KEY trên Vercel hoặc tạo lại API Key mới tại Google AI Studio (aistudio.google.com).")
 
             last_err = err
             print(f"Model {model} failed: {err}")
