@@ -355,9 +355,9 @@ document.addEventListener('DOMContentLoaded', async () => {
       let apiMode = 'DEEP_INVESTIGATION';
 
       if (activeFeatureMode === 'URL') {
-        textContent = document.getElementById('analyzer-url-input')?.value || '';
+        textContent = (document.getElementById('analyzer-url-input')?.value || '').trim().toLowerCase();
         apiMode = 'URL_PHISHING';
-        if (!textContent.trim()) {
+        if (!textContent) {
           showToast('Vui lòng nhập đường link (URL) trang web cần quét.', 'error');
           return;
         }
@@ -393,6 +393,9 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         if (res && res.analysis) {
           state.analysisResult = res.analysis;
+          if (res.providerUsed || res.modelUsed) {
+            res.analysis.providerUsed = res.providerUsed || res.modelUsed;
+          }
           renderAnalysisResult(res.analysis);
           
           const newReport = {
@@ -405,7 +408,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           localStorage.setItem('cybershield_history', JSON.stringify(state.savedReports));
 
           if (res.modelSwitched) {
-            showToast(`${res.switchReason || `Tự động chuyển từ model ${res.primaryModel || 'gemini-3.1-pro-preview'} sang ${res.modelUsed} do bị giới hạn (limit).`}`, 'info');
+            showToast(`${res.switchReason || `Phân tích thành công qua ${res.providerUsed || res.modelUsed}`}`, 'info');
           } else {
             showToast('Phân tích hoàn tất thành công!', 'success');
           }
@@ -434,17 +437,28 @@ document.addEventListener('DOMContentLoaded', async () => {
       }
     }
 
-    // Verdict Badge
+    // Verdict Badge & Provider Badge
     const badge = document.getElementById('res-verdict-badge');
     if (badge) {
       const v = (res.verdict || 'SAFE').toLowerCase();
       let badgeClass = 'badge-safe';
-      if (v.includes('critical')) badgeClass = 'badge-critical';
-      else if (v.includes('high')) badgeClass = 'badge-high';
+      if (v.includes('critical') || v.includes('malicious')) badgeClass = 'badge-critical';
+      else if (v.includes('high') || v.includes('suspicious')) badgeClass = 'badge-high';
       else if (v.includes('medium')) badgeClass = 'badge-medium';
 
       badge.className = `badge-threat ${badgeClass}`;
       badge.innerText = res.threat_level_label || res.verdict;
+    }
+
+    const providerBadge = document.getElementById('res-provider-badge');
+    if (providerBadge) {
+      const p = res.providerUsed || res.provider || '';
+      if (p) {
+        providerBadge.style.display = 'inline-block';
+        providerBadge.innerText = `Nguồn: ${p}`;
+      } else {
+        providerBadge.style.display = 'none';
+      }
     }
 
     drawRiskGauge(res.risk_score || 0);

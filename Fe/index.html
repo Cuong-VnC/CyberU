@@ -190,7 +190,10 @@
             <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid var(--border-color); padding-bottom:1rem; margin-bottom:1.5rem;">
               <div>
                 <h3 style="display:flex; align-items:center; gap:0.5rem;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>Kết Quả Điều Tra & Phân Tích Đe Dọa</h3>
-                <span id="res-verdict-badge" class="badge-threat badge-critical" style="margin-top:0.4rem;">CRITICAL_RISK</span>
+                <div style="display:flex; gap:0.5rem; flex-wrap:wrap; align-items:center; margin-top:0.4rem;">
+                  <span id="res-verdict-badge" class="badge-threat badge-critical">CRITICAL_RISK</span>
+                  <span id="res-provider-badge" class="badge-threat badge-safe" style="background:rgba(99,102,241,0.15); color:var(--accent-cyan); border:1px solid var(--accent-cyan); display:none;">Nguồn: VirusTotal API v3</span>
+                </div>
               </div>
               <button type="button" class="btn btn-secondary" onclick="openModal('modal-export')" style="display:inline-flex; align-items:center; gap:0.4rem;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>Xuất Báo Cáo</button>
             </div>
