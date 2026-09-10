@@ -22,7 +22,12 @@ def get_genai_client(client_key: Optional[str] = None):
     if (raw_key.startswith('"') and raw_key.endswith('"')) or (raw_key.startswith("'") and raw_key.endswith("'")):
         raw_key = raw_key[1:-1].strip()
 
-    env_key = os.getenv("GEMINI_API_KEY", "").strip()
+    env_key = (
+        os.getenv("GEMINI_API_KEY", "") or
+        os.getenv("KHÓA_API_GEMINI", "") or
+        os.getenv("KHOA_API_GEMINI", "") or
+        os.getenv("GEMINI_KEY", "")
+    ).strip()
     if (env_key.startswith('"') and env_key.endswith('"')) or (env_key.startswith("'") and env_key.endswith("'")):
         env_key = env_key[1:-1].strip()
 

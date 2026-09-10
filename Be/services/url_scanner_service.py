@@ -14,11 +14,23 @@ GEMINI_ENV_KEY = "GEMINI_API_KEY"
 
 
 def get_virustotal_key() -> str:
-    return os.getenv(VIRUSTOTAL_ENV_KEY, "").strip()
+    return (
+        os.getenv("VIRUSTOTAL_API_KEY", "") or
+        os.getenv("KHÓA_API_VIRUSTOTAL", "") or
+        os.getenv("KHOA_API_VIRUSTOTAL", "") or
+        os.getenv("VIRUSTOTAL_KEY", "") or
+        os.getenv("VT_API_KEY", "")
+    ).strip()
 
 
 def get_safebrowsing_key() -> str:
-    return os.getenv(SAFE_BROWSING_ENV_KEY, "").strip()
+    return (
+        os.getenv("SAFE_BROWSING_API_KEY", "") or
+        os.getenv("KHÓA_API_SAFE_BROWSING", "") or
+        os.getenv("KHOA_API_SAFE_BROWSING", "") or
+        os.getenv("SAFEBROWSING_API_KEY", "") or
+        os.getenv("GOOGLE_SAFE_BROWSING_API_KEY", "")
+    ).strip()
 
 
 def normalize_url(raw_url: str) -> str:
@@ -61,7 +73,7 @@ async def scan_url_virustotal(target_url: str) -> Dict[str, Any]:
             raise RuntimeError("LIMIT_EXCEEDED: VirusTotal API v3 đã đạt hạn mức lượt yêu cầu (Quota / Rate Limit Exceeded).")
 
         if resp.status_code in [401, 403]:
-            raise ValueError("INVALID_KEY_OR_QUOTA: Khóa VirusTotal API v3 không hợp lệ hoặc bị từ chối truy cập.")
+            raise RuntimeError("INVALID_KEY_OR_QUOTA: Khóa VirusTotal API v3 không hợp lệ hoặc bị từ chối truy cập.")
 
         # Trường hợp URL chưa có sẵn trong CSDL VirusTotal (404)
         if resp.status_code == 404:
