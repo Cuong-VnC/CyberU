@@ -156,7 +156,7 @@ def determine_model_pipeline(preferred_model: Optional[str], mode: str, evidence
         pipeline = [preferred_model] + [m for m in SYSTEM_DEFAULT_MODELS if m != preferred_model] + fallback_compat
         return pipeline, preferred_model, f"Mô hình được chỉ định: {preferred_model}"
 
-    primary_model = 'gemini-flash-latest'
+    primary_model = 'gemini-pro-latest'
     
     # Priority ordered list starting with primary_model gemini-3.1-pro-preview
     remaining_models = [m for m in SYSTEM_DEFAULT_MODELS if m != primary_model]
