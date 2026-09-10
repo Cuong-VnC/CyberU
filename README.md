@@ -36,22 +36,18 @@
 ### 🛠️ Tech Stack & Security APIs
 
 #### 💻 Frontend (User Interface)
-- **Core Technologies**: HTML5, Vanilla CSS3 (Custom Dark Glassmorphism Design System), Native JavaScript (ES6+ Async/Await & Fetch API).
-- **Iconography**: Clean inline SVG Vector Icons (Lucide Specification).
+- **Core Technologies**: HTML5, CSS3, Native JavaScript (ES6+ Async/Await & Fetch API).
+- **Iconography**: Clean inline SVG Vector Icons (Lucide Specification: https://lucide.dev/).
 - **Client Storage**: `LocalStorage` for user-defined custom API keys, theme/language preferences, and scan history.
 
 #### ⚙️ Backend (Server & API Services)
 - **Language & Framework**: Python 3.10+, FastAPI (Asynchronous Web Framework), Uvicorn (ASGI Web Server), HTTPX Async Client.
-- **Multimodal AI Engine**: Google GenAI SDK (`google-genai`) supporting models (`gemini-3.1-pro-preview`, `gemini-2.5-flash`, `gemini-2.0-flash`, `gemini-1.5-flash`).
+- **Multimodal AI Engine**: Google GenAI SDK.
 
 #### 🛡️ Threat Intelligence & Security APIs
-1. **VirusTotal API v3** (*Priority 1*):
-   - Performs real-time URL and Domain threat scans against 70+ global antivirus & security vendor engines.
-   - Fallback domain reputation lookup (`/api/v3/domains/{domain}`) for unindexed URLs.
-2. **Google Safe Browsing API v4** (*Priority 2*):
-   - Cross-references URLs against Google's real-time list of dangerous web resources (Malware, Social Engineering / Phishing, Unwanted Software).
-3. **Google Gemini AI & Heuristic Fallback Engine** (*Priority 3*):
-   - Automated DOM form inspection, high-risk TLD evaluation, and AI-powered context reasoning when upstream security APIs hit rate limits.
+1. **VirusTotal API v3**
+2. **Google Safe Browsing API v4**
+3. **Google Gemini AI & Heuristic Fallback Engine**
 
 #### 🔄 3-Tier Fallback URL Scanning Pipeline
 ```
@@ -102,13 +98,11 @@ Create a `.env` file inside the `Be/` directory:
 
 ```env
 # Google Gemini AI Key
-GEMINI_API_KEY=your_gemini_api_key_here
-
-# VirusTotal API v3 Key (Primary URL Scanner)
-VIRUSTOTAL_API_KEY=your_virustotal_api_key_here
-
-# Google Safe Browsing API v4 Key (Secondary URL Scanner)
-SAFE_BROWSING_API_KEY=your_safe_browsing_api_key_here
+GEMINI_API_KEY=
+# VirusTotal API v3 Key 
+VIRUSTOTAL_API_KEY=
+# Google Safe Browsing API v4 Key 
+SAFE_BROWSING_API_KEY=
 ```
 
 ---
@@ -158,22 +152,18 @@ python main.py
 ### 🛠️ Ngôn Ngữ & Công Nghệ Sử Dụng
 
 #### 💻 Frontend (Giao Diện Người Dùng)
-- **Ngôn ngữ**: HTML5, Vanilla CSS3 (Custom Dark Glassmorphism Design System), JavaScript (ES6+ Native Async/Await & Fetch API).
-- **Biểu tượng**: SVG Vector chuẩn HTML/CSS (Lucide Icons Specification), không phụ thuộc thư viện bên ngoài.
+- **Ngôn ngữ**: HTML5, CSS3, JavaScript (ES6+ Native Async/Await & Fetch API).
+- **Biểu tượng**: SVG Vector chuẩn HTML/CSS (Lucide Icons Specification: https://lucide.dev/), .
 - **Lưu trữ phía Client**: `LocalStorage` lưu trữ cài đặt API Key cá nhân, ngôn ngữ hiển thị và lịch sử phân tích.
 
 #### ⚙️ Backend (Máy Chủ Xử Lý)
 - **Ngôn ngữ & Framework**: Python 3.10+, FastAPI (Asynchronous Web Framework), Uvicorn (ASGI Web Server), HTTPX Async Client.
-- **Trí tuệ nhân tạo (AI)**: Google GenAI SDK (`google-genai`) với các dòng mô hình tiên tiến nhất (`gemini-3.1-pro-preview`, `gemini-2.5-flash`, `gemini-2.0-flash`, `gemini-1.5-flash`).
+- **Trí tuệ nhân tạo (AI)**: Google GenAI SDK.
 
 #### 🛡️ Dịch Vụ API Bảo Mật & Phân Tích Đe Dọa
-1. **VirusTotal API v3** (*Ưu tiên 1*):
-   - Đòn bẩy phân tích URL và tên miền trực tiếp đối chiếu với hơn 70 công cụ bảo mật hàng đầu thế giới.
-   - Tự động fallback kiểm tra uy tín tên miền (`/api/v3/domains/{domain}`) nếu URL chưa từng được lưu index.
-2. **Google Safe Browsing API v4** (*Ưu tiên 2*):
-   - Đối chiếu đường link với cơ sở dữ liệu đe dọa thời gian thực của Google (Mã độc Malware, Lừa đảo Phishing / Social Engineering, Phần mềm độc hại).
-3. **Google Gemini AI & Bộ Quét Heuristic** (*Ưu tiên 3*):
-   - Phân tích cấu trúc HTML DOM, phát hiện form thu thập thông tin/OTP, đánh giá TLD rủi ro cao và lập luận ngữ cảnh bằng AI khi các API cấp trên bị giới hạn băng thông (Rate Limit).
+1. **VirusTotal API v3**
+2. **Google Safe Browsing API v4** 
+3. **Google Gemini AI & Bộ Quét Heuristic**
 
 #### 🔄 Cơ Chế Fallback 3 Lớp Quét URL Lừa Đảo
 ```
@@ -224,13 +214,13 @@ Tạo file `.env` trong thư mục `Be/`:
 
 ```env
 # Google Gemini API Key
-GEMINI_API_KEY=your_gemini_api_key_here
+GEMINI_API_KEY=
 
-# VirusTotal API v3 Key (Bộ quét URL ưu tiên 1)
-VIRUSTOTAL_API_KEY=your_virustotal_api_key_here
+# VirusTotal API v3 Key 
+VIRUSTOTAL_API_KEY=
 
-# Google Safe Browsing API v4 Key (Bộ quét URL ưu tiên 2)
-SAFE_BROWSING_API_KEY=your_safe_browsing_api_key_here
+# Google Safe Browsing API v4 Key 
+SAFE_BROWSING_API_KEY=
 ```
 
 ---
