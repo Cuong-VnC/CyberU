@@ -34,9 +34,7 @@ def get_safebrowsing_key() -> str:
 
 
 def normalize_url(raw_url: str) -> str:
-    """
-    Chuẩn hóa URL thành chữ thường (lowercase) và đúng định dạng http/https.
-    """
+    """Normalize URL to lowercase and ensure http/https scheme."""
     u = raw_url.strip().lower()
     if not re.match(r'^https?://', u):
         u = 'https://' + u
@@ -44,20 +42,17 @@ def normalize_url(raw_url: str) -> str:
 
 
 async def scan_url_virustotal(target_url: str) -> Dict[str, Any]:
-    """
-    Quét URL theo chuẩn VirusTotal API v3 Documentation:
-    https://docs.virustotal.com/reference/url
-    """
+    """Scan URL via VirusTotal API v3."""
     vt_key = get_virustotal_key()
     if not vt_key:
-        raise ValueError("MISSING_KEY: Chưa cấu hình VIRUSTOTAL_API_KEY trên Vercel.")
+        raise ValueError("MISSING_KEY: VIRUSTOTAL_API_KEY not configured.")
 
     url_clean = normalize_url(target_url)
     parsed = urllib.parse.urlparse(url_clean)
     domain = parsed.hostname or url_clean.replace("https://", "").replace("http://", "").split("/")[0]
     domain = domain.lower()
 
-    # Tạo URL identifier cho VirusTotal API v3: Base64 urlsafe không padding '='
+    # Create base64 urlsafe identifier without padding for VT v3
     url_id = base64.urlsafe_b64encode(url_clean.encode("utf-8")).decode("utf-8").strip("=")
     api_endpoint = f"https://www.virustotal.com/api/v3/urls/{url_id}"
 
@@ -70,52 +65,50 @@ async def scan_url_virustotal(target_url: str) -> Dict[str, Any]:
         resp = await client.get(api_endpoint, headers=headers)
 
         if resp.status_code in [429, 402] or "quota" in resp.text.lower() or "limit" in resp.text.lower():
-            raise RuntimeError("LIMIT_EXCEEDED: VirusTotal API v3 đã đạt hạn mức lượt yêu cầu (Quota / Rate Limit Exceeded).")
+            raise RuntimeError("LIMIT_EXCEEDED: VirusTotal API v3 quota or rate limit exceeded.")
 
         if resp.status_code in [401, 403]:
-            raise RuntimeError("INVALID_KEY_OR_QUOTA: Khóa VirusTotal API v3 không hợp lệ hoặc bị từ chối truy cập.")
+            raise RuntimeError("INVALID_KEY_OR_QUOTA: VirusTotal API v3 key invalid or unauthorized.")
 
-        # Trường hợp URL chưa có sẵn trong CSDL VirusTotal (404)
+        # Fallback to domain analysis if URL not found in VT database (404)
         if resp.status_code == 404:
-            # 1. Thử gửi POST /api/v3/urls để phân tích URL theo chuẩn VirusTotal docs
+            parsed_domain = urllib.parse.urlparse(target_url).hostname or target_url.replace("https://", "").replace("http://", "").split("/")[0]
+            domain_endpoint = f"https://www.virustotal.com/api/v3/domains/{parsed_domain}"
+            domain_resp = await client.get(domain_endpoint, headers=headers)
+            
+            if domain_resp.status_code == 200:
+                d_data = domain_resp.json()
+                d_stats = d_data.get("data", {}).get("attributes", {}).get("last_analysis_stats", {})
+                d_mal = d_stats.get("malicious", 0)
+                d_susp = d_stats.get("suspicious", 0)
+                d_total = sum(d_stats.values()) if d_stats else 1
+                
+                return {
+                    "success": True,
+                    "provider": "VirusTotal API v3",
+                    "url": url_clean,
+                    "verdict": "MALICIOUS" if d_mal >= 2 else "SUSPICIOUS" if (d_mal > 0 or d_susp > 0 or any(url_clean.endswith(tld) for tld in HIGH_RISK_TLDS)) else "SAFE",
+                    "risk_score": min(99, int(((d_mal * 2 + d_susp) / max(d_total, 10)) * 100 + 35)) if (d_mal > 0 or d_susp > 0) else (60 if any(url_clean.endswith(tld) for tld in HIGH_RISK_TLDS) else 10),
+                    "threat_label": f"Phân Tích Tên Miền VirusTotal ({parsed_domain})",
+                    "summary": f"VirusTotal đánh giá tên miền '{parsed_domain}': {d_mal} nhà bảo mật cảnh báo ĐỘC HẠI, {d_susp} cảnh báo NGHI VẤN trên tổng số {d_total} công cụ quét.",
+                    "stats": d_stats,
+                    "why_is_this_suspicious": [
+                        {
+                            "title": "Kết Quả Quét VirusTotal API v3",
+                            "explanation": f"Tên miền '{parsed_domain}': {d_mal} độc hại, {d_susp} nghi vấn trên {d_total} công cụ quét bảo mật toàn cầu."
+                        }
+                    ]
+                }
+
+            # Submit URL for new scan if domain not indexed
             submit_resp = await client.post(
                 "https://www.virustotal.com/api/v3/urls",
                 headers=headers,
                 data={"url": url_clean}
             )
-            
             if submit_resp.status_code == 429:
-                raise RuntimeError("LIMIT_EXCEEDED: VirusTotal API đã đạt hạn mức khi gửi URL phân tích.")
-
-            # 2. Truy vấn danh tiếng tên miền (Domain API v3) để lấy thông tin bảo mật tức thì
-            domain_resp = await client.get(f"https://www.virustotal.com/api/v3/domains/{domain}", headers=headers)
-            if domain_resp.status_code == 200:
-                d_stats = domain_resp.json().get("data", {}).get("attributes", {}).get("last_analysis_stats", {})
-                d_mal = d_stats.get("malicious", 0)
-                d_susp = d_stats.get("suspicious", 0)
-                d_total = sum(d_stats.values()) if d_stats else 1
-
-                verdict = "MALICIOUS" if d_mal >= 2 else "SUSPICIOUS" if (d_mal > 0 or d_susp > 0 or any(url_clean.endswith(tld) for tld in HIGH_RISK_TLDS)) else "SAFE"
-                risk_score = min(99, int(((d_mal * 2 + d_susp) / max(d_total, 10)) * 100 + 35)) if (d_mal > 0 or d_susp > 0) else (60 if any(url_clean.endswith(tld) for tld in HIGH_RISK_TLDS) else 10)
-
-                return {
-                    "success": True,
-                    "provider": "VirusTotal API v3",
-                    "url": url_clean,
-                    "verdict": verdict,
-                    "risk_score": risk_score,
-                    "threat_label": f"Báo Cáo Tên Miền VirusTotal ({domain})",
-                    "summary": f"VirusTotal đánh giá tên miền '{domain}': {d_mal} nhà bảo mật cảnh báo ĐỘC HẠI, {d_susp} cảnh báo NGHI VẤN trên tổng số {d_total} công cụ quét.",
-                    "stats": d_stats,
-                    "why_is_this_suspicious": [
-                        {
-                            "title": "Kết Quả Quét VirusTotal API v3",
-                            "explanation": f"Tên miền '{domain}': {d_mal} độc hại, {d_susp} nghi vấn trên {d_total} công cụ quét bảo mật toàn cầu."
-                        }
-                    ]
-                }
-
-            # Nếu domain chưa có, trả về phân tích sơ bộ TLD
+                raise RuntimeError("LIMIT_EXCEEDED: VirusTotal API rate limit on URL submission.")
+            
             is_high_risk_tld = any(url_clean.endswith(tld) for tld in HIGH_RISK_TLDS)
             return {
                 "success": True,
@@ -135,7 +128,7 @@ async def scan_url_virustotal(target_url: str) -> Dict[str, Any]:
             }
 
         if resp.status_code != 200:
-            raise RuntimeError(f"HTTP_ERROR_{resp.status_code}: Lỗi VirusTotal API v3 ({resp.text[:200]})")
+            raise RuntimeError(f"HTTP_ERROR_{resp.status_code}: VirusTotal API error ({resp.text[:200]})")
 
         data = resp.json()
         attributes = data.get("data", {}).get("attributes", {})
@@ -174,18 +167,14 @@ async def scan_url_virustotal(target_url: str) -> Dict[str, Any]:
 
 
 async def scan_url_safebrowsing(target_url: str) -> Dict[str, Any]:
-    """
-    Quét URL theo chuẩn Google Safe Browsing API v4 Documentation:
-    https://developers.google.com/safe-browsing/v4/get-started
-    """
+    """Scan URL via Google Safe Browsing API v4."""
     sb_key = get_safebrowsing_key()
     if not sb_key:
-        raise ValueError("MISSING_KEY: Chưa cấu hình SAFE_BROWSING_API_KEY trên Vercel.")
+        raise ValueError("MISSING_KEY: SAFE_BROWSING_API_KEY not configured.")
 
     url_clean = normalize_url(target_url)
     api_endpoint = f"https://safebrowsing.googleapis.com/v4/threatMatches:find?key={sb_key}"
 
-    # Gửi cả dạng url_clean và dạng domain đối chiếu
     parsed = urllib.parse.urlparse(url_clean)
     domain_url = f"{parsed.scheme}://{parsed.hostname}/" if parsed.hostname else url_clean
 
@@ -214,10 +203,10 @@ async def scan_url_safebrowsing(target_url: str) -> Dict[str, Any]:
         resp = await client.post(api_endpoint, json=payload)
 
         if resp.status_code in [429, 403] or "quota" in resp.text.lower() or "resource_exhausted" in resp.text.lower():
-            raise RuntimeError("LIMIT_EXCEEDED: Google Safe Browsing API v4 đã đạt hạn mức lượt yêu cầu (Quota Exceeded).")
+            raise RuntimeError("LIMIT_EXCEEDED: Google Safe Browsing API v4 quota exceeded.")
 
         if resp.status_code != 200:
-            raise RuntimeError(f"HTTP_ERROR_{resp.status_code}: Lỗi Google Safe Browsing API v4 ({resp.text[:200]})")
+            raise RuntimeError(f"HTTP_ERROR_{resp.status_code}: Google Safe Browsing API error ({resp.text[:200]})")
 
         data = resp.json()
         matches = data.get("matches", [])
@@ -271,9 +260,7 @@ async def scan_url_safebrowsing(target_url: str) -> Dict[str, Any]:
 
 
 async def scan_url_gemini(target_url: str, client_key: Optional[str] = None) -> Dict[str, Any]:
-    """
-    Quét và phân tích URL bằng Google Gemini AI (Fallback Ưu tiên 3) hoặc Heuristic Scanner.
-    """
+    """Analyze URL via Gemini AI or Heuristic Scanner."""
     url_clean = normalize_url(target_url)
     crawled = await inspect_and_fetch_url(url_clean)
 
@@ -341,7 +328,7 @@ Fetch Error (if any): {crawled.get('fetchError', 'None')}
     except Exception:
         pass
 
-    # Heuristic Fallback an toàn tuyệt đối nếu không gọi được Gemini
+    # Heuristic fallback if Gemini API call fails
     is_high_risk = crawled.get("isHighRiskTld") or crawled.get("formsDetected", {}).get("hasLoginForm")
     return {
         "success": True,
@@ -362,26 +349,20 @@ Fetch Error (if any): {crawled.get('fetchError', 'None')}
 
 
 async def scan_url_with_fallback(target_url: str, client_key: Optional[str] = None) -> Dict[str, Any]:
-    """
-    Hàm chính Quét URL lừa đảo áp dụng chuẩn 3 lớp Fallback:
-    1. VirusTotal API v3 (https://docs.virustotal.com/reference/url)
-    2. Google Safe Browsing API v4 (https://developers.google.com/safe-browsing/v4/get-started)
-    3. Google Gemini AI / Heuristic Scanner
-    URL LUÔN ĐƯỢC CHUẨN HÓA THÀNH CHỮ THƯỜNG (LOWERCASE).
-    """
+    """Main URL scan handler with fallback chain."""
     url_clean = normalize_url(target_url)
     fallback_chain: List[Dict[str, Any]] = []
 
-    # 1. Thử VirusTotal API v3
+    # 1. Try VirusTotal API v3
     try:
         res = await scan_url_virustotal(url_clean)
         fallback_chain.append({
             "provider": "VirusTotal API v3",
             "status": "SUCCESS",
-            "reason": "Kết nối thành công VirusTotal API v3."
+            "reason": "VirusTotal API v3 scan completed successfully."
         })
-        fallback_chain.append({"provider": "Google Safe Browsing API v4", "status": "SKIPPED", "reason": "VirusTotal đã xử lý thành công."})
-        fallback_chain.append({"provider": "Gemini AI", "status": "SKIPPED", "reason": "Dịch vụ ưu tiên đã hoàn thành."})
+        fallback_chain.append({"provider": "Google Safe Browsing API v4", "status": "SKIPPED", "reason": "VirusTotal scan succeeded."})
+        fallback_chain.append({"provider": "Gemini AI", "status": "SKIPPED", "reason": "Primary provider succeeded."})
         
         res["fallback_chain"] = fallback_chain
         res["provider_used"] = "VirusTotal API v3"
@@ -395,15 +376,15 @@ async def scan_url_with_fallback(target_url: str, client_key: Optional[str] = No
             "reason": err_msg
         })
 
-    # 2. Thử Google Safe Browsing API v4 (khi VirusTotal bị limit/chưa có key/lỗi)
+    # 2. Try Google Safe Browsing API v4
     try:
         res = await scan_url_safebrowsing(url_clean)
         fallback_chain.append({
             "provider": "Google Safe Browsing API v4",
             "status": "SUCCESS",
-            "reason": "Kết nối thành công Google Safe Browsing API v4."
+            "reason": "Google Safe Browsing API v4 scan completed successfully."
         })
-        fallback_chain.append({"provider": "Gemini AI", "status": "SKIPPED", "reason": "Safe Browsing đã xử lý thành công."})
+        fallback_chain.append({"provider": "Gemini AI", "status": "SKIPPED", "reason": "Safe Browsing scan succeeded."})
 
         res["fallback_chain"] = fallback_chain
         res["provider_used"] = "Google Safe Browsing API v4"
@@ -417,12 +398,12 @@ async def scan_url_with_fallback(target_url: str, client_key: Optional[str] = No
             "reason": err_msg
         })
 
-    # 3. Fallback cuối cùng: Google Gemini AI hoặc Heuristic Scanner
+    # 3. Fallback to Gemini AI or Heuristic Scanner
     res = await scan_url_gemini(url_clean, client_key=client_key)
     fallback_chain.append({
         "provider": res.get("provider", "Gemini AI"),
         "status": "SUCCESS",
-        "reason": "Chuyển sang Gemini AI / Heuristic do các dịch vụ trước đó bị limit hoặc chưa có key."
+        "reason": "Fallback to Gemini AI or Heuristic Scanner."
     })
 
     res["fallback_chain"] = fallback_chain

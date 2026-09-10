@@ -139,7 +139,7 @@ async def inspect_and_fetch_url(raw_url: str) -> Dict[str, Any]:
 
     return result
 
-# System default model rotation list specified for CyberÚ
+# Default models for CyberU
 SYSTEM_DEFAULT_MODELS = [
     'gemini-3.1-pro-preview',
     'gemini-3.8-flash',
@@ -178,10 +178,10 @@ async def analyze_scam_payload(payload: Dict[str, Any], client_key: Optional[str
     language = payload.get("language", "vi")
     preferred_model = payload.get("preferredModel")
 
-    # Trích xuất URL linh hoạt (hỗ trợ hoa/thường, có hoặc không có http/https)
+    # Extract URLs from text
     urls = re.findall(r'https?://[^\s]+', text_content, re.IGNORECASE)
     if not urls and text_content:
-        # Thử tìm dạng domain như bank-login.com, example.xyz, ...
+        # Extract domain patterns
         domain_match = re.search(r'\b(?:[a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}\b(?:/[^\s]*)?', text_content)
         if domain_match:
             candidate = domain_match.group(0)
@@ -191,7 +191,7 @@ async def analyze_scam_payload(payload: Dict[str, Any], client_key: Optional[str
 
     is_url_mode = (mode == "URL_PHISHING") or (bool(urls) and len(text_content) < 300 and not evidence_items)
 
-    # Nếu là chế độ Quét URL lừa đảo -> Xử lý 100% qua Fallback Scanner (VirusTotal -> Safe Browsing -> Gemini/Heuristic)
+    # Fallback URL scanner for phishing mode
     if is_url_mode or (mode == "URL_PHISHING"):
         target_url = urls[0] if urls else (text_content if text_content.startswith('http') else 'https://' + text_content if text_content else "https://example.com")
         from services.url_scanner_service import scan_url_with_fallback

@@ -201,5 +201,5 @@ if __name__ == "__main__":
     import uvicorn
     port = int(os.getenv("PORT", "8000"))
     host = os.getenv("HOST", "0.0.0.0")
-    print(f"🚀 CyberU Python API Server starting on http://{host}:{port}")
+    print(f"CyberU Python API Server starting on http://{host}:{port}")
     uvicorn.run("main:app", host=host, port=port, reload=True)
