@@ -167,22 +167,28 @@ def determine_model_pipeline(preferred_model: Optional[str], mode: str, evidence
 
 async def analyze_scam_payload(payload: Dict[str, Any], client_key: Optional[str] = None) -> Dict[str, Any]:
     mode = payload.get("mode", "DEEP_INVESTIGATION")
-    text_content = payload.get("textContent", "")
+    text_content = payload.get("textContent", "").strip()
     evidence_items = payload.get("evidenceItems", [])
     user_notes = payload.get("userNotes", "")
     language = payload.get("language", "vi")
     preferred_model = payload.get("preferredModel")
 
-    # Nếu là chế độ quét URL lừa đảo (URL_PHISHING) hoặc chỉ nhập link URL
-    urls = re.findall(r'https?://[^\s]+', text_content)
-    if not urls and (text_content.strip().startswith('http://') or text_content.strip().startswith('https://') or '.' in text_content.strip()):
-        if not text_content.strip().startswith('http'):
-            candidate = 'https://' + text_content.strip()
-            if re.match(r'^https?://[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}', candidate):
-                urls = [candidate]
+    # Trích xuất URL linh hoạt (hỗ trợ hoa/thường, có hoặc không có http/https)
+    urls = re.findall(r'https?://[^\s]+', text_content, re.IGNORECASE)
+    if not urls and text_content:
+        # Thử tìm dạng domain như bank-login.com, example.xyz, ...
+        domain_match = re.search(r'\b(?:[a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}\b(?:/[^\s]*)?', text_content)
+        if domain_match:
+            candidate = domain_match.group(0)
+            if not candidate.startswith('http'):
+                candidate = 'https://' + candidate
+            urls = [candidate]
 
-    if mode == "URL_PHISHING" or (not evidence_items and (urls or (text_content.strip().startswith('http') or '.' in text_content.strip())) and len(text_content.strip()) < 300):
-        target_url = urls[0] if urls else (text_content.strip() if text_content.strip().startswith('http') else 'https://' + text_content.strip())
+    is_url_mode = (mode == "URL_PHISHING") or (bool(urls) and len(text_content) < 300 and not evidence_items)
+
+    # Nếu là chế độ Quét URL lừa đảo -> Xử lý 100% qua Fallback Scanner (VirusTotal -> Safe Browsing -> Gemini/Heuristic)
+    if is_url_mode or (mode == "URL_PHISHING"):
+        target_url = urls[0] if urls else (text_content if text_content.startswith('http') else 'https://' + text_content if text_content else "https://example.com")
         from services.url_scanner_service import scan_url_with_fallback
         scan_res = await scan_url_with_fallback(target_url, client_key=client_key)
         
@@ -227,7 +233,7 @@ async def analyze_scam_payload(payload: Dict[str, Any], client_key: Optional[str
             "modelUsed": provider,
             "primaryModel": provider,
             "modelSwitched": True,
-            "switchReason": f"Kết quả từ dịch vụ quét URL: {provider}.",
+            "switchReason": f"Kết quả trực tiếp từ dịch vụ quét URL: {provider}.",
             "rationale": f"Xử lý thành công qua {provider}.",
             "analysis": {
                 "verdict": scan_res.get("verdict", "SAFE"),
@@ -363,6 +369,27 @@ Return STRICT JSON adhering precisely to schema."""
                             }
                     except Exception as fb_err:
                         print("Fallback client error:", fb_err)
+
+                if urls:
+                    from services.url_scanner_service import scan_url_with_fallback
+                    scan_res = await scan_url_with_fallback(urls[0], client_key=client_key)
+                    return {
+                        "success": True,
+                        "providerUsed": scan_res.get("provider_used", "URL Scanner"),
+                        "modelUsed": "URL Scanner Fallback",
+                        "primaryModel": primary_model,
+                        "modelSwitched": True,
+                        "switchReason": "Tự động sử dụng Bộ quét URL Fallback do Gemini API gặp sự cố 401.",
+                        "rationale": "Chuyển sang Bộ quét URL Fallback.",
+                        "analysis": {
+                            "verdict": scan_res.get("verdict", "SUSPICIOUS"),
+                            "risk_score": scan_res.get("risk_score", 50),
+                            "threat_level_label": scan_res.get("threat_label", "Kết quả quét URL"),
+                            "summary": scan_res.get("summary", "Đã phân tích URL thành công."),
+                            "why_is_this_suspicious": scan_res.get("why_is_this_suspicious", [{"title": "Quét URL Security", "explanation": scan_res.get("summary")}]),
+                            "recommended_actions": scan_res.get("recommended_actions", [])
+                        }
+                    }
 
                 raise ValueError("Khóa Gemini API Key không hợp lệ hoặc chưa được cấp quyền (HTTP 401 UNAUTHENTICATED). Vui lòng kiểm tra biến GEMINI_API_KEY trên Vercel hoặc tạo lại API Key mới tại Google AI Studio (aistudio.google.com).")
 
