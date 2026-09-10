@@ -69,7 +69,6 @@ async def health_check():
         },
         "timestamp": str(Path(__file__).stat().st_mtime)
     }
-
 # i18n Translations Endpoint
 @app.get("/api/i18n")
 async def get_i18n(lang: Optional[str] = None):
