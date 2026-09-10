@@ -8,6 +8,7 @@ from fastapi.responses import JSONResponse
 from dotenv import load_dotenv
 
 from services.gemini_service import validate_api_key, analyze_scam_payload, inspect_and_fetch_url
+from services.url_scanner_service import scan_url_with_fallback, get_virustotal_key, get_safebrowsing_key
 
 load_dotenv()
 
@@ -45,6 +46,8 @@ async def root():
         "endpoints": {
             "health": "/api/health",
             "analyze": "/api/gemini/analyze",
+            "scanUrl": "/api/scan-url",
+            "inspectUrl": "/api/inspect-url",
             "knowledge": "/api/knowledge/threats"
         }
     }
@@ -52,11 +55,18 @@ async def root():
 # Health & Status Endpoint
 @app.get("/api/health")
 async def health_check():
-    has_env_key = bool(os.getenv("GEMINI_API_KEY", "").strip())
+    has_gemini_key = bool(os.getenv("GEMINI_API_KEY", "").strip())
+    has_virustotal_key = bool(get_virustotal_key())
+    has_safebrowsing_key = bool(get_safebrowsing_key())
     return {
         "status": "ok",
         "service": "CyberU Python FastAPI Backend",
-        "hasEnvKey": has_env_key,
+        "hasEnvKey": has_gemini_key,
+        "apiKeysConfigured": {
+            "GEMINI_API_KEY": has_gemini_key,
+            "VIRUSTOTAL_API_KEY": has_virustotal_key,
+            "SAFE_BROWSING_API_KEY": has_safebrowsing_key
+        },
         "timestamp": str(Path(__file__).stat().st_mtime)
     }
 
@@ -102,11 +112,33 @@ async def analyze_scam(request: Request, x_gemini_api_key: Optional[str] = Heade
         print("Analysis error:", e)
         raise HTTPException(status_code=500, detail=f"Lỗi khi xử lý phân tích AI: {str(e)}")
 
+# Phishing URL Scanning Endpoint with Fallback Mechanism (VirusTotal -> Safe Browsing -> Gemini)
+@app.get("/api/scan-url")
+async def scan_url_get(url: str = Query(..., description="Target URL to scan for phishing/malware")):
+    result = await scan_url_with_fallback(url)
+    return result
+
+@app.post("/api/scan-url")
+async def scan_url_post(request: Request, x_gemini_api_key: Optional[str] = Header(None)):
+    try:
+        body = await request.json()
+    except Exception:
+        raise HTTPException(status_code=400, detail="Dữ liệu không hợp lệ.")
+    
+    url = body.get("url")
+    if not url:
+        raise HTTPException(status_code=400, detail="Vui lòng cung cấp URL cần quét (tham số 'url').")
+    
+    result = await scan_url_with_fallback(url, client_key=x_gemini_api_key)
+    return result
+
 # Live URL Forensics Inspection Endpoint
 @app.get("/api/inspect-url")
 async def inspect_url(url: str = Query(..., description="Target URL to inspect")):
+    scanned = await scan_url_with_fallback(url)
     crawled = await inspect_and_fetch_url(url)
-    return {"success": True, "crawled": crawled}
+    return {"success": True, "scan": scanned, "crawled": crawled}
+
 
 # Knowledge Base Endpoints
 @app.get("/api/knowledge/encyclopedia")

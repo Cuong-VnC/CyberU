@@ -196,7 +196,20 @@ Return STRICT JSON adhering precisely to schema."""
     if text_content and text_content.strip():
         parts.append(f"[SUSPICIOUS TEXT / EMAIL / MESSAGE CONTENT TO ANALYZE]:\n\"\"\"\n{text_content.strip()}\n\"\"\"")
         urls = re.findall(r'https?://[^\s]+', text_content)
+        if not urls and (text_content.strip().startswith('http://') or text_content.strip().startswith('https://') or '.' in text_content.strip()):
+            if not text_content.strip().startswith('http'):
+                candidate = 'https://' + text_content.strip()
+                if re.match(r'^https?://[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}', candidate):
+                    urls = [candidate]
+
         if urls:
+            try:
+                from services.url_scanner_service import scan_url_with_fallback
+                url_scan_res = await scan_url_with_fallback(urls[0], client_key=client_key)
+                parts.append(f"[URL FORENSICS & SECURITY REPUTATION SCAN FOR \"{urls[0]}\"]:\nPrimary Security Provider Used: {url_scan_res.get('provider_used')}\nVerdict: {url_scan_res.get('verdict')}\nRisk Score: {url_scan_res.get('risk_score')}\nThreat Summary: {url_scan_res.get('summary')}\nFallback Chain Log: {json.dumps(url_scan_res.get('fallback_chain', []))}")
+            except Exception as scan_err:
+                print("URL Fallback scan error:", scan_err)
+            
             try:
                 crawled = await inspect_and_fetch_url(urls[0])
                 parts.append(f"[LIVE CRAWLED WEB CONTENT FROM URL \"{urls[0]}\"]:\nFinal URL: {crawled.get('finalUrl')}\nTitle: {crawled.get('title')}\nForms Detected: {json.dumps(crawled.get('formsDetected', {}))}\nBody Text Snippet:\n\"\"\"\n{crawled.get('bodySnippet', '')}\n\"\"\"")
