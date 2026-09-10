@@ -166,13 +166,71 @@ def determine_model_pipeline(preferred_model: Optional[str], mode: str, evidence
     return pipeline, primary_model, rationale
 
 async def analyze_scam_payload(payload: Dict[str, Any], client_key: Optional[str] = None) -> Dict[str, Any]:
-    client = get_genai_client(client_key)
     mode = payload.get("mode", "DEEP_INVESTIGATION")
     text_content = payload.get("textContent", "")
     evidence_items = payload.get("evidenceItems", [])
     user_notes = payload.get("userNotes", "")
     language = payload.get("language", "vi")
     preferred_model = payload.get("preferredModel")
+
+    # Nếu là chế độ quét URL lừa đảo (URL_PHISHING) hoặc chỉ nhập link URL
+    urls = re.findall(r'https?://[^\s]+', text_content)
+    if not urls and (text_content.strip().startswith('http://') or text_content.strip().startswith('https://') or '.' in text_content.strip()):
+        if not text_content.strip().startswith('http'):
+            candidate = 'https://' + text_content.strip()
+            if re.match(r'^https?://[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}', candidate):
+                urls = [candidate]
+
+    if mode == "URL_PHISHING" and urls:
+        from services.url_scanner_service import scan_url_with_fallback
+        scan_res = await scan_url_with_fallback(urls[0], client_key=client_key)
+        
+        # Nếu VirusTotal hoặc Google Safe Browsing xử lý thành công -> Trả về kết quả ngay mà không cần gọi Gemini API
+        if scan_res.get("provider_used") in ["VirusTotal", "Google Safe Browsing"]:
+            why_items = []
+            if scan_res.get("provider_used") == "VirusTotal":
+                stats = scan_res.get("stats", {})
+                why_items.append({
+                    "title": "Báo cáo Bảo mật VirusTotal",
+                    "explanation": f"Số nhà bảo mật cảnh báo độc hại: {stats.get('malicious', 0)}, nghi vấn: {stats.get('suspicious', 0)}."
+                })
+            elif scan_res.get("provider_used") == "Google Safe Browsing":
+                why_items.append({
+                    "title": "Báo cáo Google Safe Browsing",
+                    "explanation": scan_res.get("summary", "Đã đối chiếu dữ liệu với Google Safe Browsing Database.")
+                })
+
+            return {
+                "success": True,
+                "providerUsed": scan_res.get("provider_used"),
+                "modelUsed": scan_res.get("provider_used"),
+                "primaryModel": scan_res.get("provider_used"),
+                "modelSwitched": True,
+                "switchReason": f"Kết quả trực tiếp từ dịch vụ {scan_res.get('provider_used')}.",
+                "rationale": f"Xử lý thành công qua {scan_res.get('provider_used')}.",
+                "analysis": {
+                    "verdict": scan_res.get("verdict", "SAFE"),
+                    "risk_score": scan_res.get("risk_score", 0),
+                    "threat_level_label": scan_res.get("threat_label", scan_res.get("verdict")),
+                    "summary": scan_res.get("summary", ""),
+                    "why_is_this_suspicious": why_items,
+                    "recommended_actions": [
+                        {
+                            "step_number": 1,
+                            "title": "Kiểm tra địa chỉ trang web",
+                            "action": "Không nhập thông tin tài khoản, mật khẩu hoặc mã OTP vào website này."
+                        },
+                        {
+                            "step_number": 2,
+                            "title": "Báo cáo vi phạm",
+                            "action": "Nếu phát hiện dấu hiệu lừa đảo, hãy báo cáo cho cơ quan chức năng hoặc Quản trị viên."
+                        }
+                    ]
+                }
+            }
+
+    # Nếu bước 1 (VirusTotal) và bước 2 (Safe Browsing) bị limit/lỗi, mới khởi tạo Gemini Client cho bước 3
+    client = get_genai_client(client_key)
 
     parts = []
     system_prompt = f"""You are CyberU AI — a world-class Cybersecurity Threat Intelligence, Multimodal Scam, Phishing, and Social Engineering Analysis engine.
@@ -195,13 +253,6 @@ Return STRICT JSON adhering precisely to schema."""
 
     if text_content and text_content.strip():
         parts.append(f"[SUSPICIOUS TEXT / EMAIL / MESSAGE CONTENT TO ANALYZE]:\n\"\"\"\n{text_content.strip()}\n\"\"\"")
-        urls = re.findall(r'https?://[^\s]+', text_content)
-        if not urls and (text_content.strip().startswith('http://') or text_content.strip().startswith('https://') or '.' in text_content.strip()):
-            if not text_content.strip().startswith('http'):
-                candidate = 'https://' + text_content.strip()
-                if re.match(r'^https?://[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}', candidate):
-                    urls = [candidate]
-
         if urls:
             try:
                 from services.url_scanner_service import scan_url_with_fallback
