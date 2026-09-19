@@ -10,13 +10,14 @@ import httpx
 from google import genai
 from google.genai import types
 
-# High risk TLDs list
+# danh sach domain tld rui ro cao hay dung de lam web scam
 HIGH_RISK_TLDS = [
     '.top', '.xyz', '.cc', '.vip', '.work', '.icu', '.tk', '.ml', '.ga', '.cf',
     '.gq', '.pw', '.fun', '.buzz', '.click', '.site', '.rest', '.online', '.live',
     '.cam', '.fit', '.sbs', '.cfd', '.quest', '.beauty', '.hair', '.skin', '.center'
 ]
 
+# ham khoi tao client google genai tu key truyen vao hoac bien env
 def get_genai_client(client_key: Optional[str] = None):
     raw_key = (client_key or "").strip()
     if (raw_key.startswith('"') and raw_key.endswith('"')) or (raw_key.startswith("'") and raw_key.endswith("'")):
@@ -36,10 +37,11 @@ def get_genai_client(client_key: Optional[str] = None):
         raise ValueError("MISSING_API_KEY: Chưa cấu hình Gemini API Key. Vui lòng nhập API Key trong phần Cài Đặt hoặc chọn 'Sử dụng API có sẵn'.")
     return genai.Client(api_key=api_key)
 
+# test thu key xem co chay duoc voi cac model gemini khong
 async def validate_api_key(client_key: Optional[str] = None) -> Dict[str, Any]:
     try:
         client = get_genai_client(client_key)
-        probe_models = ['gemini-2.5-flash', 'gemini-1.5-flash', 'gemini-2.0-flash', 'gemini-3.5-flash-lite']
+        probe_models = ['gemini-3.5-flash-lite', 'gemini-3.1-flash-lite', 'gemini-3.7-flash', 'gemini-flash-latest']
         last_error = None
 
         for m in probe_models:
@@ -65,6 +67,7 @@ async def validate_api_key(client_key: Optional[str] = None) -> Dict[str, Any]:
     except Exception as e:
         return {"valid": False, "error": str(e)}
 
+# crawl thong tin tu url nhap vao de gui them context cho ai
 async def inspect_and_fetch_url(raw_url: str) -> Dict[str, Any]:
     target_url = raw_url.strip()
     if not re.match(r'^https?://', target_url, re.IGNORECASE):
@@ -98,17 +101,17 @@ async def inspect_and_fetch_url(raw_url: str) -> Dict[str, Any]:
             result["statusCode"] = resp.status_code
             html = resp.text
 
-            # Extract title
+            # lay tieu de the title
             title_match = re.search(r'<title[^>]*>(.*?)</title>', html, re.IGNORECASE | re.DOTALL)
             if title_match:
                 result["title"] = re.sub(r'\s+', ' ', title_match.group(1)).strip()
 
-            # Extract meta description
+            # lay meta description
             desc_match = re.search(r'<meta[^>]*name=["\']description["\'][^>]*content=["\']([^"\']+)["\']', html, re.IGNORECASE)
             if desc_match:
                 result["metaDescription"] = re.sub(r'\s+', ' ', desc_match.group(1)).strip()
 
-            # Inspect inputs / forms
+            # soi cac input va form nghi van phish
             lower_html = html.lower()
             has_login = bool(re.search(r'type=["\']password["\']|name=["\'](password|pass|matkhau|pwd)', lower_html))
             has_otp = bool(re.search(r'name=["\'](otp|ma_otp|token|code|2fa)|placeholder=["\'][^"\']*(otp|mã xác thực)', lower_html))
@@ -124,7 +127,7 @@ async def inspect_and_fetch_url(raw_url: str) -> Dict[str, Any]:
                 "formActions": form_actions[:5]
             }
 
-            # Text snippet
+            # trich xuat noi dung van ban thuan
             clean_text = re.sub(r'<script\b[^<]*(?:(?!</script>)<[^<]*)*</script>', ' ', html, flags=re.IGNORECASE)
             clean_text = re.sub(r'<style\b[^<]*(?:(?!</style>)<[^<]*)*</style>', ' ', clean_text, flags=re.IGNORECASE)
             clean_text = re.sub(r'<[^>]+>', ' ', clean_text)
@@ -139,37 +142,117 @@ async def inspect_and_fetch_url(raw_url: str) -> Dict[str, Any]:
 
     return result
 
-# Default models for CyberU
+# cac model ai duoc google ho tro hien tai
 SYSTEM_DEFAULT_MODELS = [
-    'gemini-3.1-pro-preview',
-    'gemini-3.8-flash',
-    'gemini-3.7-flash',
     'gemini-3.5-flash-lite',
     'gemini-3.1-flash-lite',
-    'gemini-pro-latest'
+    'gemini-3.7-flash',
+    'gemini-3.8-flash',
+    'gemini-3.1-pro-preview',
+    'gemini-flash-latest'
 ]
 
-# Global round-robin index counter
+# bien dem vong lap doi model khi bi nghen
 _MODEL_ROTATION_INDEX = 0
 
 def determine_model_pipeline(preferred_model: Optional[str], mode: str, evidence_items: List[Dict[str, Any]], text_content: str):
     global _MODEL_ROTATION_INDEX
 
-    fallback_compat = ['gemini-2.5-flash', 'gemini-2.0-flash', 'gemini-1.5-flash']
+    fallback_compat = ['gemini-3.5-flash-lite', 'gemini-3.1-flash-lite', 'gemini-3.7-flash', 'gemini-flash-latest']
 
     if preferred_model and preferred_model != "AUTO":
         pipeline = [preferred_model] + [m for m in SYSTEM_DEFAULT_MODELS if m != preferred_model] + fallback_compat
         return pipeline, preferred_model, f"Mô hình được chỉ định: {preferred_model}"
 
-    primary_model = 'gemini-3.1-flash-lite'
+    primary_model = 'gemini-3.5-flash-lite'
     
-    # Priority ordered list starting with primary_model gemini-3.1-pro-preview
+    # danh sach uu tien bat dau bang primary_model
     remaining_models = [m for m in SYSTEM_DEFAULT_MODELS if m != primary_model]
     pipeline = [primary_model] + remaining_models + fallback_compat
     rationale = f"Mô hình mặc định: {primary_model} (Tự động chuyển đổi nếu bị giới hạn/gặp lỗi)"
 
     return pipeline, primary_model, rationale
 
+# ham chuan hoa du lieu tra ve tu gemini ai de giao dien hien thi khong bi sap
+def normalize_analysis_response(raw_data: Dict[str, Any]) -> Dict[str, Any]:
+    if not isinstance(raw_data, dict):
+        raw_data = {}
+    
+    verdict = str(raw_data.get("verdict") or raw_data.get("verdict_level") or raw_data.get("status") or "SUSPICIOUS").upper()
+    
+    risk_score = raw_data.get("risk_score")
+    if risk_score is None:
+        risk_score = raw_data.get("riskScore")
+    if risk_score is None:
+        risk_score = 75 if verdict in ["CRITICAL_RISK", "HIGH_RISK", "MALICIOUS"] else 40 if verdict in ["MEDIUM_RISK", "SUSPICIOUS"] else 10
+    try:
+        risk_score = int(risk_score)
+    except Exception:
+        risk_score = 50
+
+    threat_label = raw_data.get("threat_level_label") or raw_data.get("threat_label") or raw_data.get("threatLevel") or raw_data.get("threat_level") or verdict
+    summary = raw_data.get("summary") or raw_data.get("summary_text") or raw_data.get("description") or "Đã hoàn thành phân tích đe dọa."
+
+    why_items = raw_data.get("why_is_this_suspicious") or raw_data.get("suspicious_points") or raw_data.get("reasons") or []
+    if not isinstance(why_items, list):
+        why_items = []
+
+    normalized_why = []
+    for item in why_items:
+        if isinstance(item, dict):
+            title_val = item.get("title") or item.get("point") or "Dấu hiệu nghi vấn"
+            exp_val = item.get("explanation") or item.get("detail") or item.get("description") or item.get("text") or item.get("action")
+            if not exp_val:
+                exp_val = str(item)
+            normalized_why.append({
+                "title": title_val,
+                "explanation": exp_val
+            })
+        elif isinstance(item, str):
+            normalized_why.append({"title": "Dấu hiệu nghi vấn", "explanation": item})
+
+    actions = raw_data.get("recommended_actions") or raw_data.get("actions") or raw_data.get("safety_steps") or []
+    if not isinstance(actions, list):
+        actions = []
+
+    normalized_actions = []
+    for i, act in enumerate(actions):
+        if isinstance(act, dict):
+            step_num = act.get("step_number", i + 1)
+            title_val = act.get("title") or f"Bước {step_num}"
+            act_val = act.get("action") or act.get("explanation") or act.get("detail") or act.get("description") or act.get("text")
+            if not act_val:
+                act_val = str(act)
+            normalized_actions.append({
+                "step_number": step_num,
+                "title": title_val,
+                "action": act_val
+            })
+        elif isinstance(act, str):
+            normalized_actions.append({
+                "step_number": i + 1,
+                "title": f"Hướng dẫn {i + 1}",
+                "action": act
+            })
+
+
+    if not normalized_actions:
+        normalized_actions = [
+            {"step_number": 1, "title": "Dừng mọi giao dịch", "action": "Tuyệt đối không đọc mã OTP, không truy cập đường link lạ hoặc chuyển tiền."},
+            {"step_number": 2, "title": "Xác minh trực tiếp", "action": "Gọi tới hotline chính thức của ngân hàng hoặc cơ quan chức năng để kiểm tra thông tin."}
+        ]
+
+    return {
+        "verdict": verdict,
+        "risk_score": risk_score,
+        "threat_level_label": str(threat_label),
+        "summary": str(summary),
+        "why_is_this_suspicious": normalized_why,
+        "recommended_actions": normalized_actions,
+        "emergency_active_threat": bool(raw_data.get("emergency_active_threat", risk_score >= 75))
+    }
+
+# ham chinh phan tich noi dung lua dao qua gemini api
 async def analyze_scam_payload(payload: Dict[str, Any], client_key: Optional[str] = None) -> Dict[str, Any]:
     mode = payload.get("mode", "DEEP_INVESTIGATION")
     text_content = payload.get("textContent", "").strip()
@@ -178,10 +261,9 @@ async def analyze_scam_payload(payload: Dict[str, Any], client_key: Optional[str
     language = payload.get("language", "vi")
     preferred_model = payload.get("preferredModel")
 
-    # Extract URLs from text
+    # tim url co trong tin nhan hoac van ban
     urls = re.findall(r'https?://[^\s]+', text_content, re.IGNORECASE)
     if not urls and text_content:
-        # Extract domain patterns
         domain_match = re.search(r'\b(?:[a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}\b(?:/[^\s]*)?', text_content)
         if domain_match:
             candidate = domain_match.group(0)
@@ -189,48 +271,17 @@ async def analyze_scam_payload(payload: Dict[str, Any], client_key: Optional[str
                 candidate = 'https://' + candidate
             urls = [candidate]
 
-    is_url_mode = (mode == "URL_PHISHING") or (bool(urls) and len(text_content) < 300 and not evidence_items)
+    is_url_mode = (mode in ["URL", "URL_PHISHING"]) and not (evidence_items or (text_content and len(text_content.split()) > 10))
 
-    # Fallback URL scanner for phishing mode
-    if is_url_mode or (mode == "URL_PHISHING"):
+    # neu chi truyen url thi dung scanner dich vu ngoai lam fallback
+    if is_url_mode:
         target_url = urls[0] if urls else (text_content if text_content.startswith('http') else 'https://' + text_content if text_content else "https://example.com")
         from services.url_scanner_service import scan_url_with_fallback
         scan_res = await scan_url_with_fallback(target_url, client_key=client_key)
         
         provider = scan_res.get("provider_used", scan_res.get("provider", "URL Scanner"))
-        why_items = scan_res.get("why_is_this_suspicious", [])
-        if not why_items:
-            if provider == "VirusTotal":
-                stats = scan_res.get("stats", {})
-                why_items.append({
-                    "title": "Báo cáo Bảo mật VirusTotal API v3",
-                    "explanation": f"Số nhà bảo mật đánh giá độc hại: {stats.get('malicious', 0)}, nghi vấn: {stats.get('suspicious', 0)} trên tổng số {sum(stats.values()) if stats else 1} công cụ quét."
-                })
-            elif provider == "Google Safe Browsing":
-                why_items.append({
-                    "title": "Báo cáo Google Safe Browsing API v4",
-                    "explanation": scan_res.get("summary", "Đã kiểm định với cơ sở dữ liệu Google Safe Browsing.")
-                })
-            else:
-                why_items.append({
-                    "title": "Phân Tích Cấu Trúc URL & Domain",
-                    "explanation": scan_res.get("summary", "Đã phân tích thông tin tên miền và thành phần trang web.")
-                })
-
-        actions = scan_res.get("recommended_actions", [])
-        if not actions:
-            actions = [
-                {
-                    "step_number": 1,
-                    "title": "Kiểm tra địa chỉ trang web",
-                    "action": "Không nhập thông tin tài khoản, mật khẩu hoặc mã OTP vào website này."
-                },
-                {
-                    "step_number": 2,
-                    "title": "Báo cáo vi phạm",
-                    "action": "Nếu phát hiện dấu hiệu lừa đảo, hãy báo cáo cho cơ quan chức năng hoặc Quản trị viên."
-                }
-            ]
+        normalized_analysis = normalize_analysis_response(scan_res)
+        normalized_analysis["fallback_chain"] = scan_res.get("fallback_chain", [])
 
         return {
             "success": True,
@@ -240,15 +291,7 @@ async def analyze_scam_payload(payload: Dict[str, Any], client_key: Optional[str
             "modelSwitched": True,
             "switchReason": f"Kết quả trực tiếp từ dịch vụ quét URL: {provider}.",
             "rationale": f"Xử lý thành công qua {provider}.",
-            "analysis": {
-                "verdict": scan_res.get("verdict", "SAFE"),
-                "risk_score": scan_res.get("risk_score", 0),
-                "threat_level_label": scan_res.get("threat_label", scan_res.get("verdict")),
-                "summary": scan_res.get("summary", f"Đã quét URL thành công qua {provider}."),
-                "why_is_this_suspicious": why_items,
-                "recommended_actions": actions,
-                "fallback_chain": scan_res.get("fallback_chain", [])
-            }
+            "analysis": normalized_analysis
         }
 
     parts = []
@@ -257,16 +300,29 @@ Your task is to thoroughly analyze the submitted evidence (text, images, audio, 
 
 MODE: {mode}
 USER CONTEXT/NOTES: {user_notes or 'None'}
-RESPONSE LANGUAGE: Provide the analysis in {'Vietnamese (Tiếng Việt)' if language == 'vi' else 'English'}. Keep technical terms clear and accessible.
+RESPONSE LANGUAGE: Provide the analysis in {'Vietnamese (Tiếng Việt)' if language == 'vi' else 'English'}.
 
-CRITICAL INSTRUCTIONS & METHODOLOGY:
-1. STEP 1 - EVIDENCE EXTRACTION: Extract claims, organizations impersonated, URLs, domains, senders, phone numbers, OTP requests, deadlines.
-2. STEP 2 - CONTEXT RECONSTRUCTION: Identify alleged identity and what action target is urged to take.
-3. STEP 3 - SCAM PATTERN MATCHING: Check for Bank/Police impersonation, Urgency, Financial manipulation, OTP harvesting.
-4. STEP 4 - CROSS-MODAL CORRELATION: Compare screenshot text vs audio vs URL domains.
-5. STEP 5 - ACTIONABLE DEFENSE: Return clear safety recommendations and emergency checklist.
-
-Return STRICT JSON adhering precisely to schema."""
+CRITICAL: Return STRICT JSON adhering precisely to this schema structure:
+{{
+  "verdict": "CRITICAL_RISK" | "HIGH_RISK" | "MEDIUM_RISK" | "LOW_RISK" | "SAFE",
+  "risk_score": 85,
+  "threat_level_label": "Cảnh Báo Lừa Đảo Mức Độ Cao",
+  "summary": "Tóm tắt chi tiết bằng tiếng Việt...",
+  "why_is_this_suspicious": [
+    {{
+      "title": "Tên dấu hiệu nghi vấn",
+      "explanation": "Mô tả chi tiết bằng tiếng Việt"
+    }}
+  ],
+  "recommended_actions": [
+    {{
+      "step_number": 1,
+      "title": "Tên bước xử lý",
+      "action": "Chi tiết hành động phòng vệ"
+    }}
+  ],
+  "emergency_active_threat": false
+}}"""
 
     parts.append(system_prompt)
 
@@ -308,6 +364,8 @@ Return STRICT JSON adhering precisely to schema."""
 
     models_to_try, primary_model, rationale = determine_model_pipeline(preferred_model, mode, evidence_items, text_content)
 
+    client = get_genai_client(client_key)
+
     last_err = None
 
     for model in models_to_try:
@@ -323,7 +381,13 @@ Return STRICT JSON adhering precisely to schema."""
             )
             if response and response.text:
                 res_text = response.text.strip()
-                parsed = json.loads(res_text)
+                # xoa block code ```json neu co
+                res_text = re.sub(r'^```(?:json)?\s*', '', res_text, flags=re.MULTILINE)
+                res_text = re.sub(r'```\s*$', '', res_text, flags=re.MULTILINE).strip()
+                
+                raw_parsed = json.loads(res_text)
+                normalized = normalize_analysis_response(raw_parsed)
+                
                 model_switched = (model != primary_model)
                 switch_reason = f"Mô hình {primary_model} bị giới hạn (Rate Limit) hoặc gặp sự cố. Hệ thống đã tự động chuyển sang mô hình {model}." if model_switched else ""
 
@@ -334,7 +398,7 @@ Return STRICT JSON adhering precisely to schema."""
                     "modelSwitched": model_switched,
                     "switchReason": switch_reason,
                     "rationale": rationale,
-                    "analysis": parsed
+                    "analysis": normalized
                 }
         except Exception as err:
             err_str = str(err)
@@ -360,7 +424,11 @@ Return STRICT JSON adhering precisely to schema."""
                             )
                         )
                         if response and response.text:
-                            parsed = json.loads(response.text.strip())
+                            fb_text = response.text.strip()
+                            fb_text = re.sub(r'^```(?:json)?\s*', '', fb_text, flags=re.MULTILINE)
+                            fb_text = re.sub(r'```\s*$', '', fb_text, flags=re.MULTILINE).strip()
+                            parsed = json.loads(fb_text)
+                            normalized = normalize_analysis_response(parsed)
                             model_switched = (model != primary_model)
                             switch_reason = f"Mô hình {primary_model} bị giới hạn hoặc gặp sự cố. Tự động chuyển API máy chủ ({model})." if model_switched else ""
                             return {
@@ -370,7 +438,7 @@ Return STRICT JSON adhering precisely to schema."""
                                 "modelSwitched": model_switched,
                                 "switchReason": switch_reason,
                                 "rationale": rationale + " (Tự động chuyển API máy chủ)",
-                                "analysis": parsed
+                                "analysis": normalized
                             }
                     except Exception as fb_err:
                         print("Fallback client error:", fb_err)
@@ -378,6 +446,7 @@ Return STRICT JSON adhering precisely to schema."""
                 if urls:
                     from services.url_scanner_service import scan_url_with_fallback
                     scan_res = await scan_url_with_fallback(urls[0], client_key=client_key)
+                    normalized_scan = normalize_analysis_response(scan_res)
                     return {
                         "success": True,
                         "providerUsed": scan_res.get("provider_used", "URL Scanner"),
@@ -386,14 +455,7 @@ Return STRICT JSON adhering precisely to schema."""
                         "modelSwitched": True,
                         "switchReason": "Tự động sử dụng Bộ quét URL Fallback do Gemini API gặp sự cố 401.",
                         "rationale": "Chuyển sang Bộ quét URL Fallback.",
-                        "analysis": {
-                            "verdict": scan_res.get("verdict", "SUSPICIOUS"),
-                            "risk_score": scan_res.get("risk_score", 50),
-                            "threat_level_label": scan_res.get("threat_label", "Kết quả quét URL"),
-                            "summary": scan_res.get("summary", "Đã phân tích URL thành công."),
-                            "why_is_this_suspicious": scan_res.get("why_is_this_suspicious", [{"title": "Quét URL Security", "explanation": scan_res.get("summary")}]),
-                            "recommended_actions": scan_res.get("recommended_actions", [])
-                        }
+                        "analysis": normalized_scan
                     }
 
                 raise ValueError("Khóa Gemini API Key không hợp lệ hoặc chưa được cấp quyền (HTTP 401 UNAUTHENTICATED). Vui lòng kiểm tra biến GEMINI_API_KEY trên Vercel hoặc tạo lại API Key mới tại Google AI Studio (aistudio.google.com).")
@@ -403,3 +465,5 @@ Return STRICT JSON adhering precisely to schema."""
             continue
 
     raise last_err or RuntimeError("Tất cả mô hình AI hiện đang quá tải. Vui lòng thử lại sau vài giây.")
+
+

@@ -1,10 +1,13 @@
-// CyberU Frontend API Client Layer
+// CyberU Frontend - File API Client ket noi voi Backend Python FastAPI
+// Do an nhom USTH CyberShield
 
 const getApiBaseUrl = () => {
   const customUrl = localStorage.getItem('cyberu_backend_url');
   if (customUrl) return customUrl.replace(/\/+$/, '') + (customUrl.endsWith('/api') ? '' : '/api');
-  if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-    return 'http://localhost:8000/api';
+  const host = window.location.hostname;
+  // tu dong nhan dien host IP local de test tien hon
+  if (host === 'localhost' || host === '127.0.0.1' || /^192\.168\./.test(host) || /^10\./.test(host) || /^172\.(1[6-9]|2[0-9]|3[0-1])\./.test(host) || host.endsWith('.local')) {
+    return `${window.location.protocol}//${host}:8000/api`;
   }
   return 'https://cyberu-be.vercel.app/api';
 };
@@ -27,6 +30,8 @@ class ApiClient {
       API_BASE_URL = getApiBaseUrl();
     }
   }
+
+  // quan ly che do key api (dung san hoac key tu nhap)
   static getApiMode() {
     return localStorage.getItem('cybershield_api_mode') || 'system_default';
   }
@@ -47,30 +52,30 @@ class ApiClient {
     }
   }
 
+  // ham tao header chuan gui len backend
   static getHeaders(customApiKey = null) {
     const headers = {
       'Content-Type': 'application/json',
     };
-    const mode = this.getApiMode();
-    if (mode === 'custom_key') {
-      const apiKey = customApiKey || this.getStoredApiKey();
-      if (apiKey) {
-        headers['X-Gemini-API-Key'] = apiKey;
-      }
+    const apiKey = customApiKey || (this.getApiMode() === 'custom_key' ? this.getStoredApiKey() : null);
+    if (apiKey) {
+      headers['X-Gemini-API-Key'] = apiKey;
     }
     return headers;
   }
 
+  // kiem tra ket noi server backend
   static async checkHealth() {
     try {
       const res = await fetch(`${API_BASE_URL}/health`);
       return await res.json();
     } catch (err) {
-      console.warn('Backend API connection warning:', err);
+      console.warn('Cảnh báo kết nối Backend API:', err);
       return { status: 'offline', error: err.message };
     }
   }
 
+  // lay du lieu ngon ngu i18n
   static async getI18n(lang = 'vi') {
     try {
       const res = await fetch(`${API_BASE_URL}/i18n?lang=${lang}`);
@@ -80,6 +85,7 @@ class ApiClient {
     }
   }
 
+  // test khoa api gemini
   static async validateApiKey(apiKey) {
     try {
       const res = await fetch(`${API_BASE_URL}/gemini/validate-key`, {
@@ -93,6 +99,7 @@ class ApiClient {
     }
   }
 
+  // gui thong tin phan tich tin nhan/url lua dao
   static async analyzeScam(payload) {
     try {
       const fullPayload = {
@@ -112,11 +119,12 @@ class ApiClient {
 
       return await res.json();
     } catch (err) {
-      console.error('API analyzeScam error:', err);
+      console.error('Lỗi khi gọi API analyzeScam:', err);
       throw err;
     }
   }
 
+  // lay cam nang va tinh huong lua dao tu csdl
   static async getEncyclopedia(query = '', category = 'all') {
     try {
       const params = new URLSearchParams();
@@ -161,3 +169,5 @@ class ApiClient {
 }
 
 window.ApiClient = ApiClient;
+
+

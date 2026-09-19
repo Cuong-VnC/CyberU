@@ -3,6 +3,7 @@ import re
 import json
 import base64
 import urllib.parse
+import typing
 from typing import Dict, Any, List, Optional
 import httpx
 
@@ -12,6 +13,7 @@ VIRUSTOTAL_ENV_KEY = "VIRUSTOTAL_API_KEY"
 SAFE_BROWSING_ENV_KEY = "SAFE_BROWSING_API_KEY"
 GEMINI_ENV_KEY = "GEMINI_API_KEY"
 
+# lay key virustotal tu bien moi truong
 def get_virustotal_key() -> str:
     return (
         os.getenv("VIRUSTOTAL_API_KEY", "") or
@@ -21,6 +23,7 @@ def get_virustotal_key() -> str:
         os.getenv("VT_API_KEY", "")
     ).strip()
 
+# lay key safe browsing tu bien moi truong
 def get_safebrowsing_key() -> str:
     return (
         os.getenv("SAFE_BROWSING_API_KEY", "") or
@@ -30,15 +33,15 @@ def get_safebrowsing_key() -> str:
         os.getenv("GOOGLE_SAFE_BROWSING_API_KEY", "")
     ).strip()
 
+# chuan hoa url ve dang chuan http/https chu thuong
 def normalize_url(raw_url: str) -> str:
-    """Normalize URL to lowercase and ensure http/https scheme."""
     u = raw_url.strip().lower()
     if not re.match(r'^https?://', u):
         u = 'https://' + u
     return u.lower()
 
+# ham quet url qua virustotal api v3
 async def scan_url_virustotal(target_url: str) -> Dict[str, Any]:
-    """Scan URL via VirusTotal API v3."""
     vt_key = get_virustotal_key()
     if not vt_key:
         raise ValueError("MISSING_KEY: VIRUSTOTAL_API_KEY not configured.")
@@ -48,7 +51,7 @@ async def scan_url_virustotal(target_url: str) -> Dict[str, Any]:
     domain = parsed.hostname or url_clean.replace("https://", "").replace("http://", "").split("/")[0]
     domain = domain.lower()
 
-    # Create base64 urlsafe identifier without padding for VT v3
+    # tao identifier base64 urlsafe theo chuan api v3 cua virustotal
     url_id = base64.urlsafe_b64encode(url_clean.encode("utf-8")).decode("utf-8").strip("=")
     api_endpoint = f"https://www.virustotal.com/api/v3/urls/{url_id}"
 
@@ -66,7 +69,7 @@ async def scan_url_virustotal(target_url: str) -> Dict[str, Any]:
         if resp.status_code in [401, 403]:
             raise RuntimeError("INVALID_KEY_OR_QUOTA: VirusTotal API v3 key invalid or unauthorized.")
 
-        # Fallback to domain analysis if URL not found in VT database (404)
+        # neu url chua co trong csdl (loi 404), fallback sang quet theo ten mien
         if resp.status_code == 404:
             parsed_domain = urllib.parse.urlparse(target_url).hostname or target_url.replace("https://", "").replace("http://", "").split("/")[0]
             domain_endpoint = f"https://www.virustotal.com/api/v3/domains/{parsed_domain}"
@@ -96,7 +99,7 @@ async def scan_url_virustotal(target_url: str) -> Dict[str, Any]:
                     ]
                 }
 
-            # Submit URL for new scan if domain not indexed
+            # gui url moi len virustotal neu chua luu index
             submit_resp = await client.post(
                 "https://www.virustotal.com/api/v3/urls",
                 headers=headers,
@@ -161,8 +164,8 @@ async def scan_url_virustotal(target_url: str) -> Dict[str, Any]:
             ]
         }
 
+# quet url qua google safe browsing api v4
 async def scan_url_safebrowsing(target_url: str) -> Dict[str, Any]:
-    """Scan URL via Google Safe Browsing API v4."""
     sb_key = get_safebrowsing_key()
     if not sb_key:
         raise ValueError("MISSING_KEY: SAFE_BROWSING_API_KEY not configured.")
@@ -253,8 +256,8 @@ async def scan_url_safebrowsing(target_url: str) -> Dict[str, Any]:
             "why_is_this_suspicious": why_items
         }
 
+# phan tich url qua gemini ai ket hop crawl dom truc tiep
 async def scan_url_gemini(target_url: str, client_key: Optional[str] = None) -> Dict[str, Any]:
-    """Analyze URL via Gemini AI or Heuristic Scanner."""
     url_clean = normalize_url(target_url)
     crawled = await inspect_and_fetch_url(url_clean)
 
@@ -322,7 +325,7 @@ Fetch Error (if any): {crawled.get('fetchError', 'None')}
     except Exception:
         pass
 
-    # Heuristic fallback if Gemini API call fails
+    # phan tich heuristic thu cong neu goi gemini api that bai
     is_high_risk = crawled.get("isHighRiskTld") or crawled.get("formsDetected", {}).get("hasLoginForm")
     return {
         "success": True,
@@ -341,26 +344,22 @@ Fetch Error (if any): {crawled.get('fetchError', 'None')}
         "crawled": crawled
     }
 
-
+# ham quet url tong hop voi chuoi fallback nhieu lop (virustotal -> safe browsing -> gemini ai)
 async def scan_url_with_fallback(target_url: str, client_key: Optional[str] = None) -> Dict[str, Any]:
-    """Main URL scan handler with fallback chain."""
     url_clean = normalize_url(target_url)
     fallback_chain: List[Dict[str, Any]] = []
 
-    # 1. Try VirusTotal API v3
+    vt_res = None
+    sb_res = None
+
+    # 1. thu quet virustotal api v3
     try:
-        res = await scan_url_virustotal(url_clean)
+        vt_res = await scan_url_virustotal(url_clean)
         fallback_chain.append({
             "provider": "VirusTotal API v3",
             "status": "SUCCESS",
-            "reason": "VirusTotal API v3 scan completed successfully."
+            "reason": f"VirusTotal verdict: {vt_res.get('verdict')} (Risk Score: {vt_res.get('risk_score')})"
         })
-        fallback_chain.append({"provider": "Google Safe Browsing API v4", "status": "SKIPPED", "reason": "VirusTotal scan succeeded."})
-        fallback_chain.append({"provider": "Gemini AI", "status": "SKIPPED", "reason": "Primary provider succeeded."})
-        
-        res["fallback_chain"] = fallback_chain
-        res["provider_used"] = "VirusTotal API v3"
-        return res
     except Exception as vt_err:
         err_msg = str(vt_err)
         status_code = "LIMIT_EXCEEDED" if "LIMIT_EXCEEDED" in err_msg or "429" in err_msg else "MISSING_KEY" if "MISSING_KEY" in err_msg else "ERROR"
@@ -370,19 +369,22 @@ async def scan_url_with_fallback(target_url: str, client_key: Optional[str] = No
             "reason": err_msg
         })
 
-    # 2. Try Google Safe Browsing API v4
+    # neu virustotal xac nhan moi de doa malicious (>=2 engine bao xau), tra ve ket qua luon
+    if vt_res and vt_res.get("verdict") == "MALICIOUS" and vt_res.get("risk_score", 0) >= 75:
+        fallback_chain.append({"provider": "Google Safe Browsing API v4", "status": "SKIPPED", "reason": "VirusTotal confirmed MALICIOUS threat."})
+        fallback_chain.append({"provider": "Gemini AI", "status": "SKIPPED", "reason": "VirusTotal confirmed MALICIOUS threat."})
+        vt_res["fallback_chain"] = fallback_chain
+        vt_res["provider_used"] = "VirusTotal API v3"
+        return vt_res
+
+    # 2. thu quet google safe browsing api v4
     try:
-        res = await scan_url_safebrowsing(url_clean)
+        sb_res = await scan_url_safebrowsing(url_clean)
         fallback_chain.append({
             "provider": "Google Safe Browsing API v4",
             "status": "SUCCESS",
-            "reason": "Google Safe Browsing API v4 scan completed successfully."
+            "reason": f"Google Safe Browsing verdict: {sb_res.get('verdict')} (Risk Score: {sb_res.get('risk_score')})"
         })
-        fallback_chain.append({"provider": "Gemini AI", "status": "SKIPPED", "reason": "Safe Browsing scan succeeded."})
-
-        res["fallback_chain"] = fallback_chain
-        res["provider_used"] = "Google Safe Browsing API v4"
-        return res
     except Exception as sb_err:
         err_msg = str(sb_err)
         status_code = "LIMIT_EXCEEDED" if "LIMIT_EXCEEDED" in err_msg or "429" in err_msg or "403" in err_msg else "MISSING_KEY" if "MISSING_KEY" in err_msg else "ERROR"
@@ -392,14 +394,30 @@ async def scan_url_with_fallback(target_url: str, client_key: Optional[str] = No
             "reason": err_msg
         })
 
-    # 3. Fallback to Gemini AI or Heuristic Scanner
-    res = await scan_url_gemini(url_clean, client_key=client_key)
+    if sb_res and sb_res.get("verdict") == "MALICIOUS":
+        fallback_chain.append({"provider": "Gemini AI", "status": "SKIPPED", "reason": "Safe Browsing confirmed MALICIOUS threat."})
+        sb_res["fallback_chain"] = fallback_chain
+        sb_res["provider_used"] = "Google Safe Browsing API v4"
+        return sb_res
+
+    # 3. luon thuc hien quet gemini ai & crawl html dom truc tiep neu virustotal/safe browsing bao an toan hoac chua index
+    gemini_res = await scan_url_gemini(url_clean, client_key=client_key)
     fallback_chain.append({
-        "provider": res.get("provider", "Gemini AI"),
+        "provider": gemini_res.get("provider", "Gemini AI DOM Forensics"),
         "status": "SUCCESS",
-        "reason": "Fallback to Gemini AI or Heuristic Scanner."
+        "reason": f"Live DOM inspection verdict: {gemini_res.get('verdict')} (Risk Score: {gemini_res.get('risk_score')})"
     })
 
-    res["fallback_chain"] = fallback_chain
-    res["provider_used"] = res.get("provider", "Gemini AI")
-    return res
+    # neu gemini ai hoac heuristic phat hien nghi van/doc hai thi uu tien ghi nhan
+    if gemini_res.get("verdict") in ["SUSPICIOUS", "MALICIOUS"] or gemini_res.get("risk_score", 0) > (vt_res.get("risk_score", 0) if vt_res else 0):
+        gemini_res["fallback_chain"] = fallback_chain
+        gemini_res["provider_used"] = f"{gemini_res.get('provider', 'Gemini AI')} (Crawl DOM Thực Tế)"
+        return gemini_res
+
+    # neu tat ca dich vu deu bao an toan
+    final_res = vt_res or sb_res or gemini_res
+    final_res["fallback_chain"] = fallback_chain
+    final_res["provider_used"] = final_res.get("provider", "VirusTotal / Safe Browsing")
+    return final_res
+
+

@@ -1,7 +1,7 @@
 
 
 document.addEventListener('DOMContentLoaded', async () => {
-  // Global State
+  // trang thai chung (state) cua ung dung
   const state = {
     currentTab: 'analyzer',
     language: localStorage.getItem('cybershield_lang') || 'vi',
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   };
 
-  // Toast System
+  // he thong thong bao toast ui
   window.showToast = function(message, type = 'info') {
     const container = document.getElementById('toast-container');
     if (!container) return;
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     }, 4500);
   };
 
-  // Load i18n Dictionary
+  // tai tu dien ngon ngu i18n
   async function loadTranslations() {
     const res = await ApiClient.getI18n(state.language);
     if (res && res.data) {
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
   }
 
-  // Language Icon Switcher Handler
+  // xu ly nut chuyen doi ngon ngu viet - anh
   const langBtn = document.getElementById('btn-lang-toggle');
   function updateLangBtnUI() {
     const label = document.getElementById('lang-flag-label');
@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
   }
 
-  // Mobile Menu Drawer Handlers
+  // xu ly menu drawer tren thiet bi di dong
   const mobileToggleBtn = document.getElementById('mobile-menu-toggle');
   const sidebar = document.getElementById('sidebar');
   const sidebarOverlay = document.getElementById('sidebar-overlay');
@@ -97,6 +97,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (sidebar) sidebar.classList.remove('mobile-open');
     if (sidebarOverlay) sidebarOverlay.classList.remove('active');
   }
+
+
 
   function toggleMobileSidebar() {
     if (sidebar) sidebar.classList.toggle('mobile-open');
@@ -422,15 +424,23 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   function renderAnalysisResult(res) {
+    if (!res) return;
     const resultSection = document.getElementById('analysis-result-section');
     if (!resultSection) return;
     resultSection.style.display = 'block';
     resultSection.scrollIntoView({ behavior: 'smooth' });
 
+    const verdictVal = (res.verdict || res.verdict_level || res.status || 'SUSPICIOUS').toString().toUpperCase();
+    const threatLabel = res.threat_level_label || res.threat_label || res.threatLevel || verdictVal;
+    const riskScore = typeof res.risk_score === 'number' ? res.risk_score : (typeof res.riskScore === 'number' ? res.riskScore : 50);
+    const summaryText = res.summary || res.summary_text || res.description || 'Đã hoàn thành phân tích đe dọa.';
+    const whyItems = res.why_is_this_suspicious || res.suspicious_points || res.reasons || [];
+    const recommendedActions = res.recommended_actions || res.actions || res.safety_steps || [];
+
     // Emergency Banner check
     const emergencyBanner = document.getElementById('emergency-threat-banner');
     if (emergencyBanner) {
-      if (res.emergency_active_threat || (res.risk_score && res.risk_score >= 75)) {
+      if (res.emergency_active_threat || riskScore >= 75) {
         emergencyBanner.style.display = 'block';
       } else {
         emergencyBanner.style.display = 'none';
@@ -440,19 +450,19 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Verdict Badge & Provider Badge
     const badge = document.getElementById('res-verdict-badge');
     if (badge) {
-      const v = (res.verdict || 'SAFE').toLowerCase();
+      const v = verdictVal.toLowerCase();
       let badgeClass = 'badge-safe';
       if (v.includes('critical') || v.includes('malicious')) badgeClass = 'badge-critical';
       else if (v.includes('high') || v.includes('suspicious')) badgeClass = 'badge-high';
       else if (v.includes('medium')) badgeClass = 'badge-medium';
 
       badge.className = `badge-threat ${badgeClass}`;
-      badge.innerText = res.threat_level_label || res.verdict;
+      badge.innerText = threatLabel;
     }
 
     const providerBadge = document.getElementById('res-provider-badge');
     if (providerBadge) {
-      const p = res.providerUsed || res.provider || '';
+      const p = res.providerUsed || res.provider || res.modelUsed || '';
       if (p) {
         providerBadge.style.display = 'inline-block';
         providerBadge.innerText = `Nguồn: ${p}`;
@@ -461,33 +471,58 @@ document.addEventListener('DOMContentLoaded', async () => {
       }
     }
 
-    drawRiskGauge(res.risk_score || 0);
+    drawRiskGauge(riskScore);
 
     const summary = document.getElementById('res-summary');
-    if (summary) summary.innerText = res.summary || '';
+    if (summary) summary.innerText = summaryText;
 
     const whyList = document.getElementById('res-why-list');
     if (whyList) {
-      whyList.innerHTML = (res.why_is_this_suspicious || []).map(item => `
-        <div style="padding:0.8rem 1.1rem; background:rgba(255,255,255,0.03); border-left:3px solid var(--accent-rose); border-radius:8px; margin-bottom:0.6rem;">
-          <strong style="color:var(--accent-rose); font-size:0.9rem; display:inline-flex; align-items:center; gap:0.35rem;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>${item.title}</strong>
-          <p style="font-size:0.85rem; color:var(--text-muted); margin-top:0.3rem;">${item.explanation}</p>
-        </div>
-      `).join('');
+      whyList.innerHTML = whyItems.map(item => {
+        let titleStr = 'Dấu hiệu nghi vấn';
+        let expStr = '';
+        if (typeof item === 'object' && item !== null) {
+          titleStr = item.title || item.point || 'Dấu hiệu nghi vấn';
+          expStr = item.explanation || item.detail || item.description || item.action || item.text || '';
+        } else if (typeof item === 'string') {
+          expStr = item;
+        }
+        if (!expStr) expStr = String(item);
+        return `
+          <div style="padding:0.8rem 1.1rem; background:rgba(255,255,255,0.03); border-left:3px solid var(--accent-rose); border-radius:8px; margin-bottom:0.6rem;">
+            <strong style="color:var(--accent-rose); font-size:0.9rem; display:inline-flex; align-items:center; gap:0.35rem;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>${titleStr}</strong>
+            <p style="font-size:0.85rem; color:var(--text-muted); margin-top:0.3rem;">${expStr}</p>
+          </div>
+        `;
+      }).join('');
     }
 
     const actionsList = document.getElementById('res-actions-list');
     if (actionsList) {
-      actionsList.innerHTML = (res.recommended_actions || []).map(act => `
-        <div style="display:flex; gap:0.85rem; align-items:flex-start; margin-bottom:0.75rem;">
-          <span style="width:26px; height:26px; border-radius:50%; background:var(--accent-indigo); color:#fff; display:flex; align-items:center; justify-content:center; font-size:0.8rem; font-weight:bold; flex-shrink:0;">${act.step_number}</span>
-          <div>
-            <strong style="font-size:0.9rem; color:#fff;">${act.title}</strong>
-            <p style="font-size:0.85rem; color:var(--text-muted);">${act.action}</p>
+      actionsList.innerHTML = recommendedActions.map((act, idx) => {
+        let stepNum = idx + 1;
+        let titleStr = `Bước ${stepNum}`;
+        let actStr = '';
+        if (typeof act === 'object' && act !== null) {
+          stepNum = act.step_number || idx + 1;
+          titleStr = act.title || `Bước ${stepNum}`;
+          actStr = act.action || act.explanation || act.detail || act.description || act.text || '';
+        } else if (typeof act === 'string') {
+          actStr = act;
+        }
+        if (!actStr) actStr = String(act);
+        return `
+          <div style="display:flex; gap:0.85rem; align-items:flex-start; margin-bottom:0.75rem;">
+            <span style="width:26px; height:26px; border-radius:50%; background:var(--accent-indigo); color:#fff; display:flex; align-items:center; justify-content:center; font-size:0.8rem; font-weight:bold; flex-shrink:0;">${stepNum}</span>
+            <div>
+              <strong style="font-size:0.9rem; color:#fff;">${titleStr}</strong>
+              <p style="font-size:0.85rem; color:var(--text-muted); margin-top:0.2rem;">${actStr}</p>
+            </div>
           </div>
-        </div>
-      `).join('');
+        `;
+      }).join('');
     }
+
   }
 
   // 100% Knowledge View with 30 Encyclopedia Articles Detail Modal
