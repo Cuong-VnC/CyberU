@@ -4,7 +4,7 @@
     "title": "1. Giả Danh Người Thân Gọi Video Bằng Deepfake Vay Tiền Gấp",
     "title_en": "1. Giả Danh Người Thân Gọi Video Bằng Deepfake Vay Tiền Gấp",
     "category": "Deepfake & AI Mạo Danh",
-    "category_en": "Deepfake & AI Mạo Danh",
+    "category_en": "Deepfake & AI Impersonation",
     "difficulty": "Hard",
     "description": "Bạn nhận được cuộc gọi video Messenger từ con trai/cháu ruột đang ở nước ngoài, hình ảnh mờ nhạt và giật cục, báo bị giữ đồ ở hải quan cần chuyển gấp 40 triệu.",
     "description_en": "Bạn nhận được cuộc gọi video Messenger từ con trai/cháu ruột đang ở nước ngoài, hình ảnh mờ nhạt và giật cục, báo bị giữ đồ ở hải quan cần chuyển gấp 40 triệu.",
@@ -29,7 +29,8 @@
             "feedback_en": "SẬP BẪY DEEPFAKE! Kẻ gian đã thu thập hình ảnh, clip người thân trên Facebook rồi dùng AI Deepfake ghép mặt gọi chớp nhoáng 5 giây.",
             "psychologyNote": "Kẻ lừa đảo đánh vào tình phụ tử, tình mẫu tử và nỗi lo lắng tột độ khi thấy người thân gặp nạn.",
             "psychologyNote_en": "Kẻ lừa đảo đánh vào tình phụ tử, tình mẫu tử và nỗi lo lắng tột độ khi thấy người thân gặp nạn.",
-            "nextStepId": "df-step-compromised"
+            "nextStepId": "df-step-compromised",
+            "nextStepId_en": "df-step-compromised"
           },
           {
             "id": "df1_2",
@@ -40,7 +41,8 @@
             "feedback_en": "QUÁ XUẤT SẮC! Khi gọi số di động cá nhân, người thân xác nhận đang đi làm bình thường, tài khoản Facebook vừa bị hacker chiếm quyền.",
             "psychologyNote": "Xác thực qua kênh viễn thông độc lập (Out-of-band Verification) là khắc tinh số 1 của Deepfake.",
             "psychologyNote_en": "Xác thực qua kênh viễn thông độc lập (Out-of-band Verification) là khắc tinh số 1 của Deepfake.",
-            "nextStepId": "df-step-safe"
+            "nextStepId": "df-step-safe",
+            "nextStepId_en": "df-step-safe"
           },
           {
             "id": "df1_3",
@@ -51,7 +53,8 @@
             "feedback_en": "RẤT THÔNG MINH! Kẻ lừa đảo không thể trả lời đúng bí mật gia đình nên sẽ vòng vo hoặc chặn liên lạc.",
             "psychologyNote": "Mật mã bí mật gia đình là chốt chặn an toàn hiệu quả.",
             "psychologyNote_en": "Mật mã bí mật gia đình là chốt chặn an toàn hiệu quả.",
-            "nextStepId": "df-step-safe"
+            "nextStepId": "df-step-safe",
+            "nextStepId_en": "df-step-safe"
           }
         ]
       },
@@ -79,6 +82,11 @@
       "Luôn gọi lại bằng sóng di động truyền thống (SIM viễn thông) để xác thực.",
       "Yêu cầu người gọi vẫy tay trước mặt hoặc quay nghiêng góc 90 độ nếu nghi ngờ."
     ],
+    "realLifeDefenseTips_en": [
+      "Cuộc gọi Deepfake thường chỉ kéo dài vài giây, viện cớ sóng yếu để tắt máy.",
+      "Luôn gọi lại bằng sóng di động truyền thống (SIM viễn thông) để xác thực.",
+      "Yêu cầu người gọi vẫy tay trước mặt hoặc quay nghiêng góc 90 độ nếu nghi ngờ."
+    ],
     "tacticAnalysis": "Ứng dụng công nghệ Deepfake AI giả lập khuôn mặt kết hợp bối cảnh nguy cấp để đánh sập rào cản phòng vệ tâm lý.",
     "tacticAnalysis_en": "Ứng dụng công nghệ Deepfake AI giả lập khuôn mặt kết hợp bối cảnh nguy cấp để đánh sập rào cản phòng vệ tâm lý."
   },
@@ -87,7 +95,7 @@
     "title": "2. Giả Giọng Nói Bằng DeepVoice Tạo Tình Huống Khẩn Cấp",
     "title_en": "2. Giả Giọng Nói Bằng DeepVoice Tạo Tình Huống Khẩn Cấp",
     "category": "Deepfake & AI Mạo Danh",
-    "category_en": "Deepfake & AI Mạo Danh",
+    "category_en": "Deepfake & AI Impersonation",
     "difficulty": "Hard",
     "description": "Bạn nhận được cuộc gọi thoại có giọng nói, ngữ điệu giống hệt giọng đứa bạn thân gọi từ số lạ, mếu máo bảo vừa gây tai nạn giao thông cần bồi thường nóng 20 triệu.",
     "description_en": "Bạn nhận được cuộc gọi thoại có giọng nói, ngữ điệu giống hệt giọng đứa bạn thân gọi từ số lạ, mếu máo bảo vừa gây tai nạn giao thông cần bồi thường nóng 20 triệu.",
@@ -112,7 +120,8 @@
             "feedback_en": "SẬP BẪY VOICE CLONE! Hiện nay AI chỉ cần đoạn ghi âm 3-5 giây từ video TikTok/Facebook là có thể nhân bản giọng nói với độ giống trên 95%.",
             "psychologyNote": "Kẻ lừa đảo đánh trúng lòng nhiệt tình giúp đỡ bạn bè trong lúc nguy nan.",
             "psychologyNote_en": "Kẻ lừa đảo đánh trúng lòng nhiệt tình giúp đỡ bạn bè trong lúc nguy nan.",
-            "nextStepId": "dv-step-compromised"
+            "nextStepId": "dv-step-compromised",
+            "nextStepId_en": "dv-step-compromised"
           },
           {
             "id": "dv1_2",
@@ -123,7 +132,8 @@
             "feedback_en": "CHUẨN XÁC! Bạn thân bắt máy và bảo đang ngồi uống cafe ở nhà, hoàn toàn không có vụ tai nạn nào.",
             "psychologyNote": "Không tin cuộc gọi từ số lạ dù giọng nói có quen thuộc đến đâu.",
             "psychologyNote_en": "Không tin cuộc gọi từ số lạ dù giọng nói có quen thuộc đến đâu.",
-            "nextStepId": "dv-step-safe"
+            "nextStepId": "dv-step-safe",
+            "nextStepId_en": "dv-step-safe"
           },
           {
             "id": "dv1_3",
@@ -134,7 +144,8 @@
             "feedback_en": "RẤT TỈNH TÁO! Kẻ lừa đảo sử dụng kịch bản AI thu âm sẵn sẽ bị lộ điểm bất thường khi gặp câu hỏi bất ngờ.",
             "psychologyNote": "Đặt câu hỏi phản xạ bất ngờ làm vỡ vụn kịch bản giả mạo.",
             "psychologyNote_en": "Đặt câu hỏi phản xạ bất ngờ làm vỡ vụn kịch bản giả mạo.",
-            "nextStepId": "dv-step-safe"
+            "nextStepId": "dv-step-safe",
+            "nextStepId_en": "dv-step-safe"
           }
         ]
       },
@@ -162,6 +173,11 @@
       "Cảnh giác khi nhận cuộc gọi từ số lạ tự xưng là người quen báo máy hỏng/mất máy.",
       "Luôn liên hệ lại qua các kênh liên lạc truyền thống đã lưu trong danh bạ."
     ],
+    "realLifeDefenseTips_en": [
+      "Công nghệ AI nhái giọng (Voice Cloning) có thể bắt chước tiếng thở, ngữ điệu và giọng địa phương.",
+      "Cảnh giác khi nhận cuộc gọi từ số lạ tự xưng là người quen báo máy hỏng/mất máy.",
+      "Luôn liên hệ lại qua các kênh liên lạc truyền thống đã lưu trong danh bạ."
+    ],
     "tacticAnalysis": "Sử dụng AI nhân bản giọng nói kết hợp yếu tố hoảng loạn, tai nạn để gây tê liệt lý trí.",
     "tacticAnalysis_en": "Sử dụng AI nhân bản giọng nói kết hợp yếu tố hoảng loạn, tai nạn để gây tê liệt lý trí."
   },
@@ -170,7 +186,7 @@
     "title": "3. Giả Danh Công An, Viện Kiểm Sát, Tòa Án Đòi Chuyển Tiền Thẩm Tra",
     "title_en": "3. Giả Danh Công An, Viện Kiểm Sát, Tòa Án Đòi Chuyển Tiền Thẩm Tra",
     "category": "Mạo Danh Cơ Quan Pháp Luật",
-    "category_en": "Mạo Danh Cơ Quan Pháp Luật",
+    "category_en": "Law Enforcement Impersonation",
     "difficulty": "Medium",
     "description": "Kẻ gian gọi điện xưng là Thượng úy Công an điều tra hoặc Kiểm sát viên, thông báo bạn liên quan vụ án rửa tiền 50 tỷ và yêu cầu chuyển tiền vào \"tài khoản an toàn\".",
     "description_en": "Kẻ gian gọi điện xưng là Thượng úy Công an điều tra hoặc Kiểm sát viên, thông báo bạn liên quan vụ án rửa tiền 50 tỷ và yêu cầu chuyển tiền vào \"tài khoản an toàn\".",
@@ -195,7 +211,8 @@
             "feedback_en": "BỊ LỪA ĐẢO NẶNG NỀ! Cơ quan Công an, Viện kiểm sát, Tòa án KHÔNG BAO GIỜ có tài khoản cá nhân hoặc tài khoản trung gian để \"thẩm tra tiền\".",
             "psychologyNote": "Kẻ gian đánh vào tâm lý sợ vướng vòng lao lý và bôi nhọ thanh danh gia đình.",
             "psychologyNote_en": "Kẻ gian đánh vào tâm lý sợ vướng vòng lao lý và bôi nhọ thanh danh gia đình.",
-            "nextStepId": "pol-step-compromised"
+            "nextStepId": "pol-step-compromised",
+            "nextStepId_en": "pol-step-compromised"
           },
           {
             "id": "pol1_2",
@@ -206,7 +223,8 @@
             "feedback_en": "RẤT CHÍNH XÁC VÀ ĐÚNG PHÁP LUẬT! Mọi hoạt động tố tụng hình sự đều phải lập biên bản trực tiếp tại trụ sở công quyền.",
             "psychologyNote": "Nắm vững kiến thức pháp luật là bức tường phòng thủ kiên cố nhất.",
             "psychologyNote_en": "Nắm vững kiến thức pháp luật là bức tường phòng thủ kiên cố nhất.",
-            "nextStepId": "pol-step-safe"
+            "nextStepId": "pol-step-safe",
+            "nextStepId_en": "pol-step-safe"
           },
           {
             "id": "pol1_3",
@@ -217,7 +235,8 @@
             "feedback_en": "NGUY HIỂM! Kẻ gian chuẩn bị sẵn phòng làm việc giả, mặc sắc phục giả và chĩa máy quay vào góc tĩnh để tiếp tục thao túng bạn.",
             "psychologyNote": "Kẻ lừa đảo chuyên nghiệp dàn dựng bối cảnh cơ quan công an rất tinh vi.",
             "psychologyNote_en": "Kẻ lừa đảo chuyên nghiệp dàn dựng bối cảnh cơ quan công an rất tinh vi.",
-            "nextStepId": "pol-step-compromised"
+            "nextStepId": "pol-step-compromised",
+            "nextStepId_en": "pol-step-compromised"
           }
         ]
       },
@@ -245,6 +264,11 @@
       "Không có cái gọi là \"tài khoản an toàn\", \"tài khoản tạm giữ của Bộ Công an\" để người dân nộp tiền.",
       "Khi nhận cuộc gọi dọa dẫm, hãy ra ngay Công an phường gần nhất để trình báo."
     ],
+    "realLifeDefenseTips_en": [
+      "Công an, Viện kiểm sát, Tòa án không bao giờ làm việc, lấy lời khai hoặc ra quyết định tố tụng qua điện thoại.",
+      "Không có cái gọi là \"tài khoản an toàn\", \"tài khoản tạm giữ của Bộ Công an\" để người dân nộp tiền.",
+      "Khi nhận cuộc gọi dọa dẫm, hãy ra ngay Công an phường gần nhất để trình báo."
+    ],
     "tacticAnalysis": "Lợi dụng uy quyền của cơ quan tư pháp, cô lập nạn nhân trong phòng kín và thúc ép chuyển tiền thần tốc.",
     "tacticAnalysis_en": "Lợi dụng uy quyền của cơ quan tư pháp, cô lập nạn nhân trong phòng kín và thúc ép chuyển tiền thần tốc."
   },
@@ -253,7 +277,7 @@
     "title": "4. Giả Danh Nhân Viên Ngân Hàng Đòi Cung Cấp OTP & Mật Khẩu",
     "title_en": "4. Giả Danh Nhân Viên Ngân Hàng Đòi Cung Cấp OTP & Mật Khẩu",
     "category": "Mạo Danh Ngân Hàng",
-    "category_en": "Mạo Danh Ngân Hàng",
+    "category_en": "Bank Impersonation",
     "difficulty": "Easy",
     "description": "Bạn nhận cuộc gọi tự xưng Trung tâm Chăm sóc khách hàng Ngân hàng, báo tài khoản có lỗi rủi ro và cần bạn đọc mã OTP gửi về máy để hỗ trợ hủy giao dịch.",
     "description_en": "Bạn nhận cuộc gọi tự xưng Trung tâm Chăm sóc khách hàng Ngân hàng, báo tài khoản có lỗi rủi ro và cần bạn đọc mã OTP gửi về máy để hỗ trợ hủy giao dịch.",
@@ -278,7 +302,8 @@
             "feedback_en": "MẤT SẠCH TIỀN! Mã OTP thực chất là mã xác nhận giao dịch chuyển tiền hoặc đổi mật khẩu do kẻ gian vừa khởi tạo trên web ngân hàng.",
             "psychologyNote": "Kẻ gian lợi dụng sự nhầm lẫn giữa mã hủy giao dịch và mã cấp quyền.",
             "psychologyNote_en": "Kẻ gian lợi dụng sự nhầm lẫn giữa mã hủy giao dịch và mã cấp quyền.",
-            "nextStepId": "bk-step-compromised"
+            "nextStepId": "bk-step-compromised",
+            "nextStepId_en": "bk-step-compromised"
           },
           {
             "id": "bk1_2",
@@ -289,7 +314,8 @@
             "feedback_en": "RẤT CHUẨN XÁC! Nguyên tắc bất di bất dịch của mọi ngân hàng: Nhân viên ngân hàng KHÔNG BAO GIỜ yêu cầu khách hàng cung cấp mã OTP.",
             "psychologyNote": "Bảo vệ mã bí mật OTP như chìa khóa nhà của bạn.",
             "psychologyNote_en": "Bảo vệ mã bí mật OTP như chìa khóa nhà của bạn.",
-            "nextStepId": "bk-step-safe"
+            "nextStepId": "bk-step-safe",
+            "nextStepId_en": "bk-step-safe"
           }
         ]
       },
@@ -317,6 +343,11 @@
       "Đọc kỹ nội dung tin nhắn SMS chứa OTP: xem số tiền và mục đích giao dịch ghi trong tin nhắn.",
       "Chủ động gọi lên tổng đài chính thức in trên mặt sau thẻ ngân hàng khi có nghi vấn."
     ],
+    "realLifeDefenseTips_en": [
+      "Ngân hàng không bao giờ yêu cầu khách hàng cung cấp mã OTP, mã PIN Smart OTP, mật khẩu hay mã CVV.",
+      "Đọc kỹ nội dung tin nhắn SMS chứa OTP: xem số tiền và mục đích giao dịch ghi trong tin nhắn.",
+      "Chủ động gọi lên tổng đài chính thức in trên mặt sau thẻ ngân hàng khi có nghi vấn."
+    ],
     "tacticAnalysis": "Tạo tình huống giao dịch gian lận giả mạo để lừa nạn nhân tự nguyện giao nộp chìa khóa xác thực 2 lớp (OTP).",
     "tacticAnalysis_en": "Tạo tình huống giao dịch gian lận giả mạo để lừa nạn nhân tự nguyện giao nộp chìa khóa xác thực 2 lớp (OTP)."
   },
@@ -325,7 +356,7 @@
     "title": "5. Tin Nhắn SMS Brandname Giả Mạo Ngân Hàng / Cơ Quan Nhà Nước",
     "title_en": "5. Tin Nhắn SMS Brandname Giả Mạo Ngân Hàng / Cơ Quan Nhà Nước",
     "category": "Phishing Công Nghệ Cao",
-    "category_en": "Phishing Công Nghệ Cao",
+    "category_en": "High-Tech Phishing",
     "difficulty": "Medium",
     "description": "Tin nhắn gửi đến từ đúng tên Brandname \"VIETCOMBANK\" hoặc \"VNeID\" cảnh báo tài khoản bị tạm khóa, yêu cầu nhấp link để xác thực.",
     "description_en": "Tin nhắn gửi đến từ đúng tên Brandname \"VIETCOMBANK\" hoặc \"VNeID\" cảnh báo tài khoản bị tạm khóa, yêu cầu nhấp link để xác thực.",
@@ -350,7 +381,8 @@
             "feedback_en": "SẬP BẪY TRẠM PHÁT SÓNG BTS GIẢ! Kẻ lừa đảo dùng thiết bị phát sóng vô tuyến giả mạo chèn tin nhắn vào đúng luồng tên thương hiệu.",
             "psychologyNote": "Kẻ gian lợi dụng lòng tin vào tính năng Brandname viễn thông.",
             "psychologyNote_en": "Kẻ gian lợi dụng lòng tin vào tính năng Brandname viễn thông.",
-            "nextStepId": "sms-step-compromised"
+            "nextStepId": "sms-step-compromised",
+            "nextStepId_en": "sms-step-compromised"
           },
           {
             "id": "sms1_2",
@@ -361,7 +393,8 @@
             "feedback_en": "TUYỆT VỜI! Mở app chính thức thấy tài khoản hoàn toàn bình thường. Website ngân hàng thật luôn là `.com.vn` hoặc `.vn`.",
             "psychologyNote": "Kiểm tra tên miền (URL check) đánh bại 100% bẫy Brandname giả mạo.",
             "psychologyNote_en": "Kiểm tra tên miền (URL check) đánh bại 100% bẫy Brandname giả mạo.",
-            "nextStepId": "sms-step-safe"
+            "nextStepId": "sms-step-safe",
+            "nextStepId_en": "sms-step-safe"
           }
         ]
       },
@@ -385,6 +418,11 @@
       }
     ],
     "realLifeDefenseTips": [
+      "Tin nhắn hiển thị đúng tên ngân hàng vẫn có thể là giả mạo do kẻ gian sử dụng thiết bị trạm BTS giả mạo.",
+      "Ngân hàng chính thống tại VN không gửi tin nhắn SMS có đính kèm đường link yêu cầu đăng nhập.",
+      "Luôn kiểm tra kỹ tên miền chính thức trước khi thao tác."
+    ],
+    "realLifeDefenseTips_en": [
       "Tin nhắn hiển thị đúng tên ngân hàng vẫn có thể là giả mạo do kẻ gian sử dụng thiết bị trạm BTS giả mạo.",
       "Ngân hàng chính thống tại VN không gửi tin nhắn SMS có đính kèm đường link yêu cầu đăng nhập.",
       "Luôn kiểm tra kỹ tên miền chính thức trước khi thao tác."
@@ -422,7 +460,8 @@
             "feedback_en": "BỊ ĐÁNH CẮP TÀI KHOẢN! Kẻ gian đã mua quảng cáo Google Ads để đẩy website giả mạo lên top 1 kết quả tìm kiếm.",
             "psychologyNote": "Người dùng thường có thói quen tin tưởng tuyệt đối vào kết quả đầu tiên của Google.",
             "psychologyNote_en": "Người dùng thường có thói quen tin tưởng tuyệt đối vào kết quả đầu tiên của Google.",
-            "nextStepId": "web-step-compromised"
+            "nextStepId": "web-step-compromised",
+            "nextStepId_en": "web-step-compromised"
           },
           {
             "id": "web1_2",
@@ -433,7 +472,8 @@
             "feedback_en": "QUÁ XUẤT SẮC! Bạn đã nhận diện chiêu trò Typo-squatting (tên miền giả dạng gần giống) kết hợp Google Ads Phishing.",
             "psychologyNote": "Kỹ năng quan sát URL trên thanh địa chỉ là lớp khiên an ninh vững chắc.",
             "psychologyNote_en": "Kỹ năng quan sát URL trên thanh địa chỉ là lớp khiên an ninh vững chắc.",
-            "nextStepId": "web-step-safe"
+            "nextStepId": "web-step-safe",
+            "nextStepId_en": "web-step-safe"
           }
         ]
       },
@@ -461,6 +501,11 @@
       "Kiểm tra chứng chỉ bảo mật và chính tả của tên miền trên thanh địa chỉ (Address bar).",
       "Nên tự gõ địa chỉ trang web hoặc dùng ứng dụng di động chính thức."
     ],
+    "realLifeDefenseTips_en": [
+      "Cảnh giác cao độ với các kết quả tìm kiếm có gắn nhãn \"Được tài trợ\" (Sponsored / Ads).",
+      "Kiểm tra chứng chỉ bảo mật và chính tả của tên miền trên thanh địa chỉ (Address bar).",
+      "Nên tự gõ địa chỉ trang web hoặc dùng ứng dụng di động chính thức."
+    ],
     "tacticAnalysis": "Sử dụng quảng cáo tìm kiếm (Search Engine Ads) để đưa website giả mạo tiếp cận nạn nhân nhanh nhất.",
     "tacticAnalysis_en": "Sử dụng quảng cáo tìm kiếm (Search Engine Ads) để đưa website giả mạo tiếp cận nạn nhân nhanh nhất."
   },
@@ -469,7 +514,7 @@
     "title": "7. Gửi Đường Link Độc Hại Qua Tin Nhắn, Email, Mạng Xã Hội",
     "title_en": "7. Gửi Đường Link Độc Hại Qua Tin Nhắn, Email, Mạng Xã Hội",
     "category": "Mã Độc & Phishing",
-    "category_en": "Mã Độc & Phishing",
+    "category_en": "Malware & Phishing",
     "difficulty": "Easy",
     "description": "Bạn nhận tin nhắn Messenger từ người quen: \"Xem ảnh kỷ yếu lớp mình nè!\", \"Có phải bạn trong clip này không?\" kèm link rút gọn `bit.ly/video-hot-2024`.",
     "description_en": "Bạn nhận tin nhắn Messenger từ người quen: \"Xem ảnh kỷ yếu lớp mình nè!\", \"Có phải bạn trong clip này không?\" kèm link rút gọn `bit.ly/video-hot-2024`.",
@@ -494,7 +539,8 @@
             "feedback_en": "BỊ CÂU MỒI ĐỘC HẠI! Đường link dẫn tới trang đăng nhập Facebook giả mạo để chiếm đoạt tài khoản hoặc tự tải virus về máy.",
             "psychologyNote": "Kẻ lừa đảo khai thác triệt để tính tò mò và tâm lý sợ bị xúc phạm danh dự.",
             "psychologyNote_en": "Kẻ lừa đảo khai thác triệt để tính tò mò và tâm lý sợ bị xúc phạm danh dự.",
-            "nextStepId": "link-step-compromised"
+            "nextStepId": "link-step-compromised",
+            "nextStepId_en": "link-step-compromised"
           },
           {
             "id": "link1_2",
@@ -505,7 +551,8 @@
             "feedback_en": "RẤT TỈNH TÁO! Bạn học xác nhận tài khoản Facebook vừa bị mất quyền kiểm soát và đang tự động spam link độc hại cho toàn bộ danh bạ.",
             "psychologyNote": "Dừng lại 3 giây kiểm tra trước khi click chuột cứu bạn khỏi nguy cơ bị hack.",
             "psychologyNote_en": "Dừng lại 3 giây kiểm tra trước khi click chuột cứu bạn khỏi nguy cơ bị hack.",
-            "nextStepId": "link-step-safe"
+            "nextStepId": "link-step-safe",
+            "nextStepId_en": "link-step-safe"
           }
         ]
       },
@@ -533,6 +580,11 @@
       "Cẩn trọng với các dịch vụ rút gọn link như bit.ly, tinyurl, cutt.ly khi không rõ nguồn gốc.",
       "Bật tính năng xác thực 2 yếu tố (2FA) trên tài khoản mạng xã hội."
     ],
+    "realLifeDefenseTips_en": [
+      "Không nhấp vào các link có tiêu đề sốc, giật gân hoặc video tò mò gửi từ tài khoản bạn bè.",
+      "Cẩn trọng với các dịch vụ rút gọn link như bit.ly, tinyurl, cutt.ly khi không rõ nguồn gốc.",
+      "Bật tính năng xác thực 2 yếu tố (2FA) trên tài khoản mạng xã hội."
+    ],
     "tacticAnalysis": "Social Engineering dạng Clickbait (mồi nhấp chuột) đánh vào trí tò mò và cảm xúc bàng hoàng.",
     "tacticAnalysis_en": "Social Engineering dạng Clickbait (mồi nhấp chuột) đánh vào trí tò mò và cảm xúc bàng hoàng."
   },
@@ -541,7 +593,7 @@
     "title": "8. Làm Giả Ứng Dụng Ngân Hàng, Dịch Vụ Công, Đầu Tư (File APK)",
     "title_en": "8. Làm Giả Ứng Dụng Ngân Hàng, Dịch Vụ Công, Đầu Tư (File APK)",
     "category": "Mã Độc Chiếm Quyền (Malware)",
-    "category_en": "Mã Độc Chiếm Quyền (Malware)",
+    "category_en": "Malware & Remote Control",
     "difficulty": "Hard",
     "description": "Đối tượng tự xưng cán bộ Thuế / Công an quận yêu cầu bạn tải ứng dụng \"Dịch Vụ Công .APK\" từ đường link lạ để làm thủ tục giảm thuế đất.",
     "description_en": "Đối tượng tự xưng cán bộ Thuế / Công an quận yêu cầu bạn tải ứng dụng \"Dịch Vụ Công .APK\" từ đường link lạ để làm thủ tục giảm thuế đất.",
@@ -566,7 +618,8 @@
             "feedback_en": "ĐIỆN THOẠI BỊ CHIẾM QUYỀN ĐIỀU KHIỂN HOÀN TOÀN! Mã độc ẩn danh sẽ tự động đọc màn hình, đánh cắp mã OTP và tự động chuyển tiền ngân hàng trong đêm.",
             "psychologyNote": "Kẻ lừa đảo lợi dụng chính sách hỗ trợ thuế và sự thiếu hiểu biết về quyền hệ thống Android.",
             "psychologyNote_en": "Kẻ lừa đảo lợi dụng chính sách hỗ trợ thuế và sự thiếu hiểu biết về quyền hệ thống Android.",
-            "nextStepId": "app-step-compromised"
+            "nextStepId": "app-step-compromised",
+            "nextStepId_en": "app-step-compromised"
           },
           {
             "id": "app1_2",
@@ -577,7 +630,8 @@
             "feedback_en": "QUÁ XUẤT SẮC! Bạn đã ngăn chặn cuộc tấn công mã độc Trojan nguy hiểm nhất hiện nay.",
             "psychologyNote": "Nguyên tắc vàng: Không bao giờ cài file .APK từ web lạ.",
             "psychologyNote_en": "Nguyên tắc vàng: Không bao giờ cài file .APK từ web lạ.",
-            "nextStepId": "app-step-safe"
+            "nextStepId": "app-step-safe",
+            "nextStepId_en": "app-step-safe"
           }
         ]
       },
@@ -605,6 +659,11 @@
       "Không bao giờ cấp quyền \"Trợ năng\" (Accessibility Service) cho các ứng dụng không rõ nguồn gốc.",
       "Nếu lỡ cài đặt, hãy bật Chế độ máy bay ngay lập tức và khôi phục cài đặt gốc của máy."
     ],
+    "realLifeDefenseTips_en": [
+      "Tuyệt đối không bao giờ tải và cài đặt các file có đuôi `.apk` gửi qua Zalo, Telegram hoặc link web.",
+      "Không bao giờ cấp quyền \"Trợ năng\" (Accessibility Service) cho các ứng dụng không rõ nguồn gốc.",
+      "Nếu lỡ cài đặt, hãy bật Chế độ máy bay ngay lập tức và khôi phục cài đặt gốc của máy."
+    ],
     "tacticAnalysis": "Phát tán mã độc gián điệp (Spyware/RAT) thông qua file APK ngoài kho ứng dụng để kiểm soát thiết bị từ xa.",
     "tacticAnalysis_en": "Phát tán mã độc gián điệp (Spyware/RAT) thông qua file APK ngoài kho ứng dụng để kiểm soát thiết bị từ xa."
   },
@@ -613,7 +672,7 @@
     "title": "9. Làm Giả Biên Lai Chuyển Khoản & Thông Báo Thành Công",
     "title_en": "9. Làm Giả Biên Lai Chuyển Khoản & Thông Báo Thành Công",
     "category": "Gian Lận Thương Mại",
-    "category_en": "Gian Lận Thương Mại",
+    "category_en": "E-Commerce Fraud",
     "difficulty": "Medium",
     "description": "Khách mua hàng gửi ảnh chụp màn hình chuyển khoản thành công kèm logo VietinBank, giục chủ shop giao hàng nhanh vì họ đang vội.",
     "description_en": "Khách mua hàng gửi ảnh chụp màn hình chuyển khoản thành công kèm logo VietinBank, giục chủ shop giao hàng nhanh vì họ đang vội.",
@@ -638,7 +697,8 @@
             "feedback_en": "BỊ LỪA MẤT HÀNG! Hiện nay có hàng trăm website và bot Telegram cho phép tạo ảnh biên lai chuyển khoản giả giống thật 100% chỉ trong 10 giây.",
             "psychologyNote": "Kẻ gian tạo sức ép thời gian để người bán không kịp kiểm tra tài khoản.",
             "psychologyNote_en": "Kẻ gian tạo sức ép thời gian để người bán không kịp kiểm tra tài khoản.",
-            "nextStepId": "rec-step-compromised"
+            "nextStepId": "rec-step-compromised",
+            "nextStepId_en": "rec-step-compromised"
           },
           {
             "id": "rec1_2",
@@ -649,7 +709,8 @@
             "feedback_en": "CHUẨN NGUYÊN TẮC KINH DOANH! Tiền nổi trên tài khoản ngân hàng của mình mới là căn cứ duy nhất để bàn giao tài sản.",
             "psychologyNote": "Chỉ tin vào số dư thực tế, không tin vào hình ảnh chụp màn hình.",
             "psychologyNote_en": "Chỉ tin vào số dư thực tế, không tin vào hình ảnh chụp màn hình.",
-            "nextStepId": "rec-step-safe"
+            "nextStepId": "rec-step-safe",
+            "nextStepId_en": "rec-step-safe"
           }
         ]
       },
@@ -673,6 +734,11 @@
       }
     ],
     "realLifeDefenseTips": [
+      "Không tin vào bất kỳ hình ảnh chụp màn hình chuyển khoản nào, kể cả có thông báo chuyển nhanh 24/7.",
+      "Sử dụng loa thông báo số dư hoặc phần mềm quản lý bán hàng đồng bộ biến động số dư tự động.",
+      "Nếu khách giải thích do \"ngân hàng bị nghẽn mạng\", hãy yêu cầu giữ hàng chờ tiền nổi mới giao."
+    ],
+    "realLifeDefenseTips_en": [
       "Không tin vào bất kỳ hình ảnh chụp màn hình chuyển khoản nào, kể cả có thông báo chuyển nhanh 24/7.",
       "Sử dụng loa thông báo số dư hoặc phần mềm quản lý bán hàng đồng bộ biến động số dư tự động.",
       "Nếu khách giải thích do \"ngân hàng bị nghẽn mạng\", hãy yêu cầu giữ hàng chờ tiền nổi mới giao."
@@ -710,7 +776,8 @@
             "feedback_en": "BỊ HACK NICK LỪA ĐẢO! Nick Facebook của đồng nghiệp vừa bị hacker chiếm đoạt cách đây 15 phút và đang nhắn tin vay tiền toàn bộ bạn bè.",
             "psychologyNote": "Kẻ gian lợi dụng uy tín cá nhân và mối quan hệ thân thiết thường nhật.",
             "psychologyNote_en": "Kẻ gian lợi dụng uy tín cá nhân và mối quan hệ thân thiết thường nhật.",
-            "nextStepId": "acc-step-compromised"
+            "nextStepId": "acc-step-compromised",
+            "nextStepId_en": "acc-step-compromised"
           },
           {
             "id": "acc1_2",
@@ -721,7 +788,8 @@
             "feedback_en": "XUẤT SẮC! Người đồng nghiệp ngơ ngác bảo không hề nhắn tin và lập tức đăng cảnh báo bị hack nick.",
             "psychologyNote": "Xác minh trực tiếp bằng giọng nói hoặc gặp mặt ngăn chặn 100% bẫy mượn tiền qua mạng.",
             "psychologyNote_en": "Xác minh trực tiếp bằng giọng nói hoặc gặp mặt ngăn chặn 100% bẫy mượn tiền qua mạng.",
-            "nextStepId": "acc-step-safe"
+            "nextStepId": "acc-step-safe",
+            "nextStepId_en": "acc-step-safe"
           }
         ]
       },
@@ -749,6 +817,11 @@
       "Cảnh giác khi tên chủ tài khoản nhận tiền khác với tên người bạn quen biết.",
       "Thiết lập câu hỏi bí mật riêng tư khi có giao dịch tài chính với bạn bè."
     ],
+    "realLifeDefenseTips_en": [
+      "Không bao giờ chuyển tiền theo yêu cầu vay mượn qua tin nhắn văn bản (Chat/SMS) mà chưa xác thực qua giọng nói.",
+      "Cảnh giác khi tên chủ tài khoản nhận tiền khác với tên người bạn quen biết.",
+      "Thiết lập câu hỏi bí mật riêng tư khi có giao dịch tài chính với bạn bè."
+    ],
     "tacticAnalysis": "Khai thác tài khoản mạng xã hội bị lộ mật khẩu để spam mượn tiền hàng loạt trên danh sách liên lạc.",
     "tacticAnalysis_en": "Khai thác tài khoản mạng xã hội bị lộ mật khẩu để spam mượn tiền hàng loạt trên danh sách liên lạc."
   },
@@ -757,7 +830,7 @@
     "title": "11. Cuộc Gọi \"Không Nói Gì\" Thu Thập Mẫu Giọng Nói",
     "title_en": "11. Cuộc Gọi \"Không Nói Gì\" Thu Thập Mẫu Giọng Nói",
     "category": "Deepfake & Thu Thập Dữ Liệu",
-    "category_en": "Deepfake & Thu Thập Dữ Liệu",
+    "category_en": "Deepfake & Data Harvesting",
     "difficulty": "Medium",
     "description": "Bạn liên tục nhận được cuộc gọi từ các đầu số lạ 024..., 028..., khi nhấc máy thì đầu dây bên kia im lặng hoặc chỉ hỏi bâng quơ để bạn nói dài.",
     "description_en": "Bạn liên tục nhận được cuộc gọi từ các đầu số lạ 024..., 028..., khi nhấc máy thì đầu dây bên kia im lặng hoặc chỉ hỏi bâng quơ để bạn nói dài.",
@@ -782,7 +855,8 @@
             "feedback_en": "RỦI RO THU THẬP GIỌNG NÓI! Kẻ gian đang ghi âm đoạn hội thoại dài của bạn để lấy dữ liệu huấn luyện mô hình AI Voice Cloning nhái giọng bạn.",
             "psychologyNote": "Kẻ gian kích thích bạn nói nhiều để có đủ âm sắc và ngữ điệu.",
             "psychologyNote_en": "Kẻ gian kích thích bạn nói nhiều để có đủ âm sắc và ngữ điệu.",
-            "nextStepId": "sil-step-compromised"
+            "nextStepId": "sil-step-compromised",
+            "nextStepId_en": "sil-step-compromised"
           },
           {
             "id": "sil1_2",
@@ -793,7 +867,8 @@
             "feedback_en": "RẤT TỈNH TÁO! Không cung cấp dữ liệu âm thanh cá nhân cho các cuộc gọi mập mờ.",
             "psychologyNote": "Dập máy sớm ngăn chặn kẻ xấu thu thập mẫu sinh trắc học giọng nói.",
             "psychologyNote_en": "Dập máy sớm ngăn chặn kẻ xấu thu thập mẫu sinh trắc học giọng nói.",
-            "nextStepId": "sil-step-safe"
+            "nextStepId": "sil-step-safe",
+            "nextStepId_en": "sil-step-safe"
           }
         ]
       },
@@ -821,6 +896,11 @@
       "Không bao giờ trả lời các câu hỏi gài \"Có phải bạn là... không?\" bằng từ \"Đúng/Vâng\" một cách dễ dãi.",
       "Cài đặt các ứng dụng chặn cuộc gọi rác và báo cáo số điện thoại nghi vấn."
     ],
+    "realLifeDefenseTips_en": [
+      "Hạn chế nói chuyện dài với các cuộc gọi khảo sát lạ hoặc cuộc gọi im lặng bất thường.",
+      "Không bao giờ trả lời các câu hỏi gài \"Có phải bạn là... không?\" bằng từ \"Đúng/Vâng\" một cách dễ dãi.",
+      "Cài đặt các ứng dụng chặn cuộc gọi rác và báo cáo số điện thoại nghi vấn."
+    ],
     "tacticAnalysis": "Thu thập dữ liệu âm thanh (Voice Sampling) phục vụ công nghệ AI Voice Cloning để tấn công người thân mục tiêu.",
     "tacticAnalysis_en": "Thu thập dữ liệu âm thanh (Voice Sampling) phục vụ công nghệ AI Voice Cloning để tấn công người thân mục tiêu."
   },
@@ -829,7 +909,7 @@
     "title": "12. Giả Danh Giáo Viên / Nhà Trường Báo Học Sinh Bị Tai Nạn",
     "title_en": "12. Giả Danh Giáo Viên / Nhà Trường Báo Học Sinh Bị Tai Nạn",
     "category": "Lừa Đảo Bệnh Viện & Trường Học",
-    "category_en": "Lừa Đảo Bệnh Viện & Trường Học",
+    "category_en": "Hospital & School Scam",
     "difficulty": "Hard",
     "description": "Bạn nhận được cuộc gọi tự xưng giáo viên chủ nhiệm thông báo con bạn vừa ngã từ lan can tầng 3 trường học, đang cấp cứu Chợ Rẫy/Việt Đức cần chuyển viện phí gấp.",
     "description_en": "Bạn nhận được cuộc gọi tự xưng giáo viên chủ nhiệm thông báo con bạn vừa ngã từ lan can tầng 3 trường học, đang cấp cứu Chợ Rẫy/Việt Đức cần chuyển viện phí gấp.",
@@ -854,7 +934,8 @@
             "feedback_en": "SẬP BẪY \"CON ĐANG CẤP CỨU\"! Đây là thủ đoạn lừa đảo tàn nhẫn từng khiến hàng nghìn phụ huynh tại Hà Nội và TP.HCM mất tiền oan.",
             "psychologyNote": "Kẻ gian khai thác tối đa nỗi sợ hãi tột cùng về sự an toàn tính mạng của con cái.",
             "psychologyNote_en": "Kẻ gian khai thác tối đa nỗi sợ hãi tột cùng về sự an toàn tính mạng của con cái.",
-            "nextStepId": "stu-step-compromised"
+            "nextStepId": "stu-step-compromised",
+            "nextStepId_en": "stu-step-compromised"
           },
           {
             "id": "stu1_2",
@@ -865,7 +946,8 @@
             "feedback_en": "QUÁ XUẤT SẮC! Giáo viên chủ nhiệm thật bắt máy và xác nhận con bạn đang ngồi học bình thường trên lớp.",
             "psychologyNote": "Nguyên tắc bất di bất dịch của bệnh viện: Luôn ưu tiên cấp cứu bệnh nhân trước, viện phí làm thủ tục sau.",
             "psychologyNote_en": "Nguyên tắc bất di bất dịch của bệnh viện: Luôn ưu tiên cấp cứu bệnh nhân trước, viện phí làm thủ tục sau.",
-            "nextStepId": "stu-step-safe"
+            "nextStepId": "stu-step-safe",
+            "nextStepId_en": "stu-step-safe"
           }
         ]
       },
@@ -893,6 +975,11 @@
       "Luôn liên hệ trực tiếp Ban Giám hiệu hoặc giáo viên chủ nhiệm quen biết.",
       "Nếu có điều kiện, cử người nhà đến trực tiếp trường học hoặc bệnh viện kiểm tra."
     ],
+    "realLifeDefenseTips_en": [
+      "Bệnh viện công lập tại Việt Nam luôn có quy trình cấp cứu khẩn cấp ưu tiên cứu người, không bao giờ ép nộp tiền qua điện thoại mới mổ.",
+      "Luôn liên hệ trực tiếp Ban Giám hiệu hoặc giáo viên chủ nhiệm quen biết.",
+      "Nếu có điều kiện, cử người nhà đến trực tiếp trường học hoặc bệnh viện kiểm tra."
+    ],
     "tacticAnalysis": "Gây khủng hoảng tâm lý cực hạn bằng thông tin con cái gặp nạn để cướp quyền kiểm soát hành vi tài chính.",
     "tacticAnalysis_en": "Gây khủng hoảng tâm lý cực hạn bằng thông tin con cái gặp nạn để cướp quyền kiểm soát hành vi tài chính."
   },
@@ -901,7 +988,7 @@
     "title": "13. Giả Danh Nhân Viên Y Tế / Bác Sĩ Báo Người Thân Cấp Cứu",
     "title_en": "13. Giả Danh Nhân Viên Y Tế / Bác Sĩ Báo Người Thân Cấp Cứu",
     "category": "Lừa Đảo Bệnh Viện & Trường Học",
-    "category_en": "Lừa Đảo Bệnh Viện & Trường Học",
+    "category_en": "Hospital & School Scam",
     "difficulty": "Medium",
     "description": "Một người tự xưng là Bác sĩ Trưởng khoa Cấp cứu bệnh viện Bạch Mai gọi điện báo chồng/vợ bạn bị tai nạn giao thông cần chuyển tiền mua máu hiếm gấp.",
     "description_en": "Một người tự xưng là Bác sĩ Trưởng khoa Cấp cứu bệnh viện Bạch Mai gọi điện báo chồng/vợ bạn bị tai nạn giao thông cần chuyển tiền mua máu hiếm gấp.",
@@ -926,7 +1013,8 @@
             "feedback_en": "BỊ LỪA ĐẢO TÂM LÝ! Bệnh viện và ngân hàng máu quốc gia không bao giờ yêu cầu chuyển khoản tiền mua máu vào tài khoản cá nhân.",
             "psychologyNote": "Kẻ lừa đảo dàn dựng bối cảnh âm thanh còi hú cứu thương ở hậu cảnh để tăng tính chân thật.",
             "psychologyNote_en": "Kẻ lừa đảo dàn dựng bối cảnh âm thanh còi hú cứu thương ở hậu cảnh để tăng tính chân thật.",
-            "nextStepId": "med-step-compromised"
+            "nextStepId": "med-step-compromised",
+            "nextStepId_en": "med-step-compromised"
           },
           {
             "id": "med1_2",
@@ -937,7 +1025,8 @@
             "feedback_en": "RẤT CHUẨN XÁC! Chồng bạn bắt máy và bảo đang ngồi họp cơ quan bình thường.",
             "psychologyNote": "Bình tĩnh kiểm chứng qua người thân triệt tiêu mọi mưu mô lừa gạt.",
             "psychologyNote_en": "Bình tĩnh kiểm chứng qua người thân triệt tiêu mọi mưu mô lừa gạt.",
-            "nextStepId": "med-step-safe"
+            "nextStepId": "med-step-safe",
+            "nextStepId_en": "med-step-safe"
           }
         ]
       },
@@ -961,6 +1050,11 @@
       }
     ],
     "realLifeDefenseTips": [
+      "Bệnh viện thực hiện cứu chữa bệnh nhân theo y đức và quy chế cấp cứu khẩn cấp, không chờ chuyển khoản qua mạng.",
+      "Gọi vào tổng đài bệnh viện chính thức để tra cứu danh sách bệnh nhân nhập viện.",
+      "Không chuyển tiền vào bất kỳ tài khoản cá nhân nào tự xưng là bác sĩ."
+    ],
+    "realLifeDefenseTips_en": [
       "Bệnh viện thực hiện cứu chữa bệnh nhân theo y đức và quy chế cấp cứu khẩn cấp, không chờ chuyển khoản qua mạng.",
       "Gọi vào tổng đài bệnh viện chính thức để tra cứu danh sách bệnh nhân nhập viện.",
       "Không chuyển tiền vào bất kỳ tài khoản cá nhân nào tự xưng là bác sĩ."
@@ -998,7 +1092,8 @@
             "feedback_en": "BỊ CƯỚP SIM (SIM SWAP ATTACK)! Cú pháp đó thực chất là lệnh chuyển số điện thoại của bạn sang phôi SIM trắng của kẻ gian. Kẻ gian sẽ dùng SIM này nhận OTP ngân hàng và rút sạch tiền.",
             "psychologyNote": "Kẻ gian lợi dụng chủ trương chuẩn hóa thông tin thuê bao của nhà nước.",
             "psychologyNote_en": "Kẻ gian lợi dụng chủ trương chuẩn hóa thông tin thuê bao của nhà nước.",
-            "nextStepId": "sim-step-compromised"
+            "nextStepId": "sim-step-compromised",
+            "nextStepId_en": "sim-step-compromised"
           },
           {
             "id": "sim1_2",
@@ -1009,7 +1104,8 @@
             "feedback_en": "QUÁ XUẤT SẮC! App nhà mạng báo thông tin thuê bao đã chính chủ và hoàn toàn hợp lệ.",
             "psychologyNote": "Sử dụng ứng dụng chính thức của nhà mạng dập tắt mọi nghi ngờ.",
             "psychologyNote_en": "Sử dụng ứng dụng chính thức của nhà mạng dập tắt mọi nghi ngờ.",
-            "nextStepId": "sim-step-safe"
+            "nextStepId": "sim-step-safe",
+            "nextStepId_en": "sim-step-safe"
           }
         ]
       },
@@ -1033,6 +1129,11 @@
       }
     ],
     "realLifeDefenseTips": [
+      "Nhà mạng chỉ thông báo chuẩn hóa thuê bao qua tin nhắn SMS có Brandname chính thức và có lộ trình kéo dài nhiều tuần.",
+      "Không soạn các cú pháp đổi SIM (như DS gửi 901) khi nhận được yêu cầu từ người lạ.",
+      "Đến trực tiếp cửa hàng giao dịch viễn thông khi cần hỗ trợ về SIM."
+    ],
+    "realLifeDefenseTips_en": [
       "Nhà mạng chỉ thông báo chuẩn hóa thuê bao qua tin nhắn SMS có Brandname chính thức và có lộ trình kéo dài nhiều tuần.",
       "Không soạn các cú pháp đổi SIM (như DS gửi 901) khi nhận được yêu cầu từ người lạ.",
       "Đến trực tiếp cửa hàng giao dịch viễn thông khi cần hỗ trợ về SIM."
@@ -1070,7 +1171,8 @@
             "feedback_en": "BỊ RÚT SẠCH TIỀN! Trang web giả mạo sẽ lấy thông tin để tạo lệnh chuyển tiền từ tài khoản của bạn đi thay vì chuyển tiền về cho bạn.",
             "psychologyNote": "Kẻ lừa đảo đánh trúng tâm lý ham nhận tiền bồi hoàn miễn phí.",
             "psychologyNote_en": "Kẻ lừa đảo đánh trúng tâm lý ham nhận tiền bồi hoàn miễn phí.",
-            "nextStepId": "ref-step-compromised"
+            "nextStepId": "ref-step-compromised",
+            "nextStepId_en": "ref-step-compromised"
           },
           {
             "id": "ref1_2",
@@ -1081,7 +1183,8 @@
             "feedback_en": "CHUẨN QUY TRÌNH HÀNH CHÍNH! Mọi khoản hoàn thuế nhà nước đều được chi trả trực tiếp vào tài khoản đã đăng ký trên hệ thống thuế chính thống.",
             "psychologyNote": "Làm việc qua cổng dịch vụ công chuẩn tắc giúp bảo vệ tài chính.",
             "psychologyNote_en": "Làm việc qua cổng dịch vụ công chuẩn tắc giúp bảo vệ tài chính.",
-            "nextStepId": "ref-step-safe"
+            "nextStepId": "ref-step-safe",
+            "nextStepId_en": "ref-step-safe"
           }
         ]
       },
@@ -1105,6 +1208,11 @@
       }
     ],
     "realLifeDefenseTips": [
+      "Quy trình hoàn thuế thu nhập cá nhân chỉ thực hiện qua cổng Dịch vụ công Quốc gia hoặc app eTax Mobile của Tổng cục Thuế.",
+      "Không bao giờ có thủ tục \"nhập OTP để nhận tiền về tài khoản\" (Nhận tiền chuyển khoản chỉ cần số tài khoản, không cần OTP).",
+      "Cảnh giác với các cuộc gọi báo hoàn tiền học phí, bảo hiểm, điện nước."
+    ],
+    "realLifeDefenseTips_en": [
       "Quy trình hoàn thuế thu nhập cá nhân chỉ thực hiện qua cổng Dịch vụ công Quốc gia hoặc app eTax Mobile của Tổng cục Thuế.",
       "Không bao giờ có thủ tục \"nhập OTP để nhận tiền về tài khoản\" (Nhận tiền chuyển khoản chỉ cần số tài khoản, không cần OTP).",
       "Cảnh giác với các cuộc gọi báo hoàn tiền học phí, bảo hiểm, điện nước."
@@ -1142,7 +1250,8 @@
             "feedback_en": "SẬP BẪY NHIỆM VỤ ĐA CẤP! Khoản tiền 60.000đ ban đầu chỉ là \"mồi nhử\" (thức ăn dụ cá). Khi bạn nạp 5 triệu, hệ thống sẽ báo lỗi và ép nạp thêm 20 triệu, 50 triệu.",
             "psychologyNote": "Kẻ gian xây dựng lòng tin bằng khoản thưởng nhỏ ban đầu rồi kích hoạt lòng tham.",
             "psychologyNote_en": "Kẻ gian xây dựng lòng tin bằng khoản thưởng nhỏ ban đầu rồi kích hoạt lòng tham.",
-            "nextStepId": "task-step-compromised"
+            "nextStepId": "task-step-compromised",
+            "nextStepId_en": "task-step-compromised"
           },
           {
             "id": "task1_2",
@@ -1153,7 +1262,8 @@
             "feedback_en": "QUÁ CAO TAY! Bạn đã nhìn thấu bản chất của trò lừa đảo tuyển dụng việc nhẹ lương cao phổ biến nhất hiện nay.",
             "psychologyNote": "Kiểm soát lòng tham là chìa khóa miễn nhiễm với bẫy lừa đảo việc làm.",
             "psychologyNote_en": "Kiểm soát lòng tham là chìa khóa miễn nhiễm với bẫy lừa đảo việc làm.",
-            "nextStepId": "task-step-safe"
+            "nextStepId": "task-step-safe",
+            "nextStepId_en": "task-step-safe"
           }
         ]
       },
@@ -1177,6 +1287,11 @@
       }
     ],
     "realLifeDefenseTips": [
+      "Không có công việc nào chỉ like video, giật đơn hàng mà kiếm tiền triệu mỗi ngày.",
+      "Tuyệt đối không nạp tiền vào bất kỳ tài khoản cá nhân nào với lý do \"giữ chân nhiệm vụ\" hay \"nâng cấp tài khoản VIP\".",
+      "Các thành viên khoe nhận tiền hàng chục triệu trong nhóm Telegram/Zalo đều là tài khoản ảo (chim mồi)."
+    ],
+    "realLifeDefenseTips_en": [
       "Không có công việc nào chỉ like video, giật đơn hàng mà kiếm tiền triệu mỗi ngày.",
       "Tuyệt đối không nạp tiền vào bất kỳ tài khoản cá nhân nào với lý do \"giữ chân nhiệm vụ\" hay \"nâng cấp tài khoản VIP\".",
       "Các thành viên khoe nhận tiền hàng chục triệu trong nhóm Telegram/Zalo đều là tài khoản ảo (chim mồi)."
@@ -1214,7 +1329,8 @@
             "feedback_en": "SẬP BẪY SÀN GIAO DỊCH ẢO! Sàn giao dịch này do kẻ lừa đảo tự lập trình, chúng có thể tự chỉnh sửa con số hiển thị trên màn hình để bạn tưởng mình có lãi.",
             "psychologyNote": "Kẻ lừa đảo đánh trúng tâm lý FOMO (sợ bỏ lỡ cơ hội làm giàu nhanh).",
             "psychologyNote_en": "Kẻ lừa đảo đánh trúng tâm lý FOMO (sợ bỏ lỡ cơ hội làm giàu nhanh).",
-            "nextStepId": "inv-step-compromised"
+            "nextStepId": "inv-step-compromised",
+            "nextStepId_en": "inv-step-compromised"
           },
           {
             "id": "inv1_2",
@@ -1225,7 +1341,8 @@
             "feedback_en": "RẤT THÔNG MINH! Lãi suất ngân hàng chỉ khoảng 5-7%/năm. Bất kỳ nơi nào hứa hẹn lãi suất trên 20-30%/tháng đều là bẫy lừa đảo Ponzi.",
             "psychologyNote": "Tư duy tài chính thực tế là bức tường bảo vệ tài sản vững chắc nhất.",
             "psychologyNote_en": "Tư duy tài chính thực tế là bức tường bảo vệ tài sản vững chắc nhất.",
-            "nextStepId": "inv-step-safe"
+            "nextStepId": "inv-step-safe",
+            "nextStepId_en": "inv-step-safe"
           }
         ]
       },
@@ -1249,6 +1366,11 @@
       }
     ],
     "realLifeDefenseTips": [
+      "Quy luật tài chính bất biến: \"Lợi nhuận càng cao thì rủi ro càng lớn\". Không có kênh đầu tư nào \"lãi suất khủng, bao lỗ 100%\".",
+      "Chỉ đầu tư qua các công ty chứng khoán được Ủy ban Chứng khoán Nhà nước cấp phép.",
+      "Cảnh giác với các hình ảnh khoe nhà sang, xe xịn, số dư tài khoản hàng tỷ đồng trên mạng xã hội."
+    ],
+    "realLifeDefenseTips_en": [
       "Quy luật tài chính bất biến: \"Lợi nhuận càng cao thì rủi ro càng lớn\". Không có kênh đầu tư nào \"lãi suất khủng, bao lỗ 100%\".",
       "Chỉ đầu tư qua các công ty chứng khoán được Ủy ban Chứng khoán Nhà nước cấp phép.",
       "Cảnh giác với các hình ảnh khoe nhà sang, xe xịn, số dư tài khoản hàng tỷ đồng trên mạng xã hội."
@@ -1286,7 +1408,8 @@
             "feedback_en": "SẬP BẪY MỔ HEO (PIG BUTCHERING)! Dù bạn nạp thêm 50 triệu hay 500 triệu, bạn sẽ KHÔNG BAO GIỜ rút được tiền. Nhóm 50 người thực chất chỉ có 1 mình bạn là nạn nhân, 49 người còn lại là bot và chim mồi.",
             "psychologyNote": "Kẻ lừa đảo dồn nạn nhân vào bẫy tâm lý \"Tiếc tiền đã nạp nên phải nạp thêm để gỡ\".",
             "psychologyNote_en": "Kẻ lừa đảo dồn nạn nhân vào bẫy tâm lý \"Tiếc tiền đã nạp nên phải nạp thêm để gỡ\".",
-            "nextStepId": "pig-step-compromised"
+            "nextStepId": "pig-step-compromised",
+            "nextStepId_en": "pig-step-compromised"
           },
           {
             "id": "pig1_2",
@@ -1297,7 +1420,8 @@
             "feedback_en": "QUYẾT ĐỊNH CẮT LỖ DŨNG CẢM & ĐÚNG ĐẮN! Dừng nạp tiền là cách duy nhất để không bị bòn rút thêm hàng trăm triệu đồng tiếp theo.",
             "psychologyNote": "Kỷ luật thép cắt lỗ cứu vãn tương lai tài chính của bạn.",
             "psychologyNote_en": "Kỷ luật thép cắt lỗ cứu vãn tương lai tài chính của bạn.",
-            "nextStepId": "pig-step-safe"
+            "nextStepId": "pig-step-safe",
+            "nextStepId_en": "pig-step-safe"
           }
         ]
       },
@@ -1321,6 +1445,11 @@
       }
     ],
     "realLifeDefenseTips": [
+      "Thủ đoạn \"Nuôi cho béo rồi mổ thịt\" (Pig Butchering): Ban đầu cho rút tiền nhỏ để tạo lòng tin tuyệt đối.",
+      "Trong các nhóm đầu tư Telegram/Zalo, hầu hết thành viên đều là tài khoản ảo do một nhóm đối tượng điều khiển.",
+      "Khi đã bị chặn rút tiền, tuyệt đối KHÔNG nạp thêm bất kỳ khoản tiền nào với bất kỳ lý do gì."
+    ],
+    "realLifeDefenseTips_en": [
       "Thủ đoạn \"Nuôi cho béo rồi mổ thịt\" (Pig Butchering): Ban đầu cho rút tiền nhỏ để tạo lòng tin tuyệt đối.",
       "Trong các nhóm đầu tư Telegram/Zalo, hầu hết thành viên đều là tài khoản ảo do một nhóm đối tượng điều khiển.",
       "Khi đã bị chặn rút tiền, tuyệt đối KHÔNG nạp thêm bất kỳ khoản tiền nào với bất kỳ lý do gì."
@@ -1358,7 +1487,8 @@
             "feedback_en": "BỊ LỪA PHÍ VẬN CHUYỂN! Khi chuyển tiền xong, bạn sẽ không nhận được bất kỳ món quà nào hoặc chỉ nhận được một kiện hàng chứa cục gạch/đồ vô giá trị.",
             "psychologyNote": "Kẻ gian lợi dụng niềm vui bất ngờ khi trúng thưởng quà giá trị lớn.",
             "psychologyNote_en": "Kẻ gian lợi dụng niềm vui bất ngờ khi trúng thưởng quà giá trị lớn.",
-            "nextStepId": "shp-step-compromised"
+            "nextStepId": "shp-step-compromised",
+            "nextStepId_en": "shp-step-compromised"
           },
           {
             "id": "shp1_2",
@@ -1369,7 +1499,8 @@
             "feedback_en": "RẤT CHÍNH XÁC! Mọi chương trình trúng thưởng chính thức của Shopee/Lazada đều hiển thị trong mục Thông báo trên app và không bao giờ yêu cầu chuyển tiền trước.",
             "psychologyNote": "Kiểm tra qua kênh ứng dụng chính thống loại trừ 100% bẫy quà tặng.",
             "psychologyNote_en": "Kiểm tra qua kênh ứng dụng chính thống loại trừ 100% bẫy quà tặng.",
-            "nextStepId": "shp-step-safe"
+            "nextStepId": "shp-step-safe",
+            "nextStepId_en": "shp-step-safe"
           }
         ]
       },
@@ -1393,6 +1524,11 @@
       }
     ],
     "realLifeDefenseTips": [
+      "Các sàn TMĐT lớn không thông báo trúng thưởng giải thưởng lớn qua cuộc gọi từ số di động cá nhân rác.",
+      "Nếu là quà tặng trúng thưởng hợp pháp, mọi khoản thuế (nếu có) sẽ được khấu trừ trực tiếp hoặc làm thủ tục trực tiếp.",
+      "Cảnh giác với các bưu kiện COD (giao hàng thu tiền hộ) mà bạn không hề đặt mua."
+    ],
+    "realLifeDefenseTips_en": [
       "Các sàn TMĐT lớn không thông báo trúng thưởng giải thưởng lớn qua cuộc gọi từ số di động cá nhân rác.",
       "Nếu là quà tặng trúng thưởng hợp pháp, mọi khoản thuế (nếu có) sẽ được khấu trừ trực tiếp hoặc làm thủ tục trực tiếp.",
       "Cảnh giác với các bưu kiện COD (giao hàng thu tiền hộ) mà bạn không hề đặt mua."
@@ -1430,7 +1566,8 @@
             "feedback_en": "BỊ LỪA TIỀN CƯỚC ẢO! Điện lực EVN không thu tiền điện qua tài khoản cá nhân của nhân viên qua điện thoại.",
             "psychologyNote": "Kẻ gian gây áp lực cắt dịch vụ thiết yếu để ép chuyển tiền trong trạng thái lo âu.",
             "psychologyNote_en": "Kẻ gian gây áp lực cắt dịch vụ thiết yếu để ép chuyển tiền trong trạng thái lo âu.",
-            "nextStepId": "evn-step-compromised"
+            "nextStepId": "evn-step-compromised",
+            "nextStepId_en": "evn-step-compromised"
           },
           {
             "id": "evn1_2",
@@ -1441,7 +1578,8 @@
             "feedback_en": "RẤT CHUẨN XÁC! App báo hóa đơn tiền điện tháng này đã được thanh toán thành công từ tuần trước.",
             "psychologyNote": "Tra cứu trực tiếp qua mã hợp đồng bảo vệ bạn tuyệt đối.",
             "psychologyNote_en": "Tra cứu trực tiếp qua mã hợp đồng bảo vệ bạn tuyệt đối.",
-            "nextStepId": "evn-step-safe"
+            "nextStepId": "evn-step-safe",
+            "nextStepId_en": "evn-step-safe"
           }
         ]
       },
@@ -1465,6 +1603,11 @@
       }
     ],
     "realLifeDefenseTips": [
+      "EVN và các công ty cấp nước chỉ thông báo qua tin nhắn SMS Brandname hoặc thông báo chính thức trên App.",
+      "Quy trình cắt điện do nợ cước phải có văn bản thông báo trước nhiều ngày theo quy định của Bộ Công Thương.",
+      "Không chuyển tiền điện vào số tài khoản cá nhân."
+    ],
+    "realLifeDefenseTips_en": [
       "EVN và các công ty cấp nước chỉ thông báo qua tin nhắn SMS Brandname hoặc thông báo chính thức trên App.",
       "Quy trình cắt điện do nợ cước phải có văn bản thông báo trước nhiều ngày theo quy định của Bộ Công Thương.",
       "Không chuyển tiền điện vào số tài khoản cá nhân."
@@ -1502,7 +1645,8 @@
             "feedback_en": "BỊ CÀI MÃ ĐỘC CHIẾM QUYỀN ĐIỆN THOẠI! File tải về là mã độc gián điệp, khi cài đặt sẽ theo dõi tài khoản ngân hàng của bạn.",
             "psychologyNote": "Kẻ gian lợi dụng tâm lý sợ mất quyền lợi khám chữa bệnh bảo hiểm y tế.",
             "psychologyNote_en": "Kẻ gian lợi dụng tâm lý sợ mất quyền lợi khám chữa bệnh bảo hiểm y tế.",
-            "nextStepId": "bhxh-step-compromised"
+            "nextStepId": "bhxh-step-compromised",
+            "nextStepId_en": "bhxh-step-compromised"
           },
           {
             "id": "bhxh1_2",
@@ -1513,7 +1657,8 @@
             "feedback_en": "RẤT TỈNH TÁO! Cơ quan BHXH Việt Nam chỉ sử dụng tên miền đuôi `.gov.vn` và app VssID chính thống trên kho ứng dụng.",
             "psychologyNote": "Chỉ tin tưởng cổng thông tin có tên miền quốc gia .gov.vn.",
             "psychologyNote_en": "Chỉ tin tưởng cổng thông tin có tên miền quốc gia .gov.vn.",
-            "nextStepId": "bhxh-step-safe"
+            "nextStepId": "bhxh-step-safe",
+            "nextStepId_en": "bhxh-step-safe"
           }
         ]
       },
@@ -1537,6 +1682,11 @@
       }
     ],
     "realLifeDefenseTips": [
+      "Trang web chính thức của Bảo hiểm Xã hội Việt Nam là `baohiemxahoi.gov.vn`.",
+      "Không tải bất kỳ ứng dụng VssID nào ngoài Google Play Store và Apple App Store.",
+      "Mọi thủ tục điều chỉnh thông tin BHXH đều có thể thực hiện trên Cổng Dịch vụ công Quốc gia."
+    ],
+    "realLifeDefenseTips_en": [
       "Trang web chính thức của Bảo hiểm Xã hội Việt Nam là `baohiemxahoi.gov.vn`.",
       "Không tải bất kỳ ứng dụng VssID nào ngoài Google Play Store và Apple App Store.",
       "Mọi thủ tục điều chỉnh thông tin BHXH đều có thể thực hiện trên Cổng Dịch vụ công Quốc gia."
@@ -1574,7 +1724,8 @@
             "feedback_en": "BỊ TẤN CÔNG QUISHING (QR PHISHING)! Mã QR chỉ đơn giản là một cách mã hóa đường link. Kẻ gian mã hóa đường link web lừa đảo thành mã QR để né tránh các bộ lọc bảo mật.",
             "psychologyNote": "Người dùng thường mất cảnh giác với mã QR hơn là đường link chữ.",
             "psychologyNote_en": "Người dùng thường mất cảnh giác với mã QR hơn là đường link chữ.",
-            "nextStepId": "qr-step-compromised"
+            "nextStepId": "qr-step-compromised",
+            "nextStepId_en": "qr-step-compromised"
           },
           {
             "id": "qr1_2",
@@ -1585,7 +1736,8 @@
             "feedback_en": "QUÁ XUẤT SẮC! Bạn nắm rất vững nguyên tắc an toàn: Nhận tiền không bao giờ cần cung cấp mật khẩu đăng nhập hay OTP.",
             "psychologyNote": "Hiểu đúng luồng nhận tiền chuyển khoản vô hiệu hóa mọi bẫy QR.",
             "psychologyNote_en": "Hiểu đúng luồng nhận tiền chuyển khoản vô hiệu hóa mọi bẫy QR.",
-            "nextStepId": "qr-step-safe"
+            "nextStepId": "qr-step-safe",
+            "nextStepId_en": "qr-step-safe"
           }
         ]
       },
@@ -1609,6 +1761,11 @@
       }
     ],
     "realLifeDefenseTips": [
+      "Khi quét mã QR thanh toán tại cửa hàng, luôn đối chiếu tên chủ tài khoản thụ hưởng hiển thị trên app xem có đúng tên quán không.",
+      "Không quét các mã QR lạ dán ở nơi công cộng hoặc gửi qua tin nhắn từ người không quen biết.",
+      "Cảnh giác với các mã QR yêu cầu cấp quyền cài đặt phần mềm hoặc yêu cầu đăng nhập tài khoản."
+    ],
+    "realLifeDefenseTips_en": [
       "Khi quét mã QR thanh toán tại cửa hàng, luôn đối chiếu tên chủ tài khoản thụ hưởng hiển thị trên app xem có đúng tên quán không.",
       "Không quét các mã QR lạ dán ở nơi công cộng hoặc gửi qua tin nhắn từ người không quen biết.",
       "Cảnh giác với các mã QR yêu cầu cấp quyền cài đặt phần mềm hoặc yêu cầu đăng nhập tài khoản."
@@ -1646,7 +1803,8 @@
             "feedback_en": "BỊ CƯỚP QUYỀN ĐIỀU KHIỂN HOÀN TOÀN! Khi bạn cho phép kết nối, kẻ gian có thể nhìn thấy mọi thao tác trên màn hình điện thoại của bạn và tự điều khiển bấm chuyển tiền ngay trước mắt bạn.",
             "psychologyNote": "Kẻ gian lợi dụng sự sợ hãi virus và sự thiếu am hiểu về phần mềm điều khiển từ xa.",
             "psychologyNote_en": "Kẻ gian lợi dụng sự sợ hãi virus và sự thiếu am hiểu về phần mềm điều khiển từ xa.",
-            "nextStepId": "rem-step-compromised"
+            "nextStepId": "rem-step-compromised",
+            "nextStepId_en": "rem-step-compromised"
           },
           {
             "id": "rem1_2",
@@ -1657,7 +1815,8 @@
             "feedback_en": "CHUẨN XÁC TUYỆT ĐỐI! Bạn đã ngăn chặn hình thức tấn công Remote Access Trojan nguy hiểm bậc nhất.",
             "psychologyNote": "Bảo vệ quyền riêng tư thiết bị là tuyến phòng thủ tối thượng.",
             "psychologyNote_en": "Bảo vệ quyền riêng tư thiết bị là tuyến phòng thủ tối thượng.",
-            "nextStepId": "rem-step-safe"
+            "nextStepId": "rem-step-safe",
+            "nextStepId_en": "rem-step-safe"
           }
         ]
       },
@@ -1681,6 +1840,11 @@
       }
     ],
     "realLifeDefenseTips": [
+      "Không bao giờ cài đặt AnyDesk, TeamViewer, RustDesk, UltraViewer theo yêu cầu của người lạ qua điện thoại.",
+      "Không cung cấp mã ID hoặc mật khẩu kết nối từ xa cho bất kỳ ai.",
+      "Nếu lỡ cho phép kết nối, hãy ngắt ngay kết nối Internet (bật Chế độ máy bay) để ngắt quyền can thiệp."
+    ],
+    "realLifeDefenseTips_en": [
       "Không bao giờ cài đặt AnyDesk, TeamViewer, RustDesk, UltraViewer theo yêu cầu của người lạ qua điện thoại.",
       "Không cung cấp mã ID hoặc mật khẩu kết nối từ xa cho bất kỳ ai.",
       "Nếu lỡ cho phép kết nối, hãy ngắt ngay kết nối Internet (bật Chế độ máy bay) để ngắt quyền can thiệp."
@@ -1718,7 +1882,8 @@
             "feedback_en": "BỊ CHIẾM ĐOẠT TÀI KHOẢN! Cổng thanh toán quốc tế không bao giờ yêu cầu người nhận tiền phải nhập mật khẩu hay OTP ngân hàng.",
             "psychologyNote": "Kẻ lừa đảo đánh trúng tâm lý người bán mừng rỡ khi vừa đăng bài đã có khách chốt mua ngay.",
             "psychologyNote_en": "Kẻ lừa đảo đánh trúng tâm lý người bán mừng rỡ khi vừa đăng bài đã có khách chốt mua ngay.",
-            "nextStepId": "buy-step-compromised"
+            "nextStepId": "buy-step-compromised",
+            "nextStepId_en": "buy-step-compromised"
           },
           {
             "id": "buy1_2",
@@ -1729,7 +1894,8 @@
             "feedback_en": "QUÁ XUẤT SẮC! Kẻ lừa đảo thấy bạn quá am hiểu quy trình nên đã lập tức chặn nick bỏ chạy.",
             "psychologyNote": "Kiên định với phương thức thanh toán an toàn dập tắt bẫy phishing.",
             "psychologyNote_en": "Kiên định với phương thức thanh toán an toàn dập tắt bẫy phishing.",
-            "nextStepId": "buy-step-safe"
+            "nextStepId": "buy-step-safe",
+            "nextStepId_en": "buy-step-safe"
           }
         ]
       },
@@ -1757,6 +1923,11 @@
       "Cảnh giác với khách hàng đồng ý mua rất nhanh mà không thèm trả giá hay hỏi tình trạng món hàng.",
       "Không bấm vào các link nhận kiều hối, nhận tiền quốc tế không rõ nguồn gốc."
     ],
+    "realLifeDefenseTips_en": [
+      "Quy tắc vàng khi bán hàng: \"Nhận tiền CHỈ CẦN đưa Số tài khoản - Tuyệt đối KHÔNG BAO GIỜ nhập mật khẩu hay OTP\".",
+      "Cảnh giác với khách hàng đồng ý mua rất nhanh mà không thèm trả giá hay hỏi tình trạng món hàng.",
+      "Không bấm vào các link nhận kiều hối, nhận tiền quốc tế không rõ nguồn gốc."
+    ],
     "tacticAnalysis": "Ngụy trang bẫy Phishing dưới hình thức cổng nhận tiền kiều hối quốc tế.",
     "tacticAnalysis_en": "Ngụy trang bẫy Phishing dưới hình thức cổng nhận tiền kiều hối quốc tế."
   },
@@ -1765,7 +1936,7 @@
     "title": "25. Bán Hàng Giá Siêu Rẻ Yêu Cầu Chuyển Tiền Cọc Rồi Chặn Liên Lạc",
     "title_en": "25. Bán Hàng Giá Siêu Rẻ Yêu Cầu Chuyển Tiền Cọc Rồi Chặn Liên Lạc",
     "category": "Gian Lận Thương Mại",
-    "category_en": "Gian Lận Thương Mại",
+    "category_en": "E-Commerce Fraud",
     "difficulty": "Easy",
     "description": "Bạn thấy một bài đăng bán iPhone 15 Pro Max hoặc Xe máy SH giá rẻ bằng 1/3 thị trường trên Facebook Marketplace, người bán ép chuyển cọc 2 triệu để giữ hàng rồi biến mất.",
     "description_en": "Bạn thấy một bài đăng bán iPhone 15 Pro Max hoặc Xe máy SH giá rẻ bằng 1/3 thị trường trên Facebook Marketplace, người bán ép chuyển cọc 2 triệu để giữ hàng rồi biến mất.",
@@ -1790,7 +1961,8 @@
             "feedback_en": "BỊ LỪA MẤT TIỀN CỌC! Ngay sau khi bạn gửi biên lai chuyển tiền 2 triệu, đối tượng sẽ lập tức chặn Facebook, chặn số điện thoại và xóa bài đăng.",
             "psychologyNote": "Kẻ gian đánh vào tâm lý hám của rẻ và nỗi sợ bị người khác cướp mất món hời (FOMO).",
             "psychologyNote_en": "Kẻ gian đánh vào tâm lý hám của rẻ và nỗi sợ bị người khác cướp mất món hời (FOMO).",
-            "nextStepId": "sel-step-compromised"
+            "nextStepId": "sel-step-compromised",
+            "nextStepId_en": "sel-step-compromised"
           },
           {
             "id": "sel1_2",
@@ -1801,7 +1973,8 @@
             "feedback_en": "RẤT TỈNH TÁO! Khi bạn đòi xem hàng trực tiếp, đối tượng sẽ lập tức viện đủ lý do thoái thác vì thực chất không hề có xe.",
             "psychologyNote": "Giao dịch trực tiếp (Face-to-face) là cách bảo vệ an toàn nhất khi mua đồ giá trị lớn.",
             "psychologyNote_en": "Giao dịch trực tiếp (Face-to-face) là cách bảo vệ an toàn nhất khi mua đồ giá trị lớn.",
-            "nextStepId": "sel-step-safe"
+            "nextStepId": "sel-step-safe",
+            "nextStepId_en": "sel-step-safe"
           }
         ]
       },
@@ -1825,6 +1998,11 @@
       }
     ],
     "realLifeDefenseTips": [
+      "Hàng hóa có giá rẻ bất thường (rẻ hơn 50-70% giá thị trường) thì 99.9% là lừa đảo đặt cọc hoặc hàng giả, hàng trộm cắp.",
+      "Không chuyển tiền đặt cọc qua mạng cho cá nhân không rõ lai lịch, địa chỉ.",
+      "Ưu tiên mua hàng qua các sàn TMĐT có chính sách bảo vệ người mua và giữ tiền trung gian (Escrow)."
+    ],
+    "realLifeDefenseTips_en": [
       "Hàng hóa có giá rẻ bất thường (rẻ hơn 50-70% giá thị trường) thì 99.9% là lừa đảo đặt cọc hoặc hàng giả, hàng trộm cắp.",
       "Không chuyển tiền đặt cọc qua mạng cho cá nhân không rõ lai lịch, địa chỉ.",
       "Ưu tiên mua hàng qua các sàn TMĐT có chính sách bảo vệ người mua và giữ tiền trung gian (Escrow)."
@@ -1862,7 +2040,8 @@
             "feedback_en": "SẬP BẪY MẠO DANH CSGT! Trang web giả mạo sẽ yêu cầu bạn nhập thẻ ngân hàng hoặc tải app chứa mã độc để chiếm đoạt tài khoản.",
             "psychologyNote": "Kẻ gian đánh vào tâm lý lo sợ bị xử phạt hành chính và thu giữ phương tiện.",
             "psychologyNote_en": "Kẻ gian đánh vào tâm lý lo sợ bị xử phạt hành chính và thu giữ phương tiện.",
-            "nextStepId": "csgt-step-compromised"
+            "nextStepId": "csgt-step-compromised",
+            "nextStepId_en": "csgt-step-compromised"
           },
           {
             "id": "csgt1_2",
@@ -1873,7 +2052,8 @@
             "feedback_en": "QUÁ CHUẨN XÁC! Trang web chính thức `csgt.vn` báo phương tiện của bạn hoàn toàn không có lỗi vi phạm nào.",
             "psychologyNote": "Tra cứu tại cổng thông tin chính phủ .vn bảo đảm an toàn 100%.",
             "psychologyNote_en": "Tra cứu tại cổng thông tin chính phủ .vn bảo đảm an toàn 100%.",
-            "nextStepId": "csgt-step-safe"
+            "nextStepId": "csgt-step-safe",
+            "nextStepId_en": "csgt-step-safe"
           }
         ]
       },
@@ -1897,6 +2077,11 @@
       }
     ],
     "realLifeDefenseTips": [
+      "Thông báo phạt nguội hợp pháp được gửi bằng văn bản giấy có dấu đỏ qua đường bưu điện hoặc hiển thị trên app VNeID.",
+      "Trang web tra cứu phạt nguội duy nhất của Cục CSGT là `www.csgt.vn`.",
+      "Không nộp tiền phạt vi phạm giao thông vào các số tài khoản cá nhân được cung cấp qua tin nhắn."
+    ],
+    "realLifeDefenseTips_en": [
       "Thông báo phạt nguội hợp pháp được gửi bằng văn bản giấy có dấu đỏ qua đường bưu điện hoặc hiển thị trên app VNeID.",
       "Trang web tra cứu phạt nguội duy nhất của Cục CSGT là `www.csgt.vn`.",
       "Không nộp tiền phạt vi phạm giao thông vào các số tài khoản cá nhân được cung cấp qua tin nhắn."
@@ -1934,7 +2119,8 @@
             "feedback_en": "SẬP BẪY LỪA PHÍ TRẢ TRƯỚC (ADVANCE FEE FRAUD)! Không hề có giải thưởng nào cả. Kẻ gian sẽ chiếm đoạt 5 triệu và tiếp tục đòi thêm \"phí vận chuyển\", \"phí kích hoạt\".",
             "psychologyNote": "Kẻ lừa đảo sử dụng phép toán so sánh lợi nhuận ảo để nạn nhân thấy khoản phí là quá nhỏ so với giải thưởng.",
             "psychologyNote_en": "Kẻ lừa đảo sử dụng phép toán so sánh lợi nhuận ảo để nạn nhân thấy khoản phí là quá nhỏ so với giải thưởng.",
-            "nextStepId": "fee-step-compromised"
+            "nextStepId": "fee-step-compromised",
+            "nextStepId_en": "fee-step-compromised"
           },
           {
             "id": "fee1_2",
@@ -1945,7 +2131,8 @@
             "feedback_en": "RẤT ĐANH THÉP VÀ CHÍNH XÁC! Kẻ lừa đảo sẽ lập tức câm nín vì nguyên tắc trả thưởng hợp pháp luôn khấu trừ thuế tại nguồn.",
             "psychologyNote": "Tư duy logic về thuế khấu trừ tại nguồn đập tan bẫy phí ứng trước.",
             "psychologyNote_en": "Tư duy logic về thuế khấu trừ tại nguồn đập tan bẫy phí ứng trước.",
-            "nextStepId": "fee-step-safe"
+            "nextStepId": "fee-step-safe",
+            "nextStepId_en": "fee-step-safe"
           }
         ]
       },
@@ -1969,6 +2156,11 @@
       }
     ],
     "realLifeDefenseTips": [
+      "Không ai trúng thưởng một chương trình mà bản thân không hề mua vé hay đăng ký tham gia.",
+      "Theo Luật Quản lý Thuế, đơn vị trao thưởng có trách nhiệm khấu trừ thuế TNCN trực tiếp vào giá trị giải thưởng trước khi chi trả.",
+      "Cảnh giác với các tin nhắn thông báo trúng thưởng qua Zalo/Facebook/SMS."
+    ],
+    "realLifeDefenseTips_en": [
       "Không ai trúng thưởng một chương trình mà bản thân không hề mua vé hay đăng ký tham gia.",
       "Theo Luật Quản lý Thuế, đơn vị trao thưởng có trách nhiệm khấu trừ thuế TNCN trực tiếp vào giá trị giải thưởng trước khi chi trả.",
       "Cảnh giác với các tin nhắn thông báo trúng thưởng qua Zalo/Facebook/SMS."
@@ -2006,7 +2198,8 @@
             "feedback_en": "BỊ LỪA TÌNH LẪN TIỀN! \"Bác sĩ David Wilson\" và \"nhân viên hải quan gọi điện\" thực chất đều là một băng nhóm tội phạm xuyên quốc gia đóng kịch.",
             "psychologyNote": "Kẻ gian đầu tư thời gian nhiều tháng để thao túng tâm lý tình cảm, tạo sự gắn kết giả tạo sâu sắc.",
             "psychologyNote_en": "Kẻ gian đầu tư thời gian nhiều tháng để thao túng tâm lý tình cảm, tạo sự gắn kết giả tạo sâu sắc.",
-            "nextStepId": "rom-step-compromised"
+            "nextStepId": "rom-step-compromised",
+            "nextStepId_en": "rom-step-compromised"
           },
           {
             "id": "rom1_2",
@@ -2017,7 +2210,8 @@
             "feedback_en": "QUÁ TUYỆT VỜI! Bạn đã thoát khỏi một trong những cái bẫy lừa đảo tinh vi và tàn độc nhất thế giới mạng.",
             "psychologyNote": "Lý trí trước quy định pháp lý quốc tế giúp giải trừ bùa mê tình cảm ảo.",
             "psychologyNote_en": "Lý trí trước quy định pháp lý quốc tế giúp giải trừ bùa mê tình cảm ảo.",
-            "nextStepId": "rom-step-safe"
+            "nextStepId": "rom-step-safe",
+            "nextStepId_en": "rom-step-safe"
           }
         ]
       },
@@ -2041,6 +2235,11 @@
       }
     ],
     "realLifeDefenseTips": [
+      "Tuyệt đối không gửi tiền hoặc đóng phí nhận quà cho người chưa từng gặp mặt ngoài đời thực.",
+      "Sử dụng công cụ tìm kiếm hình ảnh (Google Reverse Image Search) để kiểm tra ảnh đại diện của đối tượng.",
+      "Cơ quan Hải quan không làm việc qua Zalo và không yêu cầu chuyển tiền nộp phạt vào tài khoản cá nhân."
+    ],
+    "realLifeDefenseTips_en": [
       "Tuyệt đối không gửi tiền hoặc đóng phí nhận quà cho người chưa từng gặp mặt ngoài đời thực.",
       "Sử dụng công cụ tìm kiếm hình ảnh (Google Reverse Image Search) để kiểm tra ảnh đại diện của đối tượng.",
       "Cơ quan Hải quan không làm việc qua Zalo và không yêu cầu chuyển tiền nộp phạt vào tài khoản cá nhân."
@@ -2078,7 +2277,8 @@
             "feedback_en": "SẬP BẪY TUYỂN DỤNG MA! Ngày mai bạn đến địa chỉ văn phòng thì phát hiện đây chỉ là văn phòng ảo cho thuê theo giờ hoặc công ty ma đã giải tán.",
             "psychologyNote": "Kẻ lừa đảo khai thác mong muốn tìm việc làm ổn định của người lao động.",
             "psychologyNote_en": "Kẻ lừa đảo khai thác mong muốn tìm việc làm ổn định của người lao động.",
-            "nextStepId": "rec-step-compromised"
+            "nextStepId": "rec-step-compromised",
+            "nextStepId_en": "rec-step-compromised"
           },
           {
             "id": "rec1_2",
@@ -2089,7 +2289,8 @@
             "feedback_en": "RẤT ĐÚNG QUY ĐỊNH PHÁP LUẬT! Điều 20 Bộ luật Lao động Việt Nam nghiêm cấm người sử dụng lao động thu tiền của người lao động dưới mọi hình thức.",
             "psychologyNote": "Nắm vững luật lao động bảo vệ người tìm việc.",
             "psychologyNote_en": "Nắm vững luật lao động bảo vệ người tìm việc.",
-            "nextStepId": "rec-step-safe"
+            "nextStepId": "rec-step-safe",
+            "nextStepId_en": "rec-step-safe"
           }
         ]
       },
@@ -2113,6 +2314,11 @@
       }
     ],
     "realLifeDefenseTips": [
+      "Mọi công ty thu tiền phỏng vấn, tiền đặt cọc giữ chỗ, tiền đồng phục trước khi làm việc đều là lừa đảo.",
+      "Kiểm tra mã số thuế và địa chỉ công ty trên Cổng thông tin Đăng ký Doanh nghiệp Quốc gia trước khi đi phỏng vấn.",
+      "Không giao nộp bản gốc CMND/CCCD hay bằng cấp gốc cho nhà tuyển dụng."
+    ],
+    "realLifeDefenseTips_en": [
       "Mọi công ty thu tiền phỏng vấn, tiền đặt cọc giữ chỗ, tiền đồng phục trước khi làm việc đều là lừa đảo.",
       "Kiểm tra mã số thuế và địa chỉ công ty trên Cổng thông tin Đăng ký Doanh nghiệp Quốc gia trước khi đi phỏng vấn.",
       "Không giao nộp bản gốc CMND/CCCD hay bằng cấp gốc cho nhà tuyển dụng."
@@ -2150,7 +2356,8 @@
             "feedback_en": "SAI LẦM TAI HẠI! Kẻ tống tiền sẽ KHÔNG BAO GIỜ xóa video sau khi nhận tiền. Chúng sẽ tiếp tục đòi thêm 100 triệu, 200 triệu cho đến khi bạn kiệt quệ tài chính.",
             "psychologyNote": "Kẻ tống tiền khai thác cảm giác xấu hổ, danh dự xã hội và sự hoảng loạn.",
             "psychologyNote_en": "Kẻ tống tiền khai thác cảm giác xấu hổ, danh dự xã hội và sự hoảng loạn.",
-            "nextStepId": "blk-step-compromised"
+            "nextStepId": "blk-step-compromised",
+            "nextStepId_en": "blk-step-compromised"
           },
           {
             "id": "blk1_2",
@@ -2161,7 +2368,8 @@
             "feedback_en": "RẤT BẢN LĨNH & ĐÚNG ĐẮN! Không chuyển tiền cho kẻ tống tiền. Cơ quan công an có chuyên án xử lý tội phạm tống tiền sử dụng công nghệ cao.",
             "psychologyNote": "Dũng cảm đối mặt và nhờ cậy pháp luật là cách duy nhất chấm dứt tống tiền.",
             "psychologyNote_en": "Dũng cảm đối mặt và nhờ cậy pháp luật là cách duy nhất chấm dứt tống tiền.",
-            "nextStepId": "blk-step-safe"
+            "nextStepId": "blk-step-safe",
+            "nextStepId_en": "blk-step-safe"
           }
         ]
       },
@@ -2185,6 +2393,11 @@
       }
     ],
     "realLifeDefenseTips": [
+      "Tuyệt đối không chuyển tiền cho kẻ đe dọa, tống tiền (Nộp tiền chỉ làm chúng đòi hỏi nhiều hơn).",
+      "Chụp ảnh màn hình toàn bộ tin nhắn, tài khoản nhận tiền, đường link để làm chứng cứ tố giác tội phạm.",
+      "Chủ động thông báo cho gia đình, bạn bè về việc mình đang bị kẻ xấu cắt ghép hình ảnh AI bôi nhọ."
+    ],
+    "realLifeDefenseTips_en": [
       "Tuyệt đối không chuyển tiền cho kẻ đe dọa, tống tiền (Nộp tiền chỉ làm chúng đòi hỏi nhiều hơn).",
       "Chụp ảnh màn hình toàn bộ tin nhắn, tài khoản nhận tiền, đường link để làm chứng cứ tố giác tội phạm.",
       "Chủ động thông báo cho gia đình, bạn bè về việc mình đang bị kẻ xấu cắt ghép hình ảnh AI bôi nhọ."

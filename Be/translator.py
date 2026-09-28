@@ -169,6 +169,62 @@ SCENARIOS_EN = {
     }
 }
 
+VI_EN_DICTIONARY = {
+    "1. Giả Danh Người Thân Gọi Video Bằng Deepfake Vay Tiền Gấp": "1. Deepfake Video Call Impersonating Relative Requesting Urgent Money",
+    "2. Giả Danh Công An Gọi Điện Đe Dọa Nhận Tiền Thẩm Tra": "2. Impersonating Police Investigator Demanding Money Verification",
+    "3. Giả Danh Nhân Viên Ngân Hàng Đòi Mã Smart OTP": "3. Impersonating Bank Staff Demanding Smart OTP Code",
+    "4. Tin Nhắn SMS Brandname Giả Mạo Ngân Hàng Dụ Click Link": "4. Fake Bank SMS Brandname Phishing Message",
+    "5. Dụ Dỗ Cài Đặt File APK Mã Độc Thuế Chiếm Quyền Điện Thoại": "5. Fake Tax Department Malicious APK Installation Scam",
+    "Deepfake & AI Mạo Danh": "Deepfake & AI Impersonation",
+    "Mạo Danh Cơ Quan Pháp Luật": "Impersonating Law Enforcement",
+    "Mạo Danh Ngân Hàng": "Bank & Finance Impersonation",
+    "Phishing Công Nghệ Cao": "High-Tech Phishing",
+    "Mã Độc & Phishing": "Malware & Phishing",
+    "SẬP BẪY DEEPFAKE! Kẻ gian đã thu thập hình ảnh, clip người thân trên Facebook rồi dùng AI Deepfake ghép mặt gọi chớp nhoáng 5 giây.": "DEEPFAKE TRAP! Scammers scraped Facebook photos/videos to make a 5-second AI Deepfake video call.",
+    "QUÁ XUẤT SẮC! Khi gọi số di động cá nhân, người thân xác nhận đang đi làm bình thường, tài khoản Facebook vừa bị hacker chiếm quyền.": "EXCELLENT DECISION! Calling mobile phone directly confirmed relative is safe and Facebook was hacked.",
+    "RẤT THÔNG MINH! Kẻ lừa đảo không thể trả lời đúng bí mật gia đình nên sẽ vòng vo hoặc chặn liên lạc.": "VERY SMART! Scammer cannot answer family secret question and blocks contact.",
+    "Vì vừa nhìn thấy đúng mặt người thân nên mở app ngân hàng chuyển 40 triệu ngay lập tức.": "Open bank app and transfer 40M VND immediately after seeing relative's face.",
+    "Bình tĩnh, không chuyển tiền ngay. Dùng SIM điện thoại thông thường gọi trực tiếp số di động của người thân để kiểm tra.": "Stay calm, do not transfer money immediately. Call relative's mobile SIM directly to verify.",
+    "Nhắn tin hỏi một câu hỏi chỉ 2 người trong nhà biết: \"Hôm trước sinh nhật mẹ ăn ở quán nào?\"": "Text a private family question that only household members know.",
+    "Màn hình hiện khuôn mặt người thân cử động nhưng khẩu hình giật giật, tiếng rè: \"Bố mẹ ơi... sóng yếu quá... con đang bị giữ đồ ở hải quan sân bay... chuyển gấp cho con 40 triệu vào số tài khoản đồng nghiệp này cứu con với...\". Sau 5 giây cuộc gọi tự ngắt và có tin nhắn gửi STK lạ.": "Screen shows relative's face moving with glitchy lip-sync and static audio: 'Mom, Dad... signal is terrible... I am detained at airport customs... transfer 40M VND to this colleague's account immediately to save me...'. Call drops after 5s followed by unknown account SMS."
+}
+
+def translate_str_fallback(text: str) -> str:
+    if not isinstance(text, str) or not text.strip():
+        return text
+    if text in VI_EN_DICTIONARY:
+        return VI_EN_DICTIONARY[text]
+    
+    res = text
+    replacements = [
+        ("Giả Danh", "Impersonating"),
+        ("Giả Mạo", "Fake"),
+        ("Mạo Danh", "Impersonating"),
+        ("Người Thân", "Relatives"),
+        ("Gọi Video", "Video Call"),
+        ("Bằng Deepfake", "Using Deepfake"),
+        ("Vay Tiền Gấp", "Urgent Money Loan"),
+        ("Công An", "Police"),
+        ("Viện Kiểm Sát", "Prosecutor"),
+        ("Tòa Án", "Court"),
+        ("Ngân Hàng", "Bank"),
+        ("Cơ Quan Pháp Luật", "Authorities"),
+        ("Nhân Viên", "Staff"),
+        ("Mã OTP", "OTP Code"),
+        ("Mã độc", "Malware"),
+        ("Chuyển tiền", "Transfer money"),
+        ("Bình tĩnh", "Stay calm"),
+        ("Xác thực", "Verify"),
+        ("Hải quan", "Customs"),
+        ("SẬP BẪY DEEPFAKE", "DEEPFAKE TRAP"),
+        ("SẬP BẪY", "SCAM TRAP"),
+        ("QUÁ XUẤT SẮC", "EXCELLENT"),
+        ("RẤT THÔNG MINH", "VERY SMART")
+    ]
+    for vi, en in replacements:
+        res = res.replace(vi, en)
+    return res
+
 def _process_obj_en(obj):
     if isinstance(obj, dict):
         new_dict = {}
@@ -177,8 +233,16 @@ def _process_obj_en(obj):
                 continue
             base_key = k
             en_val = obj.get(f"{k}_en")
-            if en_val is not None:
-                new_dict[base_key] = _process_obj_en(en_val)
+            if isinstance(en_val, str) and en_val.strip():
+                has_viet_accents = any(ord(c) > 127 for c in en_val)
+                has_en_words = any(w in en_val.lower() for w in ["the ", "is ", "to ", "and ", "you ", "call ", "video ", "fake ", "scam ", "impersonat", "bank ", "police ", "urgent ", "pretend "])
+                if en_val == v or (has_viet_accents and not has_en_words):
+                    new_dict[base_key] = translate_str_fallback(v)
+                else:
+                    new_dict[base_key] = en_val
+            elif isinstance(v, str):
+                has_viet_accents = any(ord(c) > 127 for c in v)
+                new_dict[base_key] = translate_str_fallback(v) if has_viet_accents else v
             else:
                 new_dict[base_key] = _process_obj_en(v)
         return new_dict

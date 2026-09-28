@@ -2,24 +2,18 @@
   {
     "id": "deepfake-video-scam",
     "title": "1. Deepfake AI Gọi Video Giả Danh Người Thân Mượn Tiền Cấp Cứu",
-    "title_en": "1. Deepfake AI Video Call Pretending to Be a Relative to Borrow Emergency Money",
+    "title_en": "1. Deepfake AI Gọi Video Giả Danh Người Thân Mượn Tiền Cấp Cứu",
     "category": "AI & Deepfake",
     "category_en": "AI & Deepfake",
     "shortDescription": "Kẻ gian dùng trí tuệ nhân tạo (AI) cắt ghép khuôn mặt và biểu cảm của người thân để gọi video chập chờn xin chuyển tiền viện phí, xử lý tai nạn khẩn cấp.",
-    "shortDescription_en": "Thieves use artificial intelligence (AI) to cut relatives' faces and expressions to make flickering video calls to request money transfer for hospital bills and emergency accident treatment.",
+    "shortDescription_en": "Kẻ gian dùng trí tuệ nhân tạo (AI) cắt ghép khuôn mặt và biểu cảm của người thân để gọi video chập chờn xin chuyển tiền viện phí, xử lý tai nạn khẩn cấp.",
     "whatIsIt": "Lừa đảo Deepfake Video là hình thức tội phạm công nghệ cao thu thập hình ảnh, video của nạn nhân trên mạng xã hội, dùng AI tổng hợp khuôn mặt và cử động miệng giả mạo rồi thực hiện cuộc gọi video call chớp nhoáng cho người thân để mượn tiền.",
-    "whatIsIt_en": "Deepfake Video fraud is a form of high-tech crime that collects images and videos of victims on social networks, uses AI to synthesize fake faces and mouth movements, and then makes quick video calls to relatives to borrow money.",
+    "whatIsIt_en": "Lừa đảo Deepfake Video là hình thức tội phạm công nghệ cao thu thập hình ảnh, video của nạn nhân trên mạng xã hội, dùng AI tổng hợp khuôn mặt và cử động miệng giả mạo rồi thực hiện cuộc gọi video call chớp nhoáng cho người thân để mượn tiền.",
     "howItWorks": [
       "Kẻ gian hack hoặc chiếm quyền tài khoản Facebook, Zalo, Telegram của nạn nhân.",
       "Thu thập video, hình ảnh công khai để huấn luyện mô hình AI Deepfake tạo khuôn mặt và biểu cảm giả.",
       "Gọi video call chớp nhoáng (5 - 15 giây) trong điều kiện mạng lag, giật cục, ánh sáng mờ rồi đột ngột ngắt kết nối.",
       "Nhắn tin lại qua app bảo do sóng yếu, đang gặp sự cố nguy cấp (tai nạn giao thông, nộp viện phí cấp cứu, bị giữ tại sân bay) và gửi số tài khoản ngân hàng để nhờ chuyển tiền gấp."
-    ],
-    "howItWorks_en": [
-      "Thieves hack or take over the victim's Facebook, Zalo, Telegram accounts.",
-      "Collect public videos and images to train Deepfake AI models to create fake faces and expressions.",
-      "Make quick video calls (5 - 15 seconds) in network conditions that are laggy, jerky, dim light, then suddenly disconnect.",
-      "Text back through the app saying it's because the signal is weak, you're having an emergency (traffic accident, paying emergency hospital fees, being detained at the airport) and send your bank account number to request an urgent money transfer."
     ],
     "warningSigns": [
       "Cuộc gọi video diễn ra rất ngắn, hình ảnh bị đứng hình, mờ nhòe hoặc nháy giật bất thường.",
@@ -27,85 +21,42 @@
       "Bối cảnh phía sau mờ ảo, ánh sáng khuôn mặt không đồng nhất với môi trường xung quanh.",
       "Số tài khoản ngân hàng nhận tiền mang tên người lạ hoặc mở tại ngân hàng khác biệt hoàn toàn."
     ],
-    "warningSigns_en": [
-      "The video call is very short, the image freezes, blurs or flickers abnormally.",
-      "Mouth shape does not naturally match the sound produced; Eyes dull, rarely blinking.",
-      "The background behind is blurry, the lighting of the face is not consistent with the surrounding environment.",
-      "The receiving bank account number is in the name of a stranger or opened at a completely different bank."
-    ],
     "redFlags": [
       "Khuôn mặt có viền bóng mờ quanh cằm và trán khi cử động.",
       "Từ chối gọi lại video hoặc khi gọi lại thì tắt máy ngay lập tức.",
       "Yêu cầu chuyển tiền vào tài khoản trung gian của bên thứ 3."
-    ],
-    "redFlags_en": [
-      "The face has a shadowy outline around the chin and forehead when moving.",
-      "Refuse to call back the video or when calling back, turn off the phone immediately.",
-      "Request to transfer money to a 3rd party intermediary account."
     ],
     "psychologicalTactics": [
       "Đánh vào tình mẫu tử, tình cảm gia đình ruột thịt và sự thương xót người thân.",
       "Tạo áp lực thời gian sống còn (đe dọa tính mạng nếu không đóng tiền viện phí trong 15 phút).",
       "Làm nạn nhân hoảng loạn để bỏ qua các bước kiểm tra logic thông thường."
     ],
-    "psychologicalTactics_en": [
-      "Focuses on motherly love, biological family affection and compassion for loved ones.",
-      "Creating life-or-death pressure (life threatening if hospital bills are not paid within 15 minutes).",
-      "Panic the victim to bypass normal logic checks."
-    ],
     "tactics": [
       "Lợi dụng tình cảm gia đình",
       "Tạo tình huống sinh tử khẩn cấp",
       "Cô lập khả năng kiểm chứng"
     ],
-    "tactics_en": [
-      "Taking advantage of family feelings",
-      "Create an emergency life or death situation",
-      "Isolate verifiability"
-    ],
     "whatScammersAskFor": [
       "Chuyển tiền gấp từ 10 triệu đến hàng trăm triệu đồng vào số tài khoản chỉ định.",
       "Yêu cầu không gọi cho người khác trong nhà để tránh \"làm mọi người lo lắng thêm\"."
-    ],
-    "whatScammersAskFor_en": [
-      "Urgently transfer money from 10 million to hundreds of millions of VND to the specified account number.",
-      "Ask not to call other people in the house to avoid \"making everyone worry more\"."
     ],
     "howToVerify": [
       "Dập máy ngay và gọi trực tiếp vào SỐ ĐIỆN THOẠI DI ĐỘNG (cuộc gọi SIM viễn thông thông thường) của người thân.",
       "Hỏi câu hỏi bảo mật gia đình mà người ngoài không thể biết (VD: tên trường mẫu giáo, món ăn dị ứng, kỷ niệm chung).",
       "Nếu đang gọi video, yêu cầu người đối diện quay mặt góc nghiêng 90 độ hoặc vẫy tay qua mặt (Deepfake AI sẽ bị lỗi hiển thị ngay)."
     ],
-    "howToVerify_en": [
-      "Hang up immediately and call your relative's MOBILE PHONE NUMBER (regular telecommunications SIM call) directly.",
-      "Ask family security questions that outsiders cannot know (e.g. kindergarten name, food allergies, shared memories).",
-      "If you are making a video call, ask the other person to turn their face 90 degrees or wave their hand across their face (Deepfake AI will display an error immediately)."
-    ],
     "countermeasures": [
       "Gọi xác minh qua số điện thoại SIM di động truyền thống.",
       "Đặt \"Mật khẩu an toàn gia đình\" cho các cuộc gọi liên quan đến tài chính.",
       "Yêu cầu thực hiện động tác vẫy tay hoặc quay góc nghiêng trước camera."
     ],
-    "countermeasures_en": [
-      "Call verification via traditional mobile SIM phone number.",
-      "Set a \"Family Safe Password\" for finance-related calls.",
-      "Ask to wave your hand or turn sideways in front of the camera."
-    ],
     "whatToDoIfTargeted": [
       "Không chuyển bất kỳ khoản tiền nào cho đến khi nghe thấy giọng nói thật qua SIM hoặc gặp trực tiếp.",
       "Cảnh báo người thân và bạn bè rằng tài khoản mạng xã hội của họ đang bị kẻ xấu lợi dụng."
     ],
-    "whatToDoIfTargeted_en": [
-      "Do not transfer any money until you hear a real voice via SIM or in person.",
-      "Warn relatives and friends that their social network accounts are being exploited by bad guys."
-    ],
     "whatToDoIfCompromised": [
       "Gọi ngay hotline ngân hàng chuyển tiền để yêu cầu hỗ trợ khẩn cấp tra soát giao dịch.",
       "Lưu lại video ghi màn hình, số tài khoản, tin nhắn và nộp đơn tố giác tại Cơ quan Cảnh sát điều tra."
-    ],
-    "whatToDoIfCompromised_en": [
-      "Call the money transfer bank's hotline immediately to request urgent support to check the transaction.",
-      "Save the screen recording video, account number, message and file a complaint at the Police Investigation Agency."
     ],
     "test_key": "test_val",
     "test_key_en": "test_val"
@@ -113,121 +64,72 @@
   {
     "id": "deepvoice-audio-clone",
     "title": "2. DeepVoice AI Giả Giọng Nói Người Thân Tạo Tình Huống Khẩn Cấp",
-    "title_en": "2. DeepVoice AI Impersonates a Relative's Voice to Create an Emergency Situation",
+    "title_en": "2. DeepVoice AI Giả Giọng Nói Người Thân Tạo Tình Huống Khẩn Cấp",
     "category": "AI & Deepfake",
     "category_en": "AI & Deepfake",
     "shortDescription": "Trích xuất mẫu giọng nói từ các đoạn ghi âm, video trên TikTok/Facebook để sao chép giọng nói thật 99%, gọi điện thông báo sự cố bắt cóc hoặc tai nạn.",
-    "shortDescription_en": "Extract voice samples from recordings and videos on TikTok/Facebook to copy 99% real voice, call to report kidnapping incidents or accidents.",
+    "shortDescription_en": "Trích xuất mẫu giọng nói từ các đoạn ghi âm, video trên TikTok/Facebook để sao chép giọng nói thật 99%, gọi điện thông báo sự cố bắt cóc hoặc tai nạn.",
     "whatIsIt": "DeepVoice (Voice Cloning) sử dụng mạng nơ-ron nhân tạo để học âm sắc, ngữ điệu, cách ngắt nghỉ của một người chỉ từ một đoạn ghi âm ngắn vài giây, sau đó biến đổi văn bản bất kỳ thành giọng nói của chính người đó.",
-    "whatIsIt_en": "DeepVoice (Voice Cloning) uses an artificial neural network to learn a person's timbre, intonation, and pauses from just a short recording of a few seconds, then transforms any text into that person's own voice.",
+    "whatIsIt_en": "DeepVoice (Voice Cloning) sử dụng mạng nơ-ron nhân tạo để học âm sắc, ngữ điệu, cách ngắt nghỉ của một người chỉ từ một đoạn ghi âm ngắn vài giây, sau đó biến đổi văn bản bất kỳ thành giọng nói của chính người đó.",
     "howItWorks": [
       "Kẻ gian thu thập giọng nói của nạn nhân từ video trên mạng xã hội, tin nhắn thoại (voice message) hoặc cuộc gọi khảo sát rác.",
       "Dùng công cụ AI tổng hợp giọng nói để gọi điện cho cha mẹ, ông bà của nạn nhân.",
       "Giả vờ đang khóc nức nở, thở dốc vì vừa bị bắt cóc, tai nạn hoặc bị bắt giữ tại đồn cảnh sát.",
       "Một đối tượng khác vào vai kẻ bắt cóc hoặc cán bộ điều tra giật máy, đe dọa đòi tiền chuộc/tiền bảo lãnh ngay."
     ],
-    "howItWorks_en": [
-      "Fraudsters collect victims' voices from videos on social networks, voice messages or spam survey calls.",
-      "Use voice synthesis AI tools to call the victim's parents and grandparents.",
-      "Pretend to be sobbing, panting because you've just been kidnapped, had an accident, or been arrested at the police station.",
-      "Another subject plays the role of the kidnapper or the investigation officer, who takes the phone and threatens to immediately demand ransom/bail money."
-    ],
     "warningSigns": [
       "Giọng nói có âm sắc giống nhưng ngữ điệu đôi khi hơi đều đều, thiếu cảm xúc biến thiên tự nhiên.",
       "Cuộc gọi thường kèm theo nhiều tiếng ồn nền (tiếng còi hú, tiếng khóc) nhằm che giấu khuyết điểm âm thanh AI.",
       "Đối tượng giục giã liên tục, không cho người nghe kịp ngắt lời hay đặt câu hỏi chi tiết."
     ],
-    "warningSigns_en": [
-      "The voice has the same timbre but the intonation is sometimes a bit monotonous, lacking natural emotional variation.",
-      "Calls are often accompanied by a lot of background noise (siren, crying) to hide AI audio shortcomings.",
-      "The subject urged continuously, not giving the listener time to interrupt or ask detailed questions."
-    ],
     "redFlags": [
       "Số điện thoại gọi đến là số lạ từ nước ngoài (+84... dạng ảo) hoặc ẩn danh.",
       "Kẻ gian cấm người nhận tắt máy hoặc chuyển hướng cuộc gọi."
     ],
-    "redFlags_en": [
-      "The calling phone number is a strange number from abroad (+84... virtual form) or anonymous.",
-      "Fraudsters prohibit the recipient from turning off the phone or diverting the call."
-    ],
     "psychologicalTactics": [
       "Tạo cú sốc tâm lý cực mạnh (Shock & Panic) khiến người nghe hoang mang tột độ.",
       "Sử dụng tiếng khóc van xin để kích hoạt bản năng bảo vệ con cái mù quáng."
-    ],
-    "psychologicalTactics_en": [
-      "Create extremely strong psychological shock (Shock & Panic) that makes listeners extremely confused.",
-      "Use pleading cries to activate the blind instinct to protect your children."
     ],
     "tactics": [
       "Gây sốc tâm lý",
       "Tiếng khóc giả mạo",
       "Đe dọa bạo lực hoặc tù tội"
     ],
-    "tactics_en": [
-      "Causes psychological shock",
-      "Fake crying",
-      "Threats of violence or imprisonment"
-    ],
     "whatScammersAskFor": [
       "Chuyển tiền chuộc con/em qua tài khoản ngân hàng hoặc nạp tiền ảo/thẻ cào.",
       "Giữ nguyên cuộc gọi liên tục không được cúp máy để khống chế nạn nhân."
-    ],
-    "whatScammersAskFor_en": [
-      "Transfer money to ransom your child via bank account or deposit virtual money/scratch card.",
-      "Hold the call continuously without hanging up to control the victim."
     ],
     "howToVerify": [
       "Bình tĩnh dập máy ngay lập tức và dùng điện thoại khác gọi cho con/người thân hoặc cơ quan nơi người đó đang học/làm việc.",
       "Liên hệ giáo viên chủ nhiệm, đồng nghiệp hoặc công an khu vực để kiểm tra chéo vị trí thực tế."
     ],
-    "howToVerify_en": [
-      "Calmly hang up immediately and use another phone to call your child/relative or the agency where that person is studying/working.",
-      "Contact your homeroom teacher, colleagues or local police to cross-check the actual location."
-    ],
     "countermeasures": [
       "Luôn giữ bình tĩnh, tuyệt đối không hành động theo lệnh kẻ gọi khi chưa kiểm chứng.",
       "Lưu sẵn số hotline của nhà trường, cơ quan làm việc của người thân trong danh bạ."
-    ],
-    "countermeasures_en": [
-      "Always stay calm, absolutely do not act on the caller's orders without verifying them.",
-      "Save the hotline number of your relative's school or workplace in your contacts."
     ],
     "whatToDoIfTargeted": [
       "Dập máy ngay, gọi điện thoại cho người thân và thông báo cho người xung quanh.",
       "Báo ngay cho Công an phường/xã gần nhất để được hỗ trợ can thiệp."
     ],
-    "whatToDoIfTargeted_en": [
-      "Hang up immediately, call relatives and notify those around you.",
-      "Immediately notify the nearest ward/commune police for intervention support."
-    ],
     "whatToDoIfCompromised": [
       "Báo cơ quan Công an và ngân hàng để phong tỏa tài khoản thụ hưởng trong thời gian sớm nhất."
-    ],
-    "whatToDoIfCompromised_en": [
-      "Report to the police and bank to block the beneficiary account as soon as possible."
     ]
   },
   {
     "id": "police-investigation-scam",
     "title": "3. Giả Danh Công An, Viện Kiểm Sát, Tòa Án Yêu Cầu Chuyển Tiền \"Xác Minh\"",
-    "title_en": "3. Impersonating the Police, Procuracy, Court Requesting \"Verified\" Money Transfer",
+    "title_en": "3. Giả Danh Công An, Viện Kiểm Sát, Tòa Án Yêu Cầu Chuyển Tiền \"Xác Minh\"",
     "category": "Giả danh Cơ quan chức năng",
-    "category_en": "Impersonating Authorities",
+    "category_en": "Giả danh Cơ quan chức năng",
     "shortDescription": "Mạo danh điều tra viên gọi điện dọa nạn nhân liên quan đại án ma túy, rửa tiền, gửi lệnh bắt giả và yêu cầu chuyển tiền vào tài khoản tạm giữ của nhà nước.",
-    "shortDescription_en": "Impersonating an investigator, calling to threaten victims related to drug and money laundering cases, sending fake arrest warrants and requesting money to be transferred to a state custody account.",
+    "shortDescription_en": "Mạo danh điều tra viên gọi điện dọa nạn nhân liên quan đại án ma túy, rửa tiền, gửi lệnh bắt giả và yêu cầu chuyển tiền vào tài khoản tạm giữ của nhà nước.",
     "whatIsIt": "Kẻ lừa đảo đóng vai Thiếu úy/Trung tá Công an hoặc Kiểm sát viên, thông báo tài khoản nạn nhân mở tại ngân hàng đã nhận hàng chục tỷ đồng tiền phạm pháp, sau đó ép nạn nhân chuyển tiền tiết kiệm vào \"tài khoản an ninh\" để chứng minh sự trong sạch.",
-    "whatIsIt_en": "The fraudster plays the role of a Police Lieutenant/Lieutenant Colonel or Prosecutor, informs that the victim's account opened at the bank has received tens of billions of dong in illegal money, then forces the victim to transfer the savings to a \"security account\" to prove their innocence.",
+    "whatIsIt_en": "Kẻ lừa đảo đóng vai Thiếu úy/Trung tá Công an hoặc Kiểm sát viên, thông báo tài khoản nạn nhân mở tại ngân hàng đã nhận hàng chục tỷ đồng tiền phạm pháp, sau đó ép nạn nhân chuyển tiền tiết kiệm vào \"tài khoản an ninh\" để chứng minh sự trong sạch.",
     "howItWorks": [
       "Gọi điện thoại bằng tổng đài ảo giả mạo số cơ quan chức năng, xưng tên tuổi, đơn vị điều tra cụ thể.",
       "Đọc đúng họ tên, số CCCD, địa chỉ của nạn nhân để tạo lòng tin vững chắc.",
       "Gửi hình ảnh \"Lệnh bắt tạm giam\", \"Lệnh niêm phong tài sản\" có dấu đỏ và chữ ký giả mạo qua Zalo.",
       "Yêu cầu nạn nhân vào phòng kín, giữ bí mật tuyệt đối và chuyển toàn bộ tiền gửi vào \"Tài khoản thẩm tra của Ban chuyên án\"."
-    ],
-    "howItWorks_en": [
-      "Calling using a virtual switchboard pretending to be an authority number, claiming names and specific investigation units.",
-      "Correctly read the victim's full name, CCCD number, and address to create solid trust.",
-      "Send images of \"Detention order\", \"Asset sealing order\" with red seal and fake signature via Zalo.",
-      "Ask the victim to go into a closed room, keep it absolutely confidential and transfer all money to the \"Prospect Committee's investigation account\"."
     ],
     "warningSigns": [
       "Cơ quan công an làm việc, thẩm vấn và kết tội người dân qua điện thoại hoặc Zalo.",
@@ -235,667 +137,372 @@
       "Yêu cầu công dân nộp tiền, chuyển khoản để \"thẩm tra nguồn tiền\" hoặc \"bảo lãnh tại ngoại\".",
       "Đe dọa sẽ bắt giam ngay trong ngày nếu nạn nhân tiết lộ thông tin cho người thân."
     ],
-    "warningSigns_en": [
-      "The police work, interrogate and convict people via phone or Zalo.",
-      "Send procedural documents, arrest warrants, and prosecution decisions via social networks.",
-      "Require citizens to pay money or transfer money to \"verify the source of money\" or \"guarantee bail\".",
-      "Threatened to be arrested the same day if the victim revealed information to relatives."
-    ],
     "redFlags": [
       "Số tài khoản nhận tiền mang tên cá nhân hoặc tên tài khoản doanh nghiệp mập mờ.",
       "Giọng điệu quát tháo, đe dọa dồn dập, ép buộc làm theo từng bước."
-    ],
-    "redFlags_en": [
-      "The receiving account number has an ambiguous personal name or business account name.",
-      "The tone is shouting, threatening, forcing each step to be followed."
     ],
     "psychologicalTactics": [
       "Lạm dụng biểu tượng quyền lực hành pháp (quân phục, con dấu đỏ, chức danh).",
       "Đánh vào nỗi sợ tù tội, sợ bị hủy hoại danh dự và tương lai.",
       "Kỹ thuật cô lập xã hội (ngăn nạn nhân tham vấn ý kiến người xung quanh)."
     ],
-    "psychologicalTactics_en": [
-      "Abuse of symbols of executive power (military uniform, red seal, title).",
-      "Attack the fear of imprisonment, fear of having your reputation and future ruined.",
-      "Social isolation techniques (preventing victims from consulting with those around them)."
-    ],
     "tactics": [
       "Đe dọa pháp lý",
       "Cô lập nạn nhân",
       "Giả mạo hồ sơ lệnh bắt con dấu đỏ"
     ],
-    "tactics_en": [
-      "Legal threats",
-      "Isolate the victim",
-      "Forging red seal arrest warrant records"
-    ],
     "whatScammersAskFor": [
       "Chuyển toàn bộ tiền tiết kiệm trong ngân hàng, tiền mặt ở nhà vào tài khoản của kẻ gian.",
       "Cung cấp thông tin tài khoản Internet Banking, mật khẩu và mã xác thực OTP."
-    ],
-    "whatScammersAskFor_en": [
-      "Transfer all savings in the bank and cash at home to the crook's account.",
-      "Provide Internet Banking account information, password and OTP authentication code."
     ],
     "howToVerify": [
       "Quy tắc vàng: Công an, Viện kiểm sát chỉ làm việc trực tiếp tại trụ sở, có giấy mời hoặc giấy triệu tập bằng văn bản gửi qua đường bưu điện/công an khu vực.",
       "Nhà nước KHÔNG BAO GIỜ có \"tài khoản tạm giữ\" của cá nhân để người dân nộp tiền thanh tra."
     ],
-    "howToVerify_en": [
-      "Golden Rule: The Police and Procuracy only work directly at the headquarters, with a written invitation or summons sent by post/regional police.",
-      "The state NEVER has an individual's \"impound account\" for people to pay for inspection."
-    ],
     "countermeasures": [
       "Dập máy ngay lập tức, bạn không vi phạm bất kỳ điều luật nào khi dập máy kẻ lừa đảo.",
       "Đến trực tiếp trụ sở Công an phường gần nhất để trình báo và hỏi thông tin."
-    ],
-    "countermeasures_en": [
-      "Hang up immediately, you are not breaking any laws by hanging up on a scammer.",
-      "Go directly to the nearest Ward Police headquarters to report and ask for information."
     ],
     "whatToDoIfTargeted": [
       "Tắt máy, chặn số và không chuyển bất kỳ một đồng nào.",
       "Cảnh báo người già, phụ nữ nội trợ trong gia đình vì đây là nhóm nạn nhân dễ bị nhắm tới nhất."
     ],
-    "whatToDoIfTargeted_en": [
-      "Turn off the phone, block the number and do not transfer any money.",
-      "Warn the elderly and housewives because these are the most easily targeted victim groups."
-    ],
     "whatToDoIfCompromised": [
       "Gọi ngân hàng phong tỏa tài khoản khẩn cấp.",
       "Nộp đơn trình báo tại Cơ quan Cảnh sát điều tra Công an cấp Quận/Huyện kèm biên lai chuyển khoản."
-    ],
-    "whatToDoIfCompromised_en": [
-      "Call the bank to block the account urgently.",
-      "Submit a report to the District/District Police Investigation Agency with a transfer receipt."
     ]
   },
   {
     "id": "bank-officer-otp-scam",
     "title": "4. Giả Danh Nhân Viên Ngân Hàng Yêu Cầu Cung Cấp Mật Khẩu, Mã OTP",
-    "title_en": "4. Impersonating a Bank Employee and Asking for Password and OTP Code",
+    "title_en": "4. Giả Danh Nhân Viên Ngân Hàng Yêu Cầu Cung Cấp Mật Khẩu, Mã OTP",
     "category": "Giả mạo Ngân hàng & Tài chính",
-    "category_en": "Bank & Finance Impersonation",
+    "category_en": "Giả mạo Ngân hàng & Tài chính",
     "shortDescription": "Tự xưng nhân viên chăm sóc khách hàng hỗ trợ nâng hạn mức thẻ, xử lý lỗi giao dịch hoặc kích hoạt gói quà tặng để lừa đọc mã Smart OTP.",
-    "shortDescription_en": "Claiming to be a customer service staff to help increase card limits, handle transaction errors or activate gift packages to trick you into reading the Smart OTP code.",
+    "shortDescription_en": "Tự xưng nhân viên chăm sóc khách hàng hỗ trợ nâng hạn mức thẻ, xử lý lỗi giao dịch hoặc kích hoạt gói quà tặng để lừa đọc mã Smart OTP.",
     "whatIsIt": "Kẻ gian đóng vai nhân viên phòng dịch vụ khách hàng của ngân hàng, thông báo thẻ tín dụng của bạn bị lỗi hoặc cần nâng hạn mức/hủy phí thường niên, từ đó yêu cầu cung cấp số thẻ, mã CVV và mã xác thực OTP gửi về điện thoại.",
-    "whatIsIt_en": "The crook pretends to be a bank customer service employee, informing you that your credit card has an error or needs to increase the limit/cancel the annual fee, thereby asking for the card number, CVV code and OTP verification code sent to your phone.",
+    "whatIsIt_en": "Kẻ gian đóng vai nhân viên phòng dịch vụ khách hàng của ngân hàng, thông báo thẻ tín dụng của bạn bị lỗi hoặc cần nâng hạn mức/hủy phí thường niên, từ đó yêu cầu cung cấp số thẻ, mã CVV và mã xác thực OTP gửi về điện thoại.",
     "howItWorks": [
       "Gọi điện tự xưng cán bộ ngân hàng Vietcombank, Techcombank, MBBank, BIDV...",
       "Thông báo bạn đủ điều kiện nâng hạn mức thẻ tín dụng lên 100 triệu hoặc được hoàn trả tiền phí.",
       "Yêu cầu bạn chụp ảnh 2 mặt thẻ tín dụng (gồm 16 số thẻ, ngày hết hạn và 3 số CVV phía sau).",
       "Đồng thời thực hiện giao dịch thanh toán trực tuyến và yêu cầu bạn đọc mã OTP gửi về máy để \"xác nhận hoàn tất\"."
     ],
-    "howItWorks_en": [
-      "Calling and claiming to be bank officials of Vietcombank, Techcombank, MBBank, BIDV...",
-      "Notice that you are eligible to increase your credit card limit to 100 million or have your fee refunded.",
-      "Requires you to take a photo of both sides of the credit card (including 16 card numbers, expiration date and 3 CVV numbers on the back).",
-      "At the same time, make an online payment transaction and ask you to read the OTP code sent to the device to \"confirm completion\"."
-    ],
     "warningSigns": [
       "Người gọi yêu cầu đọc mã OTP, mã PIN hoặc mật khẩu ứng dụng ngân hàng.",
       "Tự xưng nhân viên ngân hàng nhưng gọi bằng số di động cá nhân 10 số (không phải tổng đài 1900...).",
       "Thúc ép đọc mã OTP nhanh kẻo \"hết hạn phiên làm việc\"."
     ],
-    "warningSigns_en": [
-      "The caller asks to read the OTP code, PIN code or banking app password.",
-      "Claiming to be a bank employee but calling from a personal 10-digit mobile number (not the 1900 switchboard...).",
-      "Encourage reading the OTP code quickly to avoid \"session expiration\"."
-    ],
     "redFlags": [
       "Tin nhắn OTP có nội dung \"Giao dịch thanh toán mua hàng...\" thay vì \"Kích hoạt dịch vụ\".",
       "Yêu cầu truy cập link lạ có giao diện đăng nhập ngân hàng điện tử."
     ],
-    "redFlags_en": [
-      "The OTP message says \"Purchase payment transaction...\" instead of \"Service activation\".",
-      "Request to access a strange link with an e-banking login interface."
-    ],
     "psychologicalTactics": [
       "Đánh vào sự tiện lợi và lòng tham quyền lợi tài chính (nâng hạn mức, tặng quà, hoàn phí).",
       "Đánh tráo khái niệm giữa \"mã xác thực nhận tiền/hủy lỗi\" và \"mã xác thực chuyển tiền\"."
-    ],
-    "psychologicalTactics_en": [
-      "Attacking convenience and greed for financial gain (limit increases, gifts, refunds).",
-      "Interchange the concept between \"error receipt/cancellation authentication code\" and \"money transfer authentication code\"."
     ],
     "tactics": [
       "Đánh tráo khái niệm mã OTP",
       "Hứa hẹn quyền lợi tài chính",
       "Mạo danh nhân viên ngân hàng"
     ],
-    "tactics_en": [
-      "Swapping the concept of OTP code",
-      "Promises financial benefits",
-      "Impersonate a bank employee"
-    ],
     "whatScammersAskFor": [
       "16 số mặt trước thẻ, ngày hết hạn và 3 chữ số bảo mật CVV/CVC mặt sau thẻ.",
       "Mã xác thực OTP gửi qua tin nhắn SMS hoặc mã sinh ra từ Smart OTP.",
       "Tên đăng nhập và mật khẩu tài khoản ngân hàng điện tử."
     ],
-    "whatScammersAskFor_en": [
-      "16 numbers on the front of the card, expiration date and 3 security digits CVV/CVC on the back of the card.",
-      "OTP authentication code sent via SMS or code generated from Smart OTP.",
-      "Username and password of electronic banking account."
-    ],
     "howToVerify": [
       "Quy tắc vàng của tất cả ngân hàng: Nhân viên ngân hàng KHÔNG BAO GIỜ yêu cầu khách hàng cung cấp mã OTP, mã PIN hay mật khẩu.",
       "Mã OTP chính là chìa khóa mở két sắt rút tiền của bạn."
-    ],
-    "howToVerify_en": [
-      "Golden rule of all banks: Bank staff NEVER ask customers for OTP codes, PIN codes or passwords.",
-      "The OTP code is the key to opening your safe to withdraw money."
     ],
     "countermeasures": [
       "Luôn đọc kỹ nội dung tin nhắn chứa mã OTP (số tiền, người nhận, mục đích giao dịch).",
       "Che kín 3 số bảo mật CVV ở mặt sau thẻ tín dụng ngay khi nhận thẻ."
     ],
-    "countermeasures_en": [
-      "Always read carefully the content of the message containing the OTP code (amount, recipient, transaction purpose).",
-      "Cover the 3 CVV security numbers on the back of your credit card immediately upon receiving the card."
-    ],
     "whatToDoIfTargeted": [
       "Tuyệt đối không đọc bất kỳ chữ số nào trong tin nhắn OTP cho người khác.",
       "Dập máy và gọi tổng đài chính thức của ngân hàng in ở mặt sau thẻ ATM."
     ],
-    "whatToDoIfTargeted_en": [
-      "Absolutely do not read any digits in the OTP message to others.",
-      "Hang up and call the bank's official switchboard printed on the back of the ATM card."
-    ],
     "whatToDoIfCompromised": [
       "Mở ngay ứng dụng ngân hàng để chủ động Khóa thẻ / Tạm khóa tài khoản khẩn cấp.",
       "Gọi tổng đài ngân hàng để hủy mọi phiên đăng nhập đang hoạt động."
-    ],
-    "whatToDoIfCompromised_en": [
-      "Immediately open the banking application to proactively Lock the card / Temporarily lock the account urgently.",
-      "Call the bank's switchboard to cancel any active login sessions."
     ]
   },
   {
     "id": "sms-brandname-phishing-scam",
     "title": "5. Tin Nhắn SMS Brandname Giả Mạo Ngân Hàng, Cơ Quan Nhà Nước",
-    "title_en": "5. Fake Brandname SMS Messages for Banks and State Agencies",
+    "title_en": "5. Tin Nhắn SMS Brandname Giả Mạo Ngân Hàng, Cơ Quan Nhà Nước",
     "category": "SMS & Viễn thông",
-    "category_en": "SMS & Telecom Scams",
+    "category_en": "SMS & Viễn thông",
     "shortDescription": "Sử dụng trạm phát sóng di động giả (Fake BTS) chèn tin nhắn giả mạo vào đúng luồng tin nhắn chính thức của ngân hàng để lừa bấm vào link độc.",
-    "shortDescription_en": "Using a fake mobile broadcast station (Fake BTS) to insert fake messages into the bank's official message stream to trick you into clicking on a malicious link.",
+    "shortDescription_en": "Sử dụng trạm phát sóng di động giả (Fake BTS) chèn tin nhắn giả mạo vào đúng luồng tin nhắn chính thức của ngân hàng để lừa bấm vào link độc.",
     "whatIsIt": "Tội phạm sử dụng thiết bị trạm thu phát sóng di động giả (IMSI Catcher / Fake BTS) phát tán tin nhắn rác mang tên thương hiệu (Brandname) của các ngân hàng, Bộ Công an, cơ quan thuế, khiến tin nhắn giả nằm chung hộp thư với tin nhắn thật của ngân hàng.",
-    "whatIsIt_en": "Criminals use fake mobile base station equipment (IMSI Catcher / Fake BTS) to spread spam messages bearing the brand names of banks, the Ministry of Public Security, and tax authorities, causing fake messages to be in the same mailbox as real messages from banks.",
+    "whatIsIt_en": "Tội phạm sử dụng thiết bị trạm thu phát sóng di động giả (IMSI Catcher / Fake BTS) phát tán tin nhắn rác mang tên thương hiệu (Brandname) của các ngân hàng, Bộ Công an, cơ quan thuế, khiến tin nhắn giả nằm chung hộp thư với tin nhắn thật của ngân hàng.",
     "howItWorks": [
       "Kẻ gian chở trạm phát sóng giả bằng ô tô hoặc xe máy đi qua các khu dân cư đông đúc.",
       "Thiết bị ép các điện thoại xung quanh ngắt kết nối với nhà mạng thật và nhận tin nhắn từ trạm giả.",
       "Nội dung tin nhắn: \"Tài khoản của quý khách bị trừ tiền / đăng nhập trái phép, bấm vào link để hủy\".",
       "Đường link dẫn đến website có giao diện y hệt ngân hàng thật để đánh cắp mật khẩu và OTP."
     ],
-    "howItWorks_en": [
-      "Thieves transport fake broadcasting stations by car or motorbike through crowded residential areas.",
-      "The device forces surrounding phones to disconnect from the real network and receive messages from the fake station.",
-      "Message content: \"Your account has been charged / logged in illegally, click on the link to cancel\".",
-      "The link leads to a website with the same interface as a real bank to steal passwords and OTPs."
-    ],
     "warningSigns": [
       "Tin nhắn chứa đường link có tên miền lạ, không phải tên miền chính thức của ngân hàng (VD: `.top`, `.vip`, `.xyz`, `.cc`, `.site`).",
       "Nội dung đe dọa trừ tiền hoặc khóa tài khoản trong vòng vài phút.",
       "Khi bấm vào link, trang web yêu cầu nhập đầy đủ tên đăng nhập, mật khẩu và mã OTP."
     ],
-    "warningSigns_en": [
-      "The message contains a link with a strange domain name, not the bank's official domain name (eg `.top`, `.vip`, `.xyz`, `.cc`, `.site`).",
-      "Content that threatens to deduct money or block your account within minutes.",
-      "When clicking on the link, the website requires you to enter your full username, password and OTP code."
-    ],
     "redFlags": [
       "Tên miền thêm bớt ký tự (VD: `vietcombank-ebank.com`, `techcombank-login.top` thay vì `vietcombank.com.vn`)."
-    ],
-    "redFlags_en": [
-      "Domain name adds or removes characters (eg: `vietcombank-ebank.com`, `techcombank-login.top` instead of `vietcombank.com.vn`)."
     ],
     "psychologicalTactics": [
       "Lợi dụng uy tín của thương hiệu ngân hàng chính thống (tin nhắn hiển thị đúng tên ngân hàng).",
       "Tạo sự hoảng hốt khi thấy số tiền lớn sắp bị trừ khỏi tài khoản."
-    ],
-    "psychologicalTactics_en": [
-      "Taking advantage of the reputation of the official bank brand (messages display the correct bank name).",
-      "Create panic when you see a large amount of money about to be deducted from your account."
     ],
     "tactics": [
       "Giả mạo sóng vô tuyến BTS",
       "Chèn luồng tin nhắn Brandname",
       "Tạo trang Phishing"
     ],
-    "tactics_en": [
-      "Spoofing BTS radio waves",
-      "Insert message stream Brandname",
-      "Create a Phishing site"
-    ],
     "whatScammersAskFor": [
       "Tên đăng nhập, mật khẩu Internet Banking.",
       "Mã OTP gửi về tin nhắn SMS."
-    ],
-    "whatScammersAskFor_en": [
-      "Internet Banking username and password.",
-      "OTP code sent to SMS."
     ],
     "howToVerify": [
       "Ngân hàng tại Việt Nam tuyệt đối KHÔNG gửi tin nhắn SMS kèm đường link yêu cầu đăng nhập tài khoản.",
       "Mở ứng dụng ngân hàng độc lập trên điện thoại để tự kiểm tra số dư và thông báo."
     ],
-    "howToVerify_en": [
-      "Banks in Vietnam absolutely DO NOT send SMS messages with links requesting account login.",
-      "Open the independent banking app on your phone to check your balance and notifications yourself."
-    ],
     "countermeasures": [
       "Không bấm vào bất kỳ đường link nào gửi qua tin nhắn SMS.",
       "Cài đặt nhận thông báo biến động số dư qua ứng dụng OTT của ngân hàng thay vì SMS."
-    ],
-    "countermeasures_en": [
-      "Do not click on any links sent via SMS messages.",
-      "Set to receive balance change notifications via the bank's OTT application instead of SMS."
     ],
     "whatToDoIfTargeted": [
       "Bỏ qua và xóa tin nhắn, không bấm vào liên kết đính kèm.",
       "Báo cáo tin nhắn rác/lừa đảo tới đầu số 156 hoặc 5656 của Bộ Thông tin & Truyền thông."
     ],
-    "whatToDoIfTargeted_en": [
-      "Ignore and delete messages, do not click on attached links.",
-      "Report spam/fraud messages to number 156 or 5656 of the Ministry of Information and Communications."
-    ],
     "whatToDoIfCompromised": [
       "Đổi mật khẩu ngân hàng ngay trên thiết bị an toàn.",
       "Khóa tài khoản và liên hệ ngân hàng gấp để phong tỏa dòng tiền."
-    ],
-    "whatToDoIfCompromised_en": [
-      "Change your banking password right on your secure device.",
-      "Lock your account and contact your bank urgently to block your cash flow."
     ]
   },
   {
     "id": "fake-bank-ecommerce-website",
     "title": "6. Tạo Website Giả Mạo Ngân Hàng, Ví Điện Tử, Sàn Thương Mại Điện Tử",
-    "title_en": "6. Creating Fake Websites for Banks, E-Wallets, and E-Commerce Platforms",
+    "title_en": "6. Tạo Website Giả Mạo Ngân Hàng, Ví Điện Tử, Sàn Thương Mại Điện Tử",
     "category": "Phishing & Giả mạo Web",
-    "category_en": "Phishing & Fake Websites",
+    "category_en": "Phishing & Giả mạo Web",
     "shortDescription": "Sao chép 100% giao diện cổng thanh toán, ví MoMo/ZaloPay, sàn Shopee/Lazada để lừa người dùng nhập thông tin thẻ và tài khoản đăng nhập.",
-    "shortDescription_en": "Copy 100% of the payment gateway interface, MoMo/ZaloPay wallet, Shopee/Lazada platform to trick users into entering card and login account information.",
+    "shortDescription_en": "Sao chép 100% giao diện cổng thanh toán, ví MoMo/ZaloPay, sàn Shopee/Lazada để lừa người dùng nhập thông tin thẻ và tài khoản đăng nhập.",
     "whatIsIt": "Kẻ tấn công sao chép mã nguồn giao diện của các cổng thanh toán ngân hàng, ví điện tử phổ biến hoặc sàn TMĐT, đặt trên các tên miền nhái (Typosquatting) nhằm thu thập thông tin thẻ thanh toán quốc tế và tài khoản cá nhân.",
-    "whatIsIt_en": "Attackers copy the interface source code of popular bank payment gateways, e-wallets or e-commerce platforms, placing them on fake domain names (Typosquatting) to collect international payment card and personal account information.",
+    "whatIsIt_en": "Kẻ tấn công sao chép mã nguồn giao diện của các cổng thanh toán ngân hàng, ví điện tử phổ biến hoặc sàn TMĐT, đặt trên các tên miền nhái (Typosquatting) nhằm thu thập thông tin thẻ thanh toán quốc tế và tài khoản cá nhân.",
     "howItWorks": [
       "Dựng website có hình ảnh, màu sắc, font chữ và logo chuẩn của ngân hàng hoặc sàn TMĐT.",
       "Chạy quảng cáo Google Ads hoặc gửi qua mạng xã hội để trang web giả xuất hiện ở vị trí đầu kết quả tìm kiếm.",
       "Nạn nhân tìm kiếm \"đăng nhập ngân hàng X\" hoặc \"nhận quà sinh nhật Shopee\" bấm vào trang web giả.",
       "Form đăng nhập chuyển thẳng dữ liệu tài khoản và mã OTP về máy chủ của tin tặc."
     ],
-    "howItWorks_en": [
-      "Build a website with standard images, colors, fonts and logos of banks or e-commerce platforms.",
-      "Run Google Ads ads or send them via social networks so that the fake website appears at the top of search results.",
-      "Victims search for \"login to X bank\" or \"receive Shopee birthday gift\" and click on the fake website.",
-      "The login form transfers account data and OTP code directly to the hacker's server."
-    ],
     "warningSigns": [
       "Thanh địa chỉ URL không có chứng chỉ bảo mật hợp lệ hoặc tên miền bị sai chính tả.",
       "Các đường link phụ trên trang web (chính sách, giới thiệu, điều khoản) bị lỗi hoặc dẫn về trang chủ.",
       "Trang web yêu cầu nhập cả mã PIN Smart OTP hoặc 3 số CVV khi không thực hiện mua sắm cụ thể."
     ],
-    "warningSigns_en": [
-      "The URL address bar does not have a valid security certificate or the domain name is misspelled.",
-      "Sub-links on the website (policies, introduction, terms) are incorrect or lead to the home page.",
-      "The website requires entering both the Smart OTP PIN code or 3 CVV numbers when not making a specific purchase."
-    ],
     "redFlags": [
       "Tên miền sử dụng đuôi quốc tế giá rẻ hoặc có tiền tố lạ (VD: `login-momo.net`, `shopee-voucher2026.com`)."
-    ],
-    "redFlags_en": [
-      "Domain names use cheap international extensions or have strange prefixes (eg `login-momo.net`, `shopee-voucher2026.com`)."
     ],
     "psychologicalTactics": [
       "Tạo cảm giác thân thuộc nhờ giao diện được copy chính xác từng pixel.",
       "Dụ dỗ bằng quà tặng khuyến mãi khủng, voucher giảm giá 50-90%."
-    ],
-    "psychologicalTactics_en": [
-      "Create a familiar feeling thanks to an interface copied exactly pixel by pixel.",
-      "Seduce with great promotional gifts, 50-90% discount vouchers."
     ],
     "tactics": [
       "Nhái giao diện pixel-perfect",
       "SEO bẩn/Chạy quảng cáo Google Ads",
       "Đánh cắp form dữ liệu ngầm"
     ],
-    "tactics_en": [
-      "Imitate the pixel-perfect look",
-      "Dirty SEO/Running Google Ads",
-      "Steal underground form data"
-    ],
     "whatScammersAskFor": [
       "Tài khoản đăng nhập, mật khẩu, mã OTP, số thẻ tín dụng và mã CVV."
-    ],
-    "whatScammersAskFor_en": [
-      "Login account, password, OTP code, credit card number and CVV code."
     ],
     "howToVerify": [
       "Luôn kiểm tra kỹ thanh địa chỉ trình duyệt xem có đúng tên miền chính thức (`.vn` hoặc tên miền thương hiệu đã đăng ký) hay không.",
       "Đánh dấu (Bookmark) các trang web ngân hàng chính thức để truy cập thay vì tìm kiếm qua Google."
     ],
-    "howToVerify_en": [
-      "Always double check the browser address bar to see if it has the correct official domain name (`.vn` or registered brand domain name).",
-      "Bookmark official banking websites to visit instead of searching via Google."
-    ],
     "countermeasures": [
       "Bật tính năng cảnh báo website lừa đảo trên trình duyệt Chrome/Safari.",
       "Không đăng nhập tài khoản ngân hàng trên các thiết bị hoặc mạng Wi-Fi công cộng không an toàn."
     ],
-    "countermeasures_en": [
-      "Turn on the phishing website warning feature on Chrome/Safari browser.",
-      "Do not log into your bank account on unsecured devices or public Wi-Fi networks."
-    ],
     "whatToDoIfTargeted": [
       "Đóng tab trình duyệt ngay, xóa lịch sử duyệt web và không nhập bất kỳ thông tin nào."
-    ],
-    "whatToDoIfTargeted_en": [
-      "Close the browser tab immediately, clear your browsing history, and do not enter any information."
     ],
     "whatToDoIfCompromised": [
       "Đổi mật khẩu ngay lập tức từ trang web chính thức hoặc ứng dụng di động.",
       "Gọi tổng đài hỗ trợ của dịch vụ đó để kiểm tra các phiên đăng nhập lạ."
-    ],
-    "whatToDoIfCompromised_en": [
-      "Change your password instantly from the official website or mobile app.",
-      "Call that service's support switchboard to check for strange login sessions."
     ]
   },
   {
     "id": "malicious-links-messages",
     "title": "7. Gửi Đường Link Độc Hại Qua Tin Nhắn, Email, Mạng Xã Hội",
-    "title_en": "7. Sending Malicious Links via SMS, Email, and Social Networks",
+    "title_en": "7. Gửi Đường Link Độc Hại Qua Tin Nhắn, Email, Mạng Xã Hội",
     "category": "Mã độc & Liên kết độc hại",
-    "category_en": "Malware & Malicious Links",
+    "category_en": "Mã độc & Liên kết độc hại",
     "shortDescription": "Gửi link \"bình chọn cuộc thi\", \"xem ảnh nhạy cảm\", \"nhận quà tặng tri ân\" chứa mã độc đánh cắp Cookie trình duyệt và tài khoản mạng xã hội.",
-    "shortDescription_en": "Sending links to \"vote in the contest\", \"view sensitive photos\", \"receive gratitude gifts\" contains malicious code that steals browser cookies and social network accounts.",
+    "shortDescription_en": "Gửi link \"bình chọn cuộc thi\", \"xem ảnh nhạy cảm\", \"nhận quà tặng tri ân\" chứa mã độc đánh cắp Cookie trình duyệt và tài khoản mạng xã hội.",
     "whatIsIt": "Hình thức phát tán mã độc hoặc kịch bản khai thác lỗ hổng (Cross-Site Scripting / Malicious Web) qua các liên kết rút gọn hoặc tin nhắn mồi chài, nhằm chiếm quyền điều khiển tài khoản mạng xã hội hoặc cài đặt phần mềm độc hại vào máy nạn nhân.",
-    "whatIsIt_en": "Form of spreading malicious code or vulnerability exploitation scripts (Cross-Site Scripting / Malicious Web) through shortened links or bait messages, to take control of social network accounts or install malware on the victim's computer.",
+    "whatIsIt_en": "Hình thức phát tán mã độc hoặc kịch bản khai thác lỗ hổng (Cross-Site Scripting / Malicious Web) qua các liên kết rút gọn hoặc tin nhắn mồi chài, nhằm chiếm quyền điều khiển tài khoản mạng xã hội hoặc cài đặt phần mềm độc hại vào máy nạn nhân.",
     "howItWorks": [
       "Nạn nhân nhận được tin nhắn từ bạn bè: \"Bình chọn giúp cháu mình thi vẽ tranh\", \"Xem video bạn bị quay lén nè\"...",
       "Đường link dẫn đến trang web yêu cầu đăng nhập lại tài khoản Facebook/Google để xem tiếp nội dung.",
       "Khi đăng nhập, mã độc thu thập Cookie, Token và mật khẩu của nạn nhân.",
       "Kẻ gian tiếp tục dùng tài khoản vừa chiếm được để phát tán link độc hại tới toàn bộ danh bạ bạn bè."
     ],
-    "howItWorks_en": [
-      "The victim received messages from friends: \"Vote for my nephew's drawing competition\", \"Watch the video you were secretly filmed\"...",
-      "The link leads to a website that requires logging back into your Facebook/Google account to continue viewing the content.",
-      "When logging in, the malware collects the victim's Cookies, Tokens and passwords.",
-      "The crooks continue to use the account they just captured to spread malicious links to all of their friends' contacts."
-    ],
     "warningSigns": [
       "Tin nhắn có nội dung giật gân, tò mò hoặc khẩn thiết nhờ vả bình chọn.",
       "Link sử dụng dịch vụ rút gọn link (bit.ly, tinyurl, cutt.ly) che giấu đích đến thật.",
       "Trang web bắt buộc phải đăng nhập lại tài khoản mạng xã hội dù bạn đang dùng ứng dụng."
     ],
-    "warningSigns_en": [
-      "Messages with sensational, curious or urgent content asking for votes.",
-      "Links using link shortening services (bit.ly, tinyurl, cutt.ly) hide the real destination.",
-      "The website requires you to re-login to your social network account even if you are using the application."
-    ],
     "redFlags": [
       "Đăng nhập tài khoản nhưng không chuyển đến nội dung như đã hứa mà hiện trang trắng hoặc báo lỗi."
-    ],
-    "redFlags_en": [
-      "Log in to your account but do not get to the content as promised, but show a blank page or error message."
     ],
     "psychologicalTactics": [
       "Kích thích tính tò mò, hiếu kỳ hoặc tâm lý ngại từ chối giúp đỡ bạn bè.",
       "Lợi dụng uy tín của tài khoản bạn bè quen biết (vốn đã bị hack từ trước)."
-    ],
-    "psychologicalTactics_en": [
-      "Stimulate curiosity, curiosity or reluctance to help friends.",
-      "Taking advantage of the reputation of friends' accounts (which have been hacked before)."
     ],
     "tactics": [
       "Lợi dụng lòng tin bạn bè",
       "Kích thích tò mò",
       "Tấn công chuỗi lây lan danh bạ"
     ],
-    "tactics_en": [
-      "Taking advantage of friends' trust",
-      "Stimulate curiosity",
-      "Contact propagation chain attack"
-    ],
     "whatScammersAskFor": [
       "Đăng nhập tài khoản Facebook, Zalo, Gmail, Telegram.",
       "Cho phép ứng dụng bên thứ 3 truy cập quyền quản lý tài khoản."
-    ],
-    "whatScammersAskFor_en": [
-      "Log in to your Facebook, Zalo, Gmail, Telegram account.",
-      "Allow 3rd party apps to access account management permissions."
     ],
     "howToVerify": [
       "Liên hệ trực tiếp với người gửi qua kênh khác (gọi điện thoại) để hỏi có phải họ gửi link không.",
       "Không bao giờ nhập mật khẩu tài khoản mạng xã hội vào các trang web bên ngoài ứng dụng chính thức."
     ],
-    "howToVerify_en": [
-      "Contact the sender directly through another channel (phone call) to ask if they sent the link.",
-      "Never enter social network account passwords on sites outside of the official app."
-    ],
     "countermeasures": [
       "Bật xác thực 2 yếu tố (2FA) bằng ứng dụng Google Authenticator cho tất cả tài khoản.",
       "Kiểm tra và đăng xuất các phiên đăng nhập lạ trong phần Cài đặt bảo mật."
     ],
-    "countermeasures_en": [
-      "Enable two-factor authentication (2FA) with the Google Authenticator app for all accounts.",
-      "Check and log out of strange login sessions in Security Settings."
-    ],
     "whatToDoIfTargeted": [
       "Không bấm vào link, thông báo cho người bạn đó biết tài khoản của họ đã bị kẻ xấu kiểm soát."
-    ],
-    "whatToDoIfTargeted_en": [
-      "Do not click on the link, notify that friend that their account has been controlled by bad guys."
     ],
     "whatToDoIfCompromised": [
       "Đổi mật khẩu ngay lập tức và chọn \"Đăng xuất khỏi tất cả các thiết bị khác\".",
       "Đăng bài cảnh báo trên trang cá nhân để bạn bè không tiếp tục bấm vào link độc."
-    ],
-    "whatToDoIfCompromised_en": [
-      "Change your password immediately and select \"Sign out of all other devices\".",
-      "Post a warning on your personal page so your friends don't continue to click on malicious links."
     ]
   },
   {
     "id": "fake-apps-malware-apk",
     "title": "8. Làm Giả Ứng Dụng Ngân Hàng, Dịch Vụ Công, Đầu Tư Để Lừa Cài Đặt File APK",
-    "title_en": "8. Fake Banking, Public Service, and Investment Applications to Trick into Installing APK Files",
+    "title_en": "8. Làm Giả Ứng Dụng Ngân Hàng, Dịch Vụ Công, Đầu Tư Để Lừa Cài Đặt File APK",
     "category": "Mã độc & Ứng dụng giả mạo",
-    "category_en": "Malware & Fake Apps",
+    "category_en": "Mã độc & Ứng dụng giả mạo",
     "shortDescription": "Dụ dỗ người dùng cài đặt file `.apk` giả mạo cổng dịch vụ công VNeID, ứng dụng hoàn thuế hoặc app chứng khoán có chứa mã độc gián điệp chiếm quyền trợ năng.",
-    "shortDescription_en": "Enticing users to install fake `.apk` files for public service portal VNeID, tax refund applications or securities applications containing spyware that takes over accessibility rights.",
+    "shortDescription_en": "Dụ dỗ người dùng cài đặt file `.apk` giả mạo cổng dịch vụ công VNeID, ứng dụng hoàn thuế hoặc app chứng khoán có chứa mã độc gián điệp chiếm quyền trợ năng.",
     "whatIsIt": "Mã độc Trojan ngân hàng trên hệ điều hành Android. Kẻ tấn công lừa nạn nhân tải và cài đặt ứng dụng từ file `.apk` ngoài kho ứng dụng, sau đó chiếm quyền Trợ năng (Accessibility) để tự động điều khiển điện thoại từ xa và rút tiền.",
-    "whatIsIt_en": "Banking Trojan malware on Android operating system. The attacker tricks the victim into downloading and installing the application from the `.apk` file outside the app store, then takes over Accessibility rights to automatically control the phone remotely and withdraw money.",
+    "whatIsIt_en": "Mã độc Trojan ngân hàng trên hệ điều hành Android. Kẻ tấn công lừa nạn nhân tải và cài đặt ứng dụng từ file `.apk` ngoài kho ứng dụng, sau đó chiếm quyền Trợ năng (Accessibility) để tự động điều khiển điện thoại từ xa và rút tiền.",
     "howItWorks": [
       "Kẻ gian gọi điện hướng dẫn cập nhật hồ sơ định danh, cài app nộp thuế điện tử hoặc app đầu tư sinh lời.",
       "Gửi đường link tải file cài đặt có đuôi `.apk` (VD: `vneid-update.apk`, `tongcuc-thue.apk`).",
       "Hướng dẫn nạn nhân tắt bảo mật Google Play Protect và cấp quyền \"Trợ năng\" (Accessibility Service).",
       "Mã độc âm thầm theo dõi mọi thao tác bấm phím, đọc trộm mã OTP ngân hàng, tự động mở app ngân hàng chuyển tiền đi khi nạn nhân ngủ."
     ],
-    "howItWorks_en": [
-      "Thieves call with instructions to update identification records, install an electronic tax payment app or a profitable investment app.",
-      "Send a link to download the installation file with the extension `.apk` (eg `vneid-update.apk`, `tongcuc-thue.apk`).",
-      "Instruct the victim to turn off Google Play Protect security and grant \"Accessibility Service\" permission.",
-      "The malicious code silently monitors every keystroke, reads the bank OTP code, and automatically opens the bank app to transfer money when the victim sleeps."
-    ],
     "warningSigns": [
       "Yêu cầu cài đặt ứng dụng bằng cách tải file trực tiếp từ trang web thay vì kho ứng dụng CH Play / App Store.",
       "Ứng dụng đòi hỏi các quyền can thiệp sâu: Quyền trợ năng, quyền điều khiển màn hình, quyền đọc SMS.",
       "Điện thoại bị nóng ran, hao pin nhanh bất thường, màn hình tự sáng hoặc tự động chuyển trang."
     ],
-    "warningSigns_en": [
-      "Requires application installation by downloading files directly from the website instead of the CH Play / App Store application store.",
-      "The application requires deep intervention permissions: Accessibility permission, screen control permission, SMS reading permission.",
-      "The phone gets hot, the battery drains unusually quickly, the screen lights up or turns pages automatically."
-    ],
     "redFlags": [
       "Yêu cầu tắt chế độ bảo vệ Play Protect hoặc bật tính năng \"Cài đặt từ nguồn không xác định\"."
-    ],
-    "redFlags_en": [
-      "Requires turning off Play Protect protection or enabling \"Install from unknown sources\"."
     ],
     "psychologicalTactics": [
       "Lợi dụng sự thiếu hiểu biết về công nghệ của người dân.",
       "Mượn danh cơ quan nhà nước để ép buộc cài đặt ứng dụng \"bắt buộc theo quy định\"."
-    ],
-    "psychologicalTactics_en": [
-      "Taking advantage of people's lack of technological understanding.",
-      "Borrowing the name of a state agency to force the installation of \"mandatory according to regulations\" applications."
     ],
     "tactics": [
       "Mã độc chiếm quyền Trợ năng (Accessibility)",
       "Kiểm soát thiết bị từ xa",
       "Tự động rút tiền"
     ],
-    "tactics_en": [
-      "Accessibility monopolizing code",
-      "Control your device remotely",
-      "Automatic withdrawal"
-    ],
     "whatScammersAskFor": [
       "Tải và cài đặt file `.apk` lạ.",
       "Cấp quyền Trợ năng (Accessibility) và quyền đọc tin nhắn SMS cho ứng dụng."
-    ],
-    "whatScammersAskFor_en": [
-      "Download and install strange `.apk` file.",
-      "Grant Accessibility and read SMS permissions to the app."
     ],
     "howToVerify": [
       "Chỉ cài đặt ứng dụng từ CH Play (Android) và App Store (iOS).",
       "Cơ quan nhà nước và ngân hàng KHÔNG BAO GIỜ yêu cầu người dân cài file APK qua đường link ngoài."
     ],
-    "howToVerify_en": [
-      "Only install apps from CH Play (Android) and App Store (iOS).",
-      "State agencies and banks NEVER ask people to install APK files via external links."
-    ],
     "countermeasures": [
       "Tuyệt đối không cấp quyền Trợ năng (Accessibility) cho bất kỳ ứng dụng nào tải từ trang web.",
       "Bật tính năng bảo vệ Google Play Protect trên điện thoại Android."
     ],
-    "countermeasures_en": [
-      "Never grant Accessibility permission to any application downloaded from the website.",
-      "Turn on the Google Play Protect protection feature on your Android phone."
-    ],
     "whatToDoIfTargeted": [
       "Từ chối cài đặt, xóa ngay file đã tải về trong thư mục Download."
-    ],
-    "whatToDoIfTargeted_en": [
-      "Refuse installation, immediately delete the downloaded file in the Download folder."
     ],
     "whatToDoIfCompromised": [
       "Bật ngay Chế độ máy bay (Airplane Mode) hoặc tháo SIM, tắt nguồn điện thoại để ngắt kết nối điều khiển.",
       "Dùng máy khác gọi hotline ngân hàng khóa toàn bộ tài khoản và thẻ.",
       "Khôi phục cài đặt gốc (Factory Reset) toàn bộ điện thoại để xóa sạch mã độc."
-    ],
-    "whatToDoIfCompromised_en": [
-      "Immediately turn on Airplane Mode or remove the SIM and turn off the phone to disconnect the controller.",
-      "Use another phone to call the bank hotline to block all accounts and cards.",
-      "Restore the entire phone to factory settings to remove malware."
     ]
   },
   {
     "id": "fake-bank-receipt-transfer",
     "title": "9. Làm Giả Biên Lai Chuyển Khoản, Thông Báo Giao Dịch Thành Công (Fake Bill)",
-    "title_en": "9. Fake Transfer Receipts and Successful Transaction Notifications (Fake Bill)",
+    "title_en": "9. Làm Giả Biên Lai Chuyển Khoản, Thông Báo Giao Dịch Thành Công (Fake Bill)",
     "category": "Gian lận Giao dịch & Thương mại",
-    "category_en": "E-Commerce & Transaction Fraud",
+    "category_en": "Gian lận Giao dịch & Thương mại",
     "shortDescription": "Sử dụng các phần mềm/website tạo ảnh chụp màn hình biên lai chuyển tiền ngân hàng giả để lừa người bán hàng giao hàng hoặc gửi tiền trả lại.",
-    "shortDescription_en": "Using software/websites to create screenshots of fake bank money transfer receipts to trick sellers into delivering goods or sending money back.",
+    "shortDescription_en": "Sử dụng các phần mềm/website tạo ảnh chụp màn hình biên lai chuyển tiền ngân hàng giả để lừa người bán hàng giao hàng hoặc gửi tiền trả lại.",
     "whatIsIt": "Kẻ lừa đảo sử dụng các công cụ tạo ảnh hóa đơn chuyển tiền giả (Fake Receipt Generator) có logo, tên tài khoản, mã giao dịch và số tiền y hệt thông báo thật của ngân hàng nhằm chiếm đoạt hàng hóa hoặc lừa người bán chuyển lại \"tiền thừa\".",
-    "whatIsIt_en": "Fraudsters use tools to create fake money transfer receipt images (Fake Receipt Generator) with the same logo, account name, transaction code and amount as the bank's real notice to appropriate the goods or trick the seller into returning \"change\".",
+    "whatIsIt_en": "Kẻ lừa đảo sử dụng các công cụ tạo ảnh hóa đơn chuyển tiền giả (Fake Receipt Generator) có logo, tên tài khoản, mã giao dịch và số tiền y hệt thông báo thật của ngân hàng nhằm chiếm đoạt hàng hóa hoặc lừa người bán chuyển lại \"tiền thừa\".",
     "howItWorks": [
       "Kẻ gian vờ mua hàng hóa giá trị cao hoặc đặt cọc phòng/dịch vụ.",
       "Tạo ảnh biên lai chuyển khoản giả mạo gửi qua tin nhắn kèm lý do \"Ngân hàng khác hệ thống nên 1-2 tiếng sau tiền mới nổi, bạn giao hàng gấp giúp mình\".",
       "Hoặc làm giả biên lai chuyển nhầm số tiền lớn (VD: mua hàng 500k nhưng gửi bill giả 5 triệu) rồi khóc lóc đòi người bán chuyển khoản lại 4.5 triệu."
-    ],
-    "howItWorks_en": [
-      "Fraudsters pretend to buy high-value goods or deposit rooms/services.",
-      "Create a photo of a fake transfer receipt sent via text message with the reason \"The bank has a different system so the money will appear after 1-2 hours, please help me deliver the goods urgently\".",
-      "Or fake a receipt to transfer a large amount of money (eg: buy 500k but send a fake bill of 5 million) and then cry and ask the seller to re-transfer 4.5 million."
     ],
     "warningSigns": [
       "Gửi ảnh biên lai chuyển tiền thành công nhưng tài khoản ngân hàng của bạn chưa nhận được tiền hoặc thông báo biến động số dư.",
       "Biên lai có phông chữ số tiền bị lệch, màu sắc không đồng nhất, thời gian giao dịch bất hợp lý.",
       "Thúc ép giao hàng ngay lập tức hoặc giục chuyển trả lại tiền thừa."
     ],
-    "warningSigns_en": [
-      "Sending a photo of a successful money transfer receipt but your bank account has not received the money or notifies about a balance change.",
-      "Receipts have misaligned amount fonts, inconsistent colors, and unreasonable transaction times.",
-      "Press for immediate delivery or return the change."
-    ],
     "redFlags": [
       "Viện lý do \"chuyển khoản liên ngân hàng vào cuối tuần nên tiền bị treo\" hoặc \"gửi link xác nhận nhận tiền\"."
-    ],
-    "redFlags_en": [
-      "The excuse is \"interbank transfer on the weekend so the money is suspended\" or \"send a link to confirm receipt of money\"."
     ],
     "psychologicalTactics": [
       "Tạo áp lực vội vã cần hàng khẩn cấp để bên bán không kịp kiểm tra tài khoản.",
       "Đánh vào sự tử tế, trung thực của người bán hàng khi thấy người khác chuyển \"nhầm\" tiền."
-    ],
-    "psychologicalTactics_en": [
-      "Create pressure to urgently need goods so that the seller does not have time to check the account.",
-      "Assess the kindness and honesty of the seller when he sees someone else transferring money \"wrongly\"."
     ],
     "tactics": [
       "Photoshop/Web tạo bill giả",
       "Gây áp lực giao hàng gấp",
       "Chiêu bài chuyển nhầm tiền"
     ],
-    "tactics_en": [
-      "Photoshop/Web creates fake bills",
-      "Pressure for urgent delivery",
-      "The trick of transferring money by mistake"
-    ],
     "whatScammersAskFor": [
       "Giao hàng hóa ngay lập tức cho shipper trước khi tiền về tài khoản.",
       "Chuyển khoản lại khoản tiền chuyển \"nhầm\" cho kẻ gian."
-    ],
-    "whatScammersAskFor_en": [
-      "Deliver the goods immediately to the shipper before the money is returned to the account.",
-      "Re-transfer the \"mistaken\" money to the fraudster."
     ],
     "howToVerify": [
       "Nguyên tắc bất di bất dịch: Chỉ giao hàng khi TIỀN ĐÃ NỔI THỰC TẾ trên ứng dụng ngân hàng của bạn (có tin nhắn biến động số dư hoặc kiểm tra trong lịch sử giao dịch app).",
       "Không tin bất kỳ hình ảnh chụp màn hình hay email thông báo nào từ phía người mua."
     ],
-    "howToVerify_en": [
-      "Immutable rule: Only deliver when the MONEY IS ACTUALLY SPENT on your banking app (there is a balance change message or a check in the app transaction history).",
-      "Do not trust any screenshots or notification emails from the buyer."
-    ],
     "countermeasures": [
       "Luôn mở app ngân hàng tự kiểm tra lịch sử giao dịch thực tế.",
       "Nếu có người lạ chuyển nhầm tiền thật, hãy đến ngân hàng làm thủ tục hoàn trả, tuyệt đối không tự ý chuyển trả vào tài khoản khác do họ yêu cầu."
     ],
-    "countermeasures_en": [
-      "Always open the banking app to check the actual transaction history yourself.",
-      "If a stranger mistakenly transfers real money, go to the bank to complete the refund procedure, absolutely do not arbitrarily transfer money back to another account at their request."
-    ],
     "whatToDoIfTargeted": [
       "Từ chối giao hàng và giữ nguyên hàng hóa cho đến khi tiền về tài khoản."
-    ],
-    "whatToDoIfTargeted_en": [
-      "Refuse delivery and keep the goods intact until the money is returned to your account."
     ],
     "whatToDoIfCompromised": [
       "Liên hệ đơn vị vận chuyển để chặn giữ đơn hàng nếu shipper chưa giao.",
       "Trình báo công an kèm bằng chứng đoạn chat và thông tin người nhận hàng."
-    ],
-    "whatToDoIfCompromised_en": [
-      "Contact the shipping unit to block and hold the order if the shipper has not yet delivered.",
-      "Report to the police with evidence of the chat and consignee information."
     ]
   },
   {
     "id": "social-account-takeover-loan",
     "title": "10. Chiếm Quyền Tài Khoản Mạng Xã Hội Rồi Nhắn Tin Vay Tiền",
-    "title_en": "10. Hijacking Social Network Accounts Then Texting To Borrow Money",
+    "title_en": "10. Chiếm Quyền Tài Khoản Mạng Xã Hội Rồi Nhắn Tin Vay Tiền",
     "category": "Mạng xã hội & Chiếm đoạt tài khoản",
-    "category_en": "Social Media & Account Takeover",
+    "category_en": "Mạng xã hội & Chiếm đoạt tài khoản",
     "shortDescription": "Hack Facebook, Zalo bằng link Phishing hoặc mã OTP, đọc lịch sử tin nhắn để bắt chước cách xưng hô rồi nhắn tin mượn tiền khắp danh bạ bạn bè.",
-    "shortDescription_en": "Hack Facebook, Zalo with Phishing links or OTP codes, read message history to imitate the way of addressing and then send messages to borrow money throughout your friend's contact list.",
+    "shortDescription_en": "Hack Facebook, Zalo bằng link Phishing hoặc mã OTP, đọc lịch sử tin nhắn để bắt chước cách xưng hô rồi nhắn tin mượn tiền khắp danh bạ bạn bè.",
     "whatIsIt": "Kẻ tấn công chiếm quyền kiểm soát tài khoản mạng xã hội của một cá nhân, nghiên cứu văn phong xưng hô và các mối quan hệ thân thiết, sau đó gửi tin nhắn đồng loạt mượn từ 2 đến 10 triệu đồng để xử lý công việc đột xuất.",
-    "whatIsIt_en": "An attacker takes control of an individual's social network account, studies their style of address and close relationships, then sends messages simultaneously borrowing from 2 to 10 million VND to handle unexpected work.",
+    "whatIsIt_en": "Kẻ tấn công chiếm quyền kiểm soát tài khoản mạng xã hội của một cá nhân, nghiên cứu văn phong xưng hô và các mối quan hệ thân thiết, sau đó gửi tin nhắn đồng loạt mượn từ 2 đến 10 triệu đồng để xử lý công việc đột xuất.",
     "howItWorks": [
       "Chiếm quyền tài khoản qua việc nạn nhân bấm link độc, quét mã QR hoặc bị lộ mật khẩu.",
       "Đổi mật khẩu, xóa số điện thoại khôi phục để chủ tài khoản không đăng nhập lại được.",
@@ -903,198 +510,109 @@
       "Nhắn tin mượn tiền với lý do: \"Em đang kẹt tiền thanh toán đơn hàng/tiền hàng, anh chuyển khoản giúp em 5 triệu lát chiều em gửi lại\".",
       "Cung cấp số tài khoản ngân hàng trùng họ tên với chủ tài khoản (mua tài khoản rác trùng tên) để tạo lòng tin tuyệt đối."
     ],
-    "howItWorks_en": [
-      "Account hijacking through the victim clicking on a malicious link, scanning a QR code or having their password revealed.",
-      "Change the password and delete the recovery phone number so the account owner cannot log in again.",
-      "Read old message history to understand how to address each other (brother/sister, you/me, dad/mom).",
-      "Texting to borrow money with the reason: \"I'm stuck paying for orders/goods, please transfer 5 million for me and I'll send it back in the afternoon.\"",
-      "Provide a bank account number with the same name as the account holder (buy a junk account with the same name) to create absolute trust."
-    ],
     "warningSigns": [
       "Người bạn lâu ngày không liên lạc đột nhiên nhắn tin nhờ chuyển tiền gấp.",
       "Cách xưng hô có điểm khác thường so với thói quen trò chuyện hàng ngày.",
       "Viện lý do tài khoản ngân hàng đang lỗi nên yêu cầu chuyển vào một tài khoản ngân hàng khác.",
       "Từ chối cuộc gọi thoại/video với lý do đang bận họp, đang trên đường lái xe."
     ],
-    "warningSigns_en": [
-      "A friend I haven't contacted for a long time suddenly texted me asking for urgent money transfer.",
-      "The way of addressing is unusual compared to everyday conversation habits.",
-      "Reasoning that the bank account was in error, he requested to transfer to another bank account.",
-      "Refuse voice/video calls because you're busy in a meeting or while driving."
-    ],
     "redFlags": [
       "Số tài khoản nhận tiền có tên chủ tài khoản viết không dấu gần giống hoặc hoàn toàn xa lạ."
-    ],
-    "redFlags_en": [
-      "The account number receiving money has the account owner's name written without accents that is similar or completely unfamiliar."
     ],
     "psychologicalTactics": [
       "Lợi dụng uy tín và mối quan hệ bạn bè, đối tác thân thiết nhiều năm.",
       "Số tiền mượn thường ở mức vừa phải (vài triệu đồng) khiến nạn nhân dễ dàng đồng ý mà không đắn đo."
-    ],
-    "psychologicalTactics_en": [
-      "Taking advantage of reputation and close relationships with friends and partners for many years.",
-      "The loan amount is usually moderate (several million VND), making it easy for victims to agree without hesitation."
     ],
     "tactics": [
       "Khai thác thông tin cá nhân",
       "Mượn danh nghĩa bạn bè",
       "Mua tài khoản ngân hàng trùng tên"
     ],
-    "tactics_en": [
-      "Exploitation of personal information",
-      "Borrowing the name of a friend",
-      "Buy a bank account with the same name"
-    ],
     "whatScammersAskFor": [
       "Chuyển tiền mượn tạm từ 2 triệu đến 20 triệu đồng."
-    ],
-    "whatScammersAskFor_en": [
-      "Transfer temporary loan from 2 million to 20 million VND."
     ],
     "howToVerify": [
       "Gọi điện thoại trực tiếp vào số SIM di động cá nhân của người đó để xác nhận trước khi chuyển 1 đồng.",
       "Hỏi lại một chi tiết riêng tư trong quá khứ mà chỉ 2 người biết."
     ],
-    "howToVerify_en": [
-      "Call directly that person's personal mobile SIM number to confirm before transferring 1 dong.",
-      "Ask about a private detail from the past that only the two of you know."
-    ],
     "countermeasures": [
       "Bật bảo mật 2 lớp cho Facebook/Zalo, không đăng nhập tài khoản trên các trang web lạ.",
       "Quy tắc ứng xử tài chính: Tuyệt đối không chuyển tiền chỉ dựa trên tin nhắn văn bản qua mạng xã hội."
     ],
-    "countermeasures_en": [
-      "Turn on 2-layer security for Facebook/Zalo, do not log in to accounts on strange websites.",
-      "Financial code of conduct: Absolutely do not transfer money based solely on text messages via social networks."
-    ],
     "whatToDoIfTargeted": [
       "Gọi điện thông báo ngay cho người bạn đó bằng điện thoại để họ kịp thời cảnh báo mọi người."
-    ],
-    "whatToDoIfTargeted_en": [
-      "Call your friend immediately to notify them by phone so they can promptly warn everyone."
     ],
     "whatToDoIfCompromised": [
       "Báo ngay cho ngân hàng chuyển tiền để đề nghị khóa chiều rút tài khoản đích.",
       "Lưu vết giao dịch và báo cáo cho cơ quan chức năng."
-    ],
-    "whatToDoIfCompromised_en": [
-      "Immediately notify the remitting bank to request to block the withdrawal method from the destination account.",
-      "Record transactions and report to authorities."
     ]
   },
   {
     "id": "sim-lock-telecom-threat",
     "title": "11. Cuộc Gọi \"Khóa SIM Sau 2 Giờ\" Ép Cung Cấp Thông Tin Cá Nhân",
-    "title_en": "11. Call \"SIM Lock After 2 Hours\" Forced to Provide Personal Information",
+    "title_en": "11. Cuộc Gọi \"Khóa SIM Sau 2 Giờ\" Ép Cung Cấp Thông Tin Cá Nhân",
     "category": "SMS & Viễn thông",
-    "category_en": "SMS & Telecom Scams",
+    "category_en": "SMS & Viễn thông",
     "shortDescription": "Cuộc gọi tự động tự xưng Cục Viễn thông / Nhà mạng thông báo SIM chưa chuẩn hóa sẽ bị khóa sau 2 giờ, ép bấm phím kết nối chuyên viên để chiếm đoạt thông tin.",
-    "shortDescription_en": "The automatic call claiming to be from the Department of Telecommunications/Network announced that unstandardized SIMs will be locked after 2 hours, forcing them to press the key to connect a specialist to steal information.",
+    "shortDescription_en": "Cuộc gọi tự động tự xưng Cục Viễn thông / Nhà mạng thông báo SIM chưa chuẩn hóa sẽ bị khóa sau 2 giờ, ép bấm phím kết nối chuyên viên để chiếm đoạt thông tin.",
     "whatIsIt": "Kẻ lừa đảo sử dụng tổng đài tự động giả danh Cục Viễn thông (Bộ TT&TT) hoặc các nhà mạng Viettel, VinaPhone, MobiFone đe dọa khóa liên lạc của thuê bao nhằm lừa người dân cung cấp số CCCD, tài khoản ngân hàng hoặc nộp tiền phạt viễn thông.",
-    "whatIsIt_en": "Fraudsters use automated switchboards impersonating the Department of Telecommunications (Ministry of Information and Communications) or network operators Viettel, VinaPhone, MobiFone to threaten to block subscribers' communications to trick people into providing CCCD numbers, bank accounts or paying telecommunications fines.",
+    "whatIsIt_en": "Kẻ lừa đảo sử dụng tổng đài tự động giả danh Cục Viễn thông (Bộ TT&TT) hoặc các nhà mạng Viettel, VinaPhone, MobiFone đe dọa khóa liên lạc của thuê bao nhằm lừa người dân cung cấp số CCCD, tài khoản ngân hàng hoặc nộp tiền phạt viễn thông.",
     "howItWorks": [
       "Tổng đài tự động phát giọng đọc: \"Cục Viễn thông thông báo thuê bao của quý khách sẽ bị khóa liên lạc sau 2 giờ do chưa chuẩn hóa thông tin hoặc vi phạm phát tán tin rác... Bấm phím 1 để gặp chuyên viên\".",
       "Khi bấm phím, kẻ lừa đảo đóng vai nhân viên nhà mạng yêu cầu cung cấp họ tên, số CCCD, ngày cấp, mã OTP gửi về máy.",
       "Sau đó kẻ gian chuyển máy sang \"Công an\" bảo số điện thoại này đang liên quan vụ án rửa tiền, dọa nạt và yêu cầu chuyển tiền."
-    ],
-    "howItWorks_en": [
-      "The switchboard automatically plays a voice reading: \"The Department of Telecommunications informs you that your subscription will be blocked after 2 hours due to not standardizing information or violating the distribution of spam... Press 1 to see a specialist.\"",
-      "When pressing the key, the fraudster plays the role of a network employee, asking for full name, CCCD number, date of issue, and OTP code sent to the device.",
-      "The thief then switched the phone to \"Police\" saying that this phone number was involved in a money laundering case, threatening and requesting money transfer."
     ],
     "warningSigns": [
       "Nhà mạng viễn thông KHÔNG BAO GIỜ thông báo khóa SIM qua cuộc gọi tự động đe dọa khóa trong 2 giờ.",
       "Cuộc gọi đến từ các đầu số lạ (+84..., đầu số nước ngoài hoặc số di động thông thường).",
       "Yêu cầu cung cấp thông tin CCCD hoặc mã xác thực OTP qua điện thoại."
     ],
-    "warningSigns_en": [
-      "Telecommunications operators NEVER announce SIM lock via automated calls threatening to lock for 2 hours.",
-      "Incoming calls from unknown numbers (+84..., foreign numbers or regular mobile numbers).",
-      "Request to provide CCCD information or OTP authentication code via phone."
-    ],
     "redFlags": [
       "Nối máy liên thông từ nhân viên nhà mạng sang công an ngay trong cùng một cuộc gọi."
-    ],
-    "redFlags_en": [
-      "Connect the phone from network staff to the police in the same call."
     ],
     "psychologicalTactics": [
       "Đánh vào tâm lý sợ bị mất liên lạc di động ảnh hưởng đến công việc làm ăn.",
       "Lợi dụng đợt chuẩn hóa thông tin thuê bao của nhà nước để dựng kịch bản."
-    ],
-    "psychologicalTactics_en": [
-      "Attacks the fear of losing mobile communication, affecting business.",
-      "Taking advantage of the state's standardization of subscriber information to create scenarios."
     ],
     "tactics": [
       "Giả mạo tổng đài Cục Viễn thông",
       "Đe dọa gián đoạn liên lạc",
       "Chuyển luồng sang kịch bản công an"
     ],
-    "tactics_en": [
-      "Impersonating the Department of Telecommunications switchboard",
-      "Threats to disrupt communications",
-      "Change the flow to the police scenario"
-    ],
     "whatScammersAskFor": [
       "Số Căn cước công dân, ảnh chụp chân dung.",
       "Mã OTP gửi về tin nhắn SMS để cướp SIM hoặc tài khoản dịch vụ mạng."
-    ],
-    "whatScammersAskFor_en": [
-      "Citizen Identification Number, portrait photo.",
-      "OTP code sent to SMS to steal SIM or network service account."
     ],
     "howToVerify": [
       "Tự soạn tin nhắn `TTTB` gửi `1414` (miễn phí) để kiểm tra thông tin thuê bao chính chủ.",
       "Gọi trực tiếp hotline chính thức của nhà mạng: Viettel (18008098), VinaPhone (18001091), MobiFone (18001090)."
     ],
-    "howToVerify_en": [
-      "Compose the message `TTTB` and send `1414` (free) to check the owner's subscriber information.",
-      "Directly call the network's official hotline: Viettel (18008098), VinaPhone (18001091), MobiFone (18001090)."
-    ],
     "countermeasures": [
       "Dập máy ngay khi nghe các thông báo khóa SIM tự động.",
       "Đến các điểm giao dịch trực tiếp của nhà mạng nếu cần cập nhật thông tin CCCD."
     ],
-    "countermeasures_en": [
-      "Hang up immediately when you hear the automatic SIM lock messages.",
-      "Go to the network's direct transaction points if you need to update CCCD information."
-    ],
     "whatToDoIfTargeted": [
       "Dập máy, phản ánh cuộc gọi rác tới đầu số 156 hoặc 5656."
     ],
-    "whatToDoIfTargeted_en": [
-      "Hang up and report spam calls to 156 or 5656."
-    ],
     "whatToDoIfCompromised": [
       "Nếu đã lỡ đọc mã OTP, liên hệ nhà mạng ngay lập tức để khóa SIM đề phòng kẻ gian chiếm đoạt số điện thoại nhận mã OTP ngân hàng."
-    ],
-    "whatToDoIfCompromised_en": [
-      "If you accidentally read the OTP code, contact the network operator immediately to lock the SIM to prevent thieves from appropriating the phone number to receive the bank OTP code."
     ]
   },
   {
     "id": "ecommerce-job-commission-scam",
     "title": "12. Bẫy Nạp Tiền Làm Nhiệm Vụ Giật Đơn Shopee, Lazada Hưởng Hoa Hồng",
-    "title_en": "12. Deposit Money Trap to Steal Orders from Shopee and Lazada to Get Commissions",
+    "title_en": "12. Bẫy Nạp Tiền Làm Nhiệm Vụ Giật Đơn Shopee, Lazada Hưởng Hoa Hồng",
     "category": "Tuyển dụng & Việc làm",
-    "category_en": "Recruitment & Job Scams",
+    "category_en": "Tuyển dụng & Việc làm",
     "shortDescription": "Tuyển cộng tác viên online nạp tiền thanh toán đơn hàng ảo nhận hoa hồng 20-30%, mồi nhử những đơn đầu sau đó giam tiền và ép nạp hàng chục triệu.",
-    "shortDescription_en": "Recruit online collaborators to deposit money to pay for virtual orders to receive a 20-30% commission, lure the first orders, then confiscate money and force tens of millions to deposit.",
+    "shortDescription_en": "Tuyển cộng tác viên online nạp tiền thanh toán đơn hàng ảo nhận hoa hồng 20-30%, mồi nhử những đơn đầu sau đó giam tiền và ép nạp hàng chục triệu.",
     "whatIsIt": "Mô hình lừa đảo cộng tác viên làm nhiệm vụ bậc thang. Kẻ gian dụ dỗ người tìm việc chuyển tiền thanh toán đơn hàng ảo để đẩy tương tác, trả hoa hồng thật cho các đơn nhỏ, sau đó nâng hạn mức đơn hàng lên hàng chục triệu rồi khóa lệnh rút tiền.",
-    "whatIsIt_en": "Model of scamming collaborators doing ladder tasks. Fraudsters lure job seekers to transfer money to pay for virtual orders to promote interaction, pay real commissions for small orders, then increase the order limit to tens of millions and then block the withdrawal order.",
+    "whatIsIt_en": "Mô hình lừa đảo cộng tác viên làm nhiệm vụ bậc thang. Kẻ gian dụ dỗ người tìm việc chuyển tiền thanh toán đơn hàng ảo để đẩy tương tác, trả hoa hồng thật cho các đơn nhỏ, sau đó nâng hạn mức đơn hàng lên hàng chục triệu rồi khóa lệnh rút tiền.",
     "howItWorks": [
       "Đăng tin tuyển dụng trên Facebook, TikTok: Tuyển người chốt đơn online, 30 phút/ngày, thu nhập 500k-1tr.",
       "Nạn nhân vào nhóm Telegram, làm đơn hàng 100k - 500k, được hoàn vốn kèm 20% hoa hồng về tài khoản ngân hàng thật.",
       "Khi nạn nhân tin tưởng, kẻ gian giao \"Nhiệm vụ VIP liên hoàn\" gồm 3 đơn: 5 triệu, 20 triệu, 50 triệu.",
       "Nạp xong 50 triệu, hệ thống báo \"Lỗi cú pháp nội dung chuyển khoản\", bắt nộp thêm 50 triệu tiền bảo hiểm để mở khóa toàn bộ số tiền."
-    ],
-    "howItWorks_en": [
-      "Post recruitment ads on Facebook, TikTok: Recruit people to close orders online, 30 minutes/day, income 500k-1 million.",
-      "The victim went to the Telegram group, made an order of 100k - 500k, and received a refund with 20% commission to his real bank account.",
-      "When the victim trusts, the crook assigns a \"Continuous VIP Mission\" consisting of 3 orders: 5 million, 20 million, 50 million.",
-      "After depositing 50 million, the system reported \"Transfer content syntax error\", forcing you to pay an additional 50 million insurance money to unlock the full amount."
     ],
     "warningSigns": [
       "Công việc online cực kỳ dễ dàng nhưng hứa hẹn hoa hồng cao bất thường (20-30%).",
@@ -1102,92 +620,51 @@
       "Toàn bộ giao dịch làm việc trao đổi qua nhóm Telegram nặc danh có nhiều tài khoản ảo liên tục khoe tiền.",
       "Bị từ chối rút tiền với đủ các lý do vô lý (sai cú pháp, chưa nộp thuế, bảo lãnh điểm tín nhiệm)."
     ],
-    "warningSigns_en": [
-      "Online jobs are extremely easy but promise unusually high commissions (20-30%).",
-      "Workers must pay their own pocket money in advance to do the task.",
-      "All transactions are exchanged through anonymous Telegram groups with many virtual accounts constantly showing off money.",
-      "Refused to withdraw money for all sorts of unreasonable reasons (wrong syntax, unpaid taxes, credit score guarantee)."
-    ],
     "redFlags": [
       "Số tài khoản nhận tiền nạp nhiệm vụ là số tài khoản cá nhân thay đổi liên tục sau mỗi lần chuyển."
-    ],
-    "redFlags_en": [
-      "The account number receiving the mission deposit is the personal account number that continuously changes after each transfer."
     ],
     "psychologicalTactics": [
       "Thả mồi bắt bóng: Cho ăn hoa hồng nhỏ ban đầu để tạo dựng niềm tin tuyệt đối.",
       "Tâm lý tiếc của (Sunk Cost Fallacy): Càng mất tiền càng cố nạp thêm để cứu vãn số tiền cũ."
-    ],
-    "psychologicalTactics_en": [
-      "Cast bait to catch the ball: Feed small roses initially to build absolute trust.",
-      "Sunk Cost Fallacy: The more money you lose, the more you try to top up to save the old money."
     ],
     "tactics": [
       "Chiêu trò thả mồi hoa hồng nhỏ",
       "Áp lực nhóm chim mồi Telegram",
       "Tạo rào cản rút tiền liên hoàn"
     ],
-    "tactics_en": [
-      "Tricks of baiting small roses",
-      "Telegram decoy group pressure",
-      "Create barriers to continuous withdrawal"
-    ],
     "whatScammersAskFor": [
       "Chuyển tiền liên tục vào các tài khoản ngân hàng chỉ định để thực hiện nhiệm vụ."
-    ],
-    "whatScammersAskFor_en": [
-      "Continuously transfer money to designated bank accounts to perform tasks."
     ],
     "howToVerify": [
       "Các sàn TMĐT lớn (Shopee, Lazada, Tiki) khẳng định KHÔNG BAO GIỜ tuyển cộng tác viên giật đơn qua Telegram hay Zalo.",
       "Không có công việc chân chính nào yêu cầu người đi làm phải chuyển tiền trước cho công ty."
     ],
-    "howToVerify_en": [
-      "Major e-commerce platforms (Shopee, Lazada, Tiki) affirm that they will NEVER recruit collaborators to solicit orders via Telegram or Zalo.",
-      "There is no real job that requires employees to transfer money to the company in advance."
-    ],
     "countermeasures": [
       "Tuyệt đối không tham gia các nhóm tuyển dụng làm nhiệm vụ online trên Telegram.",
       "Khi đã bị giữ tiền, phải DỪNG LẠI NGAY, nạp thêm chắc chắn sẽ mất thêm 100%."
     ],
-    "countermeasures_en": [
-      "Absolutely do not join online task recruitment groups on Telegram.",
-      "Once your money is withheld, you must STOP IMMEDIATELY, recharging will definitely result in a 100% loss."
-    ],
     "whatToDoIfTargeted": [
       "Rời nhóm Telegram, chặn liên lạc và không chuyển bất kỳ khoản tiền nào."
     ],
-    "whatToDoIfTargeted_en": [
-      "Leave the Telegram group, block communication and do not transfer any money."
-    ],
     "whatToDoIfCompromised": [
       "Cắt lỗ ngay lập tức, lưu lại toàn bộ ảnh chụp tin nhắn, số tài khoản kẻ lừa đảo và trình báo Công an."
-    ],
-    "whatToDoIfCompromised_en": [
-      "Cut your losses immediately, save all photos of messages, the scammer's account number and report to the police."
     ]
   },
   {
     "id": "forex-crypto-investment-scam",
     "title": "13. Lừa Đầu Tư Sàn Ngoại Hối Forex, Tiền Ảo (Crypto) Cam Kết Lãi Khủng",
-    "title_en": "13. Investment Scam Forex, Virtual Currency (Crypto) Commitment to Huge Profits",
+    "title_en": "13. Lừa Đầu Tư Sàn Ngoại Hối Forex, Tiền Ảo (Crypto) Cam Kết Lãi Khủng",
     "category": "Đầu tư & Tài chính ảo",
-    "category_en": "Crypto & Forex Investment Scams",
+    "category_en": "Đầu tư & Tài chính ảo",
     "shortDescription": "Lập sàn giao dịch tài chính ảo, cam kết lợi nhuận 30-50%/tháng, dùng biểu đồ can thiệp ngầm cho thắng liên tục lúc đầu rồi đánh cháy tài khoản.",
-    "shortDescription_en": "Set up a virtual financial trading floor, commit to a profit of 30-50%/month, use an underground intervention chart to win continuously at first and then burn your account.",
+    "shortDescription_en": "Lập sàn giao dịch tài chính ảo, cam kết lợi nhuận 30-50%/tháng, dùng biểu đồ can thiệp ngầm cho thắng liên tục lúc đầu rồi đánh cháy tài khoản.",
     "whatIsIt": "Tội phạm lập ra các sàn giao dịch Forex, quyền chọn nhị phân (BO), chứng khoán quốc tế hoặc tiền mã hóa không có giấy phép, cho chuyên gia đọc lệnh \"bao thắng\", điều chỉnh biểu đồ nến xanh đỏ từ hậu trường để chiếm đoạt toàn bộ tiền nạp của nhà đầu tư.",
-    "whatIsIt_en": "Criminals set up unlicensed Forex, binary options (BO), international securities or cryptocurrency trading floors, let experts read \"winning\" orders, and adjust red and green candlestick charts from behind the scenes to appropriate all investors' deposits.",
+    "whatIsIt_en": "Tội phạm lập ra các sàn giao dịch Forex, quyền chọn nhị phân (BO), chứng khoán quốc tế hoặc tiền mã hóa không có giấy phép, cho chuyên gia đọc lệnh \"bao thắng\", điều chỉnh biểu đồ nến xanh đỏ từ hậu trường để chiếm đoạt toàn bộ tiền nạp của nhà đầu tư.",
     "howItWorks": [
       "Kết bạn qua mạng xã hội, khoe cuộc sống sang chảnh, xe sang, nhà đẹp nhờ đầu tư tài chính 4.0.",
       "Mời nạn nhân vào nhóm \"VIP Kéo Vốn\" có chuyên gia đọc lệnh cam kết lợi nhuận 1-3%/ngày, bảo toàn vốn 100%.",
       "Nạn nhân nạp thử vài triệu, thấy tài khoản trên web tăng vọt lên hàng chục triệu và rút được thử một khoản nhỏ.",
       "Khi nạn nhân dốc hết tiền tiết kiệm, vay mượn nạp hàng trăm triệu đến hàng tỷ đồng, sàn sẽ khóa lệnh rút hoặc cố tình đánh cháy tài khoản trong 1 đêm."
-    ],
-    "howItWorks_en": [
-      "Make friends through social networks, show off your luxurious life, luxury cars, and beautiful houses thanks to 4.0 financial investment.",
-      "Invite the victim to the \"VIP Capital Pull\" group where an expert will read the order and commit to profit 1-3%/day, preserving 100% capital.",
-      "The victim tried depositing a few million, saw his account on the web skyrocket to tens of millions and withdrew a small amount.",
-      "When the victim exhausts all their savings or borrows hundreds of millions to billions of dong, the exchange will block the withdrawal order or intentionally burn the account overnight."
     ],
     "warningSigns": [
       "Cam kết lợi nhuận cố định cao phi lý (30-100%/tháng), bao lỗ 100%.",
@@ -1195,265 +672,149 @@
       "Yêu cầu nạp tiền bằng cách chuyển khoản vào tài khoản cá nhân của người trung gian hoặc mua USDT.",
       "Khi rút tiền lớn, sàn bắt nộp thêm \"Phí thuế thu nhập cá nhân 20%\", \"Phí xác minh rửa tiền\"..."
     ],
-    "warningSigns_en": [
-      "Commitment to unreasonably high fixed profits (30-100%/month), 100% loss cover.",
-      "The trading floor is not licensed to operate by the State Bank or the Vietnam Securities Commission.",
-      "Request a deposit by transferring money to the intermediary's personal account or buying USDT.",
-      "When withdrawing large amounts of money, the exchange requires additional payment of \"Personal Income Tax Fee of 20%\", \"Money Laundering Verification Fee\"..."
-    ],
     "redFlags": [
       "Tên miền sàn giao dịch thay đổi liên tục, máy chủ đặt tại nước ngoài.",
       "Các thành viên trong nhóm liên tục gửi ảnh chụp màn hình nhận tiền lãi hàng tỷ đồng (chim mồi)."
     ],
-    "redFlags_en": [
-      "The exchange domain name changes constantly, servers are located abroad.",
-      "Group members continuously sent screenshots of receiving billions of dong in profits (decoy)."
-    ],
     "psychologicalTactics": [
       "Kích thích lòng tham làm giàu nhanh chóng không cần lao động.",
       "Tạo hiệu ứng FOMO (sợ bỏ lỡ cơ hội làm giàu) qua các hình ảnh khoe tiền của chuyên gia."
-    ],
-    "psychologicalTactics_en": [
-      "Stimulating greed to get rich quickly without labor.",
-      "Create a FOMO effect (fear of missing out on opportunities to get rich) through images of experts showing off money."
     ],
     "tactics": [
       "Thao túng biểu đồ nến ngầm",
       "Cam kết lợi nhuận siêu thực",
       "Khóa cổng rút tiền bằng các loại phí ma"
     ],
-    "tactics_en": [
-      "Implicit candlestick chart manipulation",
-      "Commitment to surreal profits",
-      "Lock the withdrawal port with ghost fees"
-    ],
     "whatScammersAskFor": [
       "Nạp tiền mặt qua tài khoản ngân hàng hoặc chuyển tiền mã hóa USDT vào ví sàn."
-    ],
-    "whatScammersAskFor_en": [
-      "Deposit cash via bank account or transfer USDT cryptocurrency to exchange wallet."
     ],
     "howToVerify": [
       "Việt Nam chưa cấp phép cho bất kỳ sàn giao dịch Forex hay tiền ảo nào hoạt động.",
       "Mọi lời hứa \"đầu tư không rủi ro, lãi suất trên 20%/năm\" đều là lừa đảo mô hình Ponzi."
     ],
-    "howToVerify_en": [
-      "Vietnam has not licensed any Forex or virtual currency exchange to operate.",
-      "Any promise of \"risk-free investment, interest rate over 20%/year\" is a Ponzi model scam."
-    ],
     "countermeasures": [
       "Chỉ đầu tư qua các công ty chứng khoán, ngân hàng được Nhà nước cấp phép chính thức.",
       "Không tin vào các \"chuyên gia đọc lệnh\", \"thầy kéo vốn\" trên mạng xã hội."
     ],
-    "countermeasures_en": [
-      "Only invest through securities companies and banks officially licensed by the State.",
-      "Do not believe in \"order reading experts\" and \"capital solicitation teachers\" on social networks."
-    ],
     "whatToDoIfTargeted": [
       "Không nạp tiền, rời khỏi các hội nhóm đầu tư tài chính lạ."
     ],
-    "whatToDoIfTargeted_en": [
-      "Do not deposit money, leave strange financial investment groups."
-    ],
     "whatToDoIfCompromised": [
       "Tuyệt đối không nạp thêm các khoản phí \"thuế giải ngân\", làm đơn tố giác kèm nhật ký chuyển khoản gửi Cơ quan CSĐT."
-    ],
-    "whatToDoIfCompromised_en": [
-      "Absolutely do not add additional \"disbursement tax\" fees, make a complaint with the transfer log to the Investigation Police Agency."
     ]
   },
   {
     "id": "kid-model-online-contest-scam",
     "title": "14. Tuyển Mẫu Nhí, Bình Chọn Cuộc Thi Online Đòi Tiền Đặt Cọc",
-    "title_en": "14. Child Model Recruitment, Online Contest Voting Requires Deposit",
+    "title_en": "14. Tuyển Mẫu Nhí, Bình Chọn Cuộc Thi Online Đòi Tiền Đặt Cọc",
     "category": "Tuyển dụng & Cuộc thi",
-    "category_en": "Recruitment & Competitions",
+    "category_en": "Tuyển dụng & Cuộc thi",
     "shortDescription": "Mạo danh các thương hiệu thời trang trẻ em tuyển mẫu nhí hoặc bình chọn tài năng, dụ phụ huynh làm nhiệm vụ mua sắm nâng điểm tín nhiệm.",
-    "shortDescription_en": "Impersonating children's fashion brands to recruit child models or vote on talent, luring parents into shopping tasks to increase credit scores.",
+    "shortDescription_en": "Mạo danh các thương hiệu thời trang trẻ em tuyển mẫu nhí hoặc bình chọn tài năng, dụ phụ huynh làm nhiệm vụ mua sắm nâng điểm tín nhiệm.",
     "whatIsIt": "Hình thức lừa đảo nhắm vào tình yêu thương và sự tự hào của cha mẹ đối với con cái. Kẻ gian lập fanpage giả mạo hãng thời trang (Canifa, KidsPlaza...) thông báo tuyển mẫu nhí, sau đó bắt phụ huynh làm các bài khảo sát nạp tiền thanh toán để con được lọt vào vòng trong.",
-    "whatIsIt_en": "This form of fraud targets the love and pride of parents towards their children. Thieves set up fanpages impersonating fashion companies (Canifa, KidsPlaza...) announcing recruitment of child models, then forcing parents to take surveys to top up payments so that their children can get into the next round.",
+    "whatIsIt_en": "Hình thức lừa đảo nhắm vào tình yêu thương và sự tự hào của cha mẹ đối với con cái. Kẻ gian lập fanpage giả mạo hãng thời trang (Canifa, KidsPlaza...) thông báo tuyển mẫu nhí, sau đó bắt phụ huynh làm các bài khảo sát nạp tiền thanh toán để con được lọt vào vòng trong.",
     "howItWorks": [
       "Chạy quảng cáo tuyển mẫu ảnh nhí với cát-xê hàng triệu đồng mỗi buổi chụp, bao vé máy bay du lịch.",
       "Phụ huynh đăng ký ảnh con, được thông báo con đã lọt vào \"Vòng xét duyệt cuối cùng\".",
       "Yêu cầu phụ huynh tham gia nhóm thử thách để \"tăng điểm tín nhiệm thương hiệu\" bằng cách mua đơn hàng hoàn tiền.",
       "Ban đầu hoàn tiền thật, sau đó đơn hàng lên tới 50-100 triệu thì chiếm đoạt toàn bộ."
     ],
-    "howItWorks_en": [
-      "Run ads recruiting child photo models with salaries of millions of dong per photo shoot, including airfare and travel.",
-      "Parents register their child's photo and are informed that their child has entered the \"Final Review Round\".",
-      "Ask parents to join a challenge group to \"increase brand credit\" by purchasing a refundable order.",
-      "Initially, real money was refunded, then orders of up to 50-100 million were taken over."
-    ],
     "warningSigns": [
       "Tuyển mẫu nhí qua mạng xã hội không yêu cầu casting trực tiếp mà chỉ yêu cầu làm nhiệm vụ chuyển tiền.",
       "Fanpage mới thành lập, tương tác ảo, không có dấu tích xanh chính chủ của thương hiệu.",
       "Ép phụ huynh nạp tiền để con đạt giải thưởng hoặc được chọn làm đại sứ thương hiệu."
     ],
-    "warningSigns_en": [
-      "Recruiting child models via social networks does not require direct casting but only requires money transfer tasks.",
-      "Newly established fanpage, virtual interaction, no green traces of the brand's owner.",
-      "Forcing parents to deposit money so their children can win prizes or be chosen as brand ambassadors."
-    ],
     "redFlags": [
       "Các bài thi bình chọn yêu cầu nạp tiền để mua lượt vote hoặc nạp điểm thử thách."
-    ],
-    "redFlags_en": [
-      "Voting contests require depositing money to buy votes or add challenge points."
     ],
     "psychologicalTactics": [
       "Đánh vào tâm lý yêu thương con cái, mong muốn con tỏa sáng và nổi tiếng của phụ huynh.",
       "Tạo sự cạnh tranh giữa các phụ huynh trong nhóm chat để thúc đẩy nạp tiền."
-    ],
-    "psychologicalTactics_en": [
-      "Tapping into parents' psychology of loving their children and wanting them to shine and be famous.",
-      "Create competition among parents in the chat group to promote deposits."
     ],
     "tactics": [
       "Lợi dụng tình thương con cái",
       "Giả danh thương hiệu thời trang",
       "Biến tướng thành bẫy nạp tiền"
     ],
-    "tactics_en": [
-      "Taking advantage of children's love",
-      "Impersonating a fashion brand",
-      "Turn your appearance into a deposit trap"
-    ],
     "whatScammersAskFor": [
       "Chuyển tiền mua sản phẩm thử thách, tiền cọc trang phục, phí bảo hiểm hình ảnh."
-    ],
-    "whatScammersAskFor_en": [
-      "Transfer money to buy challenge products, costume deposits, and image insurance fees."
     ],
     "howToVerify": [
       "Liên hệ trực tiếp hotline hoặc fanpage có tích xanh chính thức của thương hiệu để xác minh chương trình.",
       "Các công ty người mẫu chân chính luôn casting trực tiếp và không bao giờ thu tiền làm nhiệm vụ của phụ huynh."
     ],
-    "howToVerify_en": [
-      "Contact directly the hotline or fanpage with the brand's official green badge to verify the program.",
-      "Genuine modeling agencies always cast directly and never charge parents for their duties."
-    ],
     "countermeasures": [
       "Không tham gia các cuộc thi bình chọn online yêu cầu chuyển tiền hoặc đăng nhập tài khoản lạ."
-    ],
-    "countermeasures_en": [
-      "Do not participate in online voting contests that require money transfer or logging into unfamiliar accounts."
     ],
     "whatToDoIfTargeted": [
       "Từ chối tham gia, cảnh báo các phụ huynh khác trong các hội nhóm nuôi dạy con."
     ],
-    "whatToDoIfTargeted_en": [
-      "Refuse to participate, warn other parents in parenting groups."
-    ],
     "whatToDoIfCompromised": [
       "Ngừng chuyển tiền ngay, thu thập chứng cứ chuyển khoản để nộp cơ quan công an."
-    ],
-    "whatToDoIfCompromised_en": [
-      "Stop transferring money immediately, collect evidence of transfer to submit to the police."
     ]
   },
   {
     "id": "pig-butchering-romance-scam",
     "title": "15. Lừa Đảo Tình Cảm \"Bẫy Mồi Heo\" (Pig Butchering) & Gửi Quà Ngoại Quốc",
-    "title_en": "15. Pig Butchering & Sending Foreign Gifts",
+    "title_en": "15. Lừa Đảo Tình Cảm \"Bẫy Mồi Heo\" (Pig Butchering) & Gửi Quà Ngoại Quốc",
     "category": "Lừa đảo Tình cảm & Xuyên biên giới",
-    "category_en": "Romance & Cross-Border Fraud",
+    "category_en": "Lừa đảo Tình cảm & Xuyên biên giới",
     "shortDescription": "Đóng vai doanh nhân thành đạt/Việt kiều kết bạn làm quen, xây dựng quan hệ yêu đương rồi dụ đầu tư sàn ảo hoặc báo quà triệu USD bị hải quan giữ.",
-    "shortDescription_en": "Playing the role of a successful businessman/overseas Vietnamese, making friends, building a love relationship, then luring them into investing in a virtual exchange or reporting millions of dollars in gifts that are kept by customs.",
+    "shortDescription_en": "Đóng vai doanh nhân thành đạt/Việt kiều kết bạn làm quen, xây dựng quan hệ yêu đương rồi dụ đầu tư sàn ảo hoặc báo quà triệu USD bị hải quan giữ.",
     "whatIsIt": "Thủ đoạn lừa đảo tinh vi kéo dài nhiều tháng. Kẻ gian xây dựng hình tượng giàu có, quan tâm chăm sóc nạn nhân qua mạng, tạo dựng tình cảm yêu đương sâu đậm, sau đó dụ nạn nhân cùng nạp tiền đầu tư hoặc đóng phí hải quan để nhận kiện hàng quà tặng đắt tiền.",
-    "whatIsIt_en": "The sophisticated scam lasted for many months. The crooks build a rich image, take care of the victim online, create a deep love relationship, then lure the victim to invest money or pay customs fees to receive expensive gift packages.",
+    "whatIsIt_en": "Thủ đoạn lừa đảo tinh vi kéo dài nhiều tháng. Kẻ gian xây dựng hình tượng giàu có, quan tâm chăm sóc nạn nhân qua mạng, tạo dựng tình cảm yêu đương sâu đậm, sau đó dụ nạn nhân cùng nạp tiền đầu tư hoặc đóng phí hải quan để nhận kiện hàng quà tặng đắt tiền.",
     "howItWorks": [
       "Kẻ gian dùng ảnh đại diện người mẫu, doanh nhân, bác sĩ quân y nước ngoài kết bạn làm quen qua Tinder, Facebook.",
       "Nhắn tin trò chuyện mỗi ngày, quan tâm ân cần, hứa hẹn về tương lai hôn nhân hạnh phúc.",
       "Kịch bản 1: Khoe mình có bí quyết đầu tư tài chính/tiền số, rủ nạn nhân cùng chơi để \"tích lũy tiền mua nhà chung\", ban đầu cho rút lãi rồi dụ nạp hàng tỷ đồng.",
       "Kịch bản 2: Bảo đã gửi thùng quà chứa hàng triệu USD, vàng bạc về Việt Nam tặng, sau đó có đối tượng giả danh nhân viên hải quan sân bay gọi điện đòi nộp phí phạt, phí rửa tiền để nhận hàng."
     ],
-    "howItWorks_en": [
-      "Thieves use profile pictures of foreign models, businessmen, and military doctors to make friends via Tinder and Facebook.",
-      "Texting and chatting every day, caring attentively, promising a happy married future.",
-      "Scenario 1: Shows off that he has the secret to financial/digital investment, invites the victim to play together to \"accumulate money to buy a house together\", initially lets them withdraw profits and then lures them into depositing billions of dong.",
-      "Scenario 2: Bao sent a gift box containing millions of dollars, gold and silver back to Vietnam as gifts, then someone impersonating an airport customs officer called to demand payment of fines and money laundering fees to receive the goods."
-    ],
     "warningSigns": [
       "Người yêu qua mạng chưa từng gặp mặt trực tiếp ngoài đời hoặc luôn viện lý do từ chối gọi video rõ mặt.",
       "Hình ảnh cuộc sống quá hoàn hảo, giàu sang bất thường nhưng lại chia sẻ các cơ hội đầu tư bí mật.",
       "Có người tự xưng hải quan/sân bay yêu cầu chuyển tiền phạt vào tài khoản cá nhân để thông quan quà tặng."
     ],
-    "warningSigns_en": [
-      "The online lover has never met in person in real life or always makes excuses for refusing to make face-to-face video calls.",
-      "The image of life being too perfect, unusually rich but sharing secret investment opportunities.",
-      "Someone claiming to be at customs/airport asked to transfer the fine to a personal account to clear the gift."
-    ],
     "redFlags": [
       "Yêu cầu chuyển tiền vào các số tài khoản cá nhân tại Việt Nam để đóng thuế/phí hải quan quốc tế."
-    ],
-    "redFlags_en": [
-      "Request to transfer money to personal account numbers in Vietnam to pay international taxes/customs fees."
     ],
     "psychologicalTactics": [
       "Nuôi dưỡng lòng tin và cảm xúc yêu thương mù quáng trong thời gian dài (vỗ béo con mồi).",
       "Đánh vào sự cô đơn, khát khao tìm kiếm bạn đời của những người độc thân hoặc đổ vỡ tình cảm."
-    ],
-    "psychologicalTactics_en": [
-      "Cultivating blind trust and feelings of love over a long period of time (fattening the prey).",
-      "Targets the loneliness, desire to find a life partner of single or emotionally broken people."
     ],
     "tactics": [
       "Xây dựng hình tượng hoàn hảo",
       "Chiến thuật mưa dầm thấm lâu",
       "Kịch bản quà tặng hải quan"
     ],
-    "tactics_en": [
-      "Build the perfect image",
-      "Tactics of rain soaking for a long time",
-      "Customs gift scenario"
-    ],
     "whatScammersAskFor": [
       "Chuyển tiền đầu tư vào sàn ảo theo hướng dẫn của \"người yêu\".",
       "Chuyển tiền đóng phí hải quan, phí vận chuyển quốc tế, phí hối lộ nhân viên sân bay."
-    ],
-    "whatScammersAskFor_en": [
-      "Transfer investment money to the virtual exchange according to the instructions of your \"lover\".",
-      "Transfer money to pay customs fees, international shipping fees, and bribe airport staff fees."
     ],
     "howToVerify": [
       "Hải quan và cơ quan nhà nước không bao giờ làm việc qua điện thoại yêu cầu nộp tiền phạt vào tài khoản cá nhân.",
       "Tìm kiếm ngược hình ảnh (Google Reverse Image Search) của người đó để phát hiện ảnh người nổi tiếng bị trộm."
     ],
-    "howToVerify_en": [
-      "Customs and state agencies never work over the phone asking to pay fines to personal accounts.",
-      "Google Reverse Image Search of that person to detect stolen celebrity photos."
-    ],
     "countermeasures": [
       "Tuyệt đối không gửi tiền, không đầu tư tài chính theo lời rủ rê của bất kỳ ai quen qua mạng xã hội.",
       "Luôn cảnh giác với những mối quan hệ \"quá hoàn hảo\" trên không gian ảo."
     ],
-    "countermeasures_en": [
-      "Absolutely do not send money or make financial investments at the invitation of anyone you know through social networks.",
-      "Always be wary of \"too perfect\" relationships in cyberspace."
-    ],
     "whatToDoIfTargeted": [
       "Cắt đứt liên lạc, chặn tài khoản ngay lập tức."
     ],
-    "whatToDoIfTargeted_en": [
-      "Cut off contact and block account immediately."
-    ],
     "whatToDoIfCompromised": [
       "Trình báo cơ quan công an kèm lịch sử trò chuyện và tài khoản ngân hàng thụ hưởng."
-    ],
-    "whatToDoIfCompromised_en": [
-      "Report to the police with chat history and beneficiary bank account."
     ]
   },
   {
     "id": "fast-online-loan-insurance-fee",
     "title": "16. Tư Vấn Vay Tiền Online Thủ Tục Siêu Tốc Ép Nộp Phí Bảo Hiểm Khoản Vay",
-    "title_en": "16. Online Loan Consulting, Speedy Procedures for Payment of Loan Insurance Fees",
+    "title_en": "16. Tư Vấn Vay Tiền Online Thủ Tục Siêu Tốc Ép Nộp Phí Bảo Hiểm Khoản Vay",
     "category": "Tín dụng & Vay tiền ảo",
-    "category_en": "Credit & Virtual Loans",
+    "category_en": "Tín dụng & Vay tiền ảo",
     "shortDescription": "Mồi nhử duyệt vay 50-200 triệu không cần thế chấp, sau đó báo lỗi số tài khoản và ép nộp phí bảo hiểm khoản vay 10-20% mới được giải ngân.",
-    "shortDescription_en": "Decoy to approve a loan of 50-200 million without collateral, then report an error in the account number and force a loan insurance fee of 10-20% to be disbursed.",
+    "shortDescription_en": "Mồi nhử duyệt vay 50-200 triệu không cần thế chấp, sau đó báo lỗi số tài khoản và ép nộp phí bảo hiểm khoản vay 10-20% mới được giải ngân.",
     "whatIsIt": "Kẻ lừa đảo lập các trang web/ứng dụng cho vay tiền online giả mạo với điều kiện cực kỳ dễ dàng (chỉ cần CCCD, duyệt tiền trong 5 phút). Khi hồ sơ được duyệt, kẻ gian cố tình chỉnh sửa sai 1 chữ số trong số tài khoản ngân hàng của nạn nhân rồi bắt nộp tiền \"sửa hồ sơ\" và \"phí bảo hiểm\".",
-    "whatIsIt_en": "Fraudsters set up fake online money lending websites/applications with extremely easy conditions (just CCCD, approve money in 5 minutes). When the application was approved, the crooks deliberately edited one wrong digit in the victim's bank account number and then forced them to pay money for \"file correction\" and \"insurance fee\".",
+    "whatIsIt_en": "Kẻ lừa đảo lập các trang web/ứng dụng cho vay tiền online giả mạo với điều kiện cực kỳ dễ dàng (chỉ cần CCCD, duyệt tiền trong 5 phút). Khi hồ sơ được duyệt, kẻ gian cố tình chỉnh sửa sai 1 chữ số trong số tài khoản ngân hàng của nạn nhân rồi bắt nộp tiền \"sửa hồ sơ\" và \"phí bảo hiểm\".",
     "howItWorks": [
       "Nạn nhân cần tiền gấp đăng ký vay 50 triệu trên web/app vay tiền qua mạng.",
       "Hệ thống hiện thông báo \"Khoản vay 50.000.000đ đã được duyệt thành công vào ví ảo\".",
@@ -1461,634 +822,355 @@
       "Nhân viên hỗ trợ gọi điện bảo nạn nhân phải chuyển 10 triệu (20% khoản vay) để xác minh chính chủ và mở khóa, hứa sẽ hoàn trả kèm tiền vay.",
       "Nộp xong 10 triệu, kẻ gian tiếp tục bịa ra các lỗi: Phí bảo hiểm rủi ro, Phí nâng điểm tín dụng... bòn rút đến khi nạn nhân kiệt quệ."
     ],
-    "howItWorks_en": [
-      "The victim needed money urgently and registered for a loan of 50 million on an online loan website/app.",
-      "The system displays a notification \"The loan of 50,000,000 VND has been successfully approved into the virtual wallet\".",
-      "When pressing withdraw money, the system reports an error: \"Wrong bank account number, account frozen by security\".",
-      "The support staff called and told the victim to transfer 10 million (20% of the loan) to verify the owner and unlock it, promising to repay the loan along with the loan.",
-      "After paying 10 million, the crooks continue to make up errors: Risk insurance fees, Credit score enhancement fees... to extort until the victim is exhausted."
-    ],
     "warningSigns": [
       "Cho vay số tiền lớn với lãi suất siêu rẻ, thủ tục quá đơn giản không cần chứng minh thu nhập.",
       "Bắt người đi vay phải chuyển tiền phí trước (phí hồ sơ, phí bảo hiểm, phí giải ngân).",
       "Cố tình báo lỗi sai thông tin tài khoản để đòi tiền mở khóa."
     ],
-    "warningSigns_en": [
-      "Loan large amounts of money with super cheap interest rates, very simple procedures, no need to prove income.",
-      "Force the borrower to transfer fees in advance (application fee, insurance fee, disbursement fee).",
-      "Intentionally reporting incorrect account information to demand money to unlock it."
-    ],
     "redFlags": [
       "Công ty tài chính bắt nộp tiền vào số tài khoản cá nhân của nhân viên thẩm định."
-    ],
-    "redFlags_en": [
-      "The financial company requires payment to the appraiser's personal account number."
     ],
     "psychologicalTactics": [
       "Lợi dụng thế yếu và sự túng quẫn tài chính của người đang cần tiền gấp.",
       "Tâm lý tiếc khoản vay đã được duyệt khiến nạn nhân đi vay mượn thêm để nộp phí."
-    ],
-    "psychologicalTactics_en": [
-      "Taking advantage of the weakness and financial hardship of people who need money urgently.",
-      "The feeling of regret that the loan has been approved causes the victim to borrow more to pay the fees."
     ],
     "tactics": [
       "Cố tình tạo lỗi sai số tài khoản",
       "Bẫy phí trước giải ngân",
       "Đe dọa khởi kiện hợp đồng"
     ],
-    "tactics_en": [
-      "Intentionally creating an error with the wrong account number",
-      "Pre-disbursement fee trap",
-      "Threatening to sue the contract"
-    ],
     "whatScammersAskFor": [
       "Chuyển khoản nộp phí thẩm định, phí bảo hiểm khoản vay từ 10% đến 50% giá trị hợp đồng vay."
-    ],
-    "whatScammersAskFor_en": [
-      "Transfer payment of appraisal fee and loan insurance fee from 10% to 50% of loan contract value."
     ],
     "howToVerify": [
       "Các ngân hàng và công ty tài chính hợp pháp KHÔNG BAO GIỜ yêu cầu khách hàng nộp tiền trước để được giải ngân khoản vay.",
       "Mọi khoản phí hợp pháp đều được trừ trực tiếp vào số tiền giải ngân thực nhận."
     ],
-    "howToVerify_en": [
-      "Legitimate banks and financial companies NEVER require customers to pay money in advance for loan disbursement.",
-      "All legal fees are deducted directly from the actual disbursement amount received."
-    ],
     "countermeasures": [
       "Chỉ vay vốn tại các ngân hàng thương mại hoặc công ty tài chính được Ngân hàng Nhà nước cấp phép.",
       "Không tin các ứng dụng vay tiền trôi nổi trên mạng xã hội."
     ],
-    "countermeasures_en": [
-      "Only borrow capital from commercial banks or financial companies licensed by the State Bank.",
-      "Don't trust loan applications floating around on social networks."
-    ],
     "whatToDoIfTargeted": [
       "Hủy bỏ giao dịch, không nộp bất kỳ một khoản tiền phí nào."
     ],
-    "whatToDoIfTargeted_en": [
-      "Cancel the transaction, do not pay any fees."
-    ],
     "whatToDoIfCompromised": [
       "Dừng nộp tiền ngay, không sợ lời đe dọa \"khởi kiện vì hủy hợp đồng\" của kẻ gian vì hợp đồng vay ảo không có giá trị pháp lý."
-    ],
-    "whatToDoIfCompromised_en": [
-      "Stop paying money immediately, don't be afraid of the scammer's threat of \"sue for canceling the contract\" because the virtual loan contract has no legal value."
     ]
   },
   {
     "id": "traffic-fine-cold-penalty-scam",
     "title": "17. Cảnh Báo Phạt Nguội Vi Phạm Giao Thông Qua Điện Thoại Ép Chuyển Tiền",
-    "title_en": "17. Warning of Fines for Traffic Violation Using Phones to Force Money Transfer",
+    "title_en": "17. Cảnh Báo Phạt Nguội Vi Phạm Giao Thông Qua Điện Thoại Ép Chuyển Tiền",
     "category": "Giả danh Cơ quan chức năng",
-    "category_en": "Impersonating Authorities",
+    "category_en": "Giả danh Cơ quan chức năng",
     "shortDescription": "Cuộc gọi tự xưng Cảnh sát giao thông thông báo xe ô tô/xe máy của bạn có biên bản phạt nguội 15-30 triệu, dọa tước bằng lái nếu không chuyển nộp phạt ngay.",
-    "shortDescription_en": "Call claiming to be the Traffic Police informing you that your car/motorbike has a fine of 15-30 million, threatening to revoke your driver's license if you don't pay the fine immediately.",
+    "shortDescription_en": "Cuộc gọi tự xưng Cảnh sát giao thông thông báo xe ô tô/xe máy của bạn có biên bản phạt nguội 15-30 triệu, dọa tước bằng lái nếu không chuyển nộp phạt ngay.",
     "whatIsIt": "Kẻ lừa đảo đóng giả cán bộ Đội Cảnh sát giao thông hoặc Cục Cảnh sát giao thông, thông báo phương tiện của nạn nhân bị camera ghi lại vi phạm gây tai nạn rồi bỏ trốn hoặc vượt đèn đỏ tại địa phương khác, yêu cầu chuyển tiền phạt vào tài khoản cá nhân để xử lý nhanh.",
-    "whatIsIt_en": "The scammer impersonates an officer of the Traffic Police Team or Traffic Police Department, informs that the victim's vehicle was recorded on camera causing an accident and then flees or runs a red light in another locality, requesting that the fine be transferred to a personal account for quick processing.",
+    "whatIsIt_en": "Kẻ lừa đảo đóng giả cán bộ Đội Cảnh sát giao thông hoặc Cục Cảnh sát giao thông, thông báo phương tiện của nạn nhân bị camera ghi lại vi phạm gây tai nạn rồi bỏ trốn hoặc vượt đèn đỏ tại địa phương khác, yêu cầu chuyển tiền phạt vào tài khoản cá nhân để xử lý nhanh.",
     "howItWorks": [
       "Gọi điện thoại xưng là Cán bộ CSGT thông báo xe biển số ... vi phạm lỗi nghiêm trọng.",
       "Hỏi nạn nhân có muốn \"nộp phạt online xử lý tại chỗ\" để không bị gửi giấy báo về cơ quan và giữ bằng lái không.",
       "Gửi số tài khoản cá nhân bảo đây là tài khoản của kho bạc/cán bộ thụ lý hồ sơ.",
       "Sau khi nhận tiền xong, kẻ gian lập tức cắt đứt mọi liên lạc."
     ],
-    "howItWorks_en": [
-      "Called claiming to be a Traffic Police Officer to report that the vehicle's license plate... had committed a serious violation.",
-      "Ask the victim if he wants to \"pay the fine online and have it processed on the spot\" so that he doesn't have to send a notice to the agency and keeps his driver's license.",
-      "Send your personal account number, stating that this is the account of the treasury/document handling officer.",
-      "After receiving the money, the thief immediately cut off all contact."
-    ],
     "warningSigns": [
       "CSGT thông báo vi phạm phạt nguội qua điện thoại (Quy định: CSGT chỉ gửi thông báo bằng văn bản giấy có dấu đỏ về địa chỉ chủ xe).",
       "Yêu cầu nộp tiền phạt giao thông qua số tài khoản ngân hàng cá nhân.",
       "Hối thúc chuyển tiền ngay trong ngày kẻo bị niêm phong phương tiện."
     ],
-    "warningSigns_en": [
-      "Traffic police notify cold violations by phone (Regulation: Traffic police only send notices in writing with a red stamp to the vehicle owner's address).",
-      "Request to pay traffic fines via personal bank account number.",
-      "Urge to transfer money on the same day to avoid having your vehicle sealed."
-    ],
     "redFlags": [
       "Đọc sai thông tin loại xe hoặc vi phạm tại địa phương mà nạn nhân chưa từng lái xe đến."
-    ],
-    "redFlags_en": [
-      "Wrong information about vehicle type or violation in a locality where the victim has never driven."
     ],
     "psychologicalTactics": [
       "Đánh vào tâm lý sợ phiền phức, sợ bị giữ bằng lái hoặc bị phạt nặng hơn.",
       "Lợi dụng tâm lý muốn \"nộp phạt nhanh gọn\" của người dân."
-    ],
-    "psychologicalTactics_en": [
-      "Attacks the fear of trouble, fear of having your driver's license suspended or being fined more severely.",
-      "Taking advantage of people's desire to \"pay fines quickly\"."
     ],
     "tactics": [
       "Mạo danh CSGT",
       "Đe dọa tước bằng lái xe",
       "Lừa chuyển tiền nộp phạt vào tài khoản cá nhân"
     ],
-    "tactics_en": [
-      "Impersonating a traffic police officer",
-      "Threaten to revoke driver's license",
-      "Fraudulent transfer of fine payment to personal account"
-    ],
     "whatScammersAskFor": [
       "Chuyển tiền nộp phạt vi phạm giao thông từ 3 triệu đến 25 triệu đồng."
-    ],
-    "whatScammersAskFor_en": [
-      "Transfer money to pay traffic violation fines from 3 million to 25 million VND."
     ],
     "howToVerify": [
       "Tra cứu phạt nguội chính xác 100% trên Cổng thông tin Cục Cảnh sát Giao thông (`csgt.vn`) hoặc Cổng Dịch vụ công Quốc gia.",
       "Cơ quan CSGT KHÔNG BAO GIỜ gọi điện thoại đòi tiền phạt trực tiếp."
     ],
-    "howToVerify_en": [
-      "Look up fines with 100% accuracy on the Traffic Police Department Information Portal (`csgt.vn`) or the National Public Service Portal.",
-      "Traffic police NEVER call to ask for fines directly."
-    ],
     "countermeasures": [
       "Nộp phạt giao thông chỉ thực hiện tại Kho bạc Nhà nước hoặc qua Cổng Dịch vụ công Quốc gia."
-    ],
-    "countermeasures_en": [
-      "Paying traffic fines can only be done at the State Treasury or through the National Public Service Portal."
     ],
     "whatToDoIfTargeted": [
       "Dập máy ngay, tự vào trang web `csgt.vn` nhập biển số xe để kiểm tra."
     ],
-    "whatToDoIfTargeted_en": [
-      "Hang up immediately, go to the website 'csgt.vn' and enter the license plate number to check."
-    ],
     "whatToDoIfCompromised": [
       "Báo cáo cho cơ quan công an địa phương kèm thông tin số điện thoại và số tài khoản kẻ lừa đảo."
-    ],
-    "whatToDoIfCompromised_en": [
-      "Report to the local police agency with the scammer's phone number and account number."
     ]
   },
   {
     "id": "evn-electricity-cut-threat-scam",
     "title": "18. Giả Danh Điện Lực EVN Đe Dọa Cắt Điện Sinh Hoạt Ép Thanh Toán Gấp",
-    "title_en": "18. Impersonating EVN Electricity, Threatening to Cut Off Electricity to Homes, Forcing Urgent Payment",
+    "title_en": "18. Giả Danh Điện Lực EVN Đe Dọa Cắt Điện Sinh Hoạt Ép Thanh Toán Gấp",
     "category": "Giả danh Doanh nghiệp Dịch vụ",
-    "category_en": "Impersonating a Service Business",
+    "category_en": "Giả danh Doanh nghiệp Dịch vụ",
     "shortDescription": "Mạo danh Tổng công ty Điện lực gọi điện dọa gia đình nợ cước 2-5 triệu và sẽ ngắt điện sinh hoạt sau 2 giờ nếu không chuyển khoản thanh toán gấp.",
-    "shortDescription_en": "Impersonating the Electricity Corporation, called and threatened that the family owed 2-5 million and would cut off electricity after 2 hours if the payment was not transferred urgently.",
+    "shortDescription_en": "Mạo danh Tổng công ty Điện lực gọi điện dọa gia đình nợ cước 2-5 triệu và sẽ ngắt điện sinh hoạt sau 2 giờ nếu không chuyển khoản thanh toán gấp.",
     "whatIsIt": "Kẻ lừa đảo đóng giả nhân viên thu cước của Tập đoàn Điện lực Việt Nam (EVN), gọi điện thoại vào các khung giờ cao điểm hoặc thời tiết nắng nóng, dọa cắt điện nhà ở/cơ sở kinh doanh nếu không chuyển khoản thanh toán tiền điện nợ đọng.",
-    "whatIsIt_en": "The scammer impersonates a bill collector of Vietnam Electricity Group (EVN), calls during peak hours or hot weather, and threatens to cut off electricity to the house/business if the outstanding electricity bill payment is not remitted.",
+    "whatIsIt_en": "Kẻ lừa đảo đóng giả nhân viên thu cước của Tập đoàn Điện lực Việt Nam (EVN), gọi điện thoại vào các khung giờ cao điểm hoặc thời tiết nắng nóng, dọa cắt điện nhà ở/cơ sở kinh doanh nếu không chuyển khoản thanh toán tiền điện nợ đọng.",
     "howItWorks": [
       "Gọi điện tự xưng cán bộ Điện lực thông báo hợp đồng điện sinh hoạt còn nợ tiền điện 2 tháng.",
       "Đe dọa trong vòng 2 giờ tới nhân viên kỹ thuật sẽ đến ngắt cầu dao cắt điện toàn bộ tòa nhà.",
       "Cung cấp số tài khoản cá nhân tự xưng là \"Tài khoản cán bộ thu cước tại địa bàn\" để chuyển tiền khẩn cấp."
-    ],
-    "howItWorks_en": [
-      "Called claiming to be an Electricity official informing him that he still owes 2 months of electricity bill on his domestic electricity contract.",
-      "Threatening that within the next 2 hours, technical staff will come and turn off the circuit breaker to cut off power to the entire building.",
-      "Provide a personal account number claiming to be \"Local fee collection officer account\" for urgent money transfer."
     ],
     "warningSigns": [
       "EVN không bao giờ cử nhân viên dùng tài khoản cá nhân để thu tiền cước qua điện thoại.",
       "Đe dọa cắt điện gấp trong vòng 2 giờ (Theo luật: EVN phải gửi thông báo bằng văn bản trước ít nhất 15 ngày).",
       "Yêu cầu bấm phím 1 để gặp tổng đài viên thu cước."
     ],
-    "warningSigns_en": [
-      "EVN never assigns staff to use personal accounts to collect charges over the phone.",
-      "Threaten to urgently cut off power within 2 hours (According to law: EVN must send written notice at least 15 days in advance).",
-      "Please press key 1 to reach the operator to collect the fee."
-    ],
     "redFlags": [
       "Người gọi không đọc được chính xác Mã khách hàng (Mã PE...) in trên hóa đơn điện của gia đình bạn."
     ],
-    "redFlags_en": [
-      "The caller cannot read the Customer Code (PE Code...) printed on your family's electricity bill correctly."
-    ],
     "psychologicalTactics": [
       "Lợi dụng nhu cầu sử dụng điện thiết yếu của gia đình và cơ sở kinh doanh để gây hoảng sợ."
-    ],
-    "psychologicalTactics_en": [
-      "Taking advantage of the essential electricity needs of families and businesses to cause panic."
     ],
     "tactics": [
       "Gây áp lực ngắt dịch vụ thiết yếu",
       "Mạo danh nhân viên EVN",
       "Thu tiền qua tài khoản cá nhân"
     ],
-    "tactics_en": [
-      "Pressure to shut down essential services",
-      "Impersonating an EVN employee",
-      "Collect money via personal account"
-    ],
     "whatScammersAskFor": [
       "Chuyển tiền đóng cước điện từ 1 triệu đến 10 triệu đồng vào tài khoản cá nhân."
-    ],
-    "whatScammersAskFor_en": [
-      "Transfer electricity bill payment from 1 million to 10 million VND to personal account."
     ],
     "howToVerify": [
       "Mở ứng dụng EVN CSKH hoặc ứng dụng ngân hàng, nhập Mã khách hàng (PE...) để tra cứu số dư thực tế.",
       "Gọi tổng đài chăm sóc khách hàng chính thức của EVN: Miền Bắc (19006769), Miền Nam (19001006 / 19009000), Miền Trung (19001909), TP.HCM (1900545454)."
     ],
-    "howToVerify_en": [
-      "Open the EVN Customer Care application or banking application, enter the Customer Code (PE...) to look up the actual balance.",
-      "Call EVN's official customer care switchboard: North (19006769), South (19001006 / 19009000), Central (19001909), Ho Chi Minh City (1900545454)."
-    ],
     "countermeasures": [
       "Chỉ thanh toán tiền điện qua app ngân hàng, ví điện tử chính thức hoặc cổng Dịch vụ công EVN."
-    ],
-    "countermeasures_en": [
-      "Only pay electricity bills via bank app, official e-wallet or EVN Public Service portal."
     ],
     "whatToDoIfTargeted": [
       "Dập máy, kiểm tra trên app ngân hàng hoặc app EVN chính thức."
     ],
-    "whatToDoIfTargeted_en": [
-      "Hang up and check on the bank app or official EVN app."
-    ],
     "whatToDoIfCompromised": [
       "Báo ngân hàng phong tỏa và trình báo công an phường nơi cư trú."
-    ],
-    "whatToDoIfCompromised_en": [
-      "Report the blockade to the bank and report to the ward police where you reside."
     ]
   },
   {
     "id": "lottery-prize-tax-scam",
     "title": "19. Thông Báo Trúng Thưởng Xe Máy, Tiền Mặt Lớn Yêu Cầu Nộp Phí Trước Bạ",
-    "title_en": "19. Notice of winning motorbikes and large cash prizes requiring payment of registration fee",
+    "title_en": "19. Thông Báo Trúng Thưởng Xe Máy, Tiền Mặt Lớn Yêu Cầu Nộp Phí Trước Bạ",
     "category": "Trúng thưởng & Quà tặng",
-    "category_en": "Winning Prizes & Gifts",
+    "category_en": "Trúng thưởng & Quà tặng",
     "shortDescription": "Gửi tin nhắn hoặc gọi điện chúc mừng trúng xe máy SH, sổ tiết kiệm 500 triệu từ sự kiện tri ân, sau đó ép nộp 10% thuế trước bạ và phí vận chuyển.",
-    "shortDescription_en": "Send a text message or call to congratulate winning a SH motorbike, a savings book of 500 million from the gratitude event, then force to pay 10% registration tax and shipping fee.",
+    "shortDescription_en": "Gửi tin nhắn hoặc gọi điện chúc mừng trúng xe máy SH, sổ tiết kiệm 500 triệu từ sự kiện tri ân, sau đó ép nộp 10% thuế trước bạ và phí vận chuyển.",
     "whatIsIt": "Kịch bản lừa đảo trúng thưởng cổ điển nhưng liên tục biến tướng. Nạn nhân nhận được thông báo trúng giải đặc biệt trong chương trình quay số may mắn, nhưng muốn nhận quà thì phải chuyển trước tiền thuế thu nhập cá nhân hoặc phí đặt cọc giao xe.",
-    "whatIsIt_en": "The classic winning scam scenario but constantly changing. The victim received notice of winning a special prize in the lucky draw program, but to receive the gift, he or she must transfer personal income tax or vehicle delivery deposit in advance.",
+    "whatIsIt_en": "Kịch bản lừa đảo trúng thưởng cổ điển nhưng liên tục biến tướng. Nạn nhân nhận được thông báo trúng giải đặc biệt trong chương trình quay số may mắn, nhưng muốn nhận quà thì phải chuyển trước tiền thuế thu nhập cá nhân hoặc phí đặt cọc giao xe.",
     "howItWorks": [
       "Gửi tin nhắn Messenger hoặc gọi điện chúc mừng bạn là khách hàng may mắn trúng xe máy SH trị giá 100 triệu hoặc 500 triệu tiền mặt.",
       "Gửi đường link trang web có vòng quay may mắn và giấy chứng nhận trúng thưởng có dấu đỏ giả mạo.",
       "Yêu cầu nạn nhân nộp 10% thuế trước bạ (10 triệu đồng) vào tài khoản chỉ định để làm thủ tục nhận giải.",
       "Nộp xong 10 triệu, tiếp tục đòi phí vận chuyển xe, phí bảo hiểm quà tặng... rồi chặn liên lạc."
     ],
-    "howItWorks_en": [
-      "Send a Messenger message or call to congratulate you as the lucky customer who won a SH motorbike worth 100 million or 500 million in cash.",
-      "Send the website link with the lucky spin and the winning certificate with a fake red mark.",
-      "Require the victim to pay 10% registration tax (10 million VND) to the designated account to complete the procedure to receive the prize.",
-      "After paying 10 million, continue to ask for car transportation fees, gift insurance fees... then block contact."
-    ],
     "warningSigns": [
       "Trúng thưởng trong một chương trình mà bạn chưa từng đăng ký hay mua vé tham gia.",
       "Bắt buộc người trúng giải phải chuyển tiền nộp phí trước qua tài khoản cá nhân.",
       "Trang web thông báo trúng thưởng có giao diện sơ sài, tên miền miễn phí."
     ],
-    "warningSigns_en": [
-      "Win a prize in a program that you have never registered or bought a ticket to participate in.",
-      "Winners are required to transfer the fee in advance to their personal account.",
-      "The prize announcement website has a simple interface and a free domain name."
-    ],
     "redFlags": [
       "Yêu cầu mua thẻ cào điện thoại gửi mã PIN để thanh toán phí nhận thưởng."
-    ],
-    "redFlags_en": [
-      "Request to buy a phone scratch card and send a PIN code to pay the reward fee."
     ],
     "psychologicalTactics": [
       "Đánh vào lòng tham và niềm vui bất ngờ khi nhận được tài sản giá trị lớn.",
       "Tạo áp lực quà tặng sẽ bị hủy nếu không đóng phí trong vòng 24 giờ."
-    ],
-    "psychologicalTactics_en": [
-      "Tap into greed and the unexpected joy of receiving valuable assets.",
-      "Create pressure for gifts that will be canceled if fees are not paid within 24 hours."
     ],
     "tactics": [
       "Bẫy trúng thưởng ảo",
       "Đòi phí trước bạ trước",
       "Giả mạo giấy chứng nhận có dấu đỏ"
     ],
-    "tactics_en": [
-      "Virtual prize trap",
-      "Ask for registration fee in advance",
-      "Counterfeit certificates with red stamps"
-    ],
     "whatScammersAskFor": [
       "Chuyển tiền thuế thu nhập cá nhân 10%, phí hồ sơ, phí vận chuyển xe máy.",
       "Gửi mã thẻ cào điện thoại."
-    ],
-    "whatScammersAskFor_en": [
-      "Transfer 10% personal income tax, application fee, motorbike transportation fee.",
-      "Send phone scratch card code."
     ],
     "howToVerify": [
       "Các chương trình khuyến mãi trúng thưởng hợp pháp đều phải đăng ký với Sở Công Thương và thuế được trừ thẳng vào giá trị giải thưởng.",
       "Không có đơn vị uy tín nào bắt người trúng thưởng phải chuyển tiền nộp phí trước."
     ],
-    "howToVerify_en": [
-      "Legal prize-winning promotions must be registered with the Department of Industry and Trade and tax is deducted directly from the prize value.",
-      "No reputable unit forces winners to transfer money and pay fees in advance."
-    ],
     "countermeasures": [
       "Bỏ qua mọi thông báo trúng thưởng từ các nguồn không rõ ràng."
-    ],
-    "countermeasures_en": [
-      "Ignore any winning notifications from unknown sources."
     ],
     "whatToDoIfTargeted": [
       "Xóa tin nhắn, chặn số và không phản hồi."
     ],
-    "whatToDoIfTargeted_en": [
-      "Delete messages, block numbers and don't respond."
-    ],
     "whatToDoIfCompromised": [
       "Lưu lại bằng chứng tin nhắn và số tài khoản để trình báo cơ quan điều tra."
-    ],
-    "whatToDoIfCompromised_en": [
-      "Save evidence of messages and account numbers to report to investigative agencies."
     ]
   },
   {
     "id": "fake-parcel-cod-shipping-scam",
     "title": "20. Lừa Đảo Gửi Bưu Phẩm Quà Tặng Thu Phí Ship COD Giá Trị Cao",
-    "title_en": "20. Fraud of Sending Gift Parcels Charging High Value COD Shipping Fees",
+    "title_en": "20. Lừa Đảo Gửi Bưu Phẩm Quà Tặng Thu Phí Ship COD Giá Trị Cao",
     "category": "Giao hàng & COD Phishing",
-    "category_en": "Delivery & COD Phishing",
+    "category_en": "Giao hàng & COD Phishing",
     "shortDescription": "Lấy trộm thông tin mua hàng trên livestream, gửi gói hàng rác (vỏ hộp, giẻ lau) cho nạn nhân và thu hộ COD từ vài trăm nghìn đến tiền triệu.",
-    "shortDescription_en": "Steal purchase information on livestream, send trash packages (cans, rags) to the victim and collect COD from several hundred thousand to millions.",
+    "shortDescription_en": "Lấy trộm thông tin mua hàng trên livestream, gửi gói hàng rác (vỏ hộp, giẻ lau) cho nạn nhân và thu hộ COD từ vài trăm nghìn đến tiền triệu.",
     "whatIsIt": "Tội phạm quét thông tin khách hàng bình luận số điện thoại, địa chỉ trên các phiên livestream bán hàng, sau đó gửi bưu phẩm rác bằng hình thức thu hộ COD với số tiền 200k - 500k đúng thời điểm nạn nhân vắng nhà để nhờ người thân nhận hộ.",
-    "whatIsIt_en": "Criminals scan customer information commenting on phone numbers and addresses on livestream sales sessions, then send junk mail by COD collection in the amount of 200k - 500k at the time the victim is away from home to ask relatives to pick it up.",
+    "whatIsIt_en": "Tội phạm quét thông tin khách hàng bình luận số điện thoại, địa chỉ trên các phiên livestream bán hàng, sau đó gửi bưu phẩm rác bằng hình thức thu hộ COD với số tiền 200k - 500k đúng thời điểm nạn nhân vắng nhà để nhờ người thân nhận hộ.",
     "howItWorks": [
       "Kẻ gian thu thập thông tin đơn hàng thật của nạn nhân trên mạng xã hội.",
       "Tạo đơn hàng giả qua các công ty chuyển phát nhanh (GHTK, GHN, Viettel Post, J&T).",
       "Shipper giao hàng tới nhà khi nạn nhân vắng nhà, gọi điện cho người nhà hoặc bảo nạn nhân chuyển khoản trước để shipper gửi bảo vệ.",
       "Mở hộp ra chỉ có giấy vụn, khẩu trang cũ hoặc hàng giả vô giá trị."
     ],
-    "howItWorks_en": [
-      "Thieves collect real order information from victims on social networks.",
-      "Creating fake orders through express delivery companies (GHTK, GHN, Viettel Post, J&T).",
-      "The shipper delivers the goods to the victim's house when the victim is not home, calls family members or tells the victim to transfer money in advance so that the shipper can send it to security.",
-      "When I open the box, there are only scraps of paper, old masks or worthless fake goods."
-    ],
     "warningSigns": [
       "Giao kiện hàng mà bạn không hề đặt mua hoặc không nhớ đã mua món gì.",
       "Shipper giục chuyển khoản thanh toán gấp để chạy đơn tiếp.",
       "Người bán từ chối cho đồng kiểm (xem hàng trước khi nhận)."
     ],
-    "warningSigns_en": [
-      "Delivery of goods that you did not order or do not remember what you bought.",
-      "Shipper urges urgent payment to proceed with the order.",
-      "The seller refused to check the goods (see the goods before receiving)."
-    ],
     "redFlags": [
       "Thông tin người gửi trên bưu phẩm không rõ ràng hoặc để tên shop mập mờ."
-    ],
-    "redFlags_en": [
-      "The sender information on the parcel is unclear or the shop name is ambiguous."
     ],
     "psychologicalTactics": [
       "Lợi dụng thói quen mua sắm online nhiều của người dân khiến họ không nhớ hết các đơn hàng.",
       "Lợi dụng sự tin tưởng của người thân nhận hộ ở nhà."
-    ],
-    "psychologicalTactics_en": [
-      "Taking advantage of people's habit of shopping online so much that they don't remember all their orders.",
-      "Taking advantage of the trust of relatives to take care of you at home."
     ],
     "tactics": [
       "Quét trộm dữ liệu Livestream",
       "Giao hàng rác thu COD",
       "Lợi dụng người thân nhận hộ"
     ],
-    "tactics_en": [
-      "Stealing of Livestream data",
-      "Garbage delivery collects COD",
-      "Taking advantage of relatives to take care of you"
-    ],
     "whatScammersAskFor": [
       "Tiền mặt thu hộ COD từ 100.000đ đến vài triệu đồng."
-    ],
-    "whatScammersAskFor_en": [
-      "Cash collected on behalf of COD ranges from 100,000 VND to several million VND."
     ],
     "howToVerify": [
       "Kiểm tra mã vận đơn trên ứng dụng mua sắm chính thức (Shopee, Lazada, TikTok Shop).",
       "Yêu cầu mở hộp đồng kiểm trước sự chứng kiến của nhân viên giao hàng."
     ],
-    "howToVerify_en": [
-      "Check the waybill code on the official shopping app (Shopee, Lazada, TikTok Shop).",
-      "Request to open the check box in the presence of the delivery staff."
-    ],
     "countermeasures": [
       "Dặn dò người nhà tuyệt đối không nhận và thanh toán bất kỳ đơn hàng nào nếu chưa có sự đồng ý của bạn.",
       "Ẩn thông tin số điện thoại khi bình luận trên các phiên livestream bán hàng."
     ],
-    "countermeasures_en": [
-      "Instruct family members to absolutely not accept or pay for any orders without your consent.",
-      "Hide phone number information when commenting on livestream sales sessions."
-    ],
     "whatToDoIfTargeted": [
       "Từ chối nhận hàng và yêu cầu hoàn trả người gửi."
     ],
-    "whatToDoIfTargeted_en": [
-      "Refuse to receive the goods and request a return to the sender."
-    ],
     "whatToDoIfCompromised": [
       "Báo cáo ngay với đơn vị vận chuyển để giữ lại tiền COD chưa quyết toán cho kẻ lừa đảo."
-    ],
-    "whatToDoIfCompromised_en": [
-      "Immediately report to the shipping unit to retain the unsettled COD money for the scammer."
     ]
   },
   {
     "id": "quishing-qr-code-scam",
     "title": "21. Dụ Dỗ Quét Mã QR Nhận Quà / Thanh Toán Dẫn Tới Link Giả Mạo (Quishing)",
-    "title_en": "21. Enticing to Scan QR Codes to Receive Gifts / Payments Leading to Fake Links (Quishing)",
+    "title_en": "21. Dụ Dỗ Quét Mã QR Nhận Quà / Thanh Toán Dẫn Tới Link Giả Mạo (Quishing)",
     "category": "Mã QR & Quishing",
-    "category_en": "QR Code & Quishing",
+    "category_en": "Mã QR & Quishing",
     "shortDescription": "Dán đè mã QR lừa đảo tại các cửa hàng, hoặc gửi mã QR \"nhận tiền hoàn cước\" chứa link độc chiếm đoạt tài khoản ngân hàng và Zalo.",
-    "shortDescription_en": "Paste fraudulent QR codes at stores, or send \"receive refund\" QR codes containing unique links to hijack bank accounts and Zalo.",
+    "shortDescription_en": "Dán đè mã QR lừa đảo tại các cửa hàng, hoặc gửi mã QR \"nhận tiền hoàn cước\" chứa link độc chiếm đoạt tài khoản ngân hàng và Zalo.",
     "whatIsIt": "Quishing (QR Phishing) là thủ đoạn lợi dụng sự tiện lợi của mã QR để che giấu đường link độc hại. Do mắt thường không thể đọc được nội dung mã QR, người dùng quét mã sẽ bị chuyển hướng đến website giả mạo hoặc kích hoạt tải mã độc.",
-    "whatIsIt_en": "Quishing (QR Phishing) is a trick that takes advantage of the convenience of QR codes to hide malicious links. Because the QR code content cannot be read by the naked eye, users who scan the code will be redirected to a fake website or enabled to download malicious code.",
+    "whatIsIt_en": "Quishing (QR Phishing) là thủ đoạn lợi dụng sự tiện lợi của mã QR để che giấu đường link độc hại. Do mắt thường không thể đọc được nội dung mã QR, người dùng quét mã sẽ bị chuyển hướng đến website giả mạo hoặc kích hoạt tải mã độc.",
     "howItWorks": [
       "Kẻ gian dán đè mã QR nhận tiền của mình lên bảng mã QR thanh toán tại các quầy thu ngân quán ăn, cửa hàng.",
       "Hoặc gửi mã QR qua tin nhắn bảo: \"Quét mã này để nhận tiền thưởng 500k tri ân khách hàng\".",
       "Khi quét mã bằng camera điện thoại hoặc Zalo, trang web mở ra yêu cầu đăng nhập tài khoản ngân hàng hoặc cấp quyền truy cập Zalo."
-    ],
-    "howItWorks_en": [
-      "Thieves paste their QR code to receive money on the payment QR code board at the cashier counters of restaurants and stores.",
-      "Or send a QR code via text message saying: \"Scan this code to receive a 500k customer appreciation bonus\".",
-      "When scanning the code with the phone camera or Zalo, a website opens asking to log in to a bank account or grant access to Zalo."
     ],
     "warningSigns": [
       "Mã QR tại quầy thanh toán có dấu hiệu bị dán đè, méo mó hoặc lệch góc.",
       "Quét mã QR xong xuất hiện đường link trang web có đuôi lạ yêu cầu nhập mật khẩu.",
       "Yêu cầu quét mã QR để \"nhận tiền về tài khoản\" (Nhận tiền chỉ cần cung cấp số tài khoản, không bao giờ phải quét mã)."
     ],
-    "warningSigns_en": [
-      "The QR code at the payment counter shows signs of being pressed over, distorted or misaligned.",
-      "After scanning the QR code, a website link with a strange extension appears asking for a password.",
-      "Ask to scan the QR code to \"receive money to your account\" (Receiving money only requires providing the account number, never having to scan the code)."
-    ],
     "redFlags": [
       "Mã QR yêu cầu cấp quyền đăng nhập Zalo/Telegram trên máy tính lạ."
-    ],
-    "redFlags_en": [
-      "QR code requires permission to log in to Zalo/Telegram on a strange computer."
     ],
     "psychologicalTactics": [
       "Lợi dụng sự tiện lợi và thói quen quét mã QR nhanh chóng của người dùng hiện đại.",
       "Tính chất ẩn danh của mã QR (không nhìn thấy URL trực tiếp trước khi quét)."
-    ],
-    "psychologicalTactics_en": [
-      "Take advantage of the convenience and habit of quickly scanning QR codes of modern users.",
-      "Anonymous nature of QR codes (no direct URL visible before scanning)."
     ],
     "tactics": [
       "Dán đè mã QR tại điểm bán vật lý",
       "Gửi mã QR chiếm quyền Zalo",
       "Trang web Phishing giấu sau QR"
     ],
-    "tactics_en": [
-      "Paste the QR code at the physical point of sale",
-      "Send QR code to take over Zalo",
-      "Phishing website hidden behind QR"
-    ],
     "whatScammersAskFor": [
       "Chuyển tiền mua hàng vào tài khoản kẻ gian thay vì chủ quán.",
       "Xác thực đăng nhập tài khoản Zalo/Ngân hàng."
-    ],
-    "whatScammersAskFor_en": [
-      "Transfer money for purchases to the thief's account instead of the shop owner.",
-      "Authenticate login to Zalo/Bank account."
     ],
     "howToVerify": [
       "Khi quét mã thanh toán, luôn kiểm tra tên chủ tài khoản thụ hưởng hiển thị trên app xem có đúng tên chủ cửa hàng không.",
       "Nhìn kỹ xem mã QR có bị dán đè lớp giấy mới lên trên không."
     ],
-    "howToVerify_en": [
-      "When scanning the payment code, always check the beneficiary account owner's name displayed on the app to see if it is the correct store owner's name.",
-      "Look closely to see if the QR code is pasted over the new layer of paper."
-    ],
     "countermeasures": [
       "Kiểm tra kỹ URL trước khi bấm \"Mở liên kết\" sau khi quét mã QR.",
       "Tuyệt đối không quét mã QR lạ để đăng nhập tài khoản trên các thiết bị không phải của mình."
-    ],
-    "countermeasures_en": [
-      "Double-check the URL before clicking \"Open Link\" after scanning the QR code.",
-      "Absolutely do not scan strange QR codes to log in to accounts on devices that are not yours."
     ],
     "whatToDoIfTargeted": [
       "Tắt trang web ngay, không bấm đồng ý cấp quyền.",
       "Báo cho chủ quán nếu phát hiện bảng mã QR bị dán đè."
     ],
-    "whatToDoIfTargeted_en": [
-      "Turn off the website immediately, do not click to agree to grant permissions.",
-      "Notify the shop owner if you discover the QR code board is overwritten."
-    ],
     "whatToDoIfCompromised": [
       "Mở Zalo/Ngân hàng vào phần Quản lý thiết bị đăng nhập, lập tức bấm \"Đăng xuất khỏi tất cả các thiết bị khác\"."
-    ],
-    "whatToDoIfCompromised_en": [
-      "Open Zalo/Bank, go to Login Device Management, immediately click \"Sign out of all other devices\"."
     ]
   },
   {
     "id": "sim-swap-4g-5g-upgrade-scam",
     "title": "22. Lừa Nâng Cấp SIM 4G/5G Từ Xa Chiếm Đoạt Quyền Sử Dụng SIM (SIM Swap)",
-    "title_en": "22. Fraud to Upgrade 4G/5G SIM Remotely to Appropriate SIM Usage Rights (SIM Swap)",
+    "title_en": "22. Lừa Nâng Cấp SIM 4G/5G Từ Xa Chiếm Đoạt Quyền Sử Dụng SIM (SIM Swap)",
     "category": "SMS & Viễn thông",
-    "category_en": "SMS & Telecom Scams",
+    "category_en": "SMS & Viễn thông",
     "shortDescription": "Tự xưng nhân viên nhà mạng hỗ trợ đổi SIM 4G lên 5G miễn phí không cần ra quầy, lừa nạn nhân nhắn tin theo cú pháp để cướp quyền SIM.",
-    "shortDescription_en": "Claiming to be a network employee who supports changing 4G SIM to 5G for free without going to the counter, tricking the victim into texting with syntax to rob the SIM.",
+    "shortDescription_en": "Tự xưng nhân viên nhà mạng hỗ trợ đổi SIM 4G lên 5G miễn phí không cần ra quầy, lừa nạn nhân nhắn tin theo cú pháp để cướp quyền SIM.",
     "whatIsIt": "Tấn công hoán đổi SIM (SIM Swap Fraud). Kẻ gian dụ dỗ nạn nhân nhắn tin cú pháp đổi phôi SIM trắng của nhà mạng, từ đó kích hoạt SIM của kẻ gian và vô hiệu hóa SIM của nạn nhân để nhận mã OTP ngân hàng.",
-    "whatIsIt_en": "SIM Swap Fraud attack. The crook lures the victim into texting the network operator's blank SIM card exchange syntax, thereby activating the crook's SIM and disabling the victim's SIM to receive the bank OTP code.",
+    "whatIsIt_en": "Tấn công hoán đổi SIM (SIM Swap Fraud). Kẻ gian dụ dỗ nạn nhân nhắn tin cú pháp đổi phôi SIM trắng của nhà mạng, từ đó kích hoạt SIM của kẻ gian và vô hiệu hóa SIM của nạn nhân để nhận mã OTP ngân hàng.",
     "howItWorks": [
       "Kẻ gian gọi điện mạo danh nhân viên Viettel, MobiFone, VinaPhone thông báo SIM bạn đang dùng sắp bị cắt do chưa nâng cấp lên 4G/5G.",
       "Hướng dẫn cú pháp nhắn tin: Soạn `SIM... [Dãy số serial phôi SIM của kẻ gian]` gửi `901` hoặc `1414`.",
       "Ngay sau khi gửi tin nhắn, SIM trên điện thoại nạn nhân bị mất sóng hoàn toàn (No Service).",
       "Kẻ gian lắp SIM mới vào máy của chúng, nhận mã OTP ngân hàng và đổi mật khẩu, rút sạch tiền."
     ],
-    "howItWorks_en": [
-      "Thieves call impersonating employees of Viettel, MobiFone, VinaPhone, informing you that the SIM you are using is about to be cut off because you have not upgraded to 4G/5G.",
-      "Texting syntax instructions: Compose `SIM... [Serial number of the fraudster's SIM card]` send `901` or `1414`.",
-      "Immediately after sending the message, the SIM on the victim's phone completely lost signal (No Service).",
-      "Thieves insert a new SIM into their device, receive the bank OTP code and change the password, withdrawing all the money."
-    ],
     "warningSigns": [
       "Nhân viên nhà mạng yêu cầu nhắn tin cú pháp lạ có chứa dãy số dài gửi tổng đài.",
       "Điện thoại đột ngột bị mất sóng hoàn toàn, không thể gọi hay nhận tin nhắn trong khi xung quanh vẫn có sóng.",
       "Yêu cầu nâng cấp SIM mà không cần đến cửa hàng giao dịch trực tiếp."
     ],
-    "warningSigns_en": [
-      "The network staff asked to send a text message with strange syntax containing a long number sequence to the switchboard.",
-      "The phone suddenly lost signal completely, unable to make calls or receive messages while there was still signal around.",
-      "Request a SIM upgrade without going to a physical store."
-    ],
     "redFlags": [
       "Tin nhắn phản hồi của nhà mạng có nội dung: \"Quý khách đang yêu cầu đổi SIM mới...\"."
-    ],
-    "redFlags_en": [
-      "The network operator's response message reads: \"You are requesting to change to a new SIM...\"."
     ],
     "psychologicalTactics": [
       "Tạo sự thuận tiện (đổi SIM miễn phí tại nhà không cần đi lại) để thu hút người dùng.",
       "Đe dọa sẽ bị khóa SIM nếu không nâng cấp lên 5G kịp thời."
-    ],
-    "psychologicalTactics_en": [
-      "Create convenience (free SIM change at home without travel) to attract users.",
-      "Threats to have your SIM locked if you don't upgrade to 5G in time."
     ],
     "tactics": [
       "Lừa gửi cú pháp đổi phôi SIM",
       "Cướp quyền nhận mã OTP SMS",
       "Rút tiền tài khoản ngân hàng"
     ],
-    "tactics_en": [
-      "Tried to send SIM card exchange syntax",
-      "Hijacking the right to receive OTP SMS code",
-      "Withdraw money from bank account"
-    ],
     "whatScammersAskFor": [
       "Nhắn tin cú pháp đổi số serial phôi SIM trắng gửi tổng đài nhà mạng."
-    ],
-    "whatScammersAskFor_en": [
-      "Text the syntax to change the blank SIM card serial number to the network switchboard."
     ],
     "howToVerify": [
       "Nhà mạng KHÔNG BAO GIỜ hỗ trợ đổi SIM từ xa qua tin nhắn điện thoại.",
       "Việc đổi SIM 4G/5G bắt buộc phải thực hiện trực tiếp tại cửa hàng giao dịch chính thức của nhà mạng có xuất trình CCCD chính chủ."
     ],
-    "howToVerify_en": [
-      "The network NEVER supports remote SIM changes via phone messages.",
-      "Changing the 4G/5G SIM must be done directly at the network operator's official transaction store with the owner's ID card presented."
-    ],
     "countermeasures": [
       "Không soạn tin nhắn theo bất kỳ cú pháp nào do người lạ hướng dẫn qua điện thoại.",
       "Nếu thấy SIM đột ngột mất sóng bất thường, phải mượn máy khác gọi ngay tổng đài nhà mạng để kiểm tra trạng thái SIM."
     ],
-    "countermeasures_en": [
-      "Do not compose messages according to any syntax instructed by strangers over the phone.",
-      "If you see that your SIM suddenly loses signal, you must borrow another phone and immediately call the network switchboard to check the SIM status."
-    ],
     "whatToDoIfTargeted": [
       "Từ chối và dập máy ngay."
-    ],
-    "whatToDoIfTargeted_en": [
-      "Refuse and hang up immediately."
     ],
     "whatToDoIfCompromised": [
       "Dùng máy khác gọi tổng đài nhà mạng KHÓA SIM KHẨN CẤP ngay lập tức.",
       "Gọi tổng đài các ngân hàng bạn đang dùng để KHÓA TÀI KHOẢN TRƯỚC KHI kẻ gian kịp nhận OTP."
-    ],
-    "whatToDoIfCompromised_en": [
-      "Use another phone to call the network switchboard for EMERGENCY SIM LOCK immediately.",
-      "Call the switchboard of the bank you are using to LOCK YOUR ACCOUNT BEFORE the thief can receive the OTP."
     ]
   },
   {
     "id": "bribe-visa-job-broker-scam",
     "title": "23. Lừa Đảo \"Chạy Án\", Xin Việc Làm, Làm Visa Xuất Khẩu Lao Động Ảo",
-    "title_en": "23. Fraud \"Fleeing a Case\", Applying for a Job, Making a Virtual Labor Export Visa",
+    "title_en": "23. Lừa Đảo \"Chạy Án\", Xin Việc Làm, Làm Visa Xuất Khẩu Lao Động Ảo",
     "category": "Môi giới & Dịch vụ ảo",
-    "category_en": "Virtual Brokerage & Services",
+    "category_en": "Môi giới & Dịch vụ ảo",
     "shortDescription": "Tự nhận có \"quan hệ rộng\" chạy trắng án, xin việc vào cơ quan nhà nước hoặc làm visa đi Hàn/Nhật bao đỗ 100%, nhận tiền cọc rồi biến mất.",
-    "shortDescription_en": "Claiming to have \"wide connections\", he acquitted himself, applied for a job at a state agency or applied for a visa to Korea/Japan with 100% coverage, received a deposit and then disappeared.",
+    "shortDescription_en": "Tự nhận có \"quan hệ rộng\" chạy trắng án, xin việc vào cơ quan nhà nước hoặc làm visa đi Hàn/Nhật bao đỗ 100%, nhận tiền cọc rồi biến mất.",
     "whatIsIt": "Kẻ lừa đảo khoe khoang có mối quan hệ thân thiết với lãnh đạo cấp cao, cam kết lo lót giảm án tù, xin biên chế công chức hoặc làm hồ sơ visa lao động nước ngoài với tỷ lệ đỗ 100%, yêu cầu nộp hàng chục đến hàng trăm triệu tiền \"lo lót\".",
-    "whatIsIt_en": "Fraudsters brag about having close relationships with senior leaders, pledging to pay bribes to reduce prison sentences, apply for civil servant payrolls or apply for foreign work visas with a 100% pass rate, asking to pay tens to hundreds of millions in \"briefing\" money.",
+    "whatIsIt_en": "Kẻ lừa đảo khoe khoang có mối quan hệ thân thiết với lãnh đạo cấp cao, cam kết lo lót giảm án tù, xin biên chế công chức hoặc làm hồ sơ visa lao động nước ngoài với tỷ lệ đỗ 100%, yêu cầu nộp hàng chục đến hàng trăm triệu tiền \"lo lót\".",
     "howItWorks": [
       "Tiếp cận gia đình có người thân đang bị tạm giam hoặc người đang cần xin việc, đi xuất khẩu lao động.",
       "Chụp ảnh cùng người nổi tiếng, mặc vest sang trọng, khoe giấy tờ giả mạo để tạo lòng tin.",
@@ -2096,92 +1178,51 @@
       "Yêu cầu nộp tiền theo từng giai đoạn: Phí bôi trơn, phí nộp hồ sơ mật, phí thẩm định...",
       "Đến ngày hẹn thì tắt điện thoại, xóa tài khoản mạng xã hội và bỏ trốn."
     ],
-    "howItWorks_en": [
-      "Approach families whose relatives are in detention or who are looking for a job or going to work abroad.",
-      "Take photos with celebrities, wear luxury suits, show off fake documents to build trust.",
-      "Sign a \"service consulting\" contract in handwritten paper or verbal commitment.",
-      "Payment required in each stage: Facilitation fee, confidential filing fee, appraisal fee...",
-      "On the appointment day, turn off your phone, delete your social media accounts and run away."
-    ],
     "warningSigns": [
       "Cam kết \"chạy án\", \"xin việc biên chế\", \"visa bao đậu 100%\" trái quy định pháp luật.",
       "Yêu cầu đưa tiền mặt hoặc chuyển khoản cá nhân không có hóa đơn chứng từ hợp lệ.",
       "Yêu cầu giữ bí mật tuyệt đối không được hỏi thăm cơ quan chức năng."
     ],
-    "warningSigns_en": [
-      "Commitment to \"running a case\", \"applying for a permanent job\", \"100% guaranteed visa\" against the law.",
-      "Requesting cash or personal transfer without valid invoices and documents.",
-      "Absolute confidentiality is required and no inquiries from authorities are allowed."
-    ],
     "redFlags": [
       "Không có trụ sở công ty rõ ràng hoặc công ty không có giấy phép hoạt động dịch vụ việc làm/xuất khẩu lao động của Bộ LĐ-TB&XH."
-    ],
-    "redFlags_en": [
-      "There is no clear company headquarters or the company does not have a license to operate employment services/labor export from the Ministry of Labor, Invalids and Social Affairs."
     ],
     "psychologicalTactics": [
       "Lợi dụng tâm lý nôn nóng, sự bế tắc và cả tin của người nhà nạn nhân.",
       "Đánh vào sự e ngại pháp luật của nạn nhân (nạn nhân ngại báo công an vì bản thân cũng tham gia hành vi \"chạy chọt\")."
-    ],
-    "psychologicalTactics_en": [
-      "Taking advantage of the impatience, deadlock and gullibility of the victim's family members.",
-      "Attacks the victim's fear of the law (the victim is afraid to report to the police because he/she also participates in \"running around\")."
     ],
     "tactics": [
       "Khoe khoang quan hệ ảo",
       "Cam kết bao đậu 100%",
       "Nhận tiền cọc nhiều đợt"
     ],
-    "tactics_en": [
-      "Boasting about virtual sex",
-      "Commitment to 100% beans",
-      "Receive deposits in multiple installments"
-    ],
     "whatScammersAskFor": [
       "Tiền mặt hoặc chuyển khoản tiền cọc từ 50 triệu đến hàng tỷ đồng."
-    ],
-    "whatScammersAskFor_en": [
-      "Cash or deposit transfer from 50 million to billions of VND."
     ],
     "howToVerify": [
       "Pháp luật Việt Nam nghiêm cấm mọi hành vi đưa hối lộ, chạy án, xin việc chạy chọt (đây là hành vi vi phạm hình sự).",
       "Tra cứu danh sách doanh nghiệp xuất khẩu lao động được cấp phép tại Cổng thông tin Cục Quản lý lao động ngoài nước (`dolab.gov.vn`)."
     ],
-    "howToVerify_en": [
-      "Vietnamese law strictly prohibits all acts of bribery, court fraud, and solicitation of jobs (this is a criminal violation).",
-      "Look up the list of licensed labor export enterprises at the Information Portal of the Department of Overseas Labor Management (`dolab.gov.vn`)."
-    ],
     "countermeasures": [
       "Tuyệt đối không tin các dịch vụ \"chạy án\" hay \"xin việc cửa sau\".",
       "Làm thủ tục xin visa, du học, xuất khẩu lao động qua các trung tâm uy tín được cấp phép."
     ],
-    "countermeasures_en": [
-      "Absolutely do not trust \"case running\" or \"backdoor job application\" services.",
-      "Complete visa application procedures, study abroad, and labor export through reputable, licensed centers."
-    ],
     "whatToDoIfTargeted": [
       "Từ chối giao dịch và tố giác đối tượng tới cơ quan công an."
     ],
-    "whatToDoIfTargeted_en": [
-      "Refuse the transaction and report the subject to the police."
-    ],
     "whatToDoIfCompromised": [
       "Tập hợp toàn bộ giấy tờ cam kết, ghi âm cuộc gọi, sao kê chuyển khoản nộp đơn tố cáo tại Cơ quan Cảnh sát điều tra."
-    ],
-    "whatToDoIfCompromised_en": [
-      "Gather all commitment documents, call recordings, transfer statements and submit a complaint at the Police Investigation Agency."
     ]
   },
   {
     "id": "recovery-scam-fake-lawyer",
     "title": "24. Dịch Vụ Hỗ Trợ \"Lấy Lại Tiền Bị Lừa Đảo\" (Treo Đầu Dê Bán Thịt Chó)",
-    "title_en": "24. Support Service \"Retrieve Fraudulent Money\" (Hanging Goat's Head to Sell Dog Meat)",
+    "title_en": "24. Dịch Vụ Hỗ Trợ \"Lấy Lại Tiền Bị Lừa Đảo\" (Treo Đầu Dê Bán Thịt Chó)",
     "category": "Lừa đảo Kép & Thu hồi vốn ảo",
-    "category_en": "Double Fraud & Virtual Capital Recovery",
+    "category_en": "Lừa đảo Kép & Thu hồi vốn ảo",
     "shortDescription": "Mạo danh Văn phòng Luật sư, Cục An ninh mạng cam kết lấy lại 100% tiền đã bị lừa đảo trên sàn mạng, bắt nạn nhân nộp phí ủy thác để lừa lần 2.",
-    "shortDescription_en": "Impersonating the Law Office, the Cyber ​​Security Department pledged to get back 100% of the money that had been scammed on the online platform, forcing the victim to pay a trust fee for a second scam.",
+    "shortDescription_en": "Mạo danh Văn phòng Luật sư, Cục An ninh mạng cam kết lấy lại 100% tiền đã bị lừa đảo trên sàn mạng, bắt nạn nhân nộp phí ủy thác để lừa lần 2.",
     "whatIsIt": "Lừa đảo kép (Recovery Scam). Tội phạm nhắm vào những người vừa bị lừa đảo mất tiền, đóng giả làm Luật sư uy tín hoặc Cán bộ Cục An ninh mạng & Phòng chống tội phạm công nghệ cao (A05), cam kết can thiệp kỹ thuật kéo lại tiền về ví rồi bắt nộp \"phí phần mềm\", \"phí thuế\".",
-    "whatIsIt_en": "Recovery Scam. Criminals target people who have just been scammed and lose money, posing as a reputable Lawyer or an Officer of the Cyber ​​Security & High-Tech Crime Prevention Department (A05), committing to technical intervention to bring the money back to their wallets and then forcing them to pay \"software fees\" and \"tax fees\".",
+    "whatIsIt_en": "Lừa đảo kép (Recovery Scam). Tội phạm nhắm vào những người vừa bị lừa đảo mất tiền, đóng giả làm Luật sư uy tín hoặc Cán bộ Cục An ninh mạng & Phòng chống tội phạm công nghệ cao (A05), cam kết can thiệp kỹ thuật kéo lại tiền về ví rồi bắt nộp \"phí phần mềm\", \"phí thuế\".",
     "howItWorks": [
       "Lập các Fanpage Facebook có tên: \"Cục An Ninh Mạng Hỗ Trợ Thu Hồi Vốn Treo\", \"Văn Phòng Luật Sư Tranh Tụng\"... chạy quảng cáo rầm rộ.",
       "Nạn nhân gửi thông tin vụ việc và số tiền đã mất.",
@@ -2189,92 +1230,51 @@
       "Yêu cầu nạn nhân chuyển 10-20% phí mở cổng giải ngân (VD: 20 triệu) để rút tiền về.",
       "Nhận xong 20 triệu, kẻ gian tiếp tục vòi thêm tiền rồi chặn liên lạc (nạn nhân bị lừa 2 lần liên tiếp)."
     ],
-    "howItWorks_en": [
-      "Set up Facebook Fanpages with the names: \"Cyber ​​Security Department Supports Recovery of Suspended Capital\", \"Litigation Law Office\"... run heavy advertising.",
-      "The victim sent information about the incident and the amount of money lost.",
-      "Thieves use virtual accounts to send fake screenshots: \"Your 200 million amount has been successfully blocked on the international payment gateway.\"",
-      "Ask the victim to transfer 10-20% of the disbursement gate opening fee (eg: 20 million) to withdraw money.",
-      "After receiving 20 million, the crooks continued to ask for more money and then blocked contact (the victim was scammed twice in a row)."
-    ],
     "warningSigns": [
       "Quảng cáo dịch vụ \"thu hồi tiền lừa đảo\", \"hack tài khoản sàn ảo lấy lại tiền\" trên Facebook/TikTok.",
       "Yêu cầu nộp tiền phí ủy thác, phí phần mềm kéo tiền trước.",
       "Cơ quan công an không bao giờ thu tiền phí hỗ trợ người dân lấy lại tài sản bị chiếm đoạt."
     ],
-    "warningSigns_en": [
-      "Advertising the service \"recovering fraudulent money\", \"hacking virtual exchange accounts to get money back\" on Facebook/TikTok.",
-      "Requires payment of trust fees and software fees in advance.",
-      "The police never collect fees to assist people in recovering misappropriated property."
-    ],
     "redFlags": [
       "Sử dụng tài khoản ngân hàng cá nhân để nhận tiền phí \"thu hồi tài sản\"."
-    ],
-    "redFlags_en": [
-      "Use a personal bank account to receive \"asset recovery\" fees."
     ],
     "psychologicalTactics": [
       "Đánh vào tâm lý tuyệt vọng và khát khao lấy lại số tiền đã mất của nạn nhân.",
       "Mượn danh cơ quan pháp luật và an ninh mạng để tạo vỏ bọc tin cậy."
-    ],
-    "psychologicalTactics_en": [
-      "Attacks the victim's desperation and desire to regain lost money.",
-      "Borrowing the names of law and network security agencies to create a trustworthy cover."
     ],
     "tactics": [
       "Lừa đảo lần 2 (Recovery Scam)",
       "Giả mạo Cục An ninh mạng A05",
       "Tạo bằng chứng phong tỏa tiền ảo"
     ],
-    "tactics_en": [
-      "Second Scam (Recovery Scam)",
-      "Impersonating the Cyber ​​Security Department A05",
-      "Create proof of virtual currency blockade"
-    ],
     "whatScammersAskFor": [
       "Chuyển tiền phí dịch vụ luật sư, phí giải ngân tài sản thu hồi từ 5 triệu đến 50 triệu đồng."
-    ],
-    "whatScammersAskFor_en": [
-      "Transfer money for lawyer service fees and recovered asset disbursement fees from 5 million to 50 million VND."
     ],
     "howToVerify": [
       "Bộ Công an và Cục An ninh mạng A05 KHÔNG BAO GIỜ lập trang web hay Fanpage thu hồi tiền lừa đảo cho người dân.",
       "Không có công nghệ hay luật sư nào có thể \"hack hệ thống sàn ảo để rút tiền về tự động\"."
     ],
-    "howToVerify_en": [
-      "The Ministry of Public Security and the Department of Cyber ​​Security A05 will NEVER create a website or Fanpage to recover fraudulent money from people.",
-      "There is no technology or lawyer that can \"hack the virtual exchange system to withdraw money automatically\"."
-    ],
     "countermeasures": [
       "Khi bị lừa đảo, nơi duy nhất tiếp nhận và xử lý là Cơ quan Công an cấp Quận/Huyện/Tỉnh, hoàn toàn miễn phí.",
       "Tuyệt đối không tìm kiếm các dịch vụ lấy lại tiền trên mạng xã hội."
     ],
-    "countermeasures_en": [
-      "When being scammed, the only place to receive and process is the District/Provincial Police Department, completely free of charge.",
-      "Absolutely do not search for money back services on social networks."
-    ],
     "whatToDoIfTargeted": [
       "Không liên hệ, báo cáo Fanpage giả mạo cho Facebook."
     ],
-    "whatToDoIfTargeted_en": [
-      "Do not contact or report the fake Fanpage to Facebook."
-    ],
     "whatToDoIfCompromised": [
       "Dừng nộp tiền ngay, đến trực tiếp trụ sở Cơ quan Cảnh sát điều tra Công an địa phương để làm đơn tố cáo."
-    ],
-    "whatToDoIfCompromised_en": [
-      "Stop paying money immediately, go directly to the headquarters of the local Police Investigation Agency to file a complaint."
     ]
   },
   {
     "id": "telegram-qr-code-takeover",
     "title": "25. Chiếm Đoạt Tài Khoản Telegram Bằng Mã Xác Thực Đăng Nhập Máy Tính",
-    "title_en": "25. Hijacking Telegram Accounts Using Computer Login Authentication Code",
+    "title_en": "25. Chiếm Đoạt Tài Khoản Telegram Bằng Mã Xác Thực Đăng Nhập Máy Tính",
     "category": "Mạng xã hội & Chiếm đoạt tài khoản",
-    "category_en": "Social Media & Account Takeover",
+    "category_en": "Mạng xã hội & Chiếm đoạt tài khoản",
     "shortDescription": "Gửi link \"bình chọn\", \"nhận tài liệu\" bắt quét mã QR Telegram hoặc gửi mã OTP đăng nhập, sau đó chiếm tài khoản và tống tiền danh bạ.",
-    "shortDescription_en": "Sending \"vote\" and \"receiving documents\" links requires scanning Telegram QR codes or sending login OTP codes, then takes over accounts and blackmails contacts.",
+    "shortDescription_en": "Gửi link \"bình chọn\", \"nhận tài liệu\" bắt quét mã QR Telegram hoặc gửi mã OTP đăng nhập, sau đó chiếm tài khoản và tống tiền danh bạ.",
     "whatIsIt": "Kẻ tấn công tạo trang web giả mạo yêu cầu quét mã QR để xác thực xem tài liệu hoặc bình chọn. Mã QR thực chất là mã đăng nhập Telegram Web trên máy tính của kẻ tấn công, giúp chúng chiếm quyền điều khiển tài khoản Telegram của nạn nhân ngay lập tức.",
-    "whatIsIt_en": "An attacker creates a fake website that requires scanning a QR code to authenticate viewing documents or voting. The QR code is essentially the Telegram Web login code on the attacker's computer, helping them take control of the victim's Telegram account immediately.",
+    "whatIsIt_en": "Kẻ tấn công tạo trang web giả mạo yêu cầu quét mã QR để xác thực xem tài liệu hoặc bình chọn. Mã QR thực chất là mã đăng nhập Telegram Web trên máy tính của kẻ tấn công, giúp chúng chiếm quyền điều khiển tài khoản Telegram của nạn nhân ngay lập tức.",
     "howItWorks": [
       "Kẻ gian gửi tin nhắn qua Telegram: \"Xem hình ảnh vụ tai nạn hôm qua tại link này\" hoặc \"Xác minh tài khoản Telegram để không bị xóa\".",
       "Đường link hiện mã QR bảo: \"Mở app Telegram quét mã này để xác minh\".",
@@ -2282,181 +1282,101 @@
       "Kẻ gian ngay lập tức bật mật khẩu 2 lớp (Two-Step Verification) mới, đá phiên đăng nhập của nạn nhân ra khỏi điện thoại.",
       "Dùng tài khoản Telegram vừa chiếm để nhắn tin vay tiền toàn bộ các nhóm chat tiền ảo, đối tác kinh doanh."
     ],
-    "howItWorks_en": [
-      "Thieves send messages via Telegram: \"See pictures of yesterday's accident at this link\" or \"Verify your Telegram account to avoid being deleted\".",
-      "The link shows a QR code saying: \"Open the Telegram app to scan this code for verification.\"",
-      "When scanning the code, the victim actually allowed the crook's device to log into his Telegram account.",
-      "The crooks immediately turn on the new Two-Step Verification password, kicking the victim's login session out of the phone.",
-      "Use the Telegram account you just occupied to message all virtual currency chat groups and business partners to borrow money."
-    ],
     "warningSigns": [
       "Yêu cầu quét mã QR bằng ứng dụng Telegram để \"xem tài liệu\" hoặc \"nhận quà\".",
       "Nhận được tin nhắn từ Telegram chính thức gửi mã xác nhận đăng nhập mới từ địa chỉ IP lạ.",
       "Các thông báo bảo mật gửi về điện thoại bằng tiếng Anh hoặc từ vị trí địa lý xa lạ."
     ],
-    "warningSigns_en": [
-      "Request to scan QR code with Telegram app to \"view documents\" or \"receive gifts\".",
-      "Received a message from official Telegram sending a new login confirmation code from a strange IP address.",
-      "Security notifications sent to your phone in English or from unfamiliar geographical locations."
-    ],
     "redFlags": [
       "App Telegram trên điện thoại đột ngột nhận được thông báo \"Đăng nhập mới từ trình duyệt Linux/Windows...\"."
     ],
-    "redFlags_en": [
-      "The Telegram app on the phone suddenly received the notification \"New login from Linux/Windows browser...\"."
-    ],
     "psychologicalTactics": [
       "Lợi dụng sự tò mò và thói quen quét mã QR không đọc kỹ cảnh báo trên màn hình ứng dụng."
-    ],
-    "psychologicalTactics_en": [
-      "Taking advantage of curiosity and the habit of scanning QR codes without carefully reading the warnings on the application screen."
     ],
     "tactics": [
       "Quét mã QR chiếm phiên Telegram Web",
       "Khóa tài khoản bằng mật khẩu 2 lớp mới",
       "Tống tiền danh bạ nhóm chat"
     ],
-    "tactics_en": [
-      "Scanning QR codes takes up Telegram Web sessions",
-      "Lock your account with a new 2-layer password",
-      "Blackmailing group chat contacts"
-    ],
     "whatScammersAskFor": [
       "Quét mã QR đăng nhập Telegram.",
       "Gửi mã OTP 5 chữ số đăng nhập Telegram gửi về tin nhắn."
     ],
-    "whatScammersAskFor_en": [
-      "Scan the QR code to log in to Telegram.",
-      "Send the 5-digit OTP code to log in to Telegram as a message."
-    ],
     "howToVerify": [
       "Khi quét mã QR trên Telegram, ứng dụng luôn hiển thị dòng chữ: \"Bạn đang đăng nhập Telegram trên thiết bị mới...\". Nếu không phải do bạn tự mở trên máy tính, tuyệt đối bấm HỦY."
-    ],
-    "howToVerify_en": [
-      "When scanning a QR code on Telegram, the application always displays the text: \"You are logging in to Telegram on a new device...\". If you did not open it yourself on your computer, absolutely click CANCEL."
     ],
     "countermeasures": [
       "Bật tính năng Xác thực 2 bước (Two-Step Verification / Mật khẩu đám mây) trong Cài đặt bảo mật của Telegram.",
       "Thường xuyên kiểm tra mục `Settings -> Devices` (Thiết bị) và xóa các thiết bị lạ."
     ],
-    "countermeasures_en": [
-      "Enable Two-Step Verification / Cloud Password in Telegram's Security Settings.",
-      "Regularly check `Settings -> Devices` and remove unfamiliar devices."
-    ],
     "whatToDoIfTargeted": [
       "Hủy quét mã, đổi mật khẩu 2 bước ngay."
-    ],
-    "whatToDoIfTargeted_en": [
-      "Cancel scanning code, change password in 2 steps immediately."
     ],
     "whatToDoIfCompromised": [
       "Nếu vẫn còn phiên đăng nhập trên điện thoại: Vào `Settings -> Devices -> Terminate all other sessions` (Đăng xuất tất cả thiết bị khác) ngay lập tức.",
       "Thông báo trong các nhóm chat cảnh báo tài khoản đã bị hack."
-    ],
-    "whatToDoIfCompromised_en": [
-      "If there are still logged in sessions on the phone: Go to `Settings -> Devices -> Terminate all other sessions` (Sign out all other devices) immediately.",
-      "Notifications in chat groups warning that accounts have been hacked."
     ]
   },
   {
     "id": "charity-disaster-relief-scam",
     "title": "26. Kêu Gọi Từ Thiện Cứu Trợ Thiên Tai Bằng Số Tài Khoản Cá Nhân Mạo Danh",
-    "title_en": "26. Calling for Charity for Natural Disaster Relief Using an Impersonated Personal Account Number",
+    "title_en": "26. Kêu Gọi Từ Thiện Cứu Trợ Thiên Tai Bằng Số Tài Khoản Cá Nhân Mạo Danh",
     "category": "Lừa đảo Từ thiện & Đời sống",
-    "category_en": "Charity & Lifestyle Fraud",
+    "category_en": "Lừa đảo Từ thiện & Đời sống",
     "shortDescription": "Lợi dụng bão lũ, thiên tai, bệnh hiểm nghèo để lập Fanpage giả mạo Mặt trận Tổ quốc hoặc người nổi tiếng kêu gọi chuyển tiền từ thiện.",
-    "shortDescription_en": "Taking advantage of storms, floods, natural disasters, and serious diseases to create fake Fanpages of the Fatherland Front or celebrities calling for charity money.",
+    "shortDescription_en": "Lợi dụng bão lũ, thiên tai, bệnh hiểm nghèo để lập Fanpage giả mạo Mặt trận Tổ quốc hoặc người nổi tiếng kêu gọi chuyển tiền từ thiện.",
     "whatIsIt": "Kẻ lừa đảo lợi dụng lòng nhân ái của người dân trong các đợt bão lũ, thiên tai hoặc các hoàn cảnh thương tâm để lập các fanpage giả mạo Hội Chữ thập đỏ, Quỹ Cứu trợ Mặt trận Tổ quốc, sao chép hình ảnh đau thương rồi gắn số tài khoản ngân hàng cá nhân để trục lợi.",
-    "whatIsIt_en": "Fraudsters take advantage of people's compassion during storms, floods, natural disasters or other tragic situations to set up fake fanpages of the Red Cross and the Fatherland Front Relief Fund, copy painful images and attach personal bank account numbers for profit.",
+    "whatIsIt_en": "Kẻ lừa đảo lợi dụng lòng nhân ái của người dân trong các đợt bão lũ, thiên tai hoặc các hoàn cảnh thương tâm để lập các fanpage giả mạo Hội Chữ thập đỏ, Quỹ Cứu trợ Mặt trận Tổ quốc, sao chép hình ảnh đau thương rồi gắn số tài khoản ngân hàng cá nhân để trục lợi.",
     "howItWorks": [
       "Khi xảy ra thiên tai, bão lũ lớn, kẻ gian lập tức tạo hàng loạt fanpage có tên giống Ủy ban MTTQ Việt Nam, Hội Chữ Thập Đỏ...",
       "Lấy cắp hình ảnh, bài viết cứu trợ thật của các đoàn tình nguyện, biên tập lại lời kêu gọi khẩn thiết.",
       "Thay số tài khoản chính thống bằng số tài khoản cá nhân của kẻ lừa đảo (hoặc tài khoản có tên gần giống).",
       "Chạy quảng cáo Facebook để tiếp cận hàng triệu người có lòng hảo tâm chuyển tiền ủng hộ."
     ],
-    "howItWorks_en": [
-      "When natural disasters, big storms and floods occur, criminals immediately create a series of fanpages with names similar to the Vietnam Fatherland Front Committee, the Red Cross...",
-      "Stealing real relief images and articles from volunteer groups, re-editing urgent calls.",
-      "Replace the official account number with the scammer's personal account number (or an account with a similar name).",
-      "Run Facebook ads to reach millions of people who are willing to donate money."
-    ],
     "warningSigns": [
       "Trang kêu gọi từ thiện mới thành lập vài ngày, có lượng tương tác bất thường.",
       "Số tài khoản nhận tiền là tài khoản cá nhân thay vì tài khoản minh bạch của các tổ chức từ thiện được nhà nước cấp phép.",
       "Không có báo cáo sao kê minh bạch các đợt thu chi cứu trợ."
     ],
-    "warningSigns_en": [
-      "The charity appeal page was only established a few days ago and has an unusual amount of interaction.",
-      "The account number receiving the money is a personal account instead of a transparent account of state-licensed charitable organizations.",
-      "There are no transparent statements of relief revenues and expenditures."
-    ],
     "redFlags": [
       "Fanpage giả mạo tên cơ quan nhà nước nhưng không có dấu tích xanh xác thực."
-    ],
-    "redFlags_en": [
-      "The fanpage fakes the name of a state agency but does not have a green check mark of authenticity."
     ],
     "psychologicalTactics": [
       "Đánh vào lòng trắc ẩn, sự đồng cảm và tinh thần tương thân tương ái của đồng bào.",
       "Lợi dụng sự nóng lòng muốn giúp đỡ nạn nhân vùng lũ để người dân không kịp kiểm tra tài khoản."
-    ],
-    "psychologicalTactics_en": [
-      "Tap into the compassion, empathy and spirit of solidarity among fellow citizens.",
-      "Taking advantage of people's eagerness to help flood victims so that they don't have time to check their accounts."
     ],
     "tactics": [
       "Lợi dụng bão lũ thiên tai",
       "Sao chép hình ảnh thương tâm",
       "Thay số tài khoản nhận tiền từ thiện"
     ],
-    "tactics_en": [
-      "Taking advantage of storms and natural disasters",
-      "Copying pitiful images",
-      "Change the account number to receive charity money"
-    ],
     "whatScammersAskFor": [
       "Chuyển tiền ủng hộ từ thiện từ vài trăm nghìn đến hàng triệu đồng vào số tài khoản cá nhân."
-    ],
-    "whatScammersAskFor_en": [
-      "Transfer money for charity donations from a few hundred thousand to millions of dong into a personal account number."
     ],
     "howToVerify": [
       "Chỉ gửi tiền ủng hộ qua các số tài khoản chính thức của Ban Cứu trợ Trung ương - Ủy ban Trung ương Mặt trận Tổ quốc Việt Nam hoặc Hội Chữ thập đỏ Việt Nam.",
       "Kiểm tra kỹ thông tin đơn vị tiếp nhận trên các kênh truyền thông chính thống của VTV, báo Nhân Dân."
     ],
-    "howToVerify_en": [
-      "Only send donations via official account numbers of the Central Relief Committee - Central Committee of the Vietnam Fatherland Front or the Vietnam Red Cross.",
-      "Carefully check the receiving unit information on the official media channels of VTV and Nhan Dan newspaper."
-    ],
     "countermeasures": [
       "Không chuyển tiền từ thiện vào các số tài khoản cá nhân trôi nổi trên mạng xã hội."
-    ],
-    "countermeasures_en": [
-      "Do not transfer charity money to personal account numbers floating on social networks."
     ],
     "whatToDoIfTargeted": [
       "Báo cáo trang Fanpage giả mạo và cảnh báo cho bạn bè."
     ],
-    "whatToDoIfTargeted_en": [
-      "Report the fake Fanpage and warn your friends."
-    ],
     "whatToDoIfCompromised": [
       "Lưu vết chuyển tiền và gửi phản ánh tới cơ quan công an để triệt phá đường dây trục lợi từ thiện."
-    ],
-    "whatToDoIfCompromised_en": [
-      "Save money transfer traces and send reports to the police to destroy the charity profiteering ring."
     ]
   },
   {
     "id": "hotel-tour-booking-deposit-scam",
     "title": "27. Đặt Cọc Phòng Khách Sạn / Tour Du Lịch Giá Siêu Rẻ Dịp Lễ Rồi Bùng Cọc",
-    "title_en": "27. Deposit Super Cheap Hotel Rooms/Tours During the Holidays and Get Big Deposits",
+    "title_en": "27. Đặt Cọc Phòng Khách Sạn / Tour Du Lịch Giá Siêu Rẻ Dịp Lễ Rồi Bùng Cọc",
     "category": "Du lịch & Dịch vụ ảo",
-    "category_en": "Virtual Travel & Services",
+    "category_en": "Du lịch & Dịch vụ ảo",
     "shortDescription": "Lập Fanpage nhái khách sạn, resort 5 sao nổi tiếng, bán combo phòng giá rẻ hơn thị trường 50%, ép chuyển cọc 100% rồi chặn liên lạc.",
-    "shortDescription_en": "Set up a Fanpage that imitates a famous 5-star hotel or resort, sell room combos 50% cheaper than the market, force a 100% deposit transfer and then block contact.",
+    "shortDescription_en": "Lập Fanpage nhái khách sạn, resort 5 sao nổi tiếng, bán combo phòng giá rẻ hơn thị trường 50%, ép chuyển cọc 100% rồi chặn liên lạc.",
     "whatIsIt": "Kẻ lừa đảo tạo fanpage mạo danh các khách sạn, khu nghỉ dưỡng (resort) nổi tiếng tại Đà Lạt, Phú Quốc, Nha Trang, Sa Pa... chạy quảng cáo combo du lịch giá siêu rẻ dịp lễ Tết, yêu cầu khách chuyển cọc 50-100% tiền phòng rồi chiếm đoạt.",
-    "whatIsIt_en": "Fraudsters create fanpages impersonating famous hotels and resorts in Da Lat, Phu Quoc, Nha Trang, Sa Pa... running ads for super cheap travel combos during Tet holidays, asking customers to deposit 50-100% of the room fee and then take over.",
+    "whatIsIt_en": "Kẻ lừa đảo tạo fanpage mạo danh các khách sạn, khu nghỉ dưỡng (resort) nổi tiếng tại Đà Lạt, Phú Quốc, Nha Trang, Sa Pa... chạy quảng cáo combo du lịch giá siêu rẻ dịp lễ Tết, yêu cầu khách chuyển cọc 50-100% tiền phòng rồi chiếm đoạt.",
     "howItWorks": [
       "Tạo fanpage có tên và ảnh đại diện giống hệt resort 5 sao, sao chép toàn bộ bài đăng, video đánh giá.",
       "Đăng bài thanh lý voucher phòng nghỉ, combo vé máy bay + khách sạn giảm giá 50% chỉ áp dụng trong ngày.",
@@ -2464,90 +1384,50 @@
       "Yêu cầu khách chuyển tiền cọc hoặc thanh toán 100% tiền phòng vào tài khoản cá nhân để \"giữ phòng giờ chót\".",
       "Sau khi khách chuyển tiền xong, đối tượng chặn Facebook, Zalo, điện thoại."
     ],
-    "howItWorks_en": [
-      "Create a fanpage with the same name and profile picture as the 5-star resort, copy all posts and video reviews.",
-      "Posting liquidation of room vouchers, air ticket + hotel combos with 50% discount only applies during the day.",
-      "When the customer texted to ask, the crooks gave enthusiastic advice and sent a booking confirmation contract with a fake seal.",
-      "Require guests to transfer a deposit or pay 100% of the room fee to their personal account to \"reserve the room at the last minute\".",
-      "After the customer finished transferring money, the subject blocked Facebook, Zalo, and phone."
-    ],
     "warningSigns": [
       "Giá phòng hoặc tour rẻ bất thường so với mặt bằng chung các trang đặt phòng uy tín (Agoda, Booking.com).",
       "Fanpage mới lập, có nhiều lượt thích ảo, phần đánh giá bị tắt.",
       "Yêu cầu chuyển tiền cọc gấp vào số tài khoản cá nhân của người tự xưng là \"Quản lý kinh doanh\" thay vì tài khoản công ty khách sạn."
     ],
-    "warningSigns_en": [
-      "Room or tour prices are unusually cheap compared to the average of reputable booking sites (Agoda, Booking.com).",
-      "Newly created fanpage, has many fake likes, review section is turned off.",
-      "Request to transfer the deposit urgently to the personal account number of the person claiming to be \"Business Manager\" instead of the hotel company account."
-    ],
     "redFlags": [
       "Thúc ép chuyển tiền ngay trong 15 phút với lý do \"chỉ còn 1 phòng duy nhất\"."
     ],
-    "redFlags_en": [
-      "Forced to transfer money within 15 minutes with the reason \"only 1 room left\"."
-    ],
     "psychologicalTactics": [
       "Tạo tâm lý săn deal hời giá rẻ và nỗi sợ hết phòng trong mùa du lịch cao điểm."
-    ],
-    "psychologicalTactics_en": [
-      "Create the psychology of hunting for cheap bargains and the fear of running out of rooms during the peak tourist season."
     ],
     "tactics": [
       "Nhái Fanpage resort 5 sao",
       "Tung deal giá siêu rẻ",
       "Hối thúc chuyển cọc giữ chỗ"
     ],
-    "tactics_en": [
-      "Copy of 5-star resort Fanpage",
-      "Launching a super cheap deal",
-      "Urge to move the reservation deposit"
-    ],
     "whatScammersAskFor": [
       "Chuyển khoản tiền cọc phòng từ 2 triệu đến hàng chục triệu đồng."
-    ],
-    "whatScammersAskFor_en": [
-      "Transfer room deposit from 2 million to tens of millions of VND."
     ],
     "howToVerify": [
       "Tra cứu số điện thoại hotline cố định của khách sạn trên Google Maps hoặc website chính thức để gọi xác nhận.",
       "Đặt phòng qua các nền tảng OTA uy tín có bảo hiểm hủy phòng (Booking.com, Traveloka, Agoda)."
     ],
-    "howToVerify_en": [
-      "Look up the hotel's fixed hotline number on Google Maps or the official website to call to confirm.",
-      "Book via reputable OTA platforms with cancellation insurance (Booking.com, Traveloka, Agoda)."
-    ],
     "countermeasures": [
       "Kiểm tra tính minh bạch của Fanpage (ngày đổi tên, vị trí người quản trị trang).",
       "Chỉ chuyển khoản vào tài khoản công ty có tên doanh nghiệp chủ quản khách sạn."
     ],
-    "countermeasures_en": [
-      "Check the transparency of the Fanpage (name change date, page administrator position).",
-      "Only transfer money to the company account with the hotel owner's name."
-    ],
     "whatToDoIfTargeted": [
       "Không chuyển tiền cọc, gọi trực tiếp khách sạn để kiểm tra."
     ],
-    "whatToDoIfTargeted_en": [
-      "Do not transfer deposit, call hotel directly to check."
-    ],
     "whatToDoIfCompromised": [
       "Báo ngân hàng và làm đơn tố cáo gửi Công an địa phương nơi cư trú."
-    ],
-    "whatToDoIfCompromised_en": [
-      "Report to the bank and file a complaint with the local police where you reside."
     ]
   },
   {
     "id": "study-abroad-scholarship-scam",
     "title": "28. Học Bổng Du Học Quốc Tế \"Bao Đậu\" Yêu Cầu Đặt Cọc Giữ Chỗ Khẩn Cấp",
-    "title_en": "28. \"Bean Bag\" International Study Abroad Scholarship Requires Emergency Reservation Deposit",
+    "title_en": "28. Học Bổng Du Học Quốc Tế \"Bao Đậu\" Yêu Cầu Đặt Cọc Giữ Chỗ Khẩn Cấp",
     "category": "Giáo dục & Du học ảo",
-    "category_en": "Virtual Education & Study Abroad",
+    "category_en": "Giáo dục & Du học ảo",
     "shortDescription": "Mạo danh đại diện các trường đại học danh tiếng tại Úc, Mỹ, Canada thông báo trúng học bổng 70-100%, bắt nộp phí bảo chứng tài chính.",
-    "shortDescription_en": "Impersonating representatives of prestigious universities in Australia, the US, and Canada announced that they had won 70-100% scholarships and were required to pay a financial guarantee fee.",
+    "shortDescription_en": "Mạo danh đại diện các trường đại học danh tiếng tại Úc, Mỹ, Canada thông báo trúng học bổng 70-100%, bắt nộp phí bảo chứng tài chính.",
     "whatIsIt": "Kẻ lừa đảo lập các trung tâm tư vấn du học ảo, gửi thư chúc mừng giả mạo từ các trường đại học quốc tế thông báo học sinh đã được duyệt cấp học bổng toàn phần, sau đó yêu cầu phụ huynh chuyển tiền đặt cọc giữ chỗ và phí bảo chứng chứng minh tài chính visa.",
-    "whatIsIt_en": "Fraudsters set up virtual study abroad consulting centers, send fake congratulatory letters from international universities announcing that students have been approved for full scholarships, then ask parents to transfer a deposit to reserve a place and a guarantee fee to prove visa finances.",
+    "whatIsIt_en": "Kẻ lừa đảo lập các trung tâm tư vấn du học ảo, gửi thư chúc mừng giả mạo từ các trường đại học quốc tế thông báo học sinh đã được duyệt cấp học bổng toàn phần, sau đó yêu cầu phụ huynh chuyển tiền đặt cọc giữ chỗ và phí bảo chứng chứng minh tài chính visa.",
     "howItWorks": [
       "Tiếp cận học sinh, phụ huynh qua các hội thảo du học online hoặc nhóm luyện thi IELTS.",
       "Thông báo hồ sơ của học sinh xuất sắc trúng học bổng 80% - 100% của trường đại học tại Úc/Canada.",
@@ -2555,183 +1435,102 @@
       "Yêu cầu phụ huynh chuyển 50 - 200 triệu đồng vào \"Tài khoản ủy thác visa\" để giữ suất học bổng trước hạn chót.",
       "Sau khi nhận tiền, trung tâm ảo biến mất không dấu vết."
     ],
-    "howItWorks_en": [
-      "Reach students and parents through online study abroad seminars or IELTS test preparation groups.",
-      "Announcing profiles of excellent students who won 80% - 100% scholarships from universities in Australia/Canada.",
-      "Send a Letter of Offer in English with a fake signature and school logo.",
-      "Parents are required to transfer 50 - 200 million VND to the \"Visa Trust Account\" to keep the scholarship before the deadline.",
-      "After receiving the money, the virtual center disappeared without a trace."
-    ],
     "warningSigns": [
       "Được cấp học bổng giá trị cao quá dễ dàng mà không cần trải qua phỏng vấn hay yêu cầu chứng chỉ ngoại ngữ khắt khe.",
       "Yêu cầu nộp tiền cọc học bổng qua số tài khoản cá nhân tại Việt Nam.",
       "Email gửi thư trúng tuyển dùng tên miền miễn phí (@gmail.com, @yahoo.com) thay vì tên miền trường đại học (`.edu`, `.edu.au`)."
     ],
-    "warningSigns_en": [
-      "Being granted high-value scholarships is so easy without having to go through an interview or require a strict foreign language certificate.",
-      "Request to pay scholarship deposit via personal account number in Vietnam.",
-      "The email sending the acceptance letter uses a free domain name (@gmail.com, @yahoo.com) instead of the university domain name (`.edu`, `.edu.au`)."
-    ],
     "redFlags": [
       "Thúc ép nộp tiền trong vòng 24 - 48 giờ nếu không sẽ chuyển học bổng cho ứng viên khác."
-    ],
-    "redFlags_en": [
-      "Force payment within 24 - 48 hours or else the scholarship will be transferred to another candidate."
     ],
     "psychologicalTactics": [
       "Đánh vào niềm tự hào và ước mơ du học nước ngoài của học sinh và phụ huynh.",
       "Tạo áp lực thời hạn giữ chỗ để phụ huynh không kịp liên hệ xác minh với trường."
-    ],
-    "psychologicalTactics_en": [
-      "Tap into students' and parents' pride and dreams of studying abroad.",
-      "Create pressure on reservation deadlines so that parents do not have time to contact the school to verify."
     ],
     "tactics": [
       "Làm giả thư trúng tuyển đại học",
       "Cam kết học bổng bao đỗ",
       "Thu phí bảo chứng tài chính ảo"
     ],
-    "tactics_en": [
-      "Fake university admission letter",
-      "Commitment to scholarships",
-      "Collect virtual financial guarantee fees"
-    ],
     "whatScammersAskFor": [
       "Chuyển tiền cọc giữ suất học bổng, phí bảo hiểm du học sinh, phí chứng minh tài chính từ 50 triệu đến 300 triệu đồng."
-    ],
-    "whatScammersAskFor_en": [
-      "Transfer deposits to hold scholarships, international student insurance fees, and financial proof fees from 50 million to 300 million VND."
     ],
     "howToVerify": [
       "Kiểm tra địa chỉ email người gửi: Phải có đuôi tên miền chính thức của trường (VD: `@sydney.edu.au`, `@harvard.edu`).",
       "Gửi email trực tiếp vào hòm thư tuyển sinh (Admissions Office) trên trang web chính thức của trường để xác thực."
     ],
-    "howToVerify_en": [
-      "Check the sender's email address: Must have the school's official domain extension (eg: `@sydney.edu.au`, `@harvard.edu`).",
-      "Send email directly to the Admissions Office on the school's official website for verification."
-    ],
     "countermeasures": [
       "Chỉ làm việc với các công ty tư vấn du học có pháp nhân và giấy phép hoạt động giáo dục rõ ràng."
-    ],
-    "countermeasures_en": [
-      "Only work with study abroad consulting companies that have a clear legal entity and educational license."
     ],
     "whatToDoIfTargeted": [
       "Dừng giao dịch, liên hệ trực tiếp với trường đại học ở nước ngoài để kiểm tra."
     ],
-    "whatToDoIfTargeted_en": [
-      "Stop the transaction, contact the overseas university directly to check."
-    ],
     "whatToDoIfCompromised": [
       "Báo cáo cho cơ quan công an kinh tế kèm toàn bộ thư từ và sao kê chuyển tiền."
-    ],
-    "whatToDoIfCompromised_en": [
-      "Report to the economic police agency with all letters and money transfer statements."
     ]
   },
   {
     "id": "emergency-hospital-child-surgery-scam",
     "title": "29. Mạo Danh Giáo Viên / Bệnh Viện Báo \"Con Đang Cấp Cứu\" Giục Chuyển Tiền Mổ Gấp",
-    "title_en": "29. Impersonating a Teacher/Hospital Reporting \"Children in Emergency\" Urging Money for Urgent Surgery",
+    "title_en": "29. Mạo Danh Giáo Viên / Bệnh Viện Báo \"Con Đang Cấp Cứu\" Giục Chuyển Tiền Mổ Gấp",
     "category": "Mạo danh & Tống tiền khẩn cấp",
-    "category_en": "Impersonation & Emergency Extortion",
+    "category_en": "Mạo danh & Tống tiền khẩn cấp",
     "shortDescription": "Gọi điện thoại cho phụ huynh thông báo con bị ngã chấn thương sọ não đang ở phòng cấp cứu, ép chuyển khoản gấp 20-50 triệu để bác sĩ mổ.",
-    "shortDescription_en": "Call parents to inform them that their child has fallen and suffered a traumatic brain injury and is in the emergency room, forcing them to urgently transfer 20-50 million to the doctor for surgery.",
+    "shortDescription_en": "Gọi điện thoại cho phụ huynh thông báo con bị ngã chấn thương sọ não đang ở phòng cấp cứu, ép chuyển khoản gấp 20-50 triệu để bác sĩ mổ.",
     "whatIsIt": "Thủ đoạn lừa đảo táng tận lương tâm nhắm vào phụ huynh học sinh. Kẻ gian gọi điện trong giờ học, tự xưng là giáo viên chủ nhiệm hoặc bác sĩ bệnh viện (Việt Đức, Chợ Rẫy...), thông báo con bị ngã cầu thang bất tỉnh cần mổ gấp và yêu cầu chuyển tiền viện phí ngay.",
-    "whatIsIt_en": "Unconscionable fraud targeting students' parents. Thieves call during class hours, claiming to be the homeroom teacher or a hospital doctor (Viet Duc, Cho Ray...), informing them that their child has fallen unconscious down the stairs and needs urgent surgery and requests immediate transfer of hospital fees.",
+    "whatIsIt_en": "Thủ đoạn lừa đảo táng tận lương tâm nhắm vào phụ huynh học sinh. Kẻ gian gọi điện trong giờ học, tự xưng là giáo viên chủ nhiệm hoặc bác sĩ bệnh viện (Việt Đức, Chợ Rẫy...), thông báo con bị ngã cầu thang bất tỉnh cần mổ gấp và yêu cầu chuyển tiền viện phí ngay.",
     "howItWorks": [
       "Thu thập thông tin họ tên phụ huynh, tên con, tên trường học và lớp học của con.",
       "Gọi điện trong giờ con đang học trên lớp (lúc này phụ huynh không thể gọi điện cho con vì con không dùng điện thoại trong giờ học).",
       "Đầu dây bên kia có tiếng còi hú cứu thương, tiếng bác sĩ quát tháo tạo hiện trường giả cấp cứu.",
       "Tự xưng bác sĩ trưởng khoa cấp cứu yêu cầu chuyển ngay 20-50 triệu vào tài khoản viện phí để ký lệnh mổ gấp."
     ],
-    "howItWorks_en": [
-      "Collect information about parents' names, children's names, school names and children's classes.",
-      "Call during class time when your child is in class (parents cannot call their child at this time because the child does not use the phone during class).",
-      "On the other end of the line, there was an ambulance siren and a doctor shouting to create a fake emergency scene.",
-      "Claiming to be the head of the emergency department, he immediately requested 20-50 million to be transferred to the hospital fee account to sign an urgent surgery order."
-    ],
     "warningSigns": [
       "Bệnh viện KHÔNG BAO GIỜ từ chối cấp cứu bệnh nhân vì chưa nộp tiền tạm ứng qua chuyển khoản cá nhân.",
       "Người gọi thúc ép chuyển tiền ngay lập tức, đe dọa \"chậm 5 phút là con nguy hiểm tính mạng\".",
       "Số tài khoản nhận viện phí là tài khoản cá nhân chứ không phải tài khoản chính thức của bệnh viện."
     ],
-    "warningSigns_en": [
-      "The hospital will NEVER refuse to treat a patient because they have not paid an advance payment via personal transfer.",
-      "The caller urged the money to be transferred immediately, threatening that \"5 minutes late will put your life in danger.\"",
-      "The account number receiving hospital fees is a personal account, not the hospital's official account."
-    ],
     "redFlags": [
       "Từ chối cho phụ huynh nghe máy của giáo viên chủ nhiệm với lý do \"cô giáo đang làm việc với công an\"."
-    ],
-    "redFlags_en": [
-      "Refusing to let parents answer the homeroom teacher's phone on the grounds that \"the teacher is working with the police\"."
     ],
     "psychologicalTactics": [
       "Tấn công trực diện vào điểm yếu lớn nhất của cha mẹ: Tính mạng và sự an nguy của con cái.",
       "Tạo cú sốc hoảng loạn cực độ khiến phụ huynh mất hoàn toàn khả năng tư duy logic."
-    ],
-    "psychologicalTactics_en": [
-      "Direct attack on parents' greatest weakness: The lives and safety of their children.",
-      "Create extreme panic shock that causes parents to completely lose the ability to think logically."
     ],
     "tactics": [
       "Gây hoảng sợ tột độ",
       "Tạo âm thanh giả hiện trường cấp cứu",
       "Lợi dụng giờ học của con"
     ],
-    "tactics_en": [
-      "Causing extreme panic",
-      "Create fake emergency scene sounds",
-      "Take advantage of your child's school hours"
-    ],
     "whatScammersAskFor": [
       "Chuyển tiền tạm ứng viện phí, tiền mổ khẩn cấp từ 20 triệu đến 100 triệu đồng."
-    ],
-    "whatScammersAskFor_en": [
-      "Transfer money in advance for hospital fees and emergency surgery fees from 20 million to 100 million VND."
     ],
     "howToVerify": [
       "Quy tắc vàng: Giữ bình tĩnh, dập máy và gọi ngay cho GIÁO VIÊN CHỦ NHIỆM hoặc SỐ ĐIỆN THOẠI NHÀ TRƯỜNG của con.",
       "Gọi trực tiếp vào tổng đài bệnh viện được nhắc tên để kiểm tra xem có bệnh nhân tên con nhập viện không.",
       "Các bệnh viện luôn ưu tiên cứu chữa tính mạng bệnh nhân trước, làm thủ tục tài chính sau."
     ],
-    "howToVerify_en": [
-      "Golden rule: Keep calm, hang up and immediately call your child's HOME TEACHER or SCHOOL PHONE NUMBER.",
-      "Call directly the hospital switchboard mentioned by name to check if there is a patient with your name admitted to the hospital.",
-      "Hospitals always prioritize saving patients' lives first, and handling financial procedures later."
-    ],
     "countermeasures": [
       "Lưu sẵn số điện thoại giáo viên chủ nhiệm, giám thị và ban giám hiệu nhà trường trong danh bạ.",
       "Dặn dò con về các tình huống an toàn tại trường học."
     ],
-    "countermeasures_en": [
-      "Save the phone numbers of homeroom teachers, supervisors and school administrators in the phonebook.",
-      "Teach your children about safe situations at school."
-    ],
     "whatToDoIfTargeted": [
       "Bình tĩnh dập máy, gọi cho nhà trường kiểm tra."
     ],
-    "whatToDoIfTargeted_en": [
-      "Calmly hang up and call the school to check."
-    ],
     "whatToDoIfCompromised": [
       "Báo ngay cho ngân hàng chuyển tiền và cơ quan công an gần nhất."
-    ],
-    "whatToDoIfCompromised_en": [
-      "Immediately notify the remitting bank and the nearest police agency."
     ]
   },
   {
     "id": "fake-concert-flight-ticket-scam",
     "title": "30. Lừa Mua Bán Vé Máy Bay / Vé Xem Concert Âm Nhạc Ảo (Pass Vé Ảo)",
-    "title_en": "30. Fraud in Buying and Selling Airplane Tickets / Virtual Music Concert Tickets (Virtual Ticket Pass)",
+    "title_en": "30. Lừa Mua Bán Vé Máy Bay / Vé Xem Concert Âm Nhạc Ảo (Pass Vé Ảo)",
     "category": "Thương mại & Vé sự kiện ảo",
-    "category_en": "Trade & Virtual Event Tickets",
+    "category_en": "Thương mại & Vé sự kiện ảo",
     "shortDescription": "Lập tài khoản \"pass vé\" concert ca sĩ nổi tiếng hoặc vé máy bay Tết giá rẻ, nhận tiền chuyển khoản xong hủy vé hoặc gửi mã QR vé giả.",
-    "shortDescription_en": "Create an account to \"pass tickets\" to famous singers' concerts or cheap Tet airline tickets, receive money by transfer, then cancel the tickets or send fake ticket QR codes.",
+    "shortDescription_en": "Lập tài khoản \"pass vé\" concert ca sĩ nổi tiếng hoặc vé máy bay Tết giá rẻ, nhận tiền chuyển khoản xong hủy vé hoặc gửi mã QR vé giả.",
     "whatIsIt": "Kẻ gian lợi dụng các sự kiện âm nhạc cháy vé (concert Blackpink, Anh Trai Say Hi, Taylor Swift...) hoặc mùa cao điểm vé máy bay Tết để rao bán lại vé (pass vé) với giá gốc hoặc rẻ hơn, nhận tiền chuyển khoản xong chặn liên lạc hoặc gửi mã vé giả không có giá trị.",
-    "whatIsIt_en": "Thieves take advantage of sold-out music events (Blackpink concert, Anh Trai Say Hi, Taylor Swift...) or the peak season of Tet airline tickets to resell tickets (ticket passes) at original price or cheaper, receive money by bank transfer and then block contact or send fake ticket codes with no value.",
+    "whatIsIt_en": "Kẻ gian lợi dụng các sự kiện âm nhạc cháy vé (concert Blackpink, Anh Trai Say Hi, Taylor Swift...) hoặc mùa cao điểm vé máy bay Tết để rao bán lại vé (pass vé) với giá gốc hoặc rẻ hơn, nhận tiền chuyển khoản xong chặn liên lạc hoặc gửi mã vé giả không có giá trị.",
     "howItWorks": [
       "Đăng bài trong các nhóm fan hâm mộ: \"Mình bận việc đột xuất cần pass lại 2 vé VIP concert giá gốc\".",
       "Gửi ảnh chụp màn hình email xác nhận mua vé, ảnh căn cước công dân chính chủ (thực chất là CCCD ăn cắp của người khác) để tạo uy tín.",
@@ -2739,84 +1538,41 @@
       "Nhận tiền xong, đối tượng xóa bài viết, chặn tài khoản Facebook/Zalo của người mua.",
       "Hoặc gửi mã QR vé giả, khi người mua đến cổng sự kiện quét mã thì hệ thống báo vé giả hoặc vé đã được sử dụng."
     ],
-    "howItWorks_en": [
-      "Posting in fan groups: \"I'm suddenly busy and need to re-pass 2 full price VIP concert tickets.\"",
-      "Send a screenshot of the ticket purchase confirmation email and a photo of the owner's citizen identification card (actually a CCCD stolen from someone else) to create credibility.",
-      "Require the buyer to transfer 100% of the ticket price to \"change ticket recipient information on the Ticketbox system\".",
-      "After receiving the money, the subject deleted the post and blocked the buyer's Facebook/Zalo account.",
-      "Or send a fake ticket QR code, when the buyer comes to the event gate to scan the code, the system will notify you that the ticket is fake or the ticket has been used."
-    ],
     "warningSigns": [
       "Bán vé sự kiện hot đang cháy vé với giá rẻ hoặc giá gốc mà không đòi tiền chênh lệch.",
       "Từ chối giao dịch trực tiếp mặt đối mặt hoặc từ chối sử dụng dịch vụ trung gian uy tín.",
       "Hối thúc chuyển khoản nhanh vì \"đang có nhiều người hỏi mua cùng lúc\"."
     ],
-    "warningSigns_en": [
-      "Sell ​​tickets to hot events that are sold out at cheap or original prices without asking for the difference.",
-      "Refuse to make face-to-face transactions or refuse to use reputable intermediary services.",
-      "Urgent to transfer money quickly because \"there are many people asking to buy at the same time\"."
-    ],
     "redFlags": [
       "Tài khoản mạng xã hội mới tạo, không có tương tác thật trong cộng đồng fan.",
       "Số tài khoản ngân hàng không trùng tên với Căn cước công dân cung cấp."
     ],
-    "redFlags_en": [
-      "Newly created social network account, no real interaction in the fan community.",
-      "The bank account number does not match the name provided by the Citizen Identification Card."
-    ],
     "psychologicalTactics": [
       "Đánh vào tâm lý háo hức, cuồng nhiệt muốn gặp thần tượng của người hâm mộ trẻ tuổi.",
       "Tạo áp lực khan hiếm vé (vé sắp bán cho người khác nếu không chốt trong 5 phút)."
-    ],
-    "psychologicalTactics_en": [
-      "Tapping into the eagerness and enthusiasm of young fans to meet their idols.",
-      "Create pressure of scarcity of tickets (tickets are about to be sold to others if not finalized within 5 minutes)."
     ],
     "tactics": [
       "Pass vé giả",
       "Tạo lòng tin bằng CCCD ăn cắp",
       "Một vé bán cho hàng chục người"
     ],
-    "tactics_en": [
-      "Fake ticket pass",
-      "Create trust with stolen CCCD",
-      "One ticket sold to dozens of people"
-    ],
     "whatScammersAskFor": [
       "Chuyển tiền mua vé máy bay hoặc vé concert từ 1 triệu đến hàng chục triệu đồng."
-    ],
-    "whatScammersAskFor_en": [
-      "Transfer money to buy plane tickets or concert tickets from 1 million to tens of millions of dong."
     ],
     "howToVerify": [
       "Chỉ mua vé qua các kênh phân phối chính thức của ban tổ chức (Ticketbox, đại lý vé máy bay chính hãng).",
       "Nếu mua lại vé: Bắt buộc giao dịch trực tiếp gặp mặt hoặc dùng dịch vụ trung gian có bảo hiểm tiền gửi."
     ],
-    "howToVerify_en": [
-      "Only buy tickets through the official distribution channels of the organizers (Ticketbox, genuine airline ticket agents).",
-      "If re-buying tickets: Requires face-to-face transactions or using an intermediary service with deposit insurance."
-    ],
     "countermeasures": [
       "Không tin các hình ảnh chụp CCCD gửi qua mạng vì có thể là giấy tờ bị đánh cắp.",
       "Kiểm tra uy tín người bán trong các nhóm cộng đồng trước khi giao dịch."
     ],
-    "countermeasures_en": [
-      "Do not trust CCCD images sent online because they may be stolen documents.",
-      "Check the seller's reputation in community groups before making a transaction."
-    ],
     "whatToDoIfTargeted": [
       "Từ chối chuyển tiền nếu không được giao dịch trực tiếp."
-    ],
-    "whatToDoIfTargeted_en": [
-      "Refuse to transfer money if not directly transacted."
     ],
     "whatToDoIfCompromised": [
       "Đăng bài cảnh báo thông tin tài khoản kẻ lừa đảo lên các hội nhóm fan để ngăn chặn thêm nạn nhân.",
       "Trình báo công an về hành vi lừa đảo chiếm đoạt tài sản."
-    ],
-    "whatToDoIfCompromised_en": [
-      "Post a warning about the scammer's account information to fan groups to prevent more victims.",
-      "Report to the police about fraudulent appropriation of property."
     ]
   }
 ]
