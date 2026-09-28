@@ -257,26 +257,29 @@ async def scan_url_safebrowsing(target_url: str) -> Dict[str, Any]:
         }
 
 # phan tich url qua gemini ai ket hop crawl dom truc tiep
-async def scan_url_gemini(target_url: str, client_key: Optional[str] = None) -> Dict[str, Any]:
+async def scan_url_gemini(target_url: str, client_key: Optional[str] = None, lang: str = 'vi') -> Dict[str, Any]:
     url_clean = normalize_url(target_url)
     crawled = await inspect_and_fetch_url(url_clean)
 
-    system_prompt = """You are CyberU AI — an expert Cybersecurity Threat Intelligence Scanner.
+    lang_str = "English" if lang == 'en' else "Vietnamese (Tiếng Việt)"
+    system_prompt = f"""You are CyberU AI — an expert Cybersecurity Threat Intelligence Scanner.
 Analyze the target URL forensically based on domain structure, TLD, SSL fetch results, forms detected (login, OTP, card, identity harvesting), and body text snippet.
 
+RESPONSE LANGUAGE: Provide all threat_level_label, summary, title, explanation, and action fields in {lang_str}.
+
 Return a STRICT JSON response with this schema:
-{
+{{
   "verdict": "SAFE" | "SUSPICIOUS" | "MALICIOUS",
   "risk_score": <number 0-100>,
-  "threat_level_label": "<Short summary label in Vietnamese>",
-  "summary": "<Detailed analysis summary in Vietnamese>",
+  "threat_level_label": "<Short summary label in {lang_str}>",
+  "summary": "<Detailed analysis summary in {lang_str}>",
   "why_is_this_suspicious": [
-    { "title": "<Short point>", "explanation": "<Detail explanation>" }
+    {{ "title": "<Short point>", "explanation": "<Detail explanation>" }}
   ],
   "recommended_actions": [
-    { "step_number": 1, "title": "<Action>", "action": "<Detailed steps>" }
+    {{ "step_number": 1, "title": "<Action>", "action": "<Detailed steps>" }}
   ]
-}"""
+}}"""
 
     prompt_content = f"""Target URL: {url_clean}
 Final Redirected URL: {crawled.get('finalUrl', url_clean)}
@@ -314,8 +317,8 @@ Fetch Error (if any): {crawled.get('fetchError', 'None')}
                         "modelUsed": model,
                         "verdict": parsed.get("verdict", "SUSPICIOUS"),
                         "risk_score": parsed.get("risk_score", 50),
-                        "threat_label": parsed.get("threat_level_label", "Phân Tích AI Gemini"),
-                        "summary": parsed.get("summary", f"Đã phân tích đường dẫn '{url_clean}' qua mô hình AI Gemini."),
+                        "threat_label": parsed.get("threat_level_label", "Gemini AI Forensic Scan" if lang == 'en' else "Phân Tích AI Gemini"),
+                        "summary": parsed.get("summary", f"Analyzed URL '{url_clean}' via Gemini AI model." if lang == 'en' else f"Đã phân tích đường dẫn '{url_clean}' qua mô hình AI Gemini."),
                         "why_is_this_suspicious": parsed.get("why_is_this_suspicious", []),
                         "recommended_actions": parsed.get("recommended_actions", []),
                         "crawled": crawled
@@ -327,25 +330,52 @@ Fetch Error (if any): {crawled.get('fetchError', 'None')}
 
     # phan tich heuristic thu cong neu goi gemini api that bai
     is_high_risk = crawled.get("isHighRiskTld") or crawled.get("formsDetected", {}).get("hasLoginForm")
+    
+    if lang == 'en':
+        threat_label = "Heuristic URL Structure Assessment"
+        summary = f"Preliminary scan completed for URL '{url_clean}' based on TLD structure ({crawled.get('tld')}) and HTML web components."
+        why_title = "Website Structure Analysis"
+        has_login = crawled.get('formsDetected', {}).get('hasLoginForm')
+        is_hr = crawled.get('isHighRiskTld')
+        why_exp = f"TLD domain: {crawled.get('tld')} ({'High risk' if is_hr else 'Normal'}). Login form detected: {'Yes' if has_login else 'No'}."
+        rec_actions = [
+            {"step_number": 1, "title": "Security Recommendation", "action": "Never disclose OTP codes, access unfamiliar links, or transfer money."},
+            {"step_number": 2, "title": "Hotline Verification", "action": "Contact official bank hotlines or authorities to verify information."}
+        ]
+        provider = "Heuristic Security Scanner (Live DOM Crawl)"
+    else:
+        threat_label = "Đánh Giá Heuristic Cấu Trúc URL"
+        summary = f"Đã quét sơ bộ đường dẫn '{url_clean}' theo cấu trúc TLD ({crawled.get('tld')}) và thành phần trang web HTML."
+        why_title = "Phân Tích Cấu Trúc Website"
+        has_login = crawled.get('formsDetected', {}).get('hasLoginForm')
+        is_hr = crawled.get('isHighRiskTld')
+        why_exp = f"Tên miền TLD: {crawled.get('tld')} ({'Rủi ro cao' if is_hr else 'Bình thường'}). Phát hiện form đăng nhập: {'Có' if has_login else 'Không'}."
+        rec_actions = [
+            {"step_number": 1, "title": "Khuyến Cáo Bảo Mật", "action": "Tuyệt đối không đọc mã OTP, không truy cập đường link lạ hoặc chuyển tiền."},
+            {"step_number": 2, "title": "Xác Minh Hotline", "action": "Gọi tới hotline chính thức của ngân hàng hoặc cơ quan chức năng để kiểm tra thông tin."}
+        ]
+        provider = "Heuristic Security Scanner (Crawl DOM Thực Tế)"
+
     return {
         "success": True,
-        "provider": "Heuristic Security Scanner",
+        "provider": provider,
         "url": url_clean,
         "verdict": "SUSPICIOUS" if is_high_risk else "SAFE",
         "risk_score": 75 if is_high_risk else 20,
-        "threat_label": "Đánh Giá Heuristic Cấu Trúc URL",
-        "summary": f"Đã quét sơ bộ đường dẫn '{url_clean}' theo cấu trúc TLD ({crawled.get('tld')}) và thành phần trang web HTML.",
+        "threat_label": threat_label,
+        "summary": summary,
         "why_is_this_suspicious": [
             {
-                "title": "Phân Tích Cấu Trúc Website",
-                "explanation": f"Tên miền TLD: {crawled.get('tld')} ({'Rủi ro cao' if crawled.get('isHighRiskTld') else 'Bình thường'}). Phát hiện form đăng nhập: {'Có' if crawled.get('formsDetected', {}).get('hasLoginForm') else 'Không'}."
+                "title": why_title,
+                "explanation": why_exp
             }
         ],
+        "recommended_actions": rec_actions,
         "crawled": crawled
     }
 
 # ham quet url tong hop voi chuoi fallback nhieu lop (virustotal -> safe browsing -> gemini ai)
-async def scan_url_with_fallback(target_url: str, client_key: Optional[str] = None) -> Dict[str, Any]:
+async def scan_url_with_fallback(target_url: str, client_key: Optional[str] = None, lang: str = 'vi') -> Dict[str, Any]:
     url_clean = normalize_url(target_url)
     fallback_chain: List[Dict[str, Any]] = []
 
@@ -401,7 +431,7 @@ async def scan_url_with_fallback(target_url: str, client_key: Optional[str] = No
         return sb_res
 
     # 3. luon thuc hien quet gemini ai & crawl html dom truc tiep neu virustotal/safe browsing bao an toan hoac chua index
-    gemini_res = await scan_url_gemini(url_clean, client_key=client_key)
+    gemini_res = await scan_url_gemini(url_clean, client_key=client_key, lang=lang)
     fallback_chain.append({
         "provider": gemini_res.get("provider", "Gemini AI DOM Forensics"),
         "status": "SUCCESS",
@@ -411,7 +441,8 @@ async def scan_url_with_fallback(target_url: str, client_key: Optional[str] = No
     # neu gemini ai hoac heuristic phat hien nghi van/doc hai thi uu tien ghi nhan
     if gemini_res.get("verdict") in ["SUSPICIOUS", "MALICIOUS"] or gemini_res.get("risk_score", 0) > (vt_res.get("risk_score", 0) if vt_res else 0):
         gemini_res["fallback_chain"] = fallback_chain
-        gemini_res["provider_used"] = f"{gemini_res.get('provider', 'Gemini AI')} (Crawl DOM Thực Tế)"
+        provider_name = gemini_res.get('provider', 'Gemini AI')
+        gemini_res["provider_used"] = f"{provider_name} (Live DOM Crawl)" if lang == 'en' else f"{provider_name} (Crawl DOM Thực Tế)"
         return gemini_res
 
     # neu tat ca dich vu deu bao an toan

@@ -125,11 +125,12 @@ class ApiClient {
   }
 
   // lay cam nang va tinh huong lua dao tu csdl
-  static async getEncyclopedia(query = '', category = 'all') {
+  static async getEncyclopedia(query = '', category = 'all', lang = 'vi') {
     try {
       const params = new URLSearchParams();
       if (query) params.append('query', query);
       if (category) params.append('category', category);
+      if (lang) params.append('lang', lang);
       const res = await fetch(`${API_BASE_URL}/knowledge/encyclopedia?${params.toString()}`);
       return await res.json();
     } catch (err) {
@@ -137,11 +138,12 @@ class ApiClient {
     }
   }
 
-  static async getScenarios(query = '', category = 'all') {
+  static async getScenarios(query = '', category = 'all', lang = 'vi') {
     try {
       const params = new URLSearchParams();
       if (query) params.append('query', query);
       if (category) params.append('category', category);
+      if (lang) params.append('lang', lang);
       const res = await fetch(`${API_BASE_URL}/knowledge/scenarios?${params.toString()}`);
       return await res.json();
     } catch (err) {
@@ -149,25 +151,44 @@ class ApiClient {
     }
   }
 
-  static async getCases() {
+  static async getCases(lang = 'vi') {
     try {
-      const res = await fetch(`${API_BASE_URL}/cases`);
+      const res = await fetch(`${API_BASE_URL}/cases?lang=${lang}`);
       return await res.json();
     } catch (err) {
       return { success: false, data: [] };
     }
   }
 
-  static async getGameQuestions() {
+  static async getGameQuestions(lang = 'vi') {
     try {
-      const res = await fetch(`${API_BASE_URL}/game/questions`);
+      const res = await fetch(`${API_BASE_URL}/game/questions?lang=${lang}`);
       return await res.json();
     } catch (err) {
       return { success: false, data: [] };
+    }
+  }
+
+  static async loginWithGoogle(payload = {}) {
+    try {
+      const res = await fetch(`${API_BASE_URL}/auth/google`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) {
+        return { success: false, detail: data.detail || data.error || `HTTP ${res.status}` };
+      }
+      return data;
+    } catch (err) {
+      console.error('Lỗi khi gọi API loginWithGoogle:', err);
+      return { success: false, detail: err.message || 'Không thể kết nối đến máy chủ Backend' };
     }
   }
 }
 
 window.ApiClient = ApiClient;
+
 
 

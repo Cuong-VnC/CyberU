@@ -7,65 +7,78 @@
   <meta name="description" content="CyberÚ - Bài báo cáo cuối kỳ môn lập trình Web">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/components.css">
+  <!-- Google Identity Services SDK -->
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
 </head>
 <body>
   <div id="app-layout">
-    <!-- TopBar Header -->
-    <header id="topbar">
-      <div style="display:flex; align-items:center; gap:0.75rem;">
-        <button type="button" id="mobile-menu-toggle" class="mobile-toggle-btn" aria-label="Toggle Navigation">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
-        </button>
-        <a href="#" class="brand-logo">
-          <img src="Logo-Truong-Dai-hoc-Khoa-hoc-va-Cong-nghe-Ha-Noi-VN-France-University.png" alt="CyberÚ Logo" class="brand-logo-img">
-          <span class="brand-text">Cyber<span class="brand-accent">Ú</span></span>
-        </a>
-      </div>
+    <!-- Mobile Top Header Bar (Only visible on <= 768px screens) -->
+    <header id="mobile-topbar">
+      <button type="button" id="mobile-menu-toggle" class="mobile-toggle-btn" aria-label="Toggle Navigation">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
 
-      <div class="topbar-controls">
-        <!-- Language Icon Switcher Button -->
-        <button type="button" id="btn-lang-toggle" class="icon-btn-lang" title="Đổi ngôn ngữ / Switch Language">
-          <span id="lang-flag-label">🇻🇳 VI</span>
-        </button>
-      </div>
+      <a href="#" class="mobile-brand-logo">
+        <img src="Logo-Truong-Dai-hoc-Khoa-hoc-va-Cong-nghe-Ha-Noi-VN-France-University.png" alt="CyberÚ Logo" class="brand-logo-img">
+        <span class="brand-text">Cyber<span class="brand-accent">Ú</span></span>
+      </a>
+
+      <button type="button" id="btn-lang-toggle-mobile" class="mobile-lang-btn" title="Đổi ngôn ngữ / Switch Language">
+        <span class="flag-icon" id="mobile-lang-flag-icon" style="display:inline-flex; align-items:center;"><svg width="20" height="14" viewBox="0 0 30 20" style="border-radius:2px; vertical-align:middle; flex-shrink:0;"><rect width="30" height="20" fill="#DA251D"/><polygon fill="#FFFF00" points="15,4 16.65,9.08 22,9.08 17.67,12.23 19.32,17.31 15,14.16 10.68,17.31 12.33,12.23 8,9.08 13.35,9.08"/></svg></span>
+        <span class="lang-code" id="mobile-lang-code">VI</span>
+      </button>
     </header>
 
     <div class="main-wrapper">
       <div id="sidebar-overlay" class="sidebar-overlay"></div>
       <!-- Sidebar Navigation -->
       <nav id="sidebar">
-        <div class="nav-item active" data-tab="analyzer">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-          <span data-i18n="navAnalyzer">Quét & Phân Tích</span>
+        <div class="sidebar-header">
+          <a href="#" class="brand-logo">
+            <img src="Logo-Truong-Dai-hoc-Khoa-hoc-va-Cong-nghe-Ha-Noi-VN-France-University.png" alt="CyberÚ Logo" class="brand-logo-img">
+            <span class="brand-text">Cyber<span class="brand-accent">Ú</span></span>
+          </a>
         </div>
 
+        <div class="sidebar-nav-list">
+          <div class="nav-item active" data-tab="analyzer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            <span data-i18n="navAnalyzer">Quét & Phân Tích</span>
+          </div>
 
+          <div class="nav-item" data-tab="knowledge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-0.5-5.5Z"/><path d="M6 6h10"/></svg>
+            <span data-i18n="navThreatKnowledge">Từ Điển Kiến Thức</span>
+          </div>
 
-        <div class="nav-item" data-tab="knowledge">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-0.5-5.5Z"/><path d="M6 6h10"/></svg>
-          <span data-i18n="navThreatKnowledge">Từ Điển Kiến Thức</span>
+          <div class="nav-item" data-tab="academy">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            <span data-i18n="navAcademy">Học Viện An Ninh</span>
+          </div>
+
+          <div class="nav-item" data-tab="spotgame">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <span data-i18n="navSpotTheScam">Game Spot Scam</span>
+          </div>
+
+          <div class="nav-item" data-tab="history">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span data-i18n="navHistory">Lịch Sử Quét</span>
+          </div>
+
+          <div class="nav-item" data-tab="settings">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            <span data-i18n="navPrivacySettings">Đăng Nhập / Tài Khoản</span>
+          </div>
         </div>
 
-
-
-        <div class="nav-item" data-tab="academy">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
-          <span data-i18n="navAcademy">Học Viện An Ninh</span>
-        </div>
-
-        <div class="nav-item" data-tab="spotgame">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-          <span data-i18n="navSpotTheScam">Game Spot Scam</span>
-        </div>
-
-        <div class="nav-item" data-tab="history">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          <span data-i18n="navHistory">Lịch Sử Quét</span>
-        </div>
-
-        <div class="nav-item" data-tab="settings">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.38a2 2 0 0 0-.73-2.73l-.15-.1a2 2 0 0 1-1-1.72v-.51a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>
-          <span data-i18n="navPrivacySettings">Cài Đặt</span>
+        <!-- Sidebar Footer: Language Switcher -->
+        <div class="sidebar-footer">
+          <button type="button" id="btn-lang-toggle" class="sidebar-lang-btn" title="Đổi ngôn ngữ / Switch Language">
+            <span class="flag-icon" id="lang-flag-icon" style="display:inline-flex; align-items:center;"><svg width="20" height="14" viewBox="0 0 30 20" style="border-radius:2px; vertical-align:middle; flex-shrink:0;"><rect width="30" height="20" fill="#DA251D"/><polygon fill="#FFFF00" points="15,4 16.65,9.08 22,9.08 17.67,12.23 19.32,17.31 15,14.16 10.68,17.31 12.33,12.23 8,9.08 13.35,9.08"/></svg></span>
+            <span class="lang-name" id="lang-flag-label">Tiếng Việt</span>
+            <svg class="chevron-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
         </div>
       </nav>
 
@@ -84,8 +97,8 @@
                   <div class="card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
                   <span class="active-dot"></span>
                 </div>
-                <h4>Tin nhắn / SMS</h4>
-                <p>Kiểm tra nhanh tin nhắn, email và chat Zalo</p>
+                <h4 data-i18n="subtabSmsTitle">Tin nhắn / SMS</h4>
+                <p data-i18n="subtabSmsDesc">Kiểm tra nhanh tin nhắn, email và chat Zalo</p>
               </div>
 
               <div class="scam-feature-card" data-mode="URL">
@@ -93,8 +106,8 @@
                   <div class="card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
                   <span class="active-dot"></span>
                 </div>
-                <h4>Quét URL Lừa Đảo</h4>
-                <p>Truy cập link, kiểm tra web mạo danh ngân hàng...</p>
+                <h4 data-i18n="subtabUrlTitle">Quét URL Lừa Đảo</h4>
+                <p data-i18n="subtabUrlDesc">Truy cập link, kiểm tra web mạo danh ngân hàng...</p>
               </div>
 
               <div class="scam-feature-card" data-mode="IMAGE">
@@ -102,8 +115,8 @@
                   <div class="card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></div>
                   <span class="active-dot"></span>
                 </div>
-                <h4>Ảnh chụp màn hình</h4>
-                <p>Soi ảnh chuyển tiền giả, ứng dụng ngân hàng...</p>
+                <h4 data-i18n="subtabImageTitle">Ảnh chụp màn hình</h4>
+                <p data-i18n="subtabImageDesc">Soi ảnh chuyển tiền giả, ứng dụng ngân hàng...</p>
               </div>
 
               <div class="scam-feature-card" data-mode="AUDIO">
@@ -111,8 +124,8 @@
                   <div class="card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg></div>
                   <span class="active-dot"></span>
                 </div>
-                <h4>Ghi âm cuộc gọi lạ</h4>
-                <p>Phát hiện giả giọng công an, dọa nạt, AI...</p>
+                <h4 data-i18n="subtabAudioTitle">Ghi âm cuộc gọi lạ</h4>
+                <p data-i18n="subtabAudioDesc">Phát hiện giả giọng công an, dọa nạt, AI...</p>
               </div>
 
               <div class="scam-feature-card" data-mode="VIDEO">
@@ -120,8 +133,8 @@
                   <div class="card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg></div>
                   <span class="active-dot"></span>
                 </div>
-                <h4>Video / Cuộc gọi hình ảnh</h4>
-                <p>Phát hiện deepfake khuôn mặt, ứng dụng...</p>
+                <h4 data-i18n="subtabVideoTitle">Video / Cuộc gọi hình ảnh</h4>
+                <p data-i18n="subtabVideoDesc">Phát hiện deepfake khuôn mặt, ứng dụng...</p>
               </div>
 
               <div class="scam-feature-card" data-mode="MULTIMODAL">
@@ -129,8 +142,8 @@
                   <div class="card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
                   <span class="active-dot"></span>
                 </div>
-                <h4>Tổng hợp đa nguồn</h4>
-                <p>Kết hợp cả tin nhắn, ảnh chụp và âm thanh vào...</p>
+                <h4 data-i18n="subtabMultimodalTitle">Tổng hợp đa nguồn</h4>
+                <p data-i18n="subtabMultimodalDesc">Kết hợp cả tin nhắn, ảnh chụp và âm thanh vào...</p>
               </div>
             </div>
 
@@ -189,13 +202,12 @@
 
             <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid var(--border-color); padding-bottom:1rem; margin-bottom:1.5rem;">
               <div>
-                <h3 style="display:flex; align-items:center; gap:0.5rem;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>Kết Quả Điều Tra & Phân Tích Đe Dọa</h3>
+                <h3 style="display:flex; align-items:center; gap:0.5rem;" data-i18n="analysisResultTitle"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>Kết Quả Điều Tra & Phân Tích Đe Dọa</h3>
                 <div style="display:flex; gap:0.5rem; flex-wrap:wrap; align-items:center; margin-top:0.4rem;">
                   <span id="res-verdict-badge" class="badge-threat badge-critical">CRITICAL_RISK</span>
                   <span id="res-provider-badge" class="badge-threat badge-safe" style="background:rgba(99,102,241,0.15); color:var(--accent-cyan); border:1px solid var(--accent-cyan); display:none;">Nguồn: VirusTotal API v3</span>
                 </div>
               </div>
-              <button type="button" class="btn btn-secondary" onclick="openModal('modal-export')" style="display:inline-flex; align-items:center; gap:0.4rem;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>Xuất Báo Cáo</button>
             </div>
 
             <div class="analysis-result-grid" style="display:grid; grid-template-columns: 240px 1fr; gap:2rem; margin-bottom:1.5rem;">
@@ -208,7 +220,7 @@
               </div>
 
               <div>
-                <h4 style="margin-bottom:0.4rem; color:var(--accent-cyan);">Tóm Tắt Tổng Quan:</h4>
+                <h4 style="margin-bottom:0.4rem; color:var(--accent-cyan);" data-i18n="overviewSummaryTitle">Tóm Tắt Tổng Quan:</h4>
                 <p id="res-summary" style="font-size:0.9rem; color:var(--text-main); line-height:1.6;"></p>
               </div>
             </div>
@@ -268,61 +280,29 @@
           </div>
         </section>
 
-        <!-- Tab 8: SettingsView -->
+        <!-- Tab 8: SettingsView / AuthView -->
         <section id="tab-settings" class="tab-content">
           <div class="glass-panel" style="padding:2.25rem;">
-            <h2 data-i18n="privacyTitle" style="display:flex; align-items:center; gap:0.5rem;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>Cài Đặt</h2>
-            <p style="color:var(--text-muted); font-size:0.875rem; margin-top:0.3rem; margin-bottom:1.75rem;">
-              Cấu hình chế độ API AI và khóa API cho hệ thống phân tích lừa đảo CyberÚ.
-            </p>
-
-            <div style="display:flex; flex-direction:column; gap:1.25rem; margin-bottom:2rem;">
-              <!-- Option 1: API Cá Nhân -->
-              <div class="glass-card" style="padding:1.25rem 1.5rem; cursor:pointer; display:flex; gap:1rem; align-items:flex-start; border:1.5px solid var(--border-color); transition:all 0.2s ease;" id="api-option-card-custom" onclick="selectApiMode('custom_key')">
-                <input type="radio" id="radio-mode-custom" name="api-mode-choice" value="custom_key" style="margin-top:0.3rem; accent-color:var(--primary-coral); width:18px; height:18px; cursor:pointer; pointer-events:none;">
-                <div style="flex:1;">
-                  <strong style="font-size:1rem; color:var(--text-main); display:flex; align-items:center; gap:0.4rem; margin-bottom:0.35rem;">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2l-2 2m-1.5 1.5L4 19l-2 3 3-2 13.5-13.5m-1.5-1.5L21 2z"/><circle cx="7.5" cy="16.5" r="2.5"/></svg>Sử dụng API cá nhân
-                  </strong>
-                  <p style="font-size:0.825rem; color:var(--text-muted); line-height:1.5; margin-bottom:0.85rem;">
-                    Người dùng tự tải lên Gemini API Key cá nhân. Khi chạy phân tích, hệ thống sẽ ưu tiên sử dụng API Key này.
-                  </p>
-                  
-                  <div id="custom-api-key-container" class="form-group" style="margin-bottom:0.25rem;" onclick="event.stopPropagation();">
-                    <label class="form-label" style="font-size:0.75rem;" for="setting-api-key">NHẬP GOOGLE GEMINI API KEY CỦA BẠN:</label>
-                    <input type="password" id="setting-api-key" class="form-input" placeholder="Dán Gemini API Key của bạn (AQ.Ab... hoặc AIza...)..." style="max-width:550px;" onclick="event.stopPropagation();" onfocus="selectApiMode('custom_key')">
-                  </div>
-                </div>
+            <!-- Header section -->
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:1rem; margin-bottom:1.75rem; border-bottom:1px solid var(--border-color); padding-bottom:1.25rem;">
+              <div>
+                <h2 style="display:flex; align-items:center; gap:0.55rem; font-size:1.35rem;">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--primary-coral);"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                  <span data-i18n="settingsTitle">Tài Khoản & Đăng Nhập</span>
+                </h2>
+                <p data-i18n="settingsSubtitle" style="color:var(--text-muted); font-size:0.875rem; margin-top:0.3rem;">
+                  Đăng ký / Đăng nhập nhanh bằng Google để đồng bộ lịch sử phân tích đa thiết bị và kích hoạt bảo vệ an ninh CyberÚ.
+                </p>
               </div>
-
-              <!-- Option 2: API Có Sẵn (Hệ Thống) -->
-              <div class="glass-card" style="padding:1.25rem 1.5rem; cursor:pointer; display:flex; gap:1rem; align-items:flex-start; border:1.5px solid var(--border-color); transition:all 0.2s ease;" id="api-option-card-system" onclick="selectApiMode('system_default')">
-                <input type="radio" id="radio-mode-system" name="api-mode-choice" value="system_default" style="margin-top:0.3rem; accent-color:var(--primary-coral); width:18px; height:18px; cursor:pointer; pointer-events:none;">
-                <div style="flex:1;">
-                  <strong style="font-size:1rem; color:var(--text-main); display:flex; align-items:center; gap:0.4rem; margin-bottom:0.35rem;">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>Sử dụng API có sẵn (Hệ thống CyberÚ)
-                  </strong>
-                  <p style="font-size:0.825rem; color:var(--text-muted); line-height:1.55; margin-bottom:0.75rem;">
-                    Sử dụng API được thiết lập sẵn. Hệ thống sẽ <strong>luân phiên linh hoạt</strong> sử dụng các mô hình AI:
-                  </p>
-                  <div style="display:flex; flex-wrap:wrap; gap:0.4rem;">
-                    <span class="badge-threat badge-low" style="font-size:0.75rem; font-family:var(--font-mono);">gemini-3.8-flash</span>
-                    <span class="badge-threat badge-low" style="font-size:0.75rem; font-family:var(--font-mono);">gemini-3.7-flash</span>
-                    <span class="badge-threat badge-low" style="font-size:0.75rem; font-family:var(--font-mono);">gemini-3.5-flash-lite</span>
-                    <span class="badge-threat badge-low" style="font-size:0.75rem; font-family:var(--font-mono);">gemini-3.1-pro-preview</span>
-                    <span class="badge-threat badge-low" style="font-size:0.75rem; font-family:var(--font-mono);">gemini-3.1-flash-lite</span>
-                    <span class="badge-threat badge-low" style="font-size:0.75rem; font-family:var(--font-mono);">gemini-pro-latest</span>
-                  </div>
-                  <p style="font-size:0.78rem; color:var(--accent-indigo); margin-top:0.6rem; font-weight:600; display:flex; align-items:center; gap:0.3rem;">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="9" y1="18" x2="15" y2="18"/><line x1="10" y1="22" x2="14" y2="22"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1.55.62 2.95 1.63 3.98.71.73 1.15 1.5 1.37 2.42"/></svg>Tự động chọn mô hình phù hợp nhất theo loại phân tích được lựa chọn ở tab Trình phân tích lừa đảo.
-                  </p>
-                </div>
+              <div id="auth-status-pill">
+                <!-- Dynamic Pill rendered by JS -->
               </div>
             </div>
 
-            <button type="button" class="btn btn-primary" onclick="saveSettingsForm()" style="padding:0.8rem 2.25rem; font-size:0.95rem; display:inline-flex; align-items:center; gap:0.4rem;">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>Lưu Cài Đặt
-            </button>
+            <!-- Dynamic Container for Google Auth / Account Profile -->
+            <div id="auth-container">
+              <!-- Rendered via JavaScript -->
+            </div>
           </div>
         </section>
       </main>
@@ -360,17 +340,17 @@
     </div>
   </div>
 
-  <!-- Export Report Modal -->
-  <div id="modal-export" class="modal-backdrop">
-    <div class="modal-container">
-      <div class="modal-header">
-        <h3 style="display:flex; align-items:center; gap:0.4rem;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>Xuất Báo Cáo Điều Tra An Ninh</h3>
-        <button class="modal-close" onclick="closeModal('modal-export')">✕</button>
+  <!-- History Detail Modal -->
+  <div id="modal-history-detail" class="modal-backdrop">
+    <div class="modal-container" style="max-width:720px; max-height:85vh; overflow-y:auto; padding:1.75rem;">
+      <div class="modal-header" style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid var(--border-color); padding-bottom:1rem; margin-bottom:1.25rem;">
+        <h3 style="display:flex; align-items:center; gap:0.5rem; margin:0; font-size:1.15rem;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          Chi Tiết Kết Quả Phân Tích Lịch Sử
+        </h3>
+        <button class="modal-close" onclick="closeModal('modal-history-detail')">✕</button>
       </div>
-      <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-bottom:1.5rem;">
-        <button type="button" class="btn btn-secondary" onclick="window.print()" style="display:inline-flex; align-items:center; justify-content:center; gap:0.4rem;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>Bản In / Xuất PDF</button>
-        <button type="button" class="btn btn-secondary" onclick="exportReportJson()" style="display:inline-flex; align-items:center; justify-content:center; gap:0.4rem;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>Dữ Liệu JSON</button>
-      </div>
+      <div id="history-modal-body"></div>
     </div>
   </div>
 
@@ -380,8 +360,8 @@
       <div style="margin-bottom:1.25rem; display:flex; justify-content:center; align-items:center;">
         <img src="Logo-Truong-Dai-hoc-Khoa-hoc-va-Cong-nghe-Ha-Noi-VN-France-University.png" alt="USTH Logo" style="height:72px; width:auto; object-fit:contain; animation: pulse 1.5s infinite; filter: drop-shadow(0 4px 12px rgba(0,0,0,0.15));">
       </div>
-      <h3>CyberÚ Đang Phân Tích Bằng Chứng...</h3>
-      <p style="color:var(--text-muted); font-size:0.85rem; margin-top:0.5rem;">Đang giải mã đa phương thức, truy vấn máy chủ an ninh & đối chiếu từ điển thủ đoạn...</p>
+      <h3 data-i18n="loadingTitle">CyberÚ Đang Phân Tích Bằng Chứng...</h3>
+      <p style="color:var(--text-muted); font-size:0.85rem; margin-top:0.5rem;" data-i18n="loadingDesc">Đang giải mã đa phương thức, truy vấn máy chủ an ninh & đối chiếu từ điển thủ đoạn...</p>
     </div>
   </div>
 
@@ -389,12 +369,12 @@
   <div id="modal-scenario-picker" class="modal-backdrop">
     <div class="modal-container" style="max-width:750px;">
       <div class="modal-header">
-        <h3 style="display:flex; align-items:center; gap:0.4rem;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>Chọn Kịch Bản Thực Hành (30 Tình Huống)</h3>
+        <h3 style="display:flex; align-items:center; gap:0.4rem;" data-i18n="selectScenarioTitle"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>Chọn Kịch Bản Thực Hành (30 Tình Huống)</h3>
         <button class="modal-close" onclick="closeModal('modal-scenario-picker')">✕</button>
       </div>
 
       <div style="margin-bottom:1rem;">
-        <input type="text" id="scenario-modal-search" class="form-input" placeholder="Tìm kiếm kịch bản (Deepfake, Ngân hàng, Công an, SMS...)...">
+        <input type="text" id="scenario-modal-search" class="form-input" data-i18n-placeholder="searchScenariosPlaceholder" placeholder="Tìm kiếm kịch bản (Deepfake, Ngân hàng, Công an, SMS...)...">
       </div>
 
       <div id="scenario-modal-list" style="display:flex; flex-direction:column; gap:0.6rem; max-height:55vh; max-height:55dvh; overflow-y:auto; -webkit-overflow-scrolling:touch; overscroll-behavior-y:contain; touch-action:pan-y; padding-right:0.25rem;"></div>

@@ -277,7 +277,7 @@ async def analyze_scam_payload(payload: Dict[str, Any], client_key: Optional[str
     if is_url_mode:
         target_url = urls[0] if urls else (text_content if text_content.startswith('http') else 'https://' + text_content if text_content else "https://example.com")
         from services.url_scanner_service import scan_url_with_fallback
-        scan_res = await scan_url_with_fallback(target_url, client_key=client_key)
+        scan_res = await scan_url_with_fallback(target_url, client_key=client_key, lang=language)
         
         provider = scan_res.get("provider_used", scan_res.get("provider", "URL Scanner"))
         normalized_analysis = normalize_analysis_response(scan_res)
@@ -331,7 +331,7 @@ CRITICAL: Return STRICT JSON adhering precisely to this schema structure:
         if urls:
             try:
                 from services.url_scanner_service import scan_url_with_fallback
-                url_scan_res = await scan_url_with_fallback(urls[0], client_key=client_key)
+                url_scan_res = await scan_url_with_fallback(urls[0], client_key=client_key, lang=language)
                 parts.append(f"[URL FORENSICS & SECURITY REPUTATION SCAN FOR \"{urls[0]}\"]:\nPrimary Security Provider Used: {url_scan_res.get('provider_used')}\nVerdict: {url_scan_res.get('verdict')}\nRisk Score: {url_scan_res.get('risk_score')}\nThreat Summary: {url_scan_res.get('summary')}\nFallback Chain Log: {json.dumps(url_scan_res.get('fallback_chain', []))}")
             except Exception as scan_err:
                 print("URL Fallback scan error:", scan_err)
@@ -445,7 +445,7 @@ CRITICAL: Return STRICT JSON adhering precisely to this schema structure:
 
                 if urls:
                     from services.url_scanner_service import scan_url_with_fallback
-                    scan_res = await scan_url_with_fallback(urls[0], client_key=client_key)
+                    scan_res = await scan_url_with_fallback(urls[0], client_key=client_key, lang=language)
                     normalized_scan = normalize_analysis_response(scan_res)
                     return {
                         "success": True,
