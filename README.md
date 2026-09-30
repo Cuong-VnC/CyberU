@@ -36,7 +36,7 @@
 ### 🛠️ Tech Stack & Security APIs
 
 #### 💻 Frontend (User Interface)
-- **Core Technologies**: HTML5, CSS3, Native JavaScript (ES6+ Async/Await & Fetch API).
+- **Core Technologies**: HTML5, CSS3, JavaScript.
 - **Iconography**: Clean inline SVG Vector Icons (Lucide Specification: https://lucide.dev/).
 - **Client Storage**: `LocalStorage` for user-defined custom API keys, theme/language preferences, and scan history.
 
@@ -47,7 +47,7 @@
 #### 🛡️ Threat Intelligence & Security APIs
 1. **VirusTotal API v3**
 2. **Google Safe Browsing API v4**
-3. **Google Gemini AI & Heuristic Fallback Engine**
+3. **Google Gemini AI**
 
 #### 🔄 3-Tier Fallback URL Scanning Pipeline
 ```
@@ -152,7 +152,7 @@ python main.py
 ### 🛠️ Ngôn Ngữ & Công Nghệ Sử Dụng
 
 #### 💻 Frontend (Giao Diện Người Dùng)
-- **Ngôn ngữ**: HTML5, CSS3, JavaScript (ES6+ Native Async/Await & Fetch API).
+- **Ngôn ngữ**: HTML5, CSS3, JavaScript.
 - **Biểu tượng**: SVG Vector chuẩn HTML/CSS (Lucide Icons Specification: https://lucide.dev/), .
 - **Lưu trữ phía Client**: `LocalStorage` lưu trữ cài đặt API Key cá nhân, ngôn ngữ hiển thị và lịch sử phân tích.
 
@@ -163,7 +163,7 @@ python main.py
 #### 🛡️ Dịch Vụ API Bảo Mật & Phân Tích Đe Dọa
 1. **VirusTotal API v3**
 2. **Google Safe Browsing API v4** 
-3. **Google Gemini AI & Bộ Quét Heuristic**
+3. **Google Gemini AI**
 
 #### 🔄 Cơ Chế Fallback 3 Lớp Quét URL Lừa Đảo
 ```
