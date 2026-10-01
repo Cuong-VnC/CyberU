@@ -9,7 +9,32 @@ from dotenv import load_dotenv
 
 from services.gemini_service import validate_api_key, analyze_scam_payload, inspect_and_fetch_url
 from services.url_scanner_service import scan_url_with_fallback, get_virustotal_key, get_safebrowsing_key
-from translator import translate_dataset
+# ham tu dong anh xa ngon ngu cho du lieu json khi nhan lang="en"
+def process_lang_data(obj: Any, lang: Optional[str]) -> Any:
+    if lang != "en" or not obj:
+        return obj
+    if isinstance(obj, dict):
+        new_dict = {}
+        for k, v in obj.items():
+            if k.endswith("_en"):
+                continue
+            en_key = f"{k}_en"
+            if en_key in obj and obj[en_key] is not None:
+                en_val = obj[en_key]
+                if isinstance(en_val, str) and en_val.strip():
+                    new_dict[k] = en_val
+                elif isinstance(en_val, (dict, list)):
+                    new_dict[k] = process_lang_data(en_val, lang)
+                else:
+                    new_dict[k] = process_lang_data(v, lang)
+            else:
+                new_dict[k] = process_lang_data(v, lang)
+        return new_dict
+    elif isinstance(obj, list):
+        return [process_lang_data(elem, lang) for elem in obj]
+    else:
+        return obj
+
 
 # doc file moi truong .env
 load_dotenv()
@@ -148,7 +173,7 @@ async def inspect_url(url: str = Query(..., description="Target URL to inspect")
 async def get_encyclopedia(query: Optional[str] = None, category: Optional[str] = None, lang: Optional[str] = None):
     data = load_json_data("encyclopedia.json")
     if lang:
-        data = translate_dataset(data, "encyclopedia", lang)
+        data = process_lang_data(data, lang)
     if category and category.lower() != "all":
         data = [item for item in data if item.get("category", "").lower() == category.lower()]
     if query and query.strip():
@@ -164,7 +189,7 @@ async def get_encyclopedia(query: Optional[str] = None, category: Optional[str] 
 async def get_scenarios(query: Optional[str] = None, category: Optional[str] = None, lang: Optional[str] = None):
     data = load_json_data("scenarios.json")
     if lang:
-        data = translate_dataset(data, "scenarios", lang)
+        data = process_lang_data(data, lang)
     if category and category.lower() != "all":
         data = [item for item in data if item.get("category", "").lower() == category.lower()]
     if query and query.strip():
@@ -178,9 +203,9 @@ async def get_scenarios(query: Optional[str] = None, category: Optional[str] = N
 # tong hop du lieu an ninh
 @app.get("/api/knowledge/threats")
 async def get_threats(lang: Optional[str] = None):
-    encyclopedia = translate_dataset(load_json_data("encyclopedia.json"), "encyclopedia", lang or "vi")
-    scenarios = translate_dataset(load_json_data("scenarios.json"), "scenarios", lang or "vi")
-    spot_game = translate_dataset(load_json_data("spot_game.json"), "spot_game", lang or "vi")
+    encyclopedia = process_lang_data(load_json_data("encyclopedia.json"), lang or "vi")
+    scenarios = process_lang_data(load_json_data("scenarios.json"), lang or "vi")
+    spot_game = process_lang_data(load_json_data("spot_game.json"), lang or "vi")
     return {
         "success": True,
         "encyclopedia": encyclopedia,
@@ -193,7 +218,7 @@ async def get_threats(lang: Optional[str] = None):
 async def get_cases(lang: Optional[str] = None):
     cases = load_json_data("cases.json")
     if lang:
-        cases = translate_dataset(cases, "cases", lang)
+        cases = process_lang_data(cases, lang)
     return {"success": True, "count": len(cases), "data": cases}
 
 # hoc vien an ninh
@@ -201,7 +226,7 @@ async def get_cases(lang: Optional[str] = None):
 async def get_academy(lang: Optional[str] = None):
     scenarios = load_json_data("scenarios.json")
     if lang:
-        scenarios = translate_dataset(scenarios, "scenarios", lang)
+        scenarios = process_lang_data(scenarios, lang)
     return {"success": True, "count": len(scenarios), "data": scenarios}
 
 # cau hoi game nhan dien lua dao
@@ -209,8 +234,9 @@ async def get_academy(lang: Optional[str] = None):
 async def get_game_questions(lang: Optional[str] = None):
     questions = load_json_data("spot_game.json")
     if lang:
-        questions = translate_dataset(questions, "spot_game", lang)
+        questions = process_lang_data(questions, lang)
     return {"success": True, "count": len(questions), "data": questions}
+
 
 # Google OAuth authentication endpoint
 GOOGLE_CLIENT_ID = os.getenv("GOOGLE_CLIENT_ID", "474443255302-obr0748arjjqs9paq4c1e078rnt4jt8h.apps.googleusercontent.com")
