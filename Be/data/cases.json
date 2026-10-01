@@ -4,9 +4,9 @@
     "caseNumber": "VU-AN-2026-081",
     "caseNumber_en": "VU-AN-2026-081",
     "title": "Tin Nhắn Mạo Danh Ngân Hàng Kèm Link Giả Mạo VCB",
-    "title_en": "Tin Nhắn Mạo Danh Ngân Hàng Kèm Link Giả Mạo VCB",
+    "title_en": "Fake Bank Message With Fake VCB Link",
     "description": "SMS cảnh báo khóa tài khoản ngân hàng do đăng nhập lạ, kèm đường link độc hại và cuộc gọi xưng nhân viên tổng đài ép đọc mã OTP.",
-    "description_en": "SMS cảnh báo khóa tài khoản ngân hàng do đăng nhập lạ, kèm đường link độc hại và cuộc gọi xưng nhân viên tổng đài ép đọc mã OTP.",
+    "description_en": "SMS warning about your bank account being locked due to unusual login, with a malicious link and a call from someone claiming to be a customer service agent forcing you to read your OTP.",
     "status": "flagged",
     "status_en": "flagged",
     "tags": [
@@ -29,7 +29,7 @@
         "mimeType_en": "image/png",
         "size": 245000,
         "textContent": "Ảnh chụp màn hình tin nhắn SMS Brandname Vietcombank có chứa đường link https://vietcombank-ebank-xacminh.top/login",
-        "textContent_en": "Ảnh chụp màn hình tin nhắn SMS Brandname Vietcombank có chứa đường link https://vietcombank-ebank-xacminh.top/login",
+        "textContent_en": "A screenshot of a Brandname Vietcombank SMS containing a link https://vietcombank-ebank-xacminh.top/login",
         "createdAt": 1788947127777
       },
       {
@@ -42,7 +42,7 @@
         "mimeType_en": "audio/mpeg",
         "size": 1024000,
         "textContent": "Ghi âm cuộc gọi tự xưng nhân viên an ninh ngân hàng hối thúc đọc mã OTP 6 số để hủy lệnh trừ tiền 25 triệu.",
-        "textContent_en": "Ghi âm cuộc gọi tự xưng nhân viên an ninh ngân hàng hối thúc đọc mã OTP 6 số để hủy lệnh trừ tiền 25 triệu.",
+        "textContent_en": "Recording of a call where someone claiming to be a bank security officer urges to read out the 6-digit OTP to cancel a 25 million VND deduction.",
         "createdAt": 1788950727777
       }
     ],
@@ -51,11 +51,11 @@
       "caseId": "demo-case-001",
       "caseId_en": "demo-case-001",
       "caseTitle": "Tin Nhắn Mạo Danh Ngân Hàng Kèm Link Giả Mạo VCB",
-      "caseTitle_en": "Tin Nhắn Mạo Danh Ngân Hàng Kèm Link Giả Mạo VCB",
+      "caseTitle_en": "Fake Bank Message With Fake VCB Link",
       "mode": "DEEP_INVESTIGATION",
       "mode_en": "DEEP_INVESTIGATION",
       "inputText": "SMS cảnh báo trừ tiền 25 triệu kèm link giả mạo vietcombank-ebank-xacminh.top và cuộc gọi ép đọc mã OTP",
-      "inputText_en": "SMS cảnh báo trừ tiền 25 triệu kèm link giả mạo vietcombank-ebank-xacminh.top và cuộc gọi ép đọc mã OTP",
+      "inputText_en": "SMS warning about a 25 million VND deduction with a fake link vietcombank-ebank-xacminh.top and calls forcing you to read your OTP",
       "evidenceCount": 2,
       "evidenceSummary": [
         {
@@ -87,31 +87,31 @@
           "Mạo Danh Nhân Viên Ngân Hàng"
         ],
         "summary": "Phát hiện chiến dịch lừa đảo mạng cực kỳ nguy hiểm. Kẻ gian giả mạo thương hiệu Vietcombank bằng trạm BTS chèn link độc hại `.top`, kết hợp cuộc gọi thao túng tâm lý nhằm chiếm đoạt mã OTP để rút cạn tiền trong tài khoản.",
-        "summary_en": "Phát hiện chiến dịch lừa đảo mạng cực kỳ nguy hiểm. Kẻ gian giả mạo thương hiệu Vietcombank bằng trạm BTS chèn link độc hại `.top`, kết hợp cuộc gọi thao túng tâm lý nhằm chiếm đoạt mã OTP để rút cạn tiền trong tài khoản.",
+        "summary_en": "Discovered a very dangerous online scam. Hackers are pretending to be Vietcombank using BTS towers to insert malicious `.top` links, combined with psychological manipulation calls to steal OTPs and drain money from accounts.",
         "threat_level_label": "Nguy Cơ Lừa Đảo Cực Kỳ Nguy Hiểm (Mức 98/100)",
-        "threat_level_label_en": "Nguy Cơ Lừa Đảo Cực Kỳ Nguy Hiểm (Mức 98/100)",
+        "threat_level_label_en": "Extremely Dangerous Scam Risk (Level 98/100)",
         "why_is_this_suspicious": [
           {
             "title": "Tên Miền Độc Hại Đuôi .top Nhái Ngân Hàng",
-            "title_en": "Tên Miền Độc Hại Đuôi .top Nhái Ngân Hàng",
+            "title_en": "Toxic Domain Name with .top Imitating Banks",
             "explanation": "Tên miền `vietcombank-ebank-xacminh.top` hoàn toàn không thuộc sở hữu của Ngân hàng TMCP Ngoại Thương Việt Nam (trang chính thức là vietcombank.com.vn).",
-            "explanation_en": "Tên miền `vietcombank-ebank-xacminh.top` hoàn toàn không thuộc sở hữu của Ngân hàng TMCP Ngoại Thương Việt Nam (trang chính thức là vietcombank.com.vn).",
+            "explanation_en": "The domain `vietcombank-ebank-xacminh.top` is completely not owned by the Vietnam Joint Stock Commercial Bank for Foreign Trade (the official site is vietcombank.com.vn).",
             "severity": "critical",
             "severity_en": "critical"
           },
           {
             "title": "Hành Vi Đòi Hỏi Mã OTP Trực Tiếp Qua Điện Thoại",
-            "title_en": "Hành Vi Đòi Hỏi Mã OTP Trực Tiếp Qua Điện Thoại",
+            "title_en": "The Act of Asking for OTP Directly via Phone",
             "explanation": "Nhân viên ngân hàng thật KHÔNG BAO GIỜ gọi điện yêu cầu khách hàng đọc mã xác thực OTP hay mật khẩu.",
-            "explanation_en": "Nhân viên ngân hàng thật KHÔNG BAO GIỜ gọi điện yêu cầu khách hàng đọc mã xác thực OTP hay mật khẩu.",
+            "explanation_en": "Bank staff NEVER call to ask customers to read out their OTP code or password.",
             "severity": "critical",
             "severity_en": "critical"
           },
           {
             "title": "Tạo Tâm Lý Hoảng Sợ & Ép Buộc Thời Gian (5 Phút)",
-            "title_en": "Tạo Tâm Lý Hoảng Sợ & Ép Buộc Thời Gian (5 Phút)",
+            "title_en": "Creating Panic & Time Pressure (5 Minutes)",
             "explanation": "Kẻ gian bịa ra số tiền bị trừ 25 triệu và đặt giới hạn 5 phút để nạn nhân rối trí, không kịp suy nghĩ hay kiểm tra lại.",
-            "explanation_en": "Kẻ gian bịa ra số tiền bị trừ 25 triệu và đặt giới hạn 5 phút để nạn nhân rối trí, không kịp suy nghĩ hay kiểm tra lại.",
+            "explanation_en": "The scammer made up an amount of 25 million being deducted and set a 5-minute limit to confuse the victim, so they didn't have time to think or double-check.",
             "severity": "high",
             "severity_en": "high"
           }
@@ -119,33 +119,33 @@
         "evidence": [
           {
             "indicator": "Tên miền lừa đảo giả mạo",
-            "indicator_en": "Tên miền lừa đảo giả mạo",
+            "indicator_en": "Fake phishing domain",
             "detail": "https://vietcombank-ebank-xacminh.top/login",
             "detail_en": "https://vietcombank-ebank-xacminh.top/login",
             "source_type": "SMS Text & Image",
             "source_type_en": "SMS Text & Image",
             "reason": "Tên miền không thuộc dải địa chỉ IP và hệ thống quản lý của Vietcombank.",
-            "reason_en": "Tên miền không thuộc dải địa chỉ IP và hệ thống quản lý của Vietcombank.",
+            "reason_en": "The domain does not belong to the IP range and management system of Vietcombank.",
             "is_suspicious": true
           },
           {
             "indicator": "Yêu cầu đọc mã OTP qua cuộc gọi",
-            "indicator_en": "Yêu cầu đọc mã OTP qua cuộc gọi",
+            "indicator_en": "Request to read OTP code via call",
             "detail": "Đòi mã OTP 6 số để \"hủy giao dịch\"",
-            "detail_en": "Đòi mã OTP 6 số để \"hủy giao dịch\"",
+            "detail_en": "Asking for a 6-digit OTP to 'cancel the transaction'"",
             "source_type": "Ghi âm cuộc gọi thoại",
-            "source_type_en": "Ghi âm cuộc gọi thoại",
+            "source_type_en": "Call recording",
             "reason": "Mã OTP chỉ dùng để xác thực giao dịch chuyển tiền ra ngoài, không thể dùng để hủy lệnh.",
-            "reason_en": "Mã OTP chỉ dùng để xác thực giao dịch chuyển tiền ra ngoài, không thể dùng để hủy lệnh.",
+            "reason_en": "The OTP code is only used to verify money transfer transactions, it can't be used to cancel orders.",
             "is_suspicious": true
           }
         ],
         "psychological_tactics": [
           {
             "tactic": "Tạo Nỗi Sợ Mất Tiền Khẩn Cấp",
-            "tactic_en": "Tạo Nỗi Sợ Mất Tiền Khẩn Cấp",
+            "tactic_en": "Creating the Fear of Losing Money Urgently",
             "description": "Dọa dẫm tài khoản vừa bị trừ 25 triệu khiến nạn nhân hoang mang tột độ.",
-            "description_en": "Dọa dẫm tài khoản vừa bị trừ 25 triệu khiến nạn nhân hoang mang tột độ.",
+            "description_en": "Scaring the account that just got 25 million deducted made the victim extremely panicked.",
             "evidence_quote_or_element": "\"Phat hien giao dich 25.000.000 VND dang duoc thuc hien tu thiet bi la\"",
             "evidence_quote_or_element_en": "\"Phat hien giao dich 25.000.000 VND dang duoc thuc hien tu thiet bi la\""
           },
