@@ -147,15 +147,15 @@
             "description": "Dọa dẫm tài khoản vừa bị trừ 25 triệu khiến nạn nhân hoang mang tột độ.",
             "description_en": "Scaring the account that just got 25 million deducted made the victim extremely panicked.",
             "evidence_quote_or_element": "\"Phat hien giao dich 25.000.000 VND dang duoc thuc hien tu thiet bi la\"",
-            "evidence_quote_or_element_en": "\"Phat hien giao dich 25.000.000 VND dang duoc thuc hien tu thiet bi la\""
+            "evidence_quote_or_element_en": "\"A transaction of 25,000,000 VND has been detected from the device is\""
           },
           {
             "tactic": "Đóng Vai Người Hỗ Trợ Cứu Giúp (Savior Complex)",
-            "tactic_en": "Đóng Vai Người Hỗ Trợ Cứu Giúp (Savior Complex)",
+            "tactic_en": "Play the Role of a Support Helper (Savior Complex)",
             "description": "Người gọi đóng vai nhân viên an ninh tận tình giúp hủy lệnh để nạn nhân mất cảnh giác.",
-            "description_en": "Người gọi đóng vai nhân viên an ninh tận tình giúp hủy lệnh để nạn nhân mất cảnh giác.",
+            "description_en": "The caller pretended to be a security staff, kindly helping to cancel the order to catch the victim off guard.",
             "evidence_quote_or_element": "\"Anh/chị đọc ngay mã OTP để em chặn lệnh chuyển tiền này lại\"",
-            "evidence_quote_or_element_en": "\"Anh/chị đọc ngay mã OTP để em chặn lệnh chuyển tiền này lại\""
+            "evidence_quote_or_element_en": "\"Read the OTP code immediately so I can stop this money transfer\""
           }
         ],
         "requested_actions": [
@@ -165,57 +165,57 @@
         "suspicious_entities": [
           {
             "entity_type": "Tên Miền (URL)",
-            "entity_type_en": "Tên Miền (URL)",
+            "entity_type_en": "Domain Name (URL)",
             "value": "https://vietcombank-ebank-xacminh.top",
             "value_en": "https://vietcombank-ebank-xacminh.top",
             "assessment": "Website câu trộm thông tin tài khoản ngân hàng (Phishing portal)",
-            "assessment_en": "Website câu trộm thông tin tài khoản ngân hàng (Phishing portal)"
+            "assessment_en": "Website that steals bank account information (Phishing portal)"
           },
           {
             "entity_type": "Số Điện Thoại",
-            "entity_type_en": "Số Điện Thoại",
+            "entity_type_en": "Phone Number",
             "value": "0912.839.xxx",
             "value_en": "0912.839.xxx",
             "assessment": "Số điện thoại rác dùng gọi điện thao túng tâm lý",
-            "assessment_en": "Số điện thoại rác dùng gọi điện thao túng tâm lý"
+            "assessment_en": "Spam phone numbers used to psychologically manipulate people"
           },
           {
             "entity_type": "Mạo Danh",
-            "entity_type_en": "Mạo Danh",
+            "entity_type_en": "Impersonate",
             "value": "Ban An Ninh Vietcombank",
-            "value_en": "Ban An Ninh Vietcombank",
+            "value_en": "Vietcombank Security Board",
             "assessment": "Mạo danh trái phép cơ quan an ninh tài chính",
-            "assessment_en": "Mạo danh trái phép cơ quan an ninh tài chính"
+            "assessment_en": "Illegally impersonating a financial security agency"
           }
         ],
         "cross_modal_correlations": [
           {
             "items_correlated": "Tin nhắn SMS + Ghi âm cuộc gọi thoại",
-            "items_correlated_en": "Tin nhắn SMS + Ghi âm cuộc gọi thoại",
+            "items_correlated_en": "SMS messages + Call recording",
             "finding": "Cuộc gọi diễn ra ngay sau khi tin nhắn gửi tới 1 phút, chứng tỏ đây là một kịch bản có tổ chức phối hợp giữa SMS giả mạo và nhân viên gọi lừa đảo.",
-            "finding_en": "Cuộc gọi diễn ra ngay sau khi tin nhắn gửi tới 1 phút, chứng tỏ đây là một kịch bản có tổ chức phối hợp giữa SMS giả mạo và nhân viên gọi lừa đảo.",
+            "finding_en": "The call happened just a minute after the message was sent, showing this is a coordinated scheme between fake SMS and scam call agents.",
             "inconsistency_type": "Phối hợp đa phương thức tấn công có chủ đích",
-            "inconsistency_type_en": "Phối hợp đa phương thức tấn công có chủ đích"
+            "inconsistency_type_en": "Coordinating multi-method targeted attacks"
           }
         ],
         "timeline": [
           {
             "timestamp": "Phút 00:00",
-            "timestamp_en": "Phút 00:00",
+            "timestamp_en": "Minute 00:00",
             "event": "Nhận SMS Brandname có link độc hại",
-            "event_en": "Nhận SMS Brandname có link độc hại",
+            "event_en": "Receiving Brandname SMS with a malicious link",
             "analysis": "Kẻ gian kích hoạt mồi nhử bằng tin nhắn dọa mất 25 triệu.",
-            "analysis_en": "Kẻ gian kích hoạt mồi nhử bằng tin nhắn dọa mất 25 triệu.",
+            "analysis_en": "Scammers trigger the bait with messages threatening a loss of 25 million.",
             "flag": "warning",
             "flag_en": "warning"
           },
           {
             "timestamp": "Phút 01:15",
-            "timestamp_en": "Phút 01:15",
+            "timestamp_en": "Minute 01:15",
             "event": "Cuộc gọi tự xưng an ninh ngân hàng",
-            "event_en": "Cuộc gọi tự xưng an ninh ngân hàng",
+            "event_en": "A call claiming to be from bank security",
             "analysis": "Kẻ gian gọi điện thúc ép đọc mã OTP ngay lập tức.",
-            "analysis_en": "Kẻ gian gọi điện thúc ép đọc mã OTP ngay lập tức.",
+            "analysis_en": "The scammer calls and pressures you to enter the OTP immediately.",
             "flag": "critical",
             "flag_en": "critical"
           }
@@ -224,16 +224,16 @@
           {
             "step_number": 1,
             "title": "Tuyệt đối KHÔNG đọc mã OTP và KHÔNG bấm vào link",
-            "title_en": "Tuyệt đối KHÔNG đọc mã OTP và KHÔNG bấm vào link",
+            "title_en": "Absolutely DO NOT read the OTP code and DO NOT click on the link",
             "action": "Ngắt cuộc gọi ngay lập tức. Mã OTP cung cấp cho người khác sẽ khiến bạn mất toàn bộ tiền trong tài khoản.",
-            "action_en": "Ngắt cuộc gọi ngay lập tức. Mã OTP cung cấp cho người khác sẽ khiến bạn mất toàn bộ tiền trong tài khoản.",
+            "action_en": "Hang up immediately. Giving your OTP code to someone else will make you lose all the money in your account.",
             "priority": "immediate",
             "priority_en": "immediate"
           },
           {
             "step_number": 2,
             "title": "Khóa thẻ và đổi mật khẩu trên ứng dụng chính thức",
-            "title_en": "Khóa thẻ và đổi mật khẩu trên ứng dụng chính thức",
+            "title_en": "Lock the card and change the password on the official app",
             "action": "Mở ứng dụng VCB Digibank chính thức trên điện thoại, kích hoạt khóa thẻ tạm thời hoặc đổi mật khẩu đăng nhập.",
             "action_en": "Open the official VCB Digibank application on your phone, activate temporary card lock or change your login password.",
             "priority": "immediate",
