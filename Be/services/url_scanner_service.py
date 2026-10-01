@@ -329,7 +329,7 @@ Fetch Error (if any): {crawled.get('fetchError', 'None')}
         pass
 
     # phan tich heuristic thu cong neu goi gemini api that bai
-    is_high_risk = crawled.get("isHighRiskTld") or crawled.get("formsDetected", {}).get("hasLoginForm")
+           is_high_risk = crawled.get("isHighRiskTld") or crawled.get("formsDetected", {}).get("hasLoginForm")
     
     if lang == 'en':
         threat_label = "Heuristic URL Structure Assessment"
